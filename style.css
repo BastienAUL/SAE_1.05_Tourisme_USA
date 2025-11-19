@@ -1,14 +1,83 @@
+@font-face {
+font-family: 'NATS';
+src: url('assets/fonts/NATS/NATS.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
 body {
     background: #F8F8F8F8;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
+
+nav {
+    font-family: 'NATS';
+    color: #1C2F66;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    border-bottom: 3px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left img {
+    width: 100px;
+    height: 100px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding-right: 3em;
+}
+
+.right li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.right li img {
+    width: 28px;
+    height: 28px;
+}
+
+.fullscreen-las_vegas{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover; /* évite la déformation */
+    z-index: -1; /* derrière le contenu */
+}
+
+
 article{
     width: 150vh;
     height: 10px;
     filter: drop-shadow(rgba(0, 0, 0,0.25) 0px 5px 20px);
     display: flex;
+    margin-top: 1000px;
 }
 
 svg{
@@ -19,6 +88,8 @@ svg{
     padding-left: 100px;
     border-radius: 30px;
     padding-left: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 path {
