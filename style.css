@@ -93,6 +93,7 @@ nav {
     object-position: 50% 50%;
     display: block;
     z-index: 0;
+    filter: blur(3px) brightness(40%);
 }
 
 #fullscreen_las-vegas h1{
