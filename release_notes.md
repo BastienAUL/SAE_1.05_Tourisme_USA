@@ -7,6 +7,7 @@
 - fix de la nav (en partie)
 - fix lien nav (en partie)
 - fix accès css 
+- ajout de quelques elem dans personnages
 
 
 ## Version 1.0.0
