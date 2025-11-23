@@ -1,35 +1,39 @@
 @font-face {
-font-family: 'NATS';
-src: url('assets/fonts/NATS.woff') format('woff');
-font-weight: normal;
-font-style: normal;
+    font-family: 'NATS';
+    src: url('assets/fonts/NATS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'BEBAS';
-src: url('assets/fonts/BebasNeue-Regular.woff') format('woff');
-font-weight: normal;
-font-style: normal;
+    font-family: 'BEBAS';
+    src: url('assets/fonts/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
-  --bleu-fonce: #1C2F66;
-  --bleu-ciel: #3e5fbf;
-  --rouge: #cc0102;
+    --bleu-fonce: #1C2F66;
+    --bleu-ciel: #3e5fbf;
+    --rouge: #cc0102;
+    --background-gradiant: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
+
+
 }
 
 body {
-    background: #F8F8F8F8;
+    background: #F8F9FA;
+    background: var(--background-gradiant);
     align-items: center;
     justify-content: center;
-    margin:0;
+    margin: 0;
 }
 
 nav {
     font-family: 'NATS';
     color: var(--bleu-fonce);
     position: fixed;
-    z-index: 1000; 
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -96,7 +100,7 @@ nav {
     filter: blur(3px) brightness(40%);
 }
 
-#fullscreen_las-vegas h1{
+#fullscreen_las-vegas h1 {
     color: white;
     position: absolute;
     top: 50%;
@@ -111,14 +115,14 @@ nav {
     font-weight: 400;
 }
 
-article{
+article {
     height: 10px;
-    filter: drop-shadow(rgba(0, 0, 0,0.25) 0px 5px 20px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     display: flex;
     margin-top: 1000px;
 }
 
-svg{
+svg {
     background-color: white;
     padding: 50px;
     width: 900px;
@@ -154,7 +158,7 @@ path:hover {
 }
 
 .popup:target {
-  display: flex;
+    display: flex;
 }
 
 .popup-content {
@@ -175,11 +179,12 @@ path:hover {
     border-radius: 6px;
     text-decoration: none;
 }
+
 .close:hover {
     background: #444;
 }
 
-#texte-carte{
+#texte-carte {
     width: 150px;
     height: 200px;
     background-color: rgb(255, 255, 255);
@@ -195,7 +200,7 @@ path:hover {
     top: 20em;
 }
 
-#texte-carte img{
+#texte-carte img {
     width: 70px;
     height: 70px;
 }
