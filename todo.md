@@ -1,3 +1,3 @@
-- [ ] fix nav
+- [x] fix nav
 - [ ] css
 - [ ] pages de tout le monde 
