@@ -54,6 +54,17 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    list-style: none;
+    justify-content: center;
+    height: 50px;
+    margin-right: 50px;
+    padding-right: 20em;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left img {
@@ -63,11 +74,11 @@ nav {
 
 .right {
     display: flex;
-    align-items: center;
+    flex-direction: row-reverse;
     gap: 100px;
-    list-style: none;
     margin: 0;
     padding-right: 3em;
+    list-style: none;
 }
 
 .left a {
