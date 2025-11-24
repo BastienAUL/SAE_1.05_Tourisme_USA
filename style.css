@@ -66,13 +66,15 @@ nav {
     padding-right: 3em;
 }
 
-.right li {
+.right a {
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
+    color: #1C2F66;
 }
 
-.right li img {
+.right a img {
     width: 28px;
     height: 28px;
 }
