@@ -1,0 +1,173 @@
+.haut-footer{
+    background-color: var(--bleu-ciel);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haut-footer h1{
+    font-size: 36px;
+}
+
+.haut-footer h2{
+    font-size: 32px;
+}
+
+.haut-footer .contact{
+    display: flex;
+}
+
+.contact-email , .contact-tel , .contact-adr{
+    width: 30em;
+    height: 10em;
+    text-align: center;
+}
+
+.contact-email{
+    border-right: 3px solid white;
+}
+
+
+.contact-tel{
+    border-right: 3px solid white;
+}
+
+.haut-footer h3{
+    font-size: 20px;
+}
+
+.bas-footer{
+    background-color: var(--bleu-fonce);
+    height: 70px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+}
+
+#fullscreen_las-vegas {
+    width: 99.2vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #1C2F66;
+}
+
+#fullscreen_las-vegas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: block;
+    z-index: 0;
+    filter: blur(3px) brightness(40%);
+}
+
+#fullscreen_las-vegas h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'BEBAS';
+    font-size: 110px;
+    z-index: 10;
+    text-align: center;
+    width: 700px;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+}
+
+.carte {
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    display: flex;
+    margin: 50px;
+}
+
+svg {
+    background-color: white;
+    padding: 50px;
+    width: 1400px;
+    height: 920px;
+    padding-left: 100px;
+    border-radius: 30px;
+    padding-left: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+path {
+    fill: var(--bleu-ciel);
+    stroke: #ffffff;
+    stroke-width: 1.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+path:hover {
+    fill: var(--rouge);
+    stroke: #ffffff;
+    stroke-width: 2.5;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup:target {
+    display: flex;
+}
+
+.popup-content {
+    border: 3px solid black;
+    background: #fff;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.close {
+    display: inline-block;
+    margin-top: 20px;
+    background: #222;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.close:hover {
+    background: #444;
+}
+
+#texte-carte {
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid var(--bleu-fonce);
+    color: var(--bleu-fonce);
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    position: fixed;
+    left: 1em;
+    top: 20em;
+}
+
+#texte-carte img {
+    width: 70px;
+    height: 70px;
+}
