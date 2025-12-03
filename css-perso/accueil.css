@@ -300,6 +300,7 @@ path:hover {
     height: 250px;
     border-radius: 10px 10px 0 0;
     margin-bottom: -30px;
+    object-fit: cover;
 }
 
 #discover-lieux , #discover-oeuvres , #discover-personnages {
