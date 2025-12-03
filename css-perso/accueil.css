@@ -139,7 +139,7 @@ path:hover {
     margin: 50px;
 }
 
-#usa-title , #article-title h1{
+#usa-title , #article-title , #discover-title{
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     background-color: #ffffff;
     height: 120px;
@@ -148,7 +148,7 @@ path:hover {
     text-align: center;
 }
 
-#usa-title h1 , #article-title h1{
+#usa-title h1 , #article-title h1 , #discover-title h1{
     font-size: 55px;
     color: var(--bleu-fonce);
     margin:0;
@@ -264,4 +264,56 @@ path:hover {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
-}    
+}
+
+#discover-description{
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    background-color: #ffffff;
+    margin: 30px;
+    height: 120px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#discover-cate{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#discover{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'FREDOKA';
+    color: var(--bleu-fonce);
+    padding: 20px;
+}
+
+#discover-lieux img , #discover-oeuvres img , #discover-personnages img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -30px;
+}
+
+#discover-lieux , #discover-oeuvres , #discover-personnages {
+    width: 30%;
+    background-color: #fff;
+    height: 320px;
+    border-radius: 10px;
+    font-family: 'NATS';
+}
+
+hr{
+    background-color: var(--bleu-fonce);
+    height: 3px;
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px;
+}
