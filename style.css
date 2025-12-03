@@ -106,10 +106,6 @@ header nav .left {
     float: left;
 }
 
-
-
-
-
 header {
     height: 60px;
 }
@@ -213,23 +209,25 @@ footer{
     justify-content: center;
 }
 
+.contact{
+    width: 90%;
+}
+
 .contact-email , .contact-tel , .contact-adr{
-    width: 30em;
     height: 10em;
     text-align: center;
 }
 
 .contact-email{
     border-right: 3px solid white;
-}
-
-.main-oeuvres section div p {
-    width: 80%;
-    text-align: left;
-    font-family: 'FREDOKA';
-    font-weight: 100;
+    width: 40%;
 }
 
 .contact-tel{
     border-right: 3px solid white;
+    width: 40%;
+}
+
+.contact-adr{
+    width: 40%;
 }
