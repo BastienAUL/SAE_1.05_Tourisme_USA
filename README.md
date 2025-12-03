@@ -8,16 +8,26 @@ Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion c
 ---
 ## 🛠️ Technologies utilisées
 
-HTML
-CSS
-JS
+<div style=<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+</div>
+
+
 
 ---
 
 ## 📜 Licence
 
-Projet réalisé uniquement dans un cadre pédagogique.
-Ne pas réutiliser sans autorisation.
+
+> [!WARNING]  
+> Projet réalisé uniquement dans un cadre pédagogique et contient des éléments non libre de droit.
+> Ne pas réutiliser sans autorisation.
+
+
 
 ---
 
