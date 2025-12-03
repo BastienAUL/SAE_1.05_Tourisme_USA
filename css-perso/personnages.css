@@ -31,6 +31,7 @@ grid-row-gap: 40px;
     --rouge-deep: #A41015;
     --rouge: #cc0102;
     --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
+    --bg-card: #FFF;
     --border-radius-bloc: 15px;
 
 }
@@ -43,13 +44,23 @@ grid-row-gap: 40px;
 }
 
 .all-link-personnages div {
-    background-color: aqua;
+    background-color: var(--bg-card);
     margin: 30px;
     width: 400px;
     height: 600px;
-
     border-radius: var(--border-radius-bloc);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px #0000002a;
+    transition: box-shadow 0.5s ease;
+}
 
+.all-link-personnages div:hover {
+    box-shadow: 0px 0px 20px #00000064;
+
+    a {
+        box-shadow: 0px 0px 20px #00000064;
+    }
 }
 
 .all-link-personnages div img {
@@ -57,15 +68,36 @@ grid-row-gap: 40px;
     height: 400px;
     object-fit: cover;
     border-radius: var(--border-radius-bloc) var(--border-radius-bloc) 0 0;
+    object-position: top;
+    box-shadow: inset 0 0 20px #00000040;
 
 }
 
-.all-link-personnages div button{
-    float: right;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.all-link-personnages div a {
+    margin: 20px;
     padding: 10px;
     border-radius: 8px;
-    bottom: 0;
+    width: 120px;
+    align-self: flex-end;
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--bleu);
+    color: #FFF;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px #0000002a;
+    transition: box-shadow 0.5s ease;
+}
 
+
+.all-link-personnages h2 {
+    color: var(--bleu);
+    margin: 15px 0 0 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.all-link-personnages p {
+    color: #000000;
+
+    margin: 15px 15px 0 15px;
 }
