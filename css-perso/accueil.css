@@ -292,7 +292,7 @@ path:hover {
     flex-direction: column;
     font-family: 'FREDOKA';
     color: var(--bleu-fonce);
-    padding: 20px;
+    padding: 20px 0 20px 0;
 }
 
 #discover-lieux img , #discover-oeuvres img , #discover-personnages img{
