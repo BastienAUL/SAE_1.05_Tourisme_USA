@@ -1,3 +1,5 @@
+
+
 .main-oeuvres header {
     background-color: var(--bleu);
     height: 25em;
@@ -40,33 +42,61 @@
 
 }
 
-.main-oeuvres section div {
-    display: flex;
-    flex-direction: column;
-    width: 45em;
+.oeuvres-div {
+    width: 40em;
     height: 40em;
     background-color: white;
     border-radius: var(--border-radius-bloc);
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.main-oeuvres section div img {
+.oeuvres-div img {
     width: 100%;
     height: 22em;
     border-radius: var(--border-radius-bloc) var(--border-radius-bloc) 0 0;
     object-fit: cover;
-    box-shadow: inset 0 0 20px rgb(255, 0, 0);
+    box-shadow: inset 0 0 20px rgb(255, 0, 0); /* Bug */
 }
 
-.main-oeuvres section div p {
+.oeuvres-div div p {
     width: 80%;
     text-align: left;
+    font-family: 'FREDOKA';
+    font-weight: 100;
+    margin : 0;
 }
 
-.main-oeuvres section div h2 {
+.oeuvres-div div button {
+    background-color: var(--bleu);
+    width: 20em;
+    height: 3em;
+    border-radius: var(--border-radius-bloc);
+    border: 0;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.oeuvres-div div a {
+    font-family: 'FREDOKA';
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition-duration: 200ms;
+}
+
+.oeuvres-div div button:hover {
+    background-color: var(--bleu);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.oeuvres-div div button:hover a {
+    font-size: 1.7em;
+}
+
+
+
+.oeuvres-div div h2 {
     width: 80%;
     text-align: left;
     color: var(--bleu);
@@ -74,12 +104,17 @@
     font-family: 'NATS';
     font-size: 2.5em;
     font-weight: 50;
+    margin: 0;
 }
 
-
-.main-oeuvres section div p {
-    width: 80%;
+.oeuvres-div div {
+    width: 100%;
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     text-align: left;
-    font-family: 'FREDOKA';
-    font-weight: 100;
+    align-self: center;
 }
+
