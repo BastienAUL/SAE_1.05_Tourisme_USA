@@ -19,6 +19,35 @@
     font-style: normal;
 }
 
+/*
+@font-face {
+    font-family: 'NATS Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NATS Regular'), url('assets/fonts/NATS-Regular.woff') format('woff');
+}*/
+
+@font-face {
+    font-family: 'Caveat Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caveat Regular'), url('assets/fonts/Caveat-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Caveat Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Caveat Bold'), url('assets/fonts/Caveat-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Alexandria Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Alexandria Regular'), url('assets/fonts/Alexandria.woff') format('woff');
+}
 
 :root {
     --bleu-fonce: #1C2F66;
@@ -26,7 +55,7 @@
     --bleu: #0A3D91;
     --bleu-ciel: #3e5fbf;
     --rouge-fonce: #BF0606;
-    --rouge-deep:#A41015;
+    --rouge-deep: #A41015;
     --rouge: #cc0102;
     --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --border-radius-bloc: 15px;
@@ -167,7 +196,7 @@ header nav .left {
     float: left;
 }
 
-footer{
+footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -176,7 +205,7 @@ footer{
     font-family: 'NATS';
 }
 
-.haut-footer{
+.haut-footer {
     background-color: var(--bleu-ciel);
     height: 350px;
     display: flex;
@@ -184,23 +213,23 @@ footer{
     align-items: center;
 }
 
-.haut-footer h1{
+.haut-footer h1 {
     font-size: 36px;
 }
 
-.haut-footer h2{
+.haut-footer h2 {
     font-size: 32px;
 }
 
-.haut-footer .contact{
+.haut-footer .contact {
     display: flex;
 }
 
-.haut-footer h3{
+.haut-footer h3 {
     font-size: 20px;
 }
 
-.bas-footer{
+.bas-footer {
     background-color: var(--bleu-fonce);
     height: 70px;
     display: flex;
@@ -208,25 +237,27 @@ footer{
     justify-content: center;
 }
 
-.contact{
+.contact {
     width: 90%;
 }
 
-.contact-email , .contact-tel , .contact-adr{
+.contact-email,
+.contact-tel,
+.contact-adr {
     height: 10em;
     text-align: center;
 }
 
-.contact-email{
-    border-right: 3px solid white;
-    width: 40%;
-}   
-
-.contact-tel{
+.contact-email {
     border-right: 3px solid white;
     width: 40%;
 }
 
-.contact-adr{
+.contact-tel {
+    border-right: 3px solid white;
+    width: 40%;
+}
+
+.contact-adr {
     width: 40%;
 }

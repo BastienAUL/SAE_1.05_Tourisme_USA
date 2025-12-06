@@ -2,6 +2,13 @@
 # Release notes pages des personnages 
 > version de mes pages uniquements
 
+
+## Version 1.0.5 
+- ajustement image de fond
+- css header page mlk
+- ajout de font
+
+
 ## Version 1.0.4
 > 4 decembre
 - ajout d'image

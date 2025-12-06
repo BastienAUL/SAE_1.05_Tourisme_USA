@@ -1,15 +1,5 @@
 :root {
-    --bleu-fonce: #1C2F66;
-    --bleu-deep: #1D3060;
-    --bleu: #0A3D91;
-    --bleu-ciel: #3e5fbf;
-    --rouge-fonce: #BF0606;
-    --rouge-deep: #A41015;
-    --rouge: #cc0102;
-    --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --bg-card: #FFF;
-    --border-radius-bloc: 15px;
-
 }
 
 /*========== page tous les perso ==========*/
@@ -105,17 +95,46 @@
 
 }
 
-#mlk header blockquote{
+#mlk header blockquote {
     color: var(--bg-card);
     position: absolute;
     right: 18%;
     top: 27%;
     width: 670px;
     font-size: 50px;
+    font-family: 'Caveat Regular', sans-serif;
+}
+
+#mlk header ul {
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: 400px;
+    left: 60px;
+    width: 500px;
+
+    padding: 10px 20px 10px 20px;
+    border-radius: var(--border-radius-bloc);
+}
+
+#mlk header ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    color: var(--bleu);
+    font-size: x-large;
+    line-height: 2em;
+    font-family: 'Alexandria Regular' ,sans-serif;
+
+}
+
+#mlk header ul li u {
+    text-decoration-color: var(--rouge);
 }
 
 /* provisoir !!!! */
 
-#mlk article, aside{
+#mlk article,
+aside {
     background-color: #0A3D91;
 }
