@@ -2,12 +2,15 @@
 # Release notes pages des personnages 
 > version de mes pages uniquements
 
+## Version 1.0.6
+- modification font carte personnages
+- ajout titre page personnages 
+- ajout favicon sur les pages : index, personnages,mlk
 
 ## Version 1.0.5 
 - ajustement image de fond
 - css header page mlk
 - ajout de font
-
 
 ## Version 1.0.4
 > 4 decembre

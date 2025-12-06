@@ -3,6 +3,25 @@
 }
 
 /*========== page tous les perso ==========*/
+#personnages header {
+    background-color: var(--bleu);
+    height: 200px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+#personnages header h1 {
+    font-family: 'BEBAS', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+#personnages header p {
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
 
 .all-link-personnages {
     display: flex;
@@ -20,7 +39,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px #0000002a;
-    transition: box-shadow 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .all-link-personnages div:hover {
@@ -53,21 +72,26 @@
     color: #FFF;
     text-decoration: none;
     box-shadow: 0px 0px 10px #0000002a;
-    transition: box-shadow 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.all-link-personnages div a:hover {
+    font-size: 1.1em;
+}
 
 .all-link-personnages h2 {
     color: var(--bleu);
     margin: 15px 0 0 15px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
 
 .all-link-personnages p {
     color: #000000;
-
+    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
     margin: 15px 15px 0 15px;
+    font-size: 1.2em;
 }
 
 
@@ -124,7 +148,7 @@
     color: var(--bleu);
     font-size: x-large;
     line-height: 2em;
-    font-family: 'Alexandria Regular' ,sans-serif;
+    font-family: 'Alexandria Regular', sans-serif;
 
 }
 
