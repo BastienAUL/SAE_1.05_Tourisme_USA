@@ -20,6 +20,7 @@
   - ajout de contenu dans Travaux et Œuvre
 
 - modification sur quelques images
+- fix css personnages 
 
 ## Version 1.0.6
 - modification font carte personnages
