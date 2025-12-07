@@ -2,6 +2,25 @@
 # Release notes pages des personnages 
 > version de mes pages uniquements
 
+## TODO 
+- fix header 
+- finir html
+- finir css Travaux et Œuvre
+- finir reste du css
+
+
+
+## Version 1.0.7
+- modification page mlk css  
+  - css : section/article/aside
+  - css : titres textes
+  - debut css Travaux et Œuvre
+
+- modification page mlk html
+  - ajout de contenu dans Travaux et Œuvre
+
+- modification sur quelques images
+
 ## Version 1.0.6
 - modification font carte personnages
 - ajout titre page personnages 

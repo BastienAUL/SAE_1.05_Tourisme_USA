@@ -2,6 +2,11 @@
     --bg-card: #FFF;
 }
 
+body {
+    display: block;
+}
+
+
 /*========== page tous les perso ==========*/
 #personnages header {
     background-color: var(--bleu);
@@ -102,7 +107,8 @@
     background-repeat: no-repeat;
     background-position: 0;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
+    padding-top: 20px;
 
 }
 
@@ -114,8 +120,12 @@
     box-shadow: 0px 0px 10px #0000002a;
     margin-right: auto;
     margin-left: 3%;
-    width: 30%;
+    width: 650px;
     border-radius: 10px;
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+
 
 }
 
@@ -156,9 +166,73 @@
     text-decoration-color: var(--rouge);
 }
 
-/* provisoir !!!! */
+
+#mlk section {
+    align-self: center;
+    margin: auto;
+    width: 90%;
+}
 
 #mlk article,
 aside {
-    background-color: #0A3D91;
+    background-color: #ffffff;
+    margin-top: 2%;
+    padding: 20px;
+    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
+}
+
+#mlk p {
+    font-size: 1.5em;
+}
+
+#mlk h2 {
+    position: relative;
+    padding-left: 15px;
+    font-family: 'Alexandria Regular', sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+#mlk h2::before {
+    margin: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 30px;
+    background-color: var(--rouge);
+}
+
+
+
+/*=== biographie ===*/
+#mlk section article:first-of-type {
+    min-height: 450px;
+}
+
+#mlk section article:first-of-type figure {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+}
+
+#mlk section article:first-of-type figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#mlk section article:nth-of-type(2) img {
+    width: 200px;
+}
+
+#mlk section article:nth-of-type(2) div{
+    display: flex;
+}
+#mlk section article:nth-of-type(2) div div{
+    background-color: aqua;
+    margin: 5px;
 }
