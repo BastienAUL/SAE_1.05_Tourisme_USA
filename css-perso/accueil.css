@@ -324,10 +324,18 @@ path:hover {
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     background-color: #ffffff;
     height: 120px;
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    transition: 0.5s;
+}
+
+#article-1:hover,
+#article-2:hover,
+#article-3:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 10px 20px);
 }
 
 #article-1 img,
@@ -347,6 +355,7 @@ path:hover {
     text-align: left;
     font-family: 'FREDOKA';
     padding-left: 20px;
+    width: 70%;
 }
 
 #article-1 div h3,
@@ -371,6 +380,23 @@ path:hover {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
+}
+
+.article-button{
+    float: right;
+    color: white;
+    background-color: var(--bleu-fonce);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.article-button:hover{
+    background-color: white;
+    color: var(--bleu-fonce);
 }
 
 #discover-description {
