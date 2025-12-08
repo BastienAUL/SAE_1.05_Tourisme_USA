@@ -1,24 +1,39 @@
 :root {
-    --bleu-fonce: #1C2F66;
-    --bleu-deep: #1D3060;
-    --bleu: #0A3D91;
-    --bleu-ciel: #3e5fbf;
-    --rouge-fonce: #BF0606;
-    --rouge-deep: #A41015;
-    --rouge: #cc0102;
-    --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --bg-card: #FFF;
-    --border-radius-bloc: 15px;
-
 }
 
+body {
+    display: block;
+}
+
+
 /*========== page tous les perso ==========*/
+#personnages header {
+    background-color: var(--bleu);
+    height: 200px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+#personnages header h1 {
+    font-family: 'BEBAS', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+#personnages header p {
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
 
 .all-link-personnages {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    width: 90%;
+    margin: auto;
 }
 
 .all-link-personnages div {
@@ -30,7 +45,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px #0000002a;
-    transition: box-shadow 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .all-link-personnages div:hover {
@@ -63,21 +78,26 @@
     color: #FFF;
     text-decoration: none;
     box-shadow: 0px 0px 10px #0000002a;
-    transition: box-shadow 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.all-link-personnages div a:hover {
+    font-size: 1.1em;
+}
 
 .all-link-personnages h2 {
     color: var(--bleu);
     margin: 15px 0 0 15px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
 
 .all-link-personnages p {
     color: #000000;
-
+    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
     margin: 15px 15px 0 15px;
+    font-size: 1.2em;
 }
 
 
@@ -88,7 +108,8 @@
     background-repeat: no-repeat;
     background-position: 0;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
+    padding-top: 20px;
 
 }
 
@@ -100,22 +121,118 @@
     box-shadow: 0px 0px 10px #0000002a;
     margin-right: auto;
     margin-left: 3%;
-    width: 30%;
+    width: 650px;
     border-radius: 10px;
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+
 
 }
 
-#mlk header blockquote{
+#mlk header blockquote {
     color: var(--bg-card);
     position: absolute;
     right: 18%;
     top: 27%;
     width: 670px;
     font-size: 50px;
+    font-family: 'Caveat Regular', sans-serif;
 }
 
-/* provisoir !!!! */
+#mlk header ul {
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: 400px;
+    left: 60px;
+    width: 500px;
 
-#mlk article, aside{
-    background-color: #0A3D91;
+    padding: 10px 20px 10px 20px;
+    border-radius: var(--border-radius-bloc);
+}
+
+#mlk header ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    color: var(--bleu);
+    font-size: x-large;
+    line-height: 2em;
+    font-family: 'Alexandria Regular', sans-serif;
+
+}
+
+#mlk header ul li u {
+    text-decoration-color: var(--rouge);
+}
+
+
+#mlk section {
+    margin: auto;
+    width: 90%;
+}
+
+#mlk article,
+aside {
+    background-color: #ffffff;
+    margin-top: 2%;
+    padding: 20px;
+    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
+}
+
+#mlk p {
+    font-size: 1.5em;
+}
+
+#mlk h2 {
+    position: relative;
+    padding-left: 15px;
+    font-family: 'Alexandria Regular', sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+#mlk h2::before {
+    margin: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 30px;
+    background-color: var(--rouge);
+}
+
+
+
+/*=== biographie ===*/
+#mlk section article:first-of-type {
+    min-height: 450px;
+}
+
+#mlk section article:first-of-type figure {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+}
+
+#mlk section article:first-of-type figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#mlk section article:nth-of-type(2) img {
+    width: 200px;
+}
+
+#mlk section article:nth-of-type(2) div{
+    display: flex;
+}
+#mlk section article:nth-of-type(2) div div{
+    background-color: aqua;
+    margin: 5px;
 }
