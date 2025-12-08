@@ -8,7 +8,12 @@
 - finir css Travaux et Œuvre
 - finir reste du css
 
-
+## Version 1.0.8
+- structure HTML activité 
+- debut css activité
+- avancement oeuvres
+- structure css galerie
+- tentative de fix header main (raté)
 
 ## Version 1.0.7
 - modification page mlk css  

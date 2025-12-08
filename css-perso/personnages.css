@@ -10,11 +10,13 @@ body {
 /*========== page tous les perso ==========*/
 #personnages header {
     background-color: var(--bleu);
-    height: 200px;
+    height: 30%;
     padding-top: 20px;
     color: white;
     text-align: center;
+    padding-bottom: 10px;
 }
+
 
 #personnages header h1 {
     font-family: 'BEBAS', Arial, Helvetica, sans-serif;
@@ -34,6 +36,13 @@ body {
     justify-content: center;
     width: 90%;
     margin: auto;
+}
+
+
+@media screen and (min-width: 1300px) {
+    .all-link-personnages {
+        width: 100%;
+    }
 }
 
 .all-link-personnages div {
@@ -147,7 +156,6 @@ body {
     top: 400px;
     left: 60px;
     width: 500px;
-
     padding: 10px 20px 10px 20px;
     border-radius: var(--border-radius-bloc);
 }
@@ -224,15 +232,103 @@ aside {
     height: auto;
 }
 
+/*=== oeuvres ===*/
 
 #mlk section article:nth-of-type(2) img {
     width: 200px;
 }
 
-#mlk section article:nth-of-type(2) div{
+#mlk section article:nth-of-type(2) div {
     display: flex;
 }
-#mlk section article:nth-of-type(2) div div{
+/*
+#mlk section article:nth-of-type(2) div div {
     background-color: aqua;
-    margin: 5px;
+    padding: 10px;
+    border-radius: var(--border-radius-bloc);
+
+}*/
+
+
+/*bloc du haut*/
+#mlk section article:nth-of-type(2) div div {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--border-radius-bloc);
+    background-color: rgb(211, 211, 211);
+
+}
+/*bloc du haut margin */
+#mlk section article:nth-of-type(2) div div:first-of-type{
+    margin-right: 5px;
+   
+}
+#mlk section article:nth-of-type(2) div div:nth-child(2){
+    margin-left: 5px;
+    
+}
+
+/*bloc du bas taille images*/
+
+#mlk section article:nth-of-type(2) div img:first-of-type,
+#mlk section article:nth-of-type(2) div img:nth-child(2) {
+    height: 200px;
+    width: auto;
+    float: left;
+}
+
+#mlk section article:nth-of-type(2)>div:nth-of-type(2){
+    background-color: aqua;
+    margin-top: 10px;
+    border-radius: var(--border-radius-bloc);
+    
+}
+
+
+
+/*=== activité ===*/
+
+#mlk section article:nth-child(3)>div{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+}
+
+#mlk section article:nth-child(3) div>div {
+    background-color: rgb(255, 123, 0);
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#mlk section article:nth-child(3) div>div>img{
+    
+    align-self: center;
+    width: 370px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+
+/*=== galerie ===*/
+#mlk section aside {
+    background-color: blueviolet;
+
+}
+#mlk section aside div img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    
 }
