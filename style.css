@@ -171,6 +171,7 @@ header nav ul li a {
     align-items: center;
     text-decoration: none;
     color: var(--bleu-fonce);
+    transition: 0.5s;
 }
 
 header nav .left img {
@@ -194,6 +195,10 @@ header nav .right {
 
 header nav .left {
     float: left;
+}
+
+header nav ul li a:hover{
+    color: #BF0606;
 }
 
 footer {
