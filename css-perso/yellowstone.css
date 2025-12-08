@@ -1,0 +1,206 @@
+:root {
+  --bleu-fonce: #1c2f66;
+  --bleu-deep: #1d3060;
+  --bleu: #0a3d91;
+  --bleu-ciel: #3e5fbf;
+  --rouge-fonce: #bf0606;
+  --rouge-deep: #a41015;
+  --rouge: #cc0102;
+  --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
+  --bg-card: #fff;
+  --border-radius-bloc: 15px;
+}
+
+#yellowstone-page {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+#yellowstone-page header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "BEBAS", sans-serif;
+  font-size: 120px;
+  color: var(--bg-card);
+  text-shadow: 2px 5px 40px var(--bleu-fonce);
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-image: url("../assets/images/lieux/yellowstone-national-park.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+#yellowstone-page header {
+  height: auto;
+  margin-bottom: 50px;
+}
+
+#yellowstone-page main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#yellowstone-page main {
+  padding: 20px;
+}
+
+#yellowstone-page p {
+  font-family: "FREDOKA", sans-serif;
+  font-size: 18px;
+  color: var(--bleu-deep);
+  line-height: 1.6;
+}
+
+#yellowstone-page header h2 {
+  font-family: "BEBAS", sans-serif;
+  font-size: 40px;
+  color: var(--bleu-fonce);
+  border-bottom: 5px solid var(--bleu-fonce);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#yellowstone-page h3 {
+  font-family: "BEBAS", sans-serif;
+  font-size: 32px;
+  color: var(--bleu-deep);
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--bleu-fonce);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#frise-chronologique {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+#frise-section1,
+#frise-section2 {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80em;
+}
+
+#frise-section2 {
+  margin-top: 20%;
+}
+
+#frise-chronologique article {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#frise-section1 article {
+  justify-content: flex-end;
+}
+
+#frise-chronologique article h2 {
+  font-family: "BEBAS", sans-serif;
+  font-size: 28px;
+  color: var(--rouge-deep);
+  top: -50px;
+  margin: 10px;
+}
+
+#frise-chronologique article p {
+  width: 50%;
+  font-family: "FREDOKA", cursive;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 5px;
+  margin: 0;
+  color: var(--bleu-fonce);
+  overflow: auto;
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius-bloc);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#barre {
+  height: 91.5em;
+  border: 4px solid var(--bleu-fonce);
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+#point {
+  width: 20px;
+  height: 20px;
+  background-color: var(--bg-card);
+  border: 3px solid var(--bleu-fonce);
+  border-radius: 50%;
+  position: absolute;
+}
+
+#frise-section1 article #point {
+  right: -37px;
+}
+#frise-section2 article #point {
+  left: -37px;
+}
+
+#biodiversite {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#biodiversite article {
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#biodiversite img {
+  height: 25em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-bloc);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.9s ease-in-out;
+}
+
+strong {
+  font-weight: bold;
+  color: var(--bleu); /* Une couleur bleu foncé pour mettre en valeur */
+  font-style: italic; /* Optionnel, pour souligner davantage */
+}
+
+#carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  margin-top: 20px;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#carousel-image {
+  width: 130%;
+  height: 100%;
+  border: 3px solid var(--bleu-fonce);
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius-bloc);
+  transition: background-image 0.5s ease-in-out;
+}
