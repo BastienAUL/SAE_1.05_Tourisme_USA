@@ -446,3 +446,10 @@ hr {
 #discover-personnages:hover img {
     transform: scale(1.05) translateY(-5px);
 }
+
+#discover-lieux a,
+#discover-oeuvres a,
+#discover-personnages a{
+    text-decoration: none;
+    color: var(--bleu-fonce);
+}
