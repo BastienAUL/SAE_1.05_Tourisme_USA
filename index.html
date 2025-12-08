@@ -9,7 +9,33 @@
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
     <title>Carte des États‑Unis</title>
 </head>
+
 <body>
+    <div id="studentModalOverlay" class="student-modal-overlay" role="dialog" aria-modal="true"
+        aria-labelledby="studentModalTitle">
+        <div class="student-modal" role="document">
+            <h2 id="studentModalTitle">Site étudiant — usage non lucratif</h2>
+            <p>
+                Ce site est un projet étudiant, créé uniquement à des fins pédagogiques.
+                Aucun contenu n’est utilisé à des fins lucratives. Merci de ne pas copier ni réutiliser le contenu sans
+                autorisation.
+            </p>
+
+            <label class="opt">
+                <input id="studentModalDontShow" type="checkbox" aria-label="Ne plus afficher">
+                <span>Ne plus afficher</span>
+            </label>
+
+            <div class="actions">
+                <button id="studentModalCloseBtn" class="btn btn-close" type="button"
+                    aria-label="Fermer">Fermer</button>
+                <button id="studentModalAcceptBtn" class="btn btn-accept" type="button" aria-label="J'ai compris">J'ai
+                    compris</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
     <header>
         <nav>
             <ul>
@@ -37,16 +63,29 @@
     </div>
     <section class="usa-presentation">
         <article id="presentation-usa-tout">
-            <div id="usa-title"><h1>LES ÉTATS-UNIS D’AMÉRIQUE</h1></div>
+            <div id="usa-title">
+                <h1>LES ÉTATS-UNIS D’AMÉRIQUE</h1>
+            </div>
             <div id="usa-all-presentation">
-                <div id="usa-presentation"><h2>Les États-Unis sont un vaste pays d’Amérique du Nord composé de 50 États et d’un district fédéral. Ils offrent une incroyable diversité de paysages, de cultures et de traditions. Situés entre le Canada au nord et le Mexique au sud, les États-Unis sont bordés par l’océan Atlantique à l’est et le Pacifique à l’ouest.</h2></div>
+                <div id="usa-presentation">
+                    <h2>Les États-Unis sont un vaste pays d’Amérique du Nord composé de 50 États et d’un district
+                        fédéral. Ils offrent une incroyable diversité de paysages, de cultures et de traditions. Situés
+                        entre le Canada au nord et le Mexique au sud, les États-Unis sont bordés par l’océan Atlantique
+                        à l’est et le Pacifique à l’ouest.</h2>
+                </div>
                 <div id="right-presentation">
-                    <div id="right-presentation-1"><h3>Environ 335 millions d’habitants, avec une densité moyenne de 36 hab/km².</h3></div>
-                    <div id="right-presentation-2"><h3>Dollar américain (USD) 💵</h3></div>
-                    <div id="right-presentation-3"><h3>Drapeau : “Stars and Stripes”
-                        Hymne national : The Star-Spangled Banner
-                        Devise : In God We Trust
-                    </h3></div>
+                    <div id="right-presentation-1">
+                        <h3>Environ 335 millions d’habitants, avec une densité moyenne de 36 hab/km².</h3>
+                    </div>
+                    <div id="right-presentation-2">
+                        <h3>Dollar américain (USD) 💵</h3>
+                    </div>
+                    <div id="right-presentation-3">
+                        <h3>Drapeau : “Stars and Stripes”
+                            Hymne national : The Star-Spangled Banner
+                            Devise : In God We Trust
+                        </h3>
+                    </div>
                 </div>
             </div>
         </article>
@@ -368,19 +407,53 @@
     </section>
     <hr>
     <section class="article-recent">
-        <div id="article-title"><h1>ARTICLE RÉCENTS</h1></div>
-        <div id="article-1"><img src="assets/images/accueil/san-fransisco-article.jpeg" alt=""><div><h3>San Francisco • 6 min</h3><h1>Pourquoi visiter la côte Ouest au printemps</h1><h2>Climat, conseils pratiques et cartes interactives pour planifier votre itinéraire.</h2></div></div>
-        <div id="article-2"><img src="assets/images/accueil/route66-article.png" alt=""><div><h3>Route 66 • 12 min</h3><h1>Préparer un roadtrip historique sur la Route 66</h1><h2>Logistique, meilleurs arrêts et budget à prévoir.</h2></div></div>
-        <div id="article-3"><img src="assets/images/accueil/yellowstone-article.jpg" alt=""><div><h3>Yellowstone • 8 min</h3><h1>Observer la faune en toute sécurité</h1><h2>Règles du parc, saisons et équipement recommandé.</h2></div></div>
+        <div id="article-title">
+            <h1>ARTICLE RÉCENTS</h1>
+        </div>
+        <div id="article-1"><img src="assets/images/accueil/san-fransisco-article.jpeg" alt="">
+            <div>
+                <h3>San Francisco • 6 min</h3>
+                <h1>Pourquoi visiter la côte Ouest au printemps</h1>
+                <h2>Climat, conseils pratiques et cartes interactives pour planifier votre itinéraire.</h2>
+            </div>
+        </div>
+        <div id="article-2"><img src="assets/images/accueil/route66-article.png" alt="">
+            <div>
+                <h3>Route 66 • 12 min</h3>
+                <h1>Préparer un roadtrip historique sur la Route 66</h1>
+                <h2>Logistique, meilleurs arrêts et budget à prévoir.</h2>
+            </div>
+        </div>
+        <div id="article-3"><img src="assets/images/accueil/yellowstone-article.jpg" alt="">
+            <div>
+                <h3>Yellowstone • 8 min</h3>
+                <h1>Observer la faune en toute sécurité</h1>
+                <h2>Règles du parc, saisons et équipement recommandé.</h2>
+            </div>
+        </div>
     </section>
     <hr>
     <section id="discover">
-        <div id="discover-title"><h1>DÉCOUVRIR</h1></div>
-        <div id="discover-description"><h2>À travers cette rubrique, partez à la découverte des lieux incontournables, des personnages qui ont marqué l’histoire, des œuvres d’art qui ont influencé le monde, et de la gastronomie américaine qui reflète la diversité du pays.</h2></div>
+        <div id="discover-title">
+            <h1>DÉCOUVRIR</h1>
+        </div>
+        <div id="discover-description">
+            <h2>À travers cette rubrique, partez à la découverte des lieux incontournables, des personnages qui ont
+                marqué l’histoire, des œuvres d’art qui ont influencé le monde, et de la gastronomie américaine qui
+                reflète la diversité du pays.</h2>
+        </div>
         <div id="discover-cate">
-            <div id="discover-lieux"><img src="assets/images/accueil/horseshoe.jpg" alt=""><h1>LIEUX</h1></div>
-            <div id="discover-oeuvres"><img src="assets/images/accueil/nighthawks.jpg" alt=""><h1>OEUVRES</h1></div>
-            <div id="discover-personnages"><img src="assets/images/accueil/obama.jpg" alt=""><h1>PERSONNAGES</h1></div>
+            <div id="discover-lieux"><a href="pages/lieux.html"><img src="assets/images/accueil/horseshoe.jpg" alt="">
+                    <h1>LIEUX</h1>
+                </a></div>
+            <div id="discover-oeuvres"><a href="pages/oeuvres.html"><img src="assets/images/accueil/nighthawks.jpg"
+                        alt="">
+                    <h1>OEUVRES</h1>
+                </a></div>
+            <div id="discover-personnages"><a href="pages/personnages.html"><img src="assets/images/accueil/obama.jpg"
+                        alt="">
+                    <h1>PERSONNAGES</h1>
+                </a></div>
         </div>
     </section>
     <div id="popup-AL" class="popup">
@@ -707,4 +780,5 @@
         </div>
     </footer>
 </body>
+
 </html>
