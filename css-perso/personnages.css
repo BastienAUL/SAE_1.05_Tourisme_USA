@@ -120,7 +120,8 @@ body {
 
 /*aside*/
 
-#personnages>aside {
+#personnages>aside,
+#mlk>aside {
     position: fixed;
     right: -170px;
     bottom: 40px;
@@ -129,7 +130,6 @@ body {
     width: 190px;
     text-align: end;
     text-decoration: none;
-    font-size: 20px;
     color: rgb(0, 0, 0);
     border-radius: 5px 0 0 5px;
     display: flex;
@@ -142,17 +142,21 @@ body {
 
 }
 
-#personnages>aside p {
+#personnages>aside p,
+#mlk>aside p {
     margin: 0;
+    font-size: 20px;
 }
 
-#personnages>aside svg {
+#personnages>aside svg,
+#mlk>aside svg {
     width: 25px;
     height: 25px;
     margin-right: 10px;
 }
 
-#personnages>aside:hover {
+#personnages>aside:hover,
+#mlk>aside:hover {
     right: -5px;
 
 }
