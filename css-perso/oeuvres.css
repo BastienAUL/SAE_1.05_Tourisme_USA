@@ -48,6 +48,18 @@
     background-color: white;
     border-radius: var(--border-radius-bloc);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.oeuvres-div:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 5, 0.5);
+}
+
+.oeuvres-div:hover img {
+    transform: scale(1.02);
 }
 
 .oeuvres-div img {
@@ -55,6 +67,9 @@
     height: 50%;
     border-radius: var(--border-radius-bloc) var(--border-radius-bloc) 0 0;
     object-fit: cover;
+    overflow: hidden;
+
+    transition-duration: 300ms;
 }
 
 #img-american-gothic {
@@ -69,34 +84,34 @@
     margin : 0;
 }
 
-.oeuvres-div div button {
-    background-color: var(--bleu);
-    width: 20em;
-    height: 3em;
-
-    border-radius: calc(var(--border-radius-bloc) / 2); 
-    border: 0;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
-
-    transition: all;
-    transition-duration: 200ms;
-}
-
 .oeuvres-div div a {
+    background-color: var(--bleu);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 12.5em;
+    height: 2em;
+
     font-family: 'FREDOKA';
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
-    transition-duration: 200ms;
+    font-size: 1.3em;
+
+    border-radius: calc(var(--border-radius-bloc) / 2); 
+    border: 0;
+    box-shadow: 0 0px 5px var(--bleu);
+
+    transition: all;
+    transition-duration: 300ms;
 }
 
-.oeuvres-div div button:hover {
-    background-color: var(--bleu);
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
-}
 
-.oeuvres-div div button:hover a {
-    font-size: 1.7em;
+.oeuvres-div div a:hover {
+    background-color: white;
+    color: var(--bleu);
+    box-shadow: 0 0px 15px var(--bleu);
 }
 
 
