@@ -266,3 +266,12 @@ footer {
 .contact-adr {
     width: 40%;
 }
+
+footer a{
+    color: white;
+    transition: all 0.5s;
+}
+
+footer a:hover{
+    color: var(--rouge);
+}
