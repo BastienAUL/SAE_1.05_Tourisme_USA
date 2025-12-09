@@ -8,6 +8,11 @@
 - finir css Travaux et Œuvre
 - finir reste du css
 
+
+## Version 1.0.9 
+- import des dernieres images
+- finalisation du HTML
+
 ## Version 1.0.8
 - structure HTML activité 
 - debut css activité
