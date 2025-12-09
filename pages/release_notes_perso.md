@@ -3,11 +3,18 @@
 > version de mes pages uniquements
 
 ## TODO 
-- fix header 
-- finir html
 - finir css Travaux et Œuvre
 - finir reste du css
 
+## Version 1.1.0
+- modification css cartes personnages 
+  - taille 
+  - animation hover
+
+- ajout aside avec mon nom + css
+- changement lien footer
+- fix header main personnages 
+- ajout heart svg (Font Awesome Free v7.1.0 )
 
 ## Version 1.0.9 
 - import des dernieres images
