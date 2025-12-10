@@ -4,7 +4,6 @@
     width: 100%;
 }
 
-
 .main-fg header:has(h1) {
     background-image: url(/assets/images/forrest-gump/fg-cours.png);
     background-position: center;
