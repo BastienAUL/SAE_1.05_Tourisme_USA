@@ -156,9 +156,9 @@ p {
 #mlk header {
     background-image: url(/assets/images/personnages/background-mlk.png);
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: right;
     background-size: cover;
-    height: 100vh;
+    height: 50em;
     padding-top: 20px;
 
 }
@@ -203,8 +203,8 @@ blockquote::after {
     background-color: rgba(255, 255, 255, 0.500);
     backdrop-filter: blur(5px);
     position: relative;
-    top: 16em;
-    left: 5em;
+    top: 14em;
+    left: 4em;
     width: 500px;
     padding: 10px 20px 10px 20px;
     border-radius: var(--border-radius-bloc);
@@ -434,7 +434,7 @@ blockquote::after {
 .popup-credit svg {
     width: 25px;
     height: 25px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .popup-credit:hover {

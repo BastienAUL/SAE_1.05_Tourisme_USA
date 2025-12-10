@@ -5,6 +5,10 @@
 ## TODO 
 - finir css Travaux et Œuvre
 - finir reste du css
+
+## Version 1.1.1 (fix)
+- fix popup
+- modification header mlk
 ## Version 1.1.1
 - css galerie 
 - rajout barre horizontal avant galerie
