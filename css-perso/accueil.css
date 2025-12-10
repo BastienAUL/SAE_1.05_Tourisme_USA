@@ -131,7 +131,7 @@
     width: 90%;
 }
 
-svg {
+.carte svg {
     background-color: white;
     padding: 50px;
     width: 100%;
@@ -143,7 +143,7 @@ svg {
     justify-content: center;
 }
 
-path {
+.carte path {
     fill: var(--bleu-ciel);
     stroke: #ffffff;
     stroke-width: 1.5;
@@ -151,7 +151,7 @@ path {
     transition: all 0.3s ease;
 }
 
-path:hover {
+.carte path:hover {
     fill: var(--rouge);
     stroke: #ffffff;
     stroke-width: 2.5;

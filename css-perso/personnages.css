@@ -401,8 +401,6 @@ blockquote::after {
 
 }
 
-
-
 /*aside credits*/
 
 .popup-credit {
@@ -424,8 +422,6 @@ blockquote::after {
     border-color: #696969;
     border-width: 2px;
     border-style: solid;
-
-
 }
 
 .popup-credit p {

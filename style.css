@@ -275,3 +275,46 @@ footer a{
 footer a:hover{
     color: var(--rouge);
 }
+
+
+
+/*aside credits*/
+
+.popup-credit {
+    background-color: #fff;
+    position: fixed;
+    right: -170px;
+    bottom: 40px;
+    transition: 0.3s;
+    padding: 15px 15px 15px 10px;
+    width: 190px;
+    text-align: end;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    border-color: #696969;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.popup-credit p {
+    font-family: 'Fredoka';
+    margin: 0;
+    font-size: 18px;
+    margin-left: -4px;
+}
+
+.popup-credit svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.popup-credit:hover {
+    right: -5px;
+
+}
