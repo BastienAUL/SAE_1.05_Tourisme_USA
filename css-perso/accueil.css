@@ -10,6 +10,7 @@
 }
 
 .student-modal {
+    font-family: 'Alexandria Regular';
     width: 92%;
     max-width: 560px;
     background: rgba(18, 18, 18, 0.92);
