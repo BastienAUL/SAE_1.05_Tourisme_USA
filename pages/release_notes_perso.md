@@ -6,16 +6,21 @@
 - finir css Travaux et Œuvre
 - finir reste du css
 
+
+## Version 1.1.2
+- debut animation css 
+- modif texte popup 
+
 ## Version 1.1.1 (fix)
 - fix popup
 - modification header mlk
+
 ## Version 1.1.1
 - css galerie 
 - rajout barre horizontal avant galerie
 - modif popup credit 
 - modif header mlk
 - ajout class popup
-
 
 ## Version 1.1.0
 - modification traveaux et oeuvres (css)

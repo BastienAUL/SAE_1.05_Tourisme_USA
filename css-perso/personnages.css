@@ -4,6 +4,7 @@
 
 body {
     display: block;
+    overflow-x: hidden;
 
 }
 
@@ -249,6 +250,17 @@ blockquote::after {
 /*=== biographie ===*/
 #mlk section article:first-of-type {
     min-height: 450px;
+    animation: slidein 2s 2s ;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 #mlk section article:first-of-type figure {
@@ -283,10 +295,11 @@ blockquote::after {
     padding: 20px;
     border-radius: var(--border-radius-bloc);
     background-color: rgb(239, 239, 239);
-
+    transition: transform 0.3s ease;
 }
 
 /*bloc du haut margin */
+
 #mlk section article:nth-of-type(2) div div:first-of-type {
     margin-right: 10px;
 
@@ -295,6 +308,10 @@ blockquote::after {
 #mlk section article:nth-of-type(2) div div:nth-child(2) {
     margin-left: 10px;
 
+}
+
+#mlk section article:nth-of-type(2) div div:hover {
+    transform: scale(1.03);
 }
 
 /*bloc du bas taille images*/
@@ -312,6 +329,7 @@ blockquote::after {
     display: flex;
     padding: 20px;
     border-radius: var(--border-radius-bloc);
+    transition: transform 0.3s ease;
 
 }
 
@@ -326,6 +344,10 @@ blockquote::after {
 #mlk section article:nth-of-type(2)>div:nth-of-type(2) p {
     align-items: stretch;
     margin-left: 20px;
+}
+
+#mlk section article:nth-of-type(2)>div:nth-of-type(2):hover {
+    transform: scale(1.03);
 }
 
 /*=== activité ===*/
@@ -348,7 +370,7 @@ blockquote::after {
     padding: 20px;
     flex-wrap: nowrap;
     border-radius: var(--border-radius-bloc);
-
+    transition: transform 0.3s ease
 }
 
 
@@ -368,6 +390,11 @@ blockquote::after {
     object-fit: cover;
     object-position: center;
     border-radius: var(--border-radius-bloc);
+}
+
+#mlk section article:nth-child(3) div>div:hover {
+    transform: scale(1.05);
+    cursor: default;
 }
 
 
