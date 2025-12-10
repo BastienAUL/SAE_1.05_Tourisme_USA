@@ -43,7 +43,7 @@
 }
 
 .main-fg section {
-    margin: 10em;
+    margin: 4em 10em 4em 10em;
     padding: 2em;
     background-color: white;
     border-radius: var(--border-radius-bloc);
@@ -53,20 +53,23 @@
 .main-fg section:nth-child(2) {
     display: flex;
     align-items: flex-start;
-    height: auto;
     gap: 1em;
 }
 
 .main-fg section:nth-child(2) p {
     width: 80%;
+    height: 100%;
     text-align: left;
     font-family: 'FREDOKA';
     font-weight: 100;
     margin : 0;
+    padding-left: 1.5em;
+
+    display: flex;
+    align-items: center;
 }
 
 .main-fg section:nth-child(2) h2 {
-    width: 80%;
     text-align: left;
     color: var(--bleu);
 
@@ -96,6 +99,175 @@
 }
 
 .main-fg section:nth-child(2) img {
-    height: 25em;
+    width: 30%;
     align-self: center;
+}
+
+.main-fg section:nth-child(2) div {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+    
+}
+
+
+
+
+.main-fg section:nth-child(3) {
+    background: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.main-fg section:nth-child(3) > div:first-child {
+    box-sizing: border-box;
+    padding: 2em;
+    flex: 1 1 30%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: var(--border-radius-bloc);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    text-align: left;
+    font-family: 'FREDOKA';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+    margin : 0;
+
+    display : flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.main-fg section:nth-child(3) > div:first-child cite {
+    color : #8C8C8C;
+}
+
+.main-fg section:nth-child(3) > div:first-child q {
+    font-size: 1.1em;
+}
+
+.main-fg section:nth-child(3) > div:last-child {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 60%;
+    max-width: 800px;
+    gap: 1em;
+}
+
+.main-fg section:nth-child(3) > div:last-child > div {
+    box-sizing: border-box;
+    padding: 1.5em 2em;
+    width: 100%;
+    border-radius: var(--border-radius-bloc);
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), inset -100px 0 140px -100px var(--bleu-ciel);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+
+    transition: all ease 500ms;
+}
+
+.main-fg section:nth-child(3) > div:last-child > div:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), inset 100px 0 140px -100px var(--rouge);
+}
+
+.main-fg section:nth-child(3) > div:last-child > div:hover .hover-p {
+    display: block;
+}
+
+.main-fg section:nth-child(3) > div:last-child > div:hover .base-p {
+    display: none;
+}
+
+
+.hover-p{
+    display: none;
+}
+
+
+.main-fg section:nth-child(3) > div:last-child > div > div {
+    height: 5em;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-fg section:nth-child(3) > div:last-child > div img {
+    height: 5em;
+    width: auto;
+    flex-shrink: 0;
+    filter: saturate(0) brightness(0.8) contrast(1.5);
+}
+
+.main-fg section:nth-child(3) > div:last-child > div p {
+    margin: 0;
+    text-align: left;
+    flex: 1;
+    font-family: 'FREDOKA';
+    font-weight: 100;
+    margin : 0;
+}
+
+.note {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+    background: conic-gradient(var(--bleu) 0% 88%, #ffffff 88% 100%) c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+
+.note {
+    position: relative;
+    width: 17em;
+    height: 17em;
+    border-radius: 50%;
+    background: conic-gradient(#15305B 0% 88%, transparent 88% 100%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); */
+
+    margin-bottom: 2em;
+}
+
+
+.note::before {
+    content: "";
+    position: absolute;
+    width: 14em;
+    height: 14em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.note span {
+    position: relative;
+    color: #15305B;
+
+    font-family: 'BEBAS';
+    font-size: 5em;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
