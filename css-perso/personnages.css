@@ -6,6 +6,9 @@ body {
     display: block;
 }
 
+p {
+    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
+}
 
 /*========== page tous les perso ==========*/
 #personnages header {
@@ -123,51 +126,32 @@ body {
     transform: scale(1.07);
 }
 
-/*aside*/
-
-#personnages>aside,
-#mlk>aside {
-    position: fixed;
-    right: -170px;
-    bottom: 40px;
-    transition: 0.3s;
-    padding: 15px 15px 15px 10px;
-    width: 190px;
-    text-align: end;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-radius: 5px 0 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    border-color: #696969;
-    border-width: 2px;
-    border-style: solid;
-
-}
-
-#personnages>aside p,
-#mlk>aside p {
-    margin: 0;
-    font-size: 20px;
-}
-
-#personnages>aside svg,
-#mlk>aside svg {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-#personnages>aside:hover,
-#mlk>aside:hover {
-    right: -5px;
-
-}
-
-
 /*========== page mlk ==========*/
+#mlk section article p {
+    font-size: 1.5em;
+}
+
+#mlk section h2 {
+    position: relative;
+    padding-left: 15px;
+    font-family: 'Alexandria Regular', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#mlk section h2::before {
+    margin: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 30px;
+    background-color: var(--rouge);
+}
+
 
 #mlk header {
     background-image: url(/assets/images/personnages/background-mlk.png);
@@ -219,8 +203,8 @@ blockquote::after {
     background-color: rgba(255, 255, 255, 0.500);
     backdrop-filter: blur(5px);
     position: relative;
-    top: 400px;
-    left: 60px;
+    top: 16em;
+    left: 5em;
     width: 500px;
     padding: 10px 20px 10px 20px;
     border-radius: var(--border-radius-bloc);
@@ -248,43 +232,15 @@ blockquote::after {
 
 }
 
-#mlk section article {
-    border-radius: var(--border-radius-bloc);
-}
 
-#mlk article,
-aside {
+#mlk section article,
+#mlk section aside {
     background-color: #ffffff;
     margin-top: 2%;
-    padding: 20px;
+    padding: 30px 40px 40px 40px;
+    border-radius: var(--border-radius-bloc);
     font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
 }
-
-#mlk p {
-    font-size: 1.5em;
-}
-
-#mlk h2 {
-    position: relative;
-    padding-left: 15px;
-    font-family: 'Alexandria Regular', sans-serif;
-    font-size: 2em;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-#mlk h2::before {
-    margin: 0;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 30px;
-    background-color: var(--rouge);
-}
-
 
 
 /*=== biographie ===*/
@@ -414,15 +370,74 @@ aside {
 
 
 /*=== galerie ===*/
+#mlk hr {
+    height: 4px;
+    background-color: var(--bleu);
+    width: 90%;
+    margin: 2% auto 0 auto;
+    border-radius: 10px;
+    border-style: none;
+}
+
 #mlk section aside {
-    background-color: blueviolet;
+    background-color: #fff;
+
 
 }
 
+#mlk section aside div {
+    display: block
+}
+
 #mlk section aside div img {
-    width: 250px;
-    height: 200px;
+    width: 22em;
+    height: auto;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
+    gap: 2em;
+
+}
+
+
+
+/*aside credits*/
+
+.popup-credit {
+    background-color: #fff;
+    position: fixed;
+    right: -170px;
+    bottom: 40px;
+    transition: 0.3s;
+    padding: 15px 15px 15px 10px;
+    width: 190px;
+    text-align: end;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    border-color: #696969;
+    border-width: 2px;
+    border-style: solid;
+
+
+}
+
+.popup-credit p {
+    margin: 0;
+    font-size: 18px;
+    margin-left: -4px;
+}
+
+.popup-credit svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.popup-credit:hover {
+    right: -5px;
 
 }
