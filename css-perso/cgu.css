@@ -1,11 +1,13 @@
-#cgu{
+#cgu {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60vw;
 }
 
-#cgu-container{
+#cgu-container {
+    border-radius: 20px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     margin: 30px 0;
     background-color: white;
     padding: 0 30px;
@@ -18,17 +20,17 @@
     justify-content: space-evenly;
 }
 
-#cgu-end{
+#cgu-end {
     text-align: center;
 }
 
-#cgu-container h2{
+#cgu-container h2 {
     font-family: 'Alexandria Regular';
     font-size: 30px;
     text-align: center;
     background-color: white;
 }
 
-#cgu-container :nth-child(2){
+#cgu-container :nth-child(2) {
     text-align: center;
 }

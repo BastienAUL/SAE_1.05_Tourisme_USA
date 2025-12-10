@@ -382,7 +382,7 @@ path:hover {
     margin: 0;
 }
 
-.article-button{
+.article-button {
     float: right;
     color: white;
     background-color: var(--bleu-fonce);
@@ -394,7 +394,7 @@ path:hover {
     transition: 0.5s;
 }
 
-.article-button:hover{
+.article-button:hover {
     background-color: white;
     color: var(--bleu-fonce);
 }
@@ -475,7 +475,7 @@ hr {
 
 #discover-lieux a,
 #discover-oeuvres a,
-#discover-personnages a{
+#discover-personnages a {
     text-decoration: none;
     color: var(--bleu-fonce);
 }
