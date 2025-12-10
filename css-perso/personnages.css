@@ -62,9 +62,13 @@ body {
 
 .all-link-personnages h2 {
     color: var(--bleu);
-    margin: 15px 15px 0 15px;
+    /*margin: 15px 15px 0 15px;*/
+    margin: 0;
+    padding: 15px 15px 0 15px;
     font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     font-size: 2em;
+    background-color: var(--bg-card);
+    z-index: 2;
 }
 
 .all-link-personnages p {
@@ -97,6 +101,7 @@ body {
     text-decoration: none;
     box-shadow: 0px 0px 10px #0000002a;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
 }
 
 /* --- HOVER --- */
@@ -199,6 +204,15 @@ body {
     width: 670px;
     font-size: 50px;
     font-family: 'Caveat Regular', sans-serif;
+    quotes: "«" "»";
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
 }
 
 #mlk header ul {
@@ -231,6 +245,11 @@ body {
 #mlk section {
     margin: auto;
     width: 90%;
+
+}
+
+#mlk section article {
+    border-radius: var(--border-radius-bloc);
 }
 
 #mlk article,
@@ -251,6 +270,7 @@ aside {
     font-family: 'Alexandria Regular', sans-serif;
     font-size: 2em;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 #mlk h2::before {
@@ -288,39 +308,33 @@ aside {
 
 #mlk section article:nth-of-type(2) img {
     width: 200px;
+    border-radius: 10px;
 }
 
 #mlk section article:nth-of-type(2) div {
     display: flex;
 }
 
-/*
-#mlk section article:nth-of-type(2) div div {
-    background-color: aqua;
-    padding: 10px;
-    border-radius: var(--border-radius-bloc);
-
-}*/
 
 
 /*bloc du haut*/
 #mlk section article:nth-of-type(2) div div {
     width: 50%;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: var(--border-radius-bloc);
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(239, 239, 239);
 
 }
 
 /*bloc du haut margin */
 #mlk section article:nth-of-type(2) div div:first-of-type {
-    margin-right: 5px;
+    margin-right: 10px;
 
 }
 
 #mlk section article:nth-of-type(2) div div:nth-child(2) {
-    margin-left: 5px;
+    margin-left: 10px;
 
 }
 
@@ -334,18 +348,31 @@ aside {
 }
 
 #mlk section article:nth-of-type(2)>div:nth-of-type(2) {
-    background-color: aqua;
-    margin-top: 10px;
+    background-color: rgb(239, 239, 239);
+    margin-top: 20px;
+    display: flex;
+    padding: 20px;
     border-radius: var(--border-radius-bloc);
 
 }
 
+#mlk section article:nth-of-type(2)>div:nth-of-type(2) img {
+    align-self: center;
+}
 
+#mlk section article:nth-of-type(2)>div:nth-of-type(2) img:nth-child(2) {
+    margin-left: 10px;
+}
+
+#mlk section article:nth-of-type(2)>div:nth-of-type(2) p {
+    align-items: stretch;
+    margin-left: 20px;
+}
 
 /*=== activité ===*/
 
 #mlk section article:nth-child(3)>div {
-    background-color: aqua;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -354,23 +381,34 @@ aside {
 }
 
 #mlk section article:nth-child(3) div>div {
-    background-color: rgb(255, 123, 0);
-    margin: auto;
-    width: 40%;
+    background-color: rgb(239, 239, 239);
+    margin: 20px auto 20px auto;
+    width: 550px;
     display: flex;
     flex-direction: column;
-
+    padding: 20px;
+    flex-wrap: nowrap;
+    border-radius: var(--border-radius-bloc);
 
 }
 
-#mlk section article:nth-child(3) div>div>img {
 
+
+
+@media screen and (max-width: 1420px) {
+    #mlk section article:nth-child(3) div>div {
+        width: 450px;
+    }
+}
+
+#mlk section article:nth-child(3) div>div>img {
     align-self: center;
-    width: 370px;
-    height: 200px;
+    width: 25em;
+    height: 13em;
+    /*height: 200px;*/
     object-fit: cover;
     object-position: center;
-
+    border-radius: var(--border-radius-bloc);
 }
 
 

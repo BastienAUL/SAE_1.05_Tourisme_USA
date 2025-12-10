@@ -7,6 +7,10 @@
 - finir reste du css
 
 ## Version 1.1.0
+- modification traveaux et oeuvres (css)
+- modification de Activités touristiques associées (html et css)
+
+## Version 1.1.0
 - modification css cartes personnages 
   - taille 
   - animation hover
