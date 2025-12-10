@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     font-family: 'NATS';
-    height: 100%;
     justify-content: center;
     text-align: center;
     color: var(--bleu-fonce);
