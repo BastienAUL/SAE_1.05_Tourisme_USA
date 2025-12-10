@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
 }
 
-
-.main-fg header {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/images/forrest-gump/fg-cours.png);
+.main-fg header:has(h1) {
+    background-image: url(/assets/images/forrest-gump/fg-cours.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,15 +14,15 @@
     padding-top: 30%;
 }
 
-.main-fg header div{
+.main-fg header:has(h1) div{
     text-align: center;
 }
 
-.main-fg header img {
+.main-fg header:has(h1) img {
     object-fit: cover;
 }
 
-.main-fg header div h1 {
+.main-fg header:has(h1) div h1 {
     color: white;
     font-family: 'BEBAS';
     font-size: 80px;
@@ -34,8 +32,8 @@
     padding: 0;
 }
 
-.main-fg header div h3 {
-    color: white;
+.main-fg header:has(h1) div h3 {
+    color: rgba(255, 255, 255, 0.8);
     font-family: 'BEBAS';
     font-size: 20px;
     letter-spacing: 0.05rem;
@@ -46,8 +44,58 @@
 
 .main-fg section {
     margin: 10em;
+    padding: 2em;
+    background-color: white;
+    border-radius: var(--border-radius-bloc);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.main-fg section:nth-child(2) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    gap: 1em;
+}
+
+.main-fg section:nth-child(2) p {
+    width: 80%;
+    text-align: left;
+    font-family: 'FREDOKA';
+    font-weight: 100;
+    margin : 0;
+}
+
+.main-fg section:nth-child(2) h2 {
+    width: 80%;
+    text-align: left;
+    color: var(--bleu);
+
+    text-transform: uppercase;
+    font-family: 'NATS';
+    font-size: 2.5em;
+    font-weight: 50;
+
+    margin: 0;
+    padding : 0;
+
+    position: relative;
+    margin-left: 1em;
+}
+
+.main-fg section:nth-child(2) h2::before {
+    background-color: var(--rouge-fonce);
+    content: "";
+
+    width: 10px;     
+    height: 40px;
+
+    position: absolute;
+    left: -0.5em;
+    top: 50%;
+    transform: translateY(-50%);  
+}
+
+.main-fg section:nth-child(2) img {
+    height: 25em;
+    align-self: center;
 }
