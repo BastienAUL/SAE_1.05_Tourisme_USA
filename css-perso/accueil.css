@@ -1,5 +1,3 @@
-
-
 .student-modal-overlay {
     position: fixed;
     inset: 0;
@@ -79,7 +77,7 @@
 
 .btn-accept {
     background: #1f8ef1;
-    color: #fff;
+    color: var(--white);
 }
 
 .btn-close {
@@ -87,6 +85,8 @@
     color: #ddd;
 }
 
+
+/* ======== fullscreen accueil ========*/
 
 #fullscreen_las-vegas {
     width: 100%;
@@ -112,7 +112,7 @@
 }
 
 #fullscreen_las-vegas h1 {
-    color: white;
+    color: var(--white);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -126,16 +126,18 @@
     font-weight: 400;
 }
 
+
+/* ======== carte interactive + popup carte ========*/
+
 .carte {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    filter: var(--drop-shadow-0-25);
     display: flex;
     margin-top: 50px;
-    /*margin: 50px;*/
     width: 90%;
 }
 
 .carte svg {
-    background-color: white;
+    background-color: var(--white);
     padding: 50px;
     width: 100%;
     height: 680px;
@@ -148,7 +150,7 @@
 
 .carte path {
     fill: var(--bleu-ciel);
-    stroke: #ffffff;
+    stroke: var(--white);
     stroke-width: 1.5;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -156,44 +158,9 @@
 
 .carte path:hover {
     fill: var(--rouge);
-    stroke: #ffffff;
+    stroke: var(--white);
     stroke-width: 2.5;
     box-shadow: 0 0 5px rgb(255, 255, 255);
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    inset: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.popup:target {
-    display: flex;
-}
-
-.popup-content {
-    border: 3px solid black;
-    background: #fff;
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
-}
-
-.close {
-    display: inline-block;
-    margin-top: 20px;
-    background: #222;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.close:hover {
-    background: #444;
 }
 
 #texte-carte {
@@ -210,7 +177,7 @@
     position: fixed;
     left: 1em;
     top: 20em;
-    font-family: 'FREDOKA';
+    font-family: var(--font-family-fredoka);
 }
 
 #texte-carte img {
@@ -218,8 +185,46 @@
     height: 70px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup:target {
+    display: flex;
+}
+
+.popup-content {
+    border: 3px solid black;
+    background: var(--white);
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.close {
+    display: inline-block;
+    margin-top: 20px;
+    background: #222;
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.close:hover {
+    background: #444;
+}
+
+
+/* ======== présentation des USA ========*/
+
 .usa-presentation {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    filter: var(--drop-shadow-0-25);
     display: flex;
     background-color: white;
     width: 90%;
@@ -228,14 +233,13 @@
     align-items: center;
     border-radius: 30px;
     margin-top: 50px;
-    /*margin: 50px;*/
 }
 
 #usa-title,
 #article-title,
 #discover-title {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    background-color: #ffffff;
+    filter: var(--drop-shadow-0-25);
+    background-color: var(--white);
     height: 120px;
     width: 60vw;
     border-radius: 30px;
@@ -256,13 +260,13 @@
     padding: 50px;
     width: 100%;
     justify-content: space-between;
-    font-family: 'FREDOKA';
+    font-family: var(--font-family-fredoka);
 }
 
 #usa-presentation {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    filter: var(--drop-shadow-0-25);
     display: flex;
-    background-color: white;
+    background-color: var(--white);
     width: 50%;
     height: 400px;
     border-radius: 30px;
@@ -273,29 +277,16 @@
     font-size: 20px;
 }
 
-#right-presentation {
+#right-presentation-cate {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--whith);
     border-radius: 30px;
     justify-content: space-around;
     text-align: center;
     width: 50px;
     width: 40%;
     align-items: center;
-}
-
-#right-presentation-1,
-#right-presentation-2,
-#right-presentation-3 {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    height: 30%;
-    width: 90%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 30px;
 }
 
 #presentation-usa-tout {
@@ -306,11 +297,23 @@
     text-align: center;
 }
 
-#right-presentation-1 h3,
-#right-presentation-2 h3,
-#right-presentation-3 h3 {
+.right-presentation{
+    filter: var(--drop-shadow-0-25);
+    height: 30%;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 30px;
+}
+
+.right-presentation h3{
     margin: 30px;
 }
+
+
+/* ======== articles récents ========*/
 
 .article-recent {
     width: 90vw;
@@ -323,11 +326,9 @@
 
 }
 
-#article-1,
-#article-2,
-#article-3 {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    background-color: #ffffff;
+.article{
+    filter: var(--drop-shadow-0-25);
+    background-color: var(--white);
     height: 120px;
     width: 80%;
     border-radius: 10px;
@@ -336,54 +337,42 @@
     transition: 0.5s;
 }
 
-#article-1:hover,
-#article-2:hover,
-#article-3:hover {
+.article:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 10px 20px);
+    filter: var(--drop-shadow-0-5);
 }
 
-#article-1 img,
-#article-2 img,
-#article-3 img {
+.article img{
     width: 170px;
     height: 80px;
     border-radius: 10px;
     margin-left: 20px;
 }
 
-#article-1 div,
-#article-2 div,
-#article-3 div {
+.article div{
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-family: 'FREDOKA';
+    font-family: var(--font-family-fredoka);
     padding-left: 20px;
     width: 70%;
 }
 
-#article-1 div h3,
-#article-2 div h3,
-#article-3 div h3 {
-    font-weight: 100;
-    font-size: 22px;
-    margin: 0;
-}
-
-#article-1 div h1,
-#article-2 div h1,
-#article-3 div h1 {
+.article div h1{
     font-size: 26px;
     font-weight: 600;
     margin: 0;
 }
 
-#article-1 div h2,
-#article-2 div h2,
-#article-3 div h2 {
+.article div h2{
     font-size: 24px;
     font-weight: 300;
+    margin: 0;
+}
+
+.article div h3{
+    font-weight: 100;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -404,9 +393,12 @@
     color: var(--bleu-fonce);
 }
 
+
+/* ======== articles récents ========*/
+
 #discover-description {
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    background-color: #ffffff;
+    filter: var(--drop-shadow-0-25);
+    background-color: var(--white);
     margin: 30px;
     height: 120px;
     width: 80%;
@@ -428,14 +420,12 @@
     text-align: center;
     justify-content: space-around;
     flex-direction: column;
-    font-family: 'FREDOKA';
+    font-family: var(--font-family-fredoka);
     color: var(--bleu-fonce);
     padding: 20px 0 20px 0;
 }
 
-#discover-lieux img,
-#discover-oeuvres img,
-#discover-personnages img {
+.discover img{
     width: 100%;
     height: 250px;
     border-radius: 10px 10px 0 0;
@@ -444,45 +434,27 @@
     transition: all 0.5s;
 }
 
-#discover-lieux,
-#discover-oeuvres,
-#discover-personnages {
+.discover{
     width: 30%;
-    background-color: #fff;
+    background-color: var(--white);
     height: 320px;
     border-radius: 10px;
-    font-family: 'NATS';
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    font-family: var(--font-family-nats);
+    filter: var(--drop-shadow-0-25);
     transition: all 0.5s;
     overflow: hidden;
 }
 
-/*
-hr {
-    background-color: var(--bleu-fonce);
-    height: 3px;
-    width: 90%;
-    border-radius: 10px;
-    margin: 20px;
-}
-*/
-
-#discover-lieux:hover,
-#discover-oeuvres:hover,
-#discover-personnages:hover {
+.discover:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 10px 20px);
+    filter: var(--drop-shadow-0-5);
 }
 
-#discover-lieux:hover img,
-#discover-oeuvres:hover img,
-#discover-personnages:hover img {
+.discover:hover img{
     transform: scale(1.05) translateY(-5px);
 }
 
-#discover-lieux a,
-#discover-oeuvres a,
-#discover-personnages a {
+.discover a{
     text-decoration: none;
     color: var(--bleu-fonce);
 }
