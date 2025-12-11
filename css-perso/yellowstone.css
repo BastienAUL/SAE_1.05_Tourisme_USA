@@ -11,10 +11,11 @@
   --border-radius-bloc: 15px;
 }
 
+/*
 #yellowstone-page {
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
-}
+}*/
 
 #yellowstone-page header h1 {
   display: flex;

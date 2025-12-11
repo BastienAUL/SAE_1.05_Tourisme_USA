@@ -19,27 +19,12 @@
     font-style: normal;
 }
 
-/*
-@font-face {
-    font-family: 'NATS Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('NATS Regular'), url('assets/fonts/NATS-Regular.woff') format('woff');
-}*/
 
 @font-face {
     font-family: 'Caveat Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Caveat Regular'), url('assets/fonts/Caveat-Regular.woff') format('woff');
-}
-
-
-@font-face {
-    font-family: 'Caveat Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Caveat Bold'), url('assets/fonts/Caveat-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -57,22 +42,46 @@
     --rouge-fonce: #BF0606;
     --rouge-deep: #A41015;
     --rouge: #cc0102;
+    --white: #fff;
     --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --border-radius-bloc: 15px;
+    --font-family-fredoka: 'FREDOKA', Arial, Helvetica, sans-serif;
 }
 
 body {
     background: #F8F9FA;
     background: var(--background-gradient);
     margin: 0;
+    /*
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
 
+body>main>section {
+    margin-left: auto;
+    margin-right: auto;
+}
 
+body>main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: var(--font-family-fredoka);
+}
+
+/* ======== HEADER / NAV =======*/
+/*
+original : Titouan Moquet 
+refonte et menu déroulant : Bastien Aulney*/
 header {
     height: 60px;
 }
@@ -85,7 +94,7 @@ header nav {
     top: 0;
     width: 100%;
     height: 60px;
-    background: #fff;
+    background: var(--white);
     border-bottom: 2px solid var(--rouge);
     display: flex;
     align-items: center;
@@ -147,7 +156,7 @@ header nav {
     left: 0;
     width: 100%;
     height: 60px;
-    background: #fff;
+    background: var(--white);
     border-bottom: 2px solid var(--rouge);
     display: flex;
     align-items: center;
@@ -197,89 +206,143 @@ header nav .left {
     float: left;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: #BF0606;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    color: white;
-    font-family: 'NATS';
-}
 
-.haut-footer {
-    background-color: var(--bleu-ciel);
-    height: 350px;
-    display: flex;
+/* Sous-menu */
+.sous-menu {
+    gap: 5px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: none;
+    display: none;
     flex-direction: column;
-    align-items: center;
-}
-
-.haut-footer h1 {
-    font-size: 36px;
-}
-
-.haut-footer h2 {
-    font-size: 32px;
-}
-
-.haut-footer .contact {
-    display: flex;
-}
-
-.haut-footer h3 {
-    font-size: 20px;
-}
-
-.bas-footer {
-    background-color: var(--bleu-fonce);
-    height: 70px;
-    display: flex;
-    font-size: 10px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 5px 0;
+    z-index: 100;
     justify-content: center;
+    font-size: 100%;
 }
 
-.contact {
-    width: 90%;
+nav ul li:hover .sous-menu {
+    display: flex;
 }
 
-.contact-email,
-.contact-tel,
-.contact-adr {
-    height: 10em;
+.sous-menu li {
+    width: 100%;
+}
+
+.sous-menu li a {
+    padding: 10px 15px;
+    background-color: white;
+    border: 2px solid var(--bleu-fonce);
+    width: 100%;
+}
+
+.sous-menu li a:hover {
+    background: #ff0000;
+    color: white;
+}
+
+/* ======== FOOTER ========*/
+/*
+
+original : Bastien Aulney
+refonte : Titouan Moquet 
+
+*/
+
+footer {
+    color: white;
+    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+}
+
+/*!!!!!!provisoire !!!!!*/
+footer p {
+    color: white;
+}
+
+footer>div:first-child {
+    background-color: var(--bleu-ciel);
+    padding: 20px;
+}
+
+footer>div:nth-child(2) {
+    background-color: var(--bleu-ciel);
+    text-align: center;
+    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 20px;
+}
+
+footer>div:first-child h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+footer>div:first-child>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>div:first-child>div section {
+    width: 33%;
     text-align: center;
 }
 
-.contact-email {
+footer>div:first-child>div section h2 {
+    font-size: 1.5em;
+    margin-top: 16px;
+}
+
+footer>div:first-child>div section:nth-child(2) {
     border-right: 3px solid white;
-    width: 40%;
+    border-left: 3px solid white;
+
 }
 
-.contact-tel {
-    border-right: 3px solid white;
-    width: 40%;
+footer>div:last-of-type {
+    background-color: var(--bleu-fonce);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.contact-adr {
-    width: 40%;
+footer>div:last-of-type p {
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+    align-self: center;
 }
 
-footer a{
+footer a {
     color: white;
     transition: all 0.5s;
 }
 
-footer a:hover{
+footer a:hover {
     color: var(--rouge);
 }
 
+footer>div:last-of-type a {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+footer svg {
+    width: 35px;
+    margin-left: 10px;
+}
 
 
-/*aside credits*/
-
+/* ======== aside credits ========*/
 .popup-credit {
     background-color: #fff;
     position: fixed;
@@ -302,7 +365,6 @@ footer a:hover{
 }
 
 .popup-credit p {
-    font-family: 'Fredoka';
     margin: 0;
     font-size: 18px;
     margin-left: -4px;
@@ -319,38 +381,46 @@ footer a:hover{
 
 }
 
-/* Sous-menu */
-.sous-menu {
-    gap: 5px;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: none;
-    display: none;
-    flex-direction: column;
-    width: 30%;
+/*========= ELEMENTS COMMUNS ========*/
+hr {
+    height: 4px;
+    background-color: var(--bleu);
+    width: 90%;
+    margin: 2% auto 0 auto;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+
+/* ======== CGU & PDC ========*/
+#gpu-and-pdc {
+    width: 60%;
+}
+
+#gpu-and-pdc h2,
+#gpu-and-pdc h3 {
+    font-family: var(--font-family-fredoka);
+}
+
+#gpu-and-pdc>div {
     border-radius: 20px;
-    padding: 5px 0;
-    z-index: 100;
-    justify-content: center;
-    font-size: 100%;
-}
-
-nav ul li:hover .sous-menu {
-    display: flex;
-}
-.sous-menu li{
-    width: 100%;
-}
-
-.sous-menu li a {
-    padding: 10px 15px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    margin: 30px 0;
     background-color: white;
-    border: 2px solid var(--bleu-fonce);
-    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-.sous-menu li a:hover {
-    background: #ff0000;
-    color:white;
+#gpu-and-pdc>div>p:last-child {
+    text-align: center;
 }
+
+#gpu-and-pdc h2 {
+    font-family: 'Alexandria Regular';
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+}
+

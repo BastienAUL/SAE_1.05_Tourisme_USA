@@ -1,6 +1,16 @@
 # Release notes 
 
 
+## Version 2.0.0
+- refonte footer
+- ajout sous menu nav
+- début mis en commun css 
+- correction du code HTML
+- correction du code css
+...
+(toutes les modifs sur le release notes personnages)
+
+> Version manquante le release notes n'a pas été mis à jour (pour le global)
 
 ## Version 1.1.1 
 - refonte de la nav 

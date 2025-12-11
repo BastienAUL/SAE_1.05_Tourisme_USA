@@ -1,16 +1,3 @@
-:root {
-    --bg-card: #FFF;
-}
-
-body {
-    display: block;
-    overflow-x: hidden;
-
-}
-
-p {
-    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
-}
 
 /*========== page tous les perso ==========*/
 #personnages header {
@@ -21,7 +8,6 @@ p {
     text-align: center;
     padding-bottom: 20px;
 }
-
 
 #personnages header h1 {
     font-family: 'BEBAS', Arial, Helvetica, sans-serif;
@@ -35,24 +21,22 @@ p {
     font-size: 1.5em;
 }
 
-.all-link-personnages {
+#personnages>section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    margin: auto;
+    /*margin: auto;*/
 }
 
-
 @media screen and (min-width: 1300px) {
-    .all-link-personnages {
+    #personnages>section {
         width: 100%;
     }
 }
 
-
-.all-link-personnages div {
-    background-color: var(--bg-card);
+#personnages>section div {
+    background-color: var(--white);
     margin: 30px;
     width: 390px;
     height: 550px;
@@ -65,25 +49,25 @@ p {
     transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
-.all-link-personnages h2 {
+#personnages>section h2 {
     color: var(--bleu);
     /*margin: 15px 15px 0 15px;*/
     margin: 0;
     padding: 15px 15px 0 15px;
     font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     font-size: 2em;
-    background-color: var(--bg-card);
+    background-color: var(--white);
     z-index: 2;
 }
 
-.all-link-personnages p {
+#personnages>section p {
     color: #000000;
     font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
     margin: 15px 15px 0 15px;
     font-size: 1.2em;
 }
 
-.all-link-personnages div img {
+#personnages>section div img {
     width: 390px;
     height: 330px;
     object-fit: cover;
@@ -93,7 +77,7 @@ p {
     transition: transform 0.5s ease;
 }
 
-.all-link-personnages div a {
+#personnages>section div a {
     margin: 20px;
     padding: 10px;
     border-radius: 8px;
@@ -102,7 +86,7 @@ p {
     margin-top: auto;
     text-align: center;
     background-color: var(--bleu);
-    color: #FFF;
+    color: var(--white);
     text-decoration: none;
     box-shadow: 0px 0px 10px #0000002a;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -111,20 +95,20 @@ p {
 
 /* --- HOVER --- */
 
-.all-link-personnages div:hover {
+#personnages>section div:hover {
     box-shadow: 0px 0px 20px #00000064;
     transform: scale(1.02);
 }
 
-.all-link-personnages div:hover img {
+#personnages>section div:hover img {
     transform: scale(1.05);
 }
 
-.all-link-personnages div:hover a {
+#personnages>section div:hover a {
     box-shadow: 0px 0px 20px #00000064;
 }
 
-.all-link-personnages div a:hover {
+#personnages>section div a:hover {
     transform: scale(1.07);
 }
 
@@ -183,7 +167,7 @@ p {
 }
 
 #mlk header blockquote {
-    color: var(--bg-card);
+    color: var(--white);
     position: absolute;
     right: 18%;
     top: 9em;
@@ -229,13 +213,11 @@ blockquote::after {
     text-decoration-color: var(--rouge);
 }
 
-
 #mlk section {
     margin: auto;
     width: 90%;
 
 }
-
 
 #mlk section article,
 #mlk section aside {
@@ -245,7 +227,6 @@ blockquote::after {
     border-radius: var(--border-radius-bloc);
     font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
 }
-
 
 /*=== biographie ===*/
 #mlk section article:first-of-type {
@@ -286,8 +267,6 @@ blockquote::after {
     display: flex;
 }
 
-
-
 /*bloc du haut*/
 #mlk section article:nth-of-type(2) div div {
     width: 50%;
@@ -299,15 +278,12 @@ blockquote::after {
 }
 
 /*bloc du haut margin */
-
 #mlk section article:nth-of-type(2) div div:first-of-type {
     margin-right: 10px;
-
 }
 
 #mlk section article:nth-of-type(2) div div:nth-child(2) {
     margin-left: 10px;
-
 }
 
 #mlk section article:nth-of-type(2) div div:hover {
@@ -373,9 +349,6 @@ blockquote::after {
     transition: transform 0.3s ease
 }
 
-
-
-
 @media screen and (max-width: 1420px) {
     #mlk section article:nth-child(3) div>div {
         width: 450px;
@@ -397,8 +370,6 @@ blockquote::after {
     cursor: default;
 }
 
-
-
 /*=== galerie ===*/
 #mlk hr {
     height: 4px;
@@ -410,60 +381,20 @@ blockquote::after {
 }
 
 #mlk section aside {
-    background-color: #fff;
-
-
+    background-color: var(--white);
 }
 
 #mlk section aside div {
-    display: block
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
 }
 
 #mlk section aside div img {
-    width: 22em;
-    height: auto;
+    display: flex;
+    width: auto;
+    height: 20em;
     object-fit: cover;
     object-position: top;
-    gap: 2em;
-
-}
-
-/*aside credits*/
-
-.popup-credit {
-    background-color: #fff;
-    position: fixed;
-    right: -170px;
-    bottom: 40px;
-    transition: 0.3s;
-    padding: 15px 15px 15px 10px;
-    width: 190px;
-    text-align: end;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-radius: 5px 0 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    border-color: #696969;
-    border-width: 2px;
-    border-style: solid;
-}
-
-.popup-credit p {
-    margin: 0;
-    font-size: 18px;
-    margin-left: -4px;
-}
-
-.popup-credit svg {
-    width: 25px;
-    height: 25px;
-    margin-right: 25px;
-}
-
-.popup-credit:hover {
-    right: -5px;
-
+    margin-bottom: 20px; 
 }

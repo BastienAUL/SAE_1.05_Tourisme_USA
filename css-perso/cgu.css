@@ -1,11 +1,13 @@
-#cgu , #confidentialite{
+#gpu-and-pdc{
+    /*
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60vw;
+    width: 60vw;*/
+    width: 60%;
 }
 
-#cgu-container , #confidentialite-container{
+#gpu-and-pdc>div{
     border-radius: 20px;
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     margin: 30px 0;
@@ -14,23 +16,20 @@
     display: flex;
     flex-direction: column;
     font-family: 'FREDOKA';
+    /*
     width: 100%;
     justify-content: center;
     height: 120vh;
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
 }
 
-#cgu-end , #confidentialite-end{
+#gpu-and-pdc>div>p:last-child{
     text-align: center;
 }
 
-#cgu-container h2 , #confidentialite-container h2{
+#gpu-and-pdc h2 {
     font-family: 'Alexandria Regular';
     font-size: 30px;
     text-align: center;
     background-color: white;
-}
-
-#cgu-container :nth-child(2) , #confidentialite-container :nth-child(2){
-    text-align: center;
 }

@@ -10,11 +10,11 @@
   --bg-card: #fff;
   --border-radius-bloc: 15px;
 }
-
+/*
 #lieux-page {
   background-color: var(--bg-card);
   overflow-x: hidden;
-}
+}*/
 
 #lieux-page header h1 {
   display: flex;

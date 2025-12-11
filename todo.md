@@ -1,4 +1,7 @@
 - [x] fix nav
-- [ ] css
-- [ ] pages de tout le monde
-- [ ] footer
+- [x] css
+- [x] pages de tout le monde
+- [x] footer
+- [ ] verifier tout le code
+- [ ] fusionner tout les css
+- [ ] reduire la taille des médias

@@ -3,8 +3,27 @@
 > version de mes pages uniquements
 
 ## TODO 
-- finir css Travaux et Œuvre
-- finir reste du css
+- dezoomer tout car c'est trop gros
+
+
+
+## Version 1.1.3
+- finition css galerie 
+- changement icon popup
+  
+> autres changements sur le reste des pages : 
+
+- refonte footer
+- ajout sous menu nav
+- début mise en commun css 
+  - css cgu et pdc déplacer dans style.css
+
+- correction du code HTML
+- suppresion display flex body 
+- corrections css : index, lieux, yellowstone, cgu*
+- correction liens images : lieux.html 
+- correction et clean : personnages.css
+
 
 
 ## Version 1.1.2
