@@ -86,6 +86,8 @@
 }
 
 
+/* ======== fullscreen accueil ========*/
+
 #fullscreen_las-vegas {
     width: 100%;
     height: 100vh;
@@ -124,11 +126,13 @@
     font-weight: 400;
 }
 
+
+/* ======== carte interactive + popup carte ========*/
+
 .carte {
     filter: var(--drop-shadow-0-25);
     display: flex;
     margin-top: 50px;
-    /*margin: 50px;*/
     width: 90%;
 }
 
@@ -157,6 +161,28 @@
     stroke: var(--white);
     stroke-width: 2.5;
     box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+#texte-carte {
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid var(--bleu-fonce);
+    color: var(--bleu-fonce);
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    position: fixed;
+    left: 1em;
+    top: 20em;
+    font-family: var(--font-family-fredoka);
+}
+
+#texte-carte img {
+    width: 70px;
+    height: 70px;
 }
 
 .popup {
@@ -194,27 +220,8 @@
     background: #444;
 }
 
-#texte-carte {
-    width: 200px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid var(--bleu-fonce);
-    color: var(--bleu-fonce);
-    border-radius: 30px;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    font-size: 17px;
-    position: fixed;
-    left: 1em;
-    top: 20em;
-    font-family: var(--font-family-fredoka);
-}
 
-#texte-carte img {
-    width: 70px;
-    height: 70px;
-}
+/* ======== présentation des USA ========*/
 
 .usa-presentation {
     filter: var(--drop-shadow-0-25);
@@ -226,7 +233,6 @@
     align-items: center;
     border-radius: 30px;
     margin-top: 50px;
-    /*margin: 50px;*/
 }
 
 #usa-title,
@@ -271,7 +277,7 @@
     font-size: 20px;
 }
 
-#right-presentation {
+#right-presentation-cate {
     display: flex;
     flex-direction: column;
     background-color: var(--whith);
@@ -283,9 +289,15 @@
     align-items: center;
 }
 
-#right-presentation-1,
-#right-presentation-2,
-#right-presentation-3 {
+#presentation-usa-tout {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right-presentation{
     filter: var(--drop-shadow-0-25);
     height: 30%;
     width: 90%;
@@ -296,19 +308,12 @@
     border-radius: 30px;
 }
 
-#presentation-usa-tout {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#right-presentation-1 h3,
-#right-presentation-2 h3,
-#right-presentation-3 h3 {
+.right-presentation h3{
     margin: 30px;
 }
+
+
+/* ======== articles récents ========*/
 
 .article-recent {
     width: 90vw;
@@ -321,9 +326,7 @@
 
 }
 
-#article-1,
-#article-2,
-#article-3 {
+.article{
     filter: var(--drop-shadow-0-25);
     background-color: var(--white);
     height: 120px;
@@ -334,25 +337,19 @@
     transition: 0.5s;
 }
 
-#article-1:hover,
-#article-2:hover,
-#article-3:hover {
+.article:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 10px 20px);
+    filter: var(--drop-shadow-0-5);
 }
 
-#article-1 img,
-#article-2 img,
-#article-3 img {
+.article img{
     width: 170px;
     height: 80px;
     border-radius: 10px;
     margin-left: 20px;
 }
 
-#article-1 div,
-#article-2 div,
-#article-3 div {
+.article div{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -361,27 +358,21 @@
     width: 70%;
 }
 
-#article-1 div h3,
-#article-2 div h3,
-#article-3 div h3 {
-    font-weight: 100;
-    font-size: 22px;
-    margin: 0;
-}
-
-#article-1 div h1,
-#article-2 div h1,
-#article-3 div h1 {
+.article div h1{
     font-size: 26px;
     font-weight: 600;
     margin: 0;
 }
 
-#article-1 div h2,
-#article-2 div h2,
-#article-3 div h2 {
+.article div h2{
     font-size: 24px;
     font-weight: 300;
+    margin: 0;
+}
+
+.article div h3{
+    font-weight: 100;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -401,6 +392,9 @@
     background-color: white;
     color: var(--bleu-fonce);
 }
+
+
+/* ======== articles récents ========*/
 
 #discover-description {
     filter: var(--drop-shadow-0-25);
@@ -431,9 +425,7 @@
     padding: 20px 0 20px 0;
 }
 
-#discover-lieux img,
-#discover-oeuvres img,
-#discover-personnages img {
+.discover img{
     width: 100%;
     height: 250px;
     border-radius: 10px 10px 0 0;
@@ -442,9 +434,7 @@
     transition: all 0.5s;
 }
 
-#discover-lieux,
-#discover-oeuvres,
-#discover-personnages {
+.discover{
     width: 30%;
     background-color: var(--white);
     height: 320px;
@@ -455,32 +445,16 @@
     overflow: hidden;
 }
 
-/*
-hr {
-    background-color: var(--bleu-fonce);
-    height: 3px;
-    width: 90%;
-    border-radius: 10px;
-    margin: 20px;
-}
-*/
-
-#discover-lieux:hover,
-#discover-oeuvres:hover,
-#discover-personnages:hover {
+.discover:hover{
     transform: translateY(-10px);
-    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 10px 20px);
+    filter: var(--drop-shadow-0-5);
 }
 
-#discover-lieux:hover img,
-#discover-oeuvres:hover img,
-#discover-personnages:hover img {
+.discover:hover img{
     transform: scale(1.05) translateY(-5px);
 }
 
-#discover-lieux a,
-#discover-oeuvres a,
-#discover-personnages a {
+.discover a{
     text-decoration: none;
     color: var(--bleu-fonce);
 }
