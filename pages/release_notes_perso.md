@@ -5,6 +5,8 @@
 ## TODO 
 - dezoomer tout car c'est trop gros
 
+## Version 1.1.4
+- changement footer pages oeuvres
 
 
 ## Version 1.1.3
