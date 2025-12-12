@@ -5,8 +5,14 @@
 ## TODO 
 - dezoomer tout car c'est trop gros
 
+## Version 1.1.6 
+- modif css hr
+- modif taille des sections
+- modif html et correction d'erreur
+- modif nav, ajout des alt manquant sur les images nav (toute les pages sauf les lieux)
+- fix titres des sections et de la galerie
 
-## Version 1.1.5(2.0.1)
+## Version 1.1.5 (2.0.1)
 - modification css et HTMl de lieux et yellowstones pour corriger les erreurs et fix la suppression du flex du body
 - ajout favicon lieux et yellowstones
 - modif style.css pour s'ajuster avec les modifs des pages lieux

@@ -133,6 +133,7 @@
     filter: var(--drop-shadow-0-25);
     display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 90%;
 }
 
@@ -233,6 +234,7 @@
     align-items: center;
     border-radius: 30px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #usa-title,
