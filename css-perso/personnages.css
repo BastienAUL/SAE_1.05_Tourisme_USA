@@ -112,14 +112,15 @@
 }
 
 /*========== page mlk ==========*/
-#mlk hr{
+#mlk hr {
     width: 70%;
 }
+
 #mlk section p {
     font-size: 1.2em;
 }
 
-#mlk h2{
+#mlk h2 {
     position: relative;
     padding-left: 15px;
     font-family: 'Alexandria Regular', sans-serif;
@@ -264,6 +265,18 @@ blockquote::after {
     height: auto;
 }
 
+@media screen and (max-width: 900px) {
+    #mlk section:first-of-type figure {
+
+        margin-right: 15px;
+        width: 100px;
+        font-size: small;
+    }
+
+}
+
+
+
 /*=== oeuvres ===*/
 
 #mlk section:nth-of-type(2) img {
@@ -334,6 +347,46 @@ blockquote::after {
     transform: scale(1.03);
 }
 
+@media screen and (max-width: 1050px) {
+    #mlk section:nth-of-type(2) div {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #mlk section:nth-of-type(2)>div>div:first-of-type {
+        margin-right: 0;
+    }
+
+    #mlk section:nth-of-type(2)>div>div:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    #mlk section:nth-of-type(2)>div>div {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    #mlk section:nth-of-type(2)>div:nth-of-type(2) {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    #mlk section:nth-of-type(2)>div:nth-of-type(2) img:first-of-type{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #mlk section:nth-of-type(2)>div:nth-of-type(2) {
+        flex-direction: column;
+    }
+    #mlk section:nth-of-type(2)>div:nth-of-type(2) img:first-of-type{
+        display: none;
+    }
+}
+
+
 /*=== activité ===*/
 
 #mlk section:nth-of-type(3)>div {
@@ -400,9 +453,11 @@ blockquote::after {
 }
 
 #mlk aside:first-of-type div img {
-    display: flex;
+
     width: auto;
+    min-width: 20em;
     height: 20em;
+    max-width: 26em;
     object-fit: cover;
     object-position: top;
     margin-bottom: 20px;

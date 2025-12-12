@@ -5,6 +5,10 @@
 ## TODO 
 - dezoomer tout car c'est trop gros
 
+## Version 1.1.7
+- fix position images galerie
+- debut css responsive pour les oeuvres mlk
+
 ## Version 1.1.6 
 - modif css hr
 - modif taille des sections
@@ -36,8 +40,6 @@
 - corrections css : index, lieux, yellowstone, cgu*
 - correction liens images : lieux.html 
 - correction et clean : personnages.css
-
-
 
 ## Version 1.1.2
 - debut animation css 
