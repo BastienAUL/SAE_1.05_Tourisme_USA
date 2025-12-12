@@ -1,5 +1,10 @@
 # Release notes 
 
+## Version 2.0.1 
+- modification css et HTMl de lieux et yellowstones pour corriger les erreurs et fix la suppression du flex du body
+- ajout favicon lieux et yellowstones
+
+(toutes les modifs sur le release notes personnages)
 
 ## Version 2.0.0
 - refonte footer

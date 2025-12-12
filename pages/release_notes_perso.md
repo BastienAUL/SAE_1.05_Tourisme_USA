@@ -5,11 +5,16 @@
 ## TODO 
 - dezoomer tout car c'est trop gros
 
+
+## Version 1.1.5(2.0.1)
+- modification css et HTMl de lieux et yellowstones pour corriger les erreurs et fix la suppression du flex du body
+- ajout favicon lieux et yellowstones
+- modif style.css pour s'ajuster avec les modifs des pages lieux
+
 ## Version 1.1.4
 - changement footer pages oeuvres
 
-
-## Version 1.1.3
+## Version 1.1.3 (2.0.0)
 - finition css galerie 
 - changement icon popup
   

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css-perso/yellowstone.css" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
   <title>Yellowstone National Park</title>
 </head>
 
@@ -36,13 +37,18 @@
         </li>
       </ul>
     </nav>
-    <h1>yellowstone national park</h1>
+    <!--<h1>yellowstone national park</h1>-->
   </header>
-  <main>
+  <main id="yellowstone">
+    <!---->
+    <header>
+      <h1>yellowstone national park</h1>
+    </header>
+    <!---->
     <section id="info-yellowstone">
-      <header>
-        <h2>Situation géographique du parc national de Yellowstone</h2>
-      </header>
+
+      <h2>Situation géographique du parc national de Yellowstone</h2>
+
       <article>
         <p>
           Le parc national de Yellowstone se trouve à l’ouest des États-Unis,
@@ -61,84 +67,84 @@
         </p>
       </article>
     </section>
-    <header>
+    <section>
       <h2>frise chronologique de Yellowstone</h2>
-    </header>
-    <div id="frise-chronologique">
-      <section id="frise-section1">
-        <article>
-          <p>
-            John Colter, ancien membre de l’expédition Lewis et Clark, devient
-            le premier Européen à explorer la région de Yellowstone.
-          </p>
-          <h2>1807</h2>
-          <div id="point"></div>
-        </article>
-        <article>
-          <p>
-            L’expédition Folsom–Cook–Peterson réalise la première exploration
-            documentée et rapportée de Yellowstone.
-          </p>
-          <h2>1869</h2>
-          <div id="point"></div>
-        </article>
-        <article>
-          <p>
-            L’expédition Hayden, avec des scientifiques et des artistes,
-            publie les premières images et cartes détaillées de Yellowstone.
-          </p>
-          <h2>1871</h2>
-          <div id="point"></div>
-        </article>
-        <article>
-          <p>
-            De grands incendies touchent plus du tiers du parc, influençant la
-            gestion écologique moderne de Yellowstone.
-          </p>
-          <h2>1988</h2>
-          <div id="point"></div>
-        </article>
-      </section>
-      <div id="barre"></div>
-      <section id="frise-section2">
-        <article>
-          <h2>1870</h2>
-          <p>
-            L’expédition Washburn-Langford-Doane mène la première exploration
-            scientifique officielle et cartographie la région.
-          </p>
-          <div id="point"></div>
-        </article>
-        <article>
-          <h2>1872</h2>
-          <p>
-            Yellowstone est officiellement créé comme le premier parc national
-            au monde.
-          </p>
-          <div id="point"></div>
-        </article>
-        <article>
-          <h2>1995</h2>
-          <p>
-            Réintroduction du loup gris dans le parc, rétablissant l’équilibre
-            écologique des lieux.
-          </p>
-          <div id="point"></div>
-        </article>
-        <article>
-          <h2>2022</h2>
-          <p>
-            Yellowstone célèbre ses 150 ans et fait face à des inondations
-            majeures, marquant une nouvelle étape dans sa gestion.
-          </p>
-          <div id="point"></div>
-        </article>
-      </section>
-    </div>
-    <header>
-      <h2>biodiversité</h2>
-    </header>
+      <div id="frise-chronologique">
+        <section id="frise-section1">
+          <article>
+            <p>
+              John Colter, ancien membre de l’expédition Lewis et Clark, devient
+              le premier Européen à explorer la région de Yellowstone.
+            </p>
+            <h2>1807</h2>
+            <div class="point"></div>
+          </article>
+          <article>
+            <p>
+              L’expédition Folsom–Cook–Peterson réalise la première exploration
+              documentée et rapportée de Yellowstone.
+            </p>
+            <h2>1869</h2>
+            <div class="point"></div>
+          </article>
+          <article>
+            <p>
+              L’expédition Hayden, avec des scientifiques et des artistes,
+              publie les premières images et cartes détaillées de Yellowstone.
+            </p>
+            <h2>1871</h2>
+            <div class="point"></div>
+          </article>
+          <article>
+            <p>
+              De grands incendies touchent plus du tiers du parc, influençant la
+              gestion écologique moderne de Yellowstone.
+            </p>
+            <h2>1988</h2>
+            <div class="point"></div>
+          </article>
+        </section>
+        <div id="barre"></div>
+        <section id="frise-section2">
+          <article>
+            <h2>1870</h2>
+            <p>
+              L’expédition Washburn-Langford-Doane mène la première exploration
+              scientifique officielle et cartographie la région.
+            </p>
+            <div class="point"></div>
+          </article>
+          <article>
+            <h2>1872</h2>
+            <p>
+              Yellowstone est officiellement créé comme le premier parc national
+              au monde.
+            </p>
+            <div class="point"></div>
+          </article>
+          <article>
+            <h2>1995</h2>
+            <p>
+              Réintroduction du loup gris dans le parc, rétablissant l’équilibre
+              écologique des lieux.
+            </p>
+            <div class="point"></div>
+          </article>
+          <article>
+            <h2>2022</h2>
+            <p>
+              Yellowstone célèbre ses 150 ans et fait face à des inondations
+              majeures, marquant une nouvelle étape dans sa gestion.
+            </p>
+            <div class="point"></div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+
     <section id="biodiversite">
+      <h2>biodiversité</h2>
       <article>
         <h3>Bison</h3>
         <img src="../assets/images/lieux/bison-yellowstone.jpg" alt="Bison dans le parc national de Yellowstone" />
@@ -198,10 +204,11 @@
         </p>
       </article>
     </section>
-    <header>
-      <h2>Carrousel</h2>
-    </header>
+
     <section id="carrousel">
+
+      <h2>Carrousel</h2>
+
       <div id="carousel-image"></div>
     </section>
   </main>

@@ -37,8 +37,15 @@
   height: auto;
   margin-bottom: 50px;
 }
-
+/*
 #lieux-page main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}*/
+
+#yellowstone section,
+#lieu section {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -58,7 +65,7 @@
   height: auto;
   position: relative;
 }
-
+/*
 #lieux-list article p {
   height: 100%;
   font-family: "fredoka", cursive;
@@ -66,6 +73,15 @@
   line-height: 1.6;
   color: var(--bleu-fonce);
 }
+*/
+#yellowstone p,#lieux-list article p  {
+  font-family: "FREDOKA", sans-serif;
+  font-size: 1.2em;
+  color: var(--bleu-deep);
+  line-height: 1.6;
+}
+
+
 
 #container-image-aside {
   height: 30vw;

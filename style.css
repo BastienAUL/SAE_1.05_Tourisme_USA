@@ -46,6 +46,7 @@
     --border-radius-bloc: 15px;
     --font-family-fredoka: 'FREDOKA', Arial, Helvetica, sans-serif;
     --font-family-nats: 'NATS', Arial, Helvetica, sans-serif;
+    --font-family-alexandria:'Alexandria Regular', Arial, Helvetica, sans-serif;
     --drop-shadow-0-25:drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     --drop-shadow-0-50:drop-shadow(rgba(0, 0, 0, 0.5) 0px 5px 20px);
 }
@@ -53,11 +54,6 @@ body {
     background: #F8F9FA;
     background: var(--background-gradient);
     margin: 0;
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
 }
 
 body {
@@ -69,11 +65,11 @@ body>main>section {
     margin-left: auto;
     margin-right: auto;
 }
-
+/*
 body>main {
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
 p {
     font-family: var(--font-family-fredoka);
@@ -246,7 +242,7 @@ nav ul li:hover .sous-menu {
 
 .sous-menu li a:hover {
     background: #ff0000;
-    color: white;
+    color: var(--white);
 }
 
 /* ======== FOOTER ========*/
@@ -258,14 +254,10 @@ refonte : Titouan Moquet
 */
 
 footer {
-    color: white;
-    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    color: var(--white);
+    font-family: var(--font-family-alexandria);
 }
 
-/*!!!!!!provisoire !!!!!*/
-footer p {
-    color: white;
-}
 
 footer>div:first-child {
     background-color: var(--bleu-ciel);
@@ -275,8 +267,8 @@ footer>div:first-child {
 footer>div:nth-child(2) {
     background-color: var(--bleu-ciel);
     text-align: center;
-    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-family: var(--font-family-fredoka);
+    font-size: 1.2em;
     padding: 20px;
 }
 
@@ -382,7 +374,7 @@ footer svg {
 
 }
 
-/*========= ELEMENTS COMMUNS ========*/
+/*=== HR ===*/
 hr {
     height: 4px;
     background-color: var(--bleu);
@@ -424,3 +416,5 @@ hr {
     text-align: center;
     background-color: white;
 }
+
+/* ========  ========*/
