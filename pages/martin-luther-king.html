@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css-perso/personnages.css">
+    <!--<link rel="stylesheet" href="../css-perso/personnages.css">-->
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
     <title>Martin Luther King Jr</title>
 </head>
@@ -49,7 +49,6 @@
             </ul>
         </header>
 
-
         <section>
             <h2>Biographie</h2>
             <div>
@@ -81,7 +80,7 @@
 
         <section>
             <h2>Travaux et Œuvres :</h2>
-            <div>
+            <article>
                 <div>
                     <img src="../assets/images/personnages/revolution_non_violente.png"
                         alt="Photo du livre La Révolution non-violente">
@@ -99,8 +98,8 @@
                         grandes victoires législatives de 1964 et 1965.
                     </p>
                 </div>
-            </div>
-            <div>
+            </article>
+            <article>
                 <img src="../assets/images/personnages/selma-img-film.png" alt="Image extrait du film Selma">
                 <img src="../assets/images/personnages/selma.jpg" alt="Affiche du film Selma">
                 <p>Selma (2014), réalisé par Ava DuVernay, retrace la lutte menée par le Dr Martin Luther King
@@ -117,7 +116,7 @@
                     courage et
                     l’humanisme de King dans l’un des moments clés du mouvement des droits civiques.
                 </p>
-            </div>
+            </article>
         </section>
         <section>
             <h2>Activités touristiques associées : </h2>
@@ -201,7 +200,7 @@
 
 
         </section>
-        <hr>
+       
         <aside>
             <h2>Galerie: </h2>
             <div>
@@ -219,31 +218,32 @@
                 <img src="../assets/images/personnages/Martin_Luther_King_Jr_wh_coretta.jpg"
                     alt="photo d'illustration de Martin Luther King avec sa femme Coretta">
                 <img src="../assets/images/personnages/Martin_Luther_King_Jr_2.jpg"
-                    alt="photo d'illustration de Martin Luther King">
-
+                    alt="photo de Martin Luther King">
                 <img src="../assets/images/personnages/Martin_Luther_King_Jr_and_Lyndon_Johnson.jpg"
-                    alt="photo d'illustration de Martin Luther King">
+                    alt="Le président Lyndon B. Johnson rencontre Martin Luther King dans la salle du cabinet de la Maison-Blanche en 1966.">
                 <img src="../assets/images/personnages/Martin_Luther_King_Jr_with_medallion.jpg"
-                    alt="photo d'illustration de Martin Luther King avec une medaille">
+                    alt="photo de Martin Luther King qui montre sa médaille, reçue du maire Wagner en 1964">
                 <img src="../assets/images/personnages/Martin_Luther_King_Jr_Coretta_Scott_King.jpg"
-                    alt="photo d'illustration de Martin Luther King">
-
-
-                <img src="../assets/images/personnages/discour-mlk.jpg"
-                    alt="photo d'illustration de Martin Luther King">
-
+                    alt="photo de Coretta Scott King qui embrasse Martin Luther King ">
+                <img src="../assets/images/personnages/martin-luther-king-discours.jpg"
+                    alt="photo de Martin Luther King pendant un discours">
+                <img src="../assets/images/personnages/martin-luther-king-discours_2.jpg"
+                    alt="photo de Martin Luther King pendant un discours">
+                <img src="../assets/images/personnages/Martin_Luther_King_press_conference.jpg"
+                    alt="King lors d'une conférence de presse en mars 1964">
+                    
             </div>
         </aside>
 
 
-        <aside class="popup-credit">
+        <div class="popup-credit">
             <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                 <path fill="#ff5757"
                     d="M256.5 37.6C265.8 29.8 279.5 30.1 288.4 38.5C300.7 50.1 311.7 62.9 322.3 75.9C335.8 92.4 352 114.2 367.6 140.1C372.8 133.3 377.6 127.3 381.8 122.2C382.9 120.9 384 119.5 385.1 118.1C393 108.3 402.8 96 415.9 96C429.3 96 438.7 107.9 446.7 118.1C448 119.8 449.3 121.4 450.6 122.9C460.9 135.3 474.6 153.2 488.3 175.3C515.5 219.2 543.9 281.7 543.9 351.9C543.9 475.6 443.6 575.9 319.9 575.9C196.2 575.9 96 475.7 96 352C96 260.9 137.1 182 176.5 127C196.4 99.3 216.2 77.1 231.1 61.9C239.3 53.5 247.6 45.2 256.6 37.7zM321.7 480C347 480 369.4 473 390.5 459C432.6 429.6 443.9 370.8 418.6 324.6C414.1 315.6 402.6 315 396.1 322.6L370.9 351.9C364.3 359.5 352.4 359.3 346.2 351.4C328.9 329.3 297.1 289 280.9 268.4C275.5 261.5 265.7 260.4 259.4 266.5C241.1 284.3 207.9 323.3 207.9 370.8C207.9 439.4 258.5 480 321.6 480z" />
             </svg>
             <p>page par Titouan</p>
-        </aside>
+        </div>
     </main>
     <footer>
         <div>
@@ -278,6 +278,26 @@
                 </svg></a>
         </div>
     </footer>
+    <script>
+        /* Js pour les animations des sections et du aside */
+        const elements = document.querySelectorAll("#mlk section, #mlk aside");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("appear");
+                } else {
+                    
+                    entry.target.classList.remove("appear");
+                }
+            });
+        }, {
+            threshold: 0 /*controle du IntersectionObserver base sur le % visible du bloc */ 
+        });
+
+        elements.forEach(el => observer.observe(el));
+
+    </script>
+
 </body>
 
 </html>

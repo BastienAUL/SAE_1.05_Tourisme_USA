@@ -1,22 +1,35 @@
+
+:root {
+    --bg-color-article: rgb(255, 255, 255);
+}
+
+#mlk,
+#personnages {
+    cursor: default;
+}
 /*========== page tous les perso ==========*/
 #personnages header {
     background-color: var(--bleu);
-    height: 30%;
+    height: 300px;
     padding-top: 40px;
     color: white;
     text-align: center;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #personnages header h1 {
-    font-family: 'BEBAS', Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-bedas);
+    letter-spacing: 0.1rem;
     font-size: 4em;
     margin-top: 0;
     font-weight: 400;
 }
 
 #personnages header p {
-    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-alexandria);
     font-size: 1.5em;
 }
 
@@ -53,7 +66,7 @@
     /*margin: 15px 15px 0 15px;*/
     margin: 0;
     padding: 15px 15px 0 15px;
-    font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-alexandria);
     font-size: 2em;
     background-color: var(--white);
     z-index: 2;
@@ -61,9 +74,9 @@
 
 #personnages>section p {
     color: #000000;
-    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-fredoka);
     margin: 15px 15px 0 15px;
-    font-size: 1.2em;
+
 }
 
 #personnages>section div img {
@@ -118,40 +131,29 @@
 
 #mlk section p {
     font-size: 1.2em;
+    line-height: 1.6;
 }
 
 #mlk h2 {
     position: relative;
-    padding-left: 15px;
     font-family: 'Alexandria Regular', sans-serif;
     font-size: 2em;
     margin: 0;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
+    /*padding-left: 15px;*/
+    color: var(--bleu-fonce);
+    border-bottom: 3px solid var(--bleu-fonce);
 }
-
-#mlk h2::before {
-    margin: 0;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 30px;
-    background-color: var(--rouge);
-}
-
 
 #mlk header {
     background-image: url(/assets/images/personnages/background-mlk.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    height: 50em;
+    height: 55em;
     padding-top: 20px;
 
 }
-
 
 #mlk header h1 {
     color: var(--bleu);
@@ -165,8 +167,6 @@
     font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 4em;
-
-
 }
 
 #mlk header blockquote {
@@ -216,42 +216,46 @@ blockquote::after {
     text-decoration-color: var(--rouge);
 }
 
-/*
-#mlk section {
-    margin: auto;
-    width: 70%;
-
-}*/
-
 #mlk section,
-#mlk aside:first-of-type {
-    background-color: #ffffff;
+#mlk aside {
+    /*background-color: #ffffff;*/
     margin-top: 2%;
+    /*
     padding: 30px 40px 40px 40px;
+    */
     border-radius: var(--border-radius-bloc);
-    font-family: 'FREDOKA', Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-fredoka);
     margin: auto;
     width: 70%;
     /* !!! meme chose que bastien !!!*/
     margin-top: 50px;
     margin-bottom: 50px;
+
+}
+
+#mlk aside {
+    padding: 30px 40px 30px 40px
 }
 
 /*=== biographie ===*/
 #mlk section:first-of-type {
     min-height: 450px;
-    animation: slidein 2s 2s;
 }
 
-@keyframes slidein {
-    from {
-        transform: translateX(100%);
-    }
 
-    to {
-        transform: translateX(0%);
-    }
+#mlk section,
+#mlk aside{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease-out;
 }
+
+#mlk section.appear,
+#mlk aside.appear{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 #mlk section:first-of-type figure {
     float: right;
@@ -275,8 +279,6 @@ blockquote::after {
 
 }
 
-
-
 /*=== oeuvres ===*/
 
 #mlk section:nth-of-type(2) img {
@@ -284,108 +286,107 @@ blockquote::after {
     border-radius: 10px;
 }
 
-#mlk section:nth-of-type(2) div {
+#mlk section:nth-of-type(2) article {
     display: flex;
+    margin-top: 20px;
 }
 
-/*bloc du haut*/
-#mlk section:nth-of-type(2)>div>div {
+/*articles livres */
+#mlk section:nth-of-type(2)>article>div {
     width: 50%;
     text-align: center;
     padding: 20px;
     border-radius: var(--border-radius-bloc);
-    background-color: rgb(239, 239, 239);
+    background-color: var(--bg-color-article);
+    align-items: center;
     transition: transform 0.3s ease;
 }
 
-/*bloc du haut margin */
-#mlk section:nth-of-type(2)>div>div:first-of-type {
+#mlk section:nth-of-type(2)>article>div:first-of-type {
     margin-right: 10px;
 }
 
-#mlk section:nth-of-type(2)>div>div:nth-child(2) {
+#mlk section:nth-of-type(2)>article>div:nth-child(2) {
     margin-left: 10px;
 }
 
-#mlk section:nth-of-type(2)>div>div:hover {
+#mlk section:nth-of-type(2)>article>div:hover {
     transform: scale(1.03);
 }
 
-/*bloc du bas taille images*/
+/*article film*/
 
-#mlk section:nth-of-type(2) div img:first-of-type,
-#mlk section:nth-of-type(2) div img:nth-child(2) {
-    height: 200px;
+#mlk section:nth-of-type(2) article img:first-of-type,
+#mlk section:nth-of-type(2) article img:nth-child(2) {
+    height: 13em;
     width: auto;
     float: left;
 }
 
-#mlk section:nth-of-type(2)>div:nth-of-type(2) {
-    background-color: rgb(239, 239, 239);
-    margin-top: 20px;
-    display: flex;
+#mlk section:nth-of-type(2)>article:nth-of-type(2) {
+    background-color: var(--bg-color-article);
+    display: block;
     padding: 20px;
     border-radius: var(--border-radius-bloc);
     transition: transform 0.3s ease;
 
 }
 
-#mlk section:nth-of-type(2)>div:nth-of-type(2) img {
+#mlk section:nth-of-type(2)>article:nth-of-type(2) img {
     align-self: center;
 }
 
-#mlk section:nth-of-type(2)>div:nth-of-type(2) img:nth-child(2) {
+#mlk section:nth-of-type(2)>article:nth-of-type(2) img:nth-child(2) {
     margin-left: 10px;
+    margin-right: 20px;
 }
 
-#mlk section:nth-of-type(2)>div:nth-of-type(2) p {
-    align-items: stretch;
-    margin-left: 20px;
+#mlk section:nth-of-type(2)>article:nth-of-type(2) p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#mlk section:nth-of-type(2)>div:nth-of-type(2):hover {
+#mlk section:nth-of-type(2)>article:nth-of-type(2):hover {
     transform: scale(1.03);
 }
 
 @media screen and (max-width: 1050px) {
-    #mlk section:nth-of-type(2) div {
+    #mlk section:nth-of-type(2) article {
         flex-direction: column;
         align-items: center
     }
 
-    #mlk section:nth-of-type(2)>div>div:first-of-type {
+    #mlk section:nth-of-type(2)>article>div:first-of-type {
         margin-right: 0;
     }
 
-    #mlk section:nth-of-type(2)>div>div:nth-of-type(2) {
+    #mlk section:nth-of-type(2)>article>div:nth-of-type(2) {
         margin-left: 0;
     }
 
-    #mlk section:nth-of-type(2)>div>div {
+    #mlk section:nth-of-type(2)>article>div {
         width: 90%;
         margin-bottom: 40px;
     }
 
-    #mlk section:nth-of-type(2)>div:nth-of-type(2) {
+    /*article film*/
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
         margin: auto;
         width: 90%;
         margin-bottom: 10px;
     }
-    #mlk section:nth-of-type(2)>div:nth-of-type(2) img:first-of-type{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 1200px) {
-
+    /* livres */
     #mlk section:nth-of-type(2)>div:nth-of-type(2) {
         flex-direction: column;
     }
-    #mlk section:nth-of-type(2)>div:nth-of-type(2) img:first-of-type{
+    /*photo du film*/
+    #mlk section:nth-of-type(2)>div:nth-of-type(2) img:first-of-type {
         display: none;
     }
 }
-
 
 /*=== activité ===*/
 
@@ -399,7 +400,7 @@ blockquote::after {
 }
 
 #mlk section:nth-of-type(3) div>div {
-    background-color: rgb(239, 239, 239);
+    background-color: var(--bg-color-article);
     margin: 20px auto 20px auto;
     width: 40%;
     display: flex;
@@ -428,37 +429,29 @@ blockquote::after {
 
 #mlk section:nth-of-type(3) div>div:hover {
     transform: scale(1.05);
-    cursor: default;
+
 }
 
 /*=== galerie ===*/
-/*
-#mlk hr {
-    height: 4px;
-    background-color: var(--bleu);
-    width: 90%;
-    margin: 2% auto 0 auto;
-    border-radius: 10px;
-    border-style: none;
-}*/
-
-#mlk aside {
-    background-color: var(--white);
-}
 
 #mlk aside:first-of-type div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 #mlk aside:first-of-type div img {
-
-    width: auto;
-    min-width: 20em;
+    width: 100%;
     height: 20em;
-    max-width: 26em;
     object-fit: cover;
     object-position: top;
-    margin-bottom: 20px;
+    transition: all 0.5s ease ;
 }
+
+#mlk aside:first-of-type div img:hover {
+    transform: scale(0.92);
+    object-fit: contain;
+    object-position: center;
+}
+

@@ -3,7 +3,23 @@
 > version de mes pages uniquements
 
 ## TODO 
-- dezoomer tout car c'est trop gros
+- modifier tailles images
+- diminuer légèrement la taille des cartes des perso et en trouver d'autres 
+- verifier les consignes
+- enlever le js index chat gpt
+- fix sous menu
+- ajout crédit avec nos github
+
+
+## Version 1.1.8
+- modification du css pour resembler plus aux pages lieux (suppression du fond et changement titres)
+- nettoyage du css
+- changement du aside popup en div
+- migration du css vers style.css
+- ajout de quelques photos et remplacement d'une photo
+- fix position du h1 dans le html de la page lieux
+- annimations css des sections 
+- update todo
 
 ## Version 1.1.7
 - fix position images galerie

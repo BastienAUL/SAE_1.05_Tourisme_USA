@@ -1,5 +1,14 @@
 # Release notes 
 
+## Version 2.0.2
+- update css forrest gump
+- fix typo heading des article yellowstone
+- ajout d'image yellowstones
+- ajout de contenus yellowstones
+- V1.1.6 to 1.1.8 Personnages
+- migration du css personnages dans style.css
+- corrections mineures du code css
+
 ## Version 2.0.1 
 - modification css et HTMl de lieux et yellowstones pour corriger les erreurs et fix la suppression du flex du body
 - ajout favicon lieux et yellowstones
