@@ -1093,11 +1093,10 @@ blockquote::after {
 #right-presentation-cate {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     width: 50px;
     width: 40%;
-    align-items: center;
 }
 
 #presentation-usa-tout {
@@ -1112,7 +1111,7 @@ blockquote::after {
     filter: var(--drop-shadow-0-25);
     height: 30%;
     width: 90%;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     background-color: var(--white);
