@@ -323,6 +323,7 @@ hr {
 /* ======== CGU & PDC ========*/
 #gpu-and-pdc {
     width: 60%;
+    margin: auto;
 }
 
 #gpu-and-pdc h2,
