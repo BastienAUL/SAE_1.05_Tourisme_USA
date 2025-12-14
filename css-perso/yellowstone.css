@@ -30,7 +30,7 @@
   height: 100vh;
 
   margin: 0;
-  background-image: url("../assets/images/lieux/yellowstone-national-park.png");
+  background-image: url("../assets/images/lieux/yellowstone-national-park.webp");
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
@@ -122,12 +122,11 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 80em;
+  height: 60em;
 }
 
 #frise-section2 {
-  margin-top: 20%;
+  margin-top: 12em;
 }
 
 #frise-chronologique article {
@@ -137,6 +136,7 @@
   text-align: center;
   display: flex;
   align-items: center;
+  margin-bottom: 12em;
 }
 
 #frise-section1 article {
@@ -149,6 +149,8 @@
   color: var(--rouge-deep);
   top: -50px;
   margin: 10px;
+  border: none;
+  padding: 0;
 }
 
 #frise-chronologique article p {
@@ -166,7 +168,7 @@
 }
 
 #barre {
-  height: 91.5em;
+  height: 85em;
   border: 4px solid var(--bleu-fonce);
   border-radius: 10px;
   margin: 0 20px;
