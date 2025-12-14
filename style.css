@@ -525,6 +525,9 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
 }
+#personnages>section>div:not(:first-of-type){
+    opacity: 0.5;
+}
 
 /* --- HOVER --- */
 
