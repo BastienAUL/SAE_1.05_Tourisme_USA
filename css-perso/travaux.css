@@ -26,4 +26,5 @@
 
 .travaux img{
     height: 60%;
+    object-fit: contain;
 }

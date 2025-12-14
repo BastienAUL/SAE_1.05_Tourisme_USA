@@ -1,15 +1,29 @@
 # Release notes 
 
+## Version 2.0.3
+Bastien : 
+- migration css accueil vers style.css
+Flavien : 
+- mise à jour du css & début optimisation
+Titouan :
+- refonte popup js 
+- Version 1.1.9 Personnages
+- fix img size traveau & changement texte
+
 ## Version 2.0.2
+Flavien : 
 - update css forrest gump
+Ako :
 - fix typo heading des article yellowstone
 - ajout d'image yellowstones
 - ajout de contenus yellowstones
+Titouan :
 - V1.1.6 to 1.1.8 Personnages
 - migration du css personnages dans style.css
 - corrections mineures du code css
 
 ## Version 2.0.1 
+Titouan
 - modification css et HTMl de lieux et yellowstones pour corriger les erreurs et fix la suppression du flex du body
 - ajout favicon lieux et yellowstones
 

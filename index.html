@@ -34,6 +34,17 @@
             </ul>
         </nav>
     </header>
+    <div class="popup-warn">
+        <div>
+            <p>
+                Ce site est un projet étudiant, créé uniquement à des fins pédagogiques.<br>
+                Aucun contenu n’est utilisé à des fins lucratives. Merci de ne pas copier ni réutiliser le contenu sans
+                autorisation.
+
+            </p>
+            <button>J'ai compris</button>
+        </div>
+    </div>
     <main id="accueil">
         <div id="fullscreen_las-vegas">
             <img src="assets/images/accueil/background_las-vegas.jpg" alt="">
@@ -429,16 +440,15 @@
                     reflète la diversité du pays.</h2>
             </div>
             <div id="discover-cate">
-                <div class="discover"><a href="pages/lieux.html"><img src="assets/images/accueil/horseshoe.jpg"
-                            alt="">
+                <div class="discover"><a href="pages/lieux.html"><img src="assets/images/accueil/horseshoe.jpg" alt="">
                         <h1>LIEUX</h1>
                     </a></div>
                 <div class="discover"><a href="pages/oeuvres.html"><img src="assets/images/accueil/nighthawks.jpg"
                             alt="">
                         <h1>OEUVRES</h1>
                     </a></div>
-                <div class="discover"><a href="pages/personnages.html"><img
-                            src="assets/images/accueil/obama.jpg" alt="">
+                <div class="discover"><a href="pages/personnages.html"><img src="assets/images/accueil/obama.jpg"
+                            alt="">
                         <h1>PERSONNAGES</h1>
                     </a></div>
             </div>
@@ -785,6 +795,20 @@
                 </svg></a>
         </div>
     </footer>
+    <script>
+        const popup = document.querySelector('.popup-warn');
+
+        if (localStorage.popupSeen == true) {
+            popup.style.display = 'none';
+        } else {
+            popup.style.display = 'flex';
+        }
+
+        document.querySelector('button').onclick = () => {
+            localStorage.popupSeen = true;
+            popup.style.display = 'none';
+        };
+    </script>
 </body>
 
 </html>

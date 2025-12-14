@@ -4,14 +4,17 @@
 
 ## TODO 
 - modifier tailles images
-- diminuer légèrement la taille des cartes des perso et en trouver d'autres 
+
 - verifier les consignes
-- enlever le js index chat gpt
+
 - fix sous menu
 - ajout crédit avec nos github
 
+## Version 1.1.9
+- diminution de la taille des cartes de lien personnages
+- popup index 
 
-## Version 1.1.8
+## Version 1.1.8 
 - modification du css pour resembler plus aux pages lieux (suppression du fond et changement titres)
 - nettoyage du css
 - changement du aside popup en div

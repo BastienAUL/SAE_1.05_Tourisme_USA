@@ -271,7 +271,7 @@ footer svg {
 }
 
 
-/* ======== aside credits ========*/
+/* ======== credits & warning ========*/
 .popup-credit {
     background-color: #fff;
     position: fixed;
@@ -308,6 +308,32 @@ footer svg {
 .popup-credit:hover {
     right: -5px;
 
+}
+
+.popup-warn {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* fenêtre */
+.popup-warn div {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* bouton */
+.popup-warn button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
 }
 
 /*=== HR ===*/
@@ -410,8 +436,8 @@ hr {
 #personnages>section div {
     background-color: var(--white);
     margin: 30px;
-    width: 390px;
-    height: 550px;
+    width: 360px;
+    height: 530px;
     border-radius: var(--border-radius-bloc);
     display: flex;
     flex-direction: column;
@@ -427,7 +453,7 @@ hr {
     margin: 0;
     padding: 15px 15px 0 15px;
     font-family: var(--font-family-alexandria);
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: var(--white);
     z-index: 2;
 }
@@ -436,11 +462,12 @@ hr {
     color: #000000;
     font-family: var(--font-family-fredoka);
     margin: 15px 15px 0 15px;
+    font-size: 1.1em;
 
 }
 
 #personnages>section div img {
-    width: 390px;
+    width: inherit;
     height: 330px;
     object-fit: cover;
     object-position: top;
@@ -482,6 +509,15 @@ hr {
 
 #personnages>section div a:hover {
     transform: scale(1.07);
+}
+
+#personnages>p:last-of-type{
+    font-family: var(--font-family-fredoka);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#personnages>p:last-of-type a{
+    color: inherit;
 }
 
 /*========== page mlk ==========*/
@@ -1018,7 +1054,7 @@ blockquote::after {
     text-align: center;
 }
 
-.right-presentation{
+.right-presentation {
     filter: var(--drop-shadow-0-25);
     height: 30%;
     width: 90%;
@@ -1029,7 +1065,7 @@ blockquote::after {
     border-radius: 10px;
 }
 
-.right-presentation h3{
+.right-presentation h3 {
     margin: 30px;
 }
 
@@ -1047,7 +1083,7 @@ blockquote::after {
 
 }
 
-.article{
+.article {
     filter: var(--drop-shadow-0-25);
     background-color: var(--white);
     height: 120px;
@@ -1058,19 +1094,19 @@ blockquote::after {
     transition: 0.5s;
 }
 
-.article:hover{
+.article:hover {
     transform: translateY(-10px);
     filter: var(--drop-shadow-0-5);
 }
 
-.article img{
+.article img {
     width: 170px;
     height: 80px;
     border-radius: 10px;
     margin-left: 20px;
 }
 
-.article div{
+.article div {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -1079,19 +1115,19 @@ blockquote::after {
     width: 70%;
 }
 
-.article div h1{
+.article div h1 {
     font-size: 26px;
     font-weight: 600;
     margin: 0;
 }
 
-.article div h2{
+.article div h2 {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
 }
 
-.article div h3{
+.article div h3 {
     font-weight: 100;
     font-size: 22px;
     margin: 0;
@@ -1146,7 +1182,7 @@ blockquote::after {
     padding: 20px 0 20px 0;
 }
 
-.discover img{
+.discover img {
     width: 100%;
     height: 250px;
     border-radius: 10px 10px 0 0;
@@ -1155,7 +1191,7 @@ blockquote::after {
     transition: all 0.5s;
 }
 
-.discover{
+.discover {
     width: 30%;
     background-color: var(--white);
     height: 320px;
@@ -1166,16 +1202,16 @@ blockquote::after {
     overflow: hidden;
 }
 
-.discover:hover{
+.discover:hover {
     transform: translateY(-10px);
     filter: var(--drop-shadow-0-5);
 }
 
-.discover:hover img{
+.discover:hover img {
     transform: scale(1.05) translateY(-5px);
 }
 
-.discover a{
+.discover a {
     text-decoration: none;
     color: var(--bleu-fonce);
 }
