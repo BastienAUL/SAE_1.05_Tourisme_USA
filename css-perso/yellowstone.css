@@ -30,7 +30,7 @@
   height: 100vh;
 
   margin: 0;
-  background-image: url("../assets/images/lieux/yellowstone-national-park.webp");
+  background-image: url("../assets/images/lieux/yellowstone-national-park.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
