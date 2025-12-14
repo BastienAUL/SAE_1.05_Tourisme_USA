@@ -378,7 +378,40 @@ hr {
     background-color: white;
 }
 
-/* trucs communs */
+/* ======== TRAVAUX ========*/
+
+.travaux{
+    display: flex;
+    flex-direction: column;
+    font-family: 'NATS';
+    justify-content: center;
+    text-align: center;
+    color: var(--bleu-fonce);
+    height: 100vh;
+}
+
+.travaux button{
+    color: white;
+    background-color: var(--bleu-fonce);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.travaux button:hover{
+    background-color: white;
+    color: var(--bleu-fonce);
+}
+
+.travaux img{
+    height: 60%;
+    object-fit: contain;
+}
+
+/* margin communs */
 #mlk section,
 #mlk aside,
 #accueil section {
