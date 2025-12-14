@@ -7,14 +7,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 2% 8% 2% 8%;
 }
 
 .main-oeuvres header h1 {
-    color: white;
-    font-family: 'BEBAS';
+    color: var(--white);
+    font-family: var(--font-family-bedas);
     font-size: 80px;
     letter-spacing: 0.1rem;
     font-weight: 400;
@@ -24,7 +24,7 @@
 }
 
 .main-oeuvres header h3 {
-    font-family: 'NATS';
+    font-family: var(--font-family-nats);
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 50;
@@ -45,9 +45,9 @@
 .main-oeuvres > section > div {
     width: 35em;
     height: 35em;
-    background-color: white;
+    background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--drop-shadow-0-25);
     overflow: hidden;
 
     transition: all;
@@ -55,7 +55,7 @@
 }
 
 .main-oeuvres > section > div:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 5, 0.5);
+    box-shadow: var(--drop-shadow-0-5);
 }
 
 .main-oeuvres > section > div:hover img {
@@ -79,7 +79,7 @@
 .main-oeuvres > section > div > div p {
     width: 80%;
     text-align: left;
-    font-family: 'FREDOKA';
+    font-family: var(--font-family-fredoka);
     font-weight: 100;
     margin : 0;
     font-size: 1em;
@@ -97,8 +97,8 @@
 
     margin : 0.5em;
 
-    font-family: 'FREDOKA';
-    color: white;
+    font-family: var(--font-family-fredoka);
+    color: var(--white);
     text-decoration: none;
     font-size: 1.3em;
 
@@ -112,7 +112,7 @@
 
 
 .main-oeuvres > section > div > div a:hover {
-    background-color: white;
+    background-color: var(--white);
     color: var(--bleu);
     box-shadow: 0 0px 15px var(--bleu);
 }
@@ -125,7 +125,7 @@
     color: var(--bleu);
 
     text-transform: uppercase;
-    font-family: 'NATS';
+    font-family: var(--font-family-nats);
     font-size: 2.5em;
     font-weight: 50;
 
