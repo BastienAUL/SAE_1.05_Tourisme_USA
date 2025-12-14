@@ -592,7 +592,7 @@ hr {
 }
 
 #mlk header {
-    background-image: url(/assets/images/personnages/background-mlk.png);
+    background-image: url(assets/images/personnages/background-mlk.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -1626,7 +1626,7 @@ blockquote::after {
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
 
-    box-shadow: var(--drop-shadow-0-25), inset -100px 0 140px -100px var(--bleu-ciel);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px, inset -100px 0 140px -100px var(--bleu-ciel);
     display: flex;
     align-items: center;
 
@@ -1636,7 +1636,7 @@ blockquote::after {
 }
 
 .main-fg section:nth-child(3) > div:last-child > div:hover {
-    box-shadow: var(--drop-shadow-0-25), inset 100px 0 140px -100px var(--rouge);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px, inset 100px 0 140px -100px var(--rouge);
 }
 
 .main-fg section:nth-child(3) > div:last-child > div:hover .hover-p {
