@@ -1,5 +1,13 @@
 # Release notes 
 
+## Version 2.0.5
+(titouan)
+- version responsive de la nav pour toute les pages
+
+
+## Version 2.0.4
+-migration css oeuvres et lieux
+
 ## Version 2.0.3
 Bastien : 
 - migration css accueil vers style.css

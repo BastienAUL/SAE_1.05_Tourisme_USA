@@ -11,18 +11,18 @@
             src: local('Alexandria Regular'), url('../assets/fonts/Alexandria.woff') format('woff');
         }
 
+        /*
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }*/
 
         header {
             height: 60px;
             font-family: 'Alexandria Regular';
             font-size: 2em;
         }
-
 
         .navbar {
             position: fixed;
@@ -60,6 +60,7 @@
             list-style: none;
             display: flex;
             align-items: center;
+
         }
 
         .navbar a {
@@ -70,7 +71,6 @@
             align-items: center;
         }
 
-
         .nav-right li {
             position: relative;
             margin-left: 30px;
@@ -78,7 +78,6 @@
 
         .submenu {
             display: none;
-
             position: absolute;
             top: 100%;
             right: 0;
@@ -104,6 +103,12 @@
         /* Affichage au survol */
         .has-submenu:hover>.submenu {
             display: block;
+            height: 500px;
+            width: auto;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-color: #cc0102 white;
+            scrollbar-width: thin;
         }
 
         #menu-toggle {
@@ -120,7 +125,7 @@
             width: 35px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1040px) {
             .nav-left {
                 margin-left: 0;
             }
@@ -139,6 +144,13 @@
 
             #menu-toggle:checked~.nav-right {
                 display: flex;
+            }
+
+            #menu-toggle:checked~.nav-right {
+                max-height: 500px;
+                /* assez grand pour contenir le menu */
+                opacity: 1;
+                transform: translateY(0);
             }
 
             .nav-right li {
