@@ -999,7 +999,12 @@ blockquote::after {
     font-weight: 400;
 }
 
-
+@media screen and (max-width: 1420px) {
+    #fullscreen_las-vegas h1 {
+        font-size: 80px;
+        width: 350px;
+    }
+}
 /* ======== carte interactive + popup carte ========*/
 
 .carte {
