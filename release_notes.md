@@ -3,6 +3,7 @@
 ## Version 2.0.5
 (titouan)
 - version responsive de la nav pour toute les pages
+> V1.2.0 *personnage fix hover & submenu style
 
 
 ## Version 2.0.4

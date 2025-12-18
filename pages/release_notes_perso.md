@@ -3,12 +3,10 @@
 > version de mes pages uniquements
 
 ## TODO 
-- modifier tailles images
 
-- verifier les consignes
-
-- fix sous menu
-- ajout crédit avec nos github
+## Version 1.2.0
+- fix hover nav
+- fix responsif pour oeuvre de la page mlk 
 
 ## Version 1.1.9
 - diminution de la taille des cartes de lien personnages

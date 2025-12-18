@@ -149,6 +149,11 @@ header nav {
     align-items: center;
     justify-content: center;
     color: inherit;
+    transition: all 0.3s ease;
+}
+
+.navbar li:hover>a {
+    color: var(--rouge);
 }
 
 .nav-right li {
@@ -175,10 +180,12 @@ header nav {
 .submenu li a {
     display: block;
     padding: 10px;
+    transition: all 0.3 ease;
 }
 
 .submenu li a:hover {
     background: #f5f5f5;
+
 }
 
 /* Affichage au survol */
@@ -223,6 +230,7 @@ header nav {
         flex-direction: column;
         width: 100%;
         border-top: 2px solid #BF0606;
+
     }
 
 
@@ -233,11 +241,17 @@ header nav {
         opacity: 1;
         transform: translateY(0);
         background-color: var(--white);
+
+        padding: 0;
     }
 
     .nav-right li {
         text-align: center;
-        margin: 20px;
+        padding: 20px;
+        width: 100%;
+        border-bottom: #dbdbdb 1px solid;
+        margin: 0;
+        transition: all 0.3s ease;
     }
 
     .navbar {
@@ -256,8 +270,8 @@ header nav {
         transform: rotate(90deg);
     }
 
-    .has-submenu:hover {
-        background-color: var(--rouge);
+    .nav-right li:hover {
+        background: #f5f5f5;
     }
 }
 
@@ -781,7 +795,7 @@ blockquote::after {
 /*=== oeuvres ===*/
 
 #mlk section:nth-of-type(2) img {
-    width: 200px;
+    
     border-radius: 10px;
 }
 
@@ -878,17 +892,28 @@ blockquote::after {
 
 @media screen and (max-width: 1200px) {
 
-    /* livres */
-    #mlk section:nth-of-type(2)>div:nth-of-type(2) {
+    /* livres *//*
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
         flex-direction: column;
-    }
+    }*/
 
     /*photo du film*/
-    #mlk section:nth-of-type(2)>div:nth-of-type(2) img:first-of-type {
+
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) img:first-of-type {
         display: none;
     }
 }
 
+@media screen and (max-width: 515px){
+    #mlk section:nth-of-type(2)>article>div:first-of-type,
+    #mlk section:nth-of-type(2)>article>div:nth-of-type(2),
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
 /*=== activité ===*/
 
 #mlk section:nth-of-type(3)>div {
@@ -1005,6 +1030,7 @@ blockquote::after {
         width: 350px;
     }
 }
+
 /* ======== carte interactive + popup carte ========*/
 
 .carte {
