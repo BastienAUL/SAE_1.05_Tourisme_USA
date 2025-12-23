@@ -1341,11 +1341,44 @@ blockquote::after {
 
     #usa-presentation {
         font-size: 10px;
-        padding: 0;
+        margin-left: 0;
+        margin-right: 30px;
     }
 
     .right-presentation {
         font-size: 9px;
+    }
+
+    #usa-all-presentation {
+        justify-content: space-around;
+    }
+
+    .carte {
+        display: none;
+    }
+
+    .article{
+        width: 90%;
+    }
+
+    #article-title{
+        height: 60px;
+    }
+
+    .article div h1{
+        font-size: 15px;
+    }
+
+    .article div h2{
+        display: none;
+    }
+    
+    .article div h3{
+        font-size: 12px;
+    }
+
+    .article-button{
+        display: none;
     }
 }
 
