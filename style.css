@@ -1024,13 +1024,6 @@ blockquote::after {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1420px) {
-    #fullscreen_las-vegas h1 {
-        font-size: 80px;
-        width: 350px;
-    }
-}
-
 /* ======== carte interactive + popup carte ========*/
 
 .carte {
@@ -1359,6 +1352,68 @@ blockquote::after {
     color: var(--bleu-fonce);
 }
 
+@media screen and (max-width: 1420px) {
+    #fullscreen_las-vegas h1 {
+        font-size: 80px;
+        width: 350px;
+    }
+
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
+        font-size: 30px;
+    }
+
+    #usa-presentation {
+        font-size: 10px;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .right-presentation {
+        font-size: 9px;
+    }
+
+    #usa-all-presentation {
+        justify-content: space-around;
+    }
+
+    #carte {
+        display: none;
+    }
+
+    .carte {
+        display: none;
+    }
+
+    .article{
+        width: 90%;
+    }
+
+    #article-title, #discover-title{
+        height: 60px;
+    }
+
+    .article div h1{
+        font-size: 15px;
+    }
+
+    .article div h2{
+        display: none;
+    }
+    
+    .article div h3{
+        font-size: 12px;
+    }
+
+    .article-button{
+        display: none;
+    }
+
+    #discover-description{
+        font-size: 10px;
+    }
+}
 
 /* ======== PAGE OEUVRE ========*/
 
@@ -1392,8 +1447,6 @@ blockquote::after {
     font-weight: 50;
     margin: 0;
 }
-
-
 
 .main-oeuvres section {
     display: flex;
