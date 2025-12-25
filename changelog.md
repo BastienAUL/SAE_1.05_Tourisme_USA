@@ -1,4 +1,11 @@
-# Release notes 
+# Changelogs
+ 
+## Version 2.0.6 : 25/12/2025
+(titouan)
+> Version 1.2.1 Personnages
+- changement de l'emplacement de certaines pages et du js 
+- changement de tout les liens des pages 
+
 
 ## Version 2.0.5
 (titouan)
@@ -36,7 +43,7 @@ Titouan
 - modification css et HTMl de lieux et yellowstones pour corriger les erreurs et fix la suppression du flex du body
 - ajout favicon lieux et yellowstones
 
-(toutes les modifs sur le release notes personnages)
+(toutes les modifs sur le changelog personnages)
 
 ## Version 2.0.0
 - refonte footer
@@ -45,9 +52,9 @@ Titouan
 - correction du code HTML
 - correction du code css
 ...
-(toutes les modifs sur le release notes personnages)
+(toutes les modifs sur le changelog personnages)
 
-> Version manquante le release notes n'a pas été mis à jour (pour le global)
+> Version manquante le changelog n'a pas été mis à jour (pour le global)
 
 ## Version 1.1.1 
 - refonte de la nav 

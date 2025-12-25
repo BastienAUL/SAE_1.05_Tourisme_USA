@@ -6,7 +6,7 @@
 Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion consiste en la création d’un site web autour des États-Unis, comprenant différentes pages illustrant villes, œuvres et informations culturelles.
 
 
-> Pour voir les avancées du projet consulter les releases notes (un global peu représentatif et un pour chaque page)  
+> Pour voir les avancées du projet consulter le changelog 
 
 ---
 ## 🛠️ Technologies utilisées
@@ -22,6 +22,12 @@ Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion c
 
 
 ---
+
+## ⭐ Aperçu 
+
+[image]
+[image]
+[image]
 
 ## 📜 Licence
 

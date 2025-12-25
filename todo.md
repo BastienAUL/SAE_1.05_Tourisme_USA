@@ -1,7 +1,5 @@
-- [x] fix nav
-- [x] css
-- [x] pages de tout le monde
-- [x] footer
 - [ ] verifier tout le code
-- [ ] fusionner tout les css
-- [ ] reduire la taille des médias
+- [ ] version responsive de la page mlk (en cours)
+- [ ] version responsive de la page oeuvre & fg 
+- [ ] version responsive de la page lieux et yellowstone
+- [ ] version responsive de la page index
