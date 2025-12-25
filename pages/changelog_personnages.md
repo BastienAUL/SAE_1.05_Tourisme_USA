@@ -9,6 +9,7 @@
 - Changed images links on pages
 - Moving the JavaScript file to a dedicated file
 
+- small responsive change to "Activités touristiques"
 
 ## Version 1.2.0 : 18/12/2025
 - fix hover nav
