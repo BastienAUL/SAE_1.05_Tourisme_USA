@@ -1433,6 +1433,9 @@ blockquote::after {
     }
 }
 
+
+
+
 /* ======== PAGE OEUVRE ========*/
 
 .main-oeuvres header {
@@ -1445,6 +1448,7 @@ blockquote::after {
     color: var(--white);
     text-align: center;
     padding: 2% 8% 2% 8%;
+    margin-top: 60px;
 }
 
 .main-oeuvres header h1 {
@@ -1617,7 +1621,8 @@ blockquote::after {
 
     height: 40vh;
     margin: 0;
-    padding-top: 30%;
+    padding-top: 50%;
+    margin-top: 60px;
 }
 
 .main-fg header:has(h1) div {
@@ -1667,6 +1672,8 @@ blockquote::after {
     align-items: flex-start;
 
     gap: 1em;
+
+    flex-wrap: wrap;
 }
 
 .main-fg section:nth-child(2) div {
@@ -1694,7 +1701,7 @@ blockquote::after {
 
 .main-fg section:nth-child(2) img {
     width: 30%;
-
+    justify-self: center;
     align-self: center;
     object-fit: cover;
 }
@@ -2312,6 +2319,168 @@ blockquote::after {
     transform: scale(1.01);
     box-shadow: var(--drop-shadow-0-5);
 }
+
+/* Responsive */
+
+/* Format MAC */
+
+@media screen and (max-width: 1024px) {
+
+    /* Page Forrest Gump */
+
+    
+
+}
+
+/* Format Téléphone */
+
+@media screen and (max-width: 576px) {
+
+    /* Oeuvres */
+
+    .main-oeuvres header h3 {
+        display: none;
+    }
+
+    /* Page Forrest Gump */
+
+    .main-fg header:has(h1) div h3 {
+        display: none;
+    }
+
+
+    .main-fg section:nth-child(2) img {
+        width: 100%;
+    }
+
+    .main-fg section:nth-child(3) > div:first-child cite,
+    .main-fg section:nth-child(3) > div:first-child q,
+    .main-fg section:nth-child(3) > div:first-child br  {
+            display: none;
+    }
+
+    .note {
+            width: 20em;
+            height: 20em;
+    }
+
+    .note::before {
+            width: 16em;
+            height: 16em;
+    }
+
+    .mouvement-images img:nth-child(2) {
+        display: none;
+    }
+
+    .cercles-lieu, .cercles-visite {
+        display: none;
+    }
+
+    .fleche-oeuvre {
+        display: none;
+    }
+
+    .oeuvres-grid {
+        flex-direction: column;
+    }
+
+    .oeuvre-card {
+        width: 100%;
+        opacity: 100% !important;
+        box-shadow: var(--drop-shadow-0-25) !important;
+    }
+
+    .lieu-card-visite,
+    .lieu-card {
+        width: 100%;
+        margin-top: 1em !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ======== PAGE LIEUX ========*/
 
