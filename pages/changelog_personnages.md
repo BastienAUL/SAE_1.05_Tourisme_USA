@@ -2,6 +2,10 @@
 # Changelog pages des personnages 
 > differentes versions de mes pages, et des modifications que j'ai fait
 
+## Version 1.2.2 : 29/12/2025
+- responsive header main improvement
+- small responsive change nav
+
 ## Version 1.2.1 : 25/12/2025
 - Rename release note to changelog
 - Moving cgu & pdc & travaux to pages folder

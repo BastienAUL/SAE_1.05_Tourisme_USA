@@ -1,5 +1,10 @@
 # Changelogs
  
+## Version 2.0.7 : 29/12/2025
+(titouan)
+> Version 1.2.2 Personnages
+- small responsive change nav
+
 ## Version 2.0.6 : 25/12/2025
 (titouan)
 > Version 1.2.1 Personnages

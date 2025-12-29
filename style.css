@@ -82,7 +82,9 @@ h2 {
 /* ======== HEADER / NAV =======*/
 /*
 original : Titouan Moquet 
-refonte et menu déroulant : Bastien Aulney*/
+refonte et menu déroulant : Bastien Aulney
+version responsive : Titouan Moquet 
+*/
 header nav {
     height: 60px;
     font-family: 'Alexandria Regular';
@@ -274,11 +276,25 @@ header nav {
         background: #f5f5f5;
     }
 }
+@media screen and (max-width: 650px){
+    header nav {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 250px){
+    .nav-left img{
+        display: none;
+    }
+}
+
+
 
 /* ======== FOOTER ========*/
 /*
 original : Bastien Aulney
 refonte : Titouan Moquet 
+version responsive :  
 */
 
 footer {
@@ -511,6 +527,7 @@ hr {
 
 /* ======== PERSONNAGES & MLK ========*/
 
+
 #mlk,
 #personnages {
     cursor: default;
@@ -520,7 +537,7 @@ hr {
 #personnages header {
     background-color: var(--bleu);
     height: 300px;
-    padding-top: 40px;
+    padding-top: 8em;
     color: white;
     text-align: center;
     padding-bottom: 20px;
@@ -648,6 +665,9 @@ hr {
 }
 
 /*========== page mlk ==========*/
+/*
+Credit : Titouan Moquet
+*/
 #mlk hr {
     width: 70%;
 }
@@ -689,14 +709,15 @@ hr {
     border-radius: 10px;
     font-family: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 4em;
+    font-size: 3em;
+    transition: all 0.5s ease;
 }
 
 #mlk header blockquote {
     color: var(--white);
     position: absolute;
     right: 18%;
-    top: 9em;
+    top: 8em;
     width: 670px;
     font-size: 35px;
     font-family: 'Caveat Regular', sans-serif;
@@ -717,11 +738,12 @@ blockquote::after {
     background-color: rgba(255, 255, 255, 0.500);
     backdrop-filter: blur(5px);
     position: relative;
-    top: 14em;
+    top: 18em;
     left: 4em;
     width: 500px;
     padding: 10px 20px 10px 20px;
     border-radius: var(--border-radius-bloc);
+    transition: all 0.5s ease;
 }
 
 #mlk header ul li {
@@ -781,16 +803,6 @@ blockquote::after {
     display: block;
     width: 100%;
     height: auto;
-}
-
-@media screen and (max-width: 900px) {
-    #mlk section:first-of-type figure {
-
-        margin-right: 15px;
-        width: 100px;
-        font-size: small;
-    }
-
 }
 
 /*=== oeuvres ===*/
@@ -864,59 +876,6 @@ blockquote::after {
     transform: scale(1.03);
 }
 
-@media screen and (max-width: 1050px) {
-    #mlk section:nth-of-type(2) article {
-        flex-direction: column;
-        align-items: center
-    }
-
-    #mlk section:nth-of-type(2)>article>div:first-of-type {
-        margin-right: 0;
-    }
-
-    #mlk section:nth-of-type(2)>article>div:nth-of-type(2) {
-        margin-left: 0;
-    }
-
-    #mlk section:nth-of-type(2)>article>div {
-        width: 90%;
-        margin-bottom: 40px;
-    }
-
-    /*article film*/
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
-        margin: auto;
-        width: 90%;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
-    /* livres */
-    /*
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
-        flex-direction: column;
-    }*/
-
-    /*photo du film*/
-
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) img:first-of-type {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 515px) {
-
-    #mlk section:nth-of-type(2)>article>div:first-of-type,
-    #mlk section:nth-of-type(2)>article>div:nth-of-type(2),
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-}
 
 /*=== activité ===*/
 
@@ -941,11 +900,7 @@ blockquote::after {
     transition: transform 0.3s ease
 }
 
-@media screen and (max-width: 1420px) {
-    #mlk section:nth-of-type(3) div>div {
-        width: 450px;
-    }
-}
+
 
 #mlk section:nth-of-type(3) div>div>img {
     align-self: center;
@@ -985,19 +940,88 @@ blockquote::after {
     object-position: center;
 }
 
+/*===== responsif des pages mlk et personnages =====*/
+/*
+Credit : Titouan Moquet
+*/
+
+@media screen and (max-width: 1420px) {
+    #mlk section:nth-of-type(3) div>div {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* livres */
+    /*
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
+        flex-direction: column;
+    }*/
+
+    /*photo du film*/
+
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) img:first-of-type {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #mlk section:nth-of-type(2) article {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #mlk section:nth-of-type(2)>article>div:first-of-type {
+        margin-right: 0;
+    }
+
+    #mlk section:nth-of-type(2)>article>div:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    #mlk section:nth-of-type(2)>article>div {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    /*article film*/
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #mlk header blockquote {
+        left: 0;
+
+        width: auto;
+    }
+
+    #mlk header ul {
+        top: 25em;
+        left: 1em;
+
+        width: fit-content;
+    }
+
+}
 
 @media screen and (max-width: 660px) {
     #mlk section:nth-of-type(3) div>div {
         flex-wrap: wrap;
         width: auto;
     }
-    #mlk section:nth-of-type(3) div > div > img{
+
+    #mlk section:nth-of-type(3) div>div>img {
         width: 100%;
         height: auto;
     }
+
     #mlk section:nth-of-type(3) div {
         padding: 0;
     }
+
     /*
     #mlk aside:first-of-type div img {
         width: 50%;
@@ -1005,7 +1029,77 @@ blockquote::after {
     }*/
 }
 
+@media screen and (max-width: 900px) {
+    #mlk section:first-of-type figure {
 
+        margin-right: 15px;
+        width: 100px;
+        font-size: small;
+    }
+
+    #mlk header h1 {
+        font-size: 2.5em;
+        margin-top: 2em;
+    }
+
+    #mlk header ul {
+        top: 28em;
+    }
+
+    #mlk header ul li {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #mlk header {
+        height: 60em;
+    }
+
+    #mlk header blockquote {
+        display: none;
+    }
+
+    #mlk header ul {
+        width: auto;
+        top: 25em;
+        right: 0;
+        left: 0;
+
+    }
+
+    #mlk section:nth-of-type(2)>article>div:first-of-type,
+    #mlk section:nth-of-type(2)>article>div:nth-of-type(2),
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mlk aside:first-of-type div img {
+        height: 10em;
+        width: 10em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 470px) {
+    #mlk header {
+        background-position-x: -1250px;
+        background-position-y: -50px;
+    }
+}
+@media screen and (max-width: 400px){
+    #mlk p,
+    #mlk header ul{
+        font-size: 1em !important;
+    }
+    #mlk header ul li{
+        line-height: 1em;
+    }
+}
 
 /* ======== PAGE D'ACCUEIL ========*/
 
@@ -2336,7 +2430,7 @@ blockquote::after {
 
     /* Page Forrest Gump */
 
-    
+
 
 }
 
@@ -2361,27 +2455,28 @@ blockquote::after {
         width: 100%;
     }
 
-    .main-fg section:nth-child(3) > div:first-child cite,
-    .main-fg section:nth-child(3) > div:first-child q,
-    .main-fg section:nth-child(3) > div:first-child br  {
-            display: none;
+    .main-fg section:nth-child(3)>div:first-child cite,
+    .main-fg section:nth-child(3)>div:first-child q,
+    .main-fg section:nth-child(3)>div:first-child br {
+        display: none;
     }
 
     .note {
-            width: 20em;
-            height: 20em;
+        width: 20em;
+        height: 20em;
     }
 
     .note::before {
-            width: 16em;
-            height: 16em;
+        width: 16em;
+        height: 16em;
     }
 
     .mouvement-images img:nth-child(2) {
         display: none;
     }
 
-    .cercles-lieu, .cercles-visite {
+    .cercles-lieu,
+    .cercles-visite {
         display: none;
     }
 
