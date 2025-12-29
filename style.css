@@ -1495,6 +1495,7 @@ Credit : Titouan Moquet
 
     #usa-all-presentation {
         justify-content: space-around;
+        padding: 10px 0;
     }
 
     #carte {
@@ -1533,6 +1534,8 @@ Credit : Titouan Moquet
     #discover-description {
         font-size: 10px;
     }
+
+
 }
 
 
