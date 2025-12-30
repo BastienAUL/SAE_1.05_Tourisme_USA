@@ -215,86 +215,11 @@ header nav {
     width: 40px;
 }
 
-@media screen and (max-width: 970px) {
-    .nav-left {
-        margin-left: 0;
-    }
-
-    .burger {
-        display: block;
-        margin-left: auto;
-        margin-right: 30px;
-        margin-top: 8px;
-    }
-
-    .nav-right {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        border-top: 2px solid #BF0606;
-
-    }
-
-
-    #menu-toggle:checked~.nav-right {
-        display: flex;
-        max-height: 500px;
-        /* assez grand pour contenir le menu */
-        opacity: 1;
-        transform: translateY(0);
-        background-color: var(--white);
-
-        padding: 0;
-    }
-
-    .nav-right li {
-        text-align: center;
-        padding: 20px;
-        width: 100%;
-        border-bottom: #dbdbdb 1px solid;
-        margin: 0;
-        transition: all 0.3s ease;
-    }
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .has-submenu:hover>.submenu {
-        display: none;
-    }
-
-    .nav-right img {
-        display: none;
-    }
-
-    #menu-toggle:checked~.nav-top .burger svg {
-        transform: rotate(90deg);
-    }
-
-    .nav-right li:hover {
-        background: #f5f5f5;
-    }
-}
-@media screen and (max-width: 650px){
-    header nav {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 250px){
-    .nav-left img{
-        display: none;
-    }
-}
-
-
-
 /* ======== FOOTER ========*/
 /*
 original : Bastien Aulney
 refonte : Titouan Moquet 
-version responsive :  
+version responsive Titouan Moquet :  
 */
 
 footer {
@@ -386,14 +311,14 @@ footer svg {
     right: -170px;
     bottom: 40px;
     transition: 0.3s;
-    padding: 15px 15px 15px 10px;
+    padding: 15px 15px 15px 15px;
     width: 190px;
     text-align: end;
     text-decoration: none;
     color: rgb(0, 0, 0);
     border-radius: 5px 0 0 5px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     z-index: 4;
     border-color: #696969;
@@ -411,6 +336,7 @@ footer svg {
     width: 25px;
     height: 25px;
     margin-right: 25px;
+
 }
 
 .popup-credit:hover {
@@ -457,7 +383,9 @@ hr {
 /* ======== CGU & PDC ========*/
 #gpu-and-pdc {
     width: 60%;
-    margin: auto;
+    margin: 8em auto 4em auto;
+    transition: all 0.5s ease;
+
 }
 
 #gpu-and-pdc h3 {
@@ -467,11 +395,12 @@ hr {
 #gpu-and-pdc>div {
     border-radius: 20px;
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    margin: 30px 0;
+    margin: 4em 0 4em 0;
     background-color: white;
     padding: 0 30px;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease;
 }
 
 #gpu-and-pdc>div>p:last-child {
@@ -552,6 +481,7 @@ hr {
     font-size: 4em;
     margin-top: 0;
     font-weight: 400;
+    transition: font-size 0.5s ease;
 }
 
 #personnages header p {
@@ -585,6 +515,7 @@ hr {
     overflow: hidden;
     transform: scale(1);
     transition: box-shadow 0.4s ease, transform 0.4s ease;
+    transition: height, margin 0.5s ease;
 }
 
 #personnages>section h2 {
@@ -606,7 +537,7 @@ hr {
 }
 
 #personnages>section div img {
-    width: inherit;
+    /*width: inherit;*/
     height: 330px;
     object-fit: cover;
     object-position: top;
@@ -981,15 +912,15 @@ Credit : Titouan Moquet
     }
 
     #mlk section:nth-of-type(2)>article>div {
-        width: 90%;
+        width: auto;
         margin-bottom: 40px;
     }
 
     /*article film*/
     #mlk section:nth-of-type(2)>article:nth-of-type(2) {
         margin: auto;
-        width: 90%;
-        margin-bottom: 10px;
+        /*width: 90%;*/
+        /*margin-bottom: 10px;*/
     }
 
     #mlk header blockquote {
@@ -1003,6 +934,30 @@ Credit : Titouan Moquet
         left: 1em;
 
         width: fit-content;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    #mlk section:first-of-type figure {
+
+        margin-right: 15px;
+        width: 100px;
+        font-size: small;
+    }
+
+    #mlk header h1 {
+        font-size: 2.5em;
+        margin-top: 2em;
+    }
+
+    #mlk header ul {
+        top: 28em;
+    }
+
+    #mlk header ul li {
+        font-size: 1.2em;
     }
 
 }
@@ -1027,29 +982,11 @@ Credit : Titouan Moquet
         width: 50%;
         height: 10em;
     }*/
-}
 
-@media screen and (max-width: 900px) {
-    #mlk section:first-of-type figure {
+    #personnages>section div {
+        height: auto;
 
-        margin-right: 15px;
-        width: 100px;
-        font-size: small;
     }
-
-    #mlk header h1 {
-        font-size: 2.5em;
-        margin-top: 2em;
-    }
-
-    #mlk header ul {
-        top: 28em;
-    }
-
-    #mlk header ul li {
-        font-size: 1.2em;
-    }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -1076,11 +1013,38 @@ Credit : Titouan Moquet
         flex-direction: column;
     }
 
-    #mlk aside:first-of-type div img {
-        height: 10em;
-        width: 10em;
+    #mlk aside:first-of-type div {
+        display: block;
     }
 
+    #mlk aside:first-of-type div img {
+        height: 10em;
+        width: 100%;
+    }
+
+    #personnages header {
+        height: auto;
+    }
+
+    #personnages header h1 {
+        margin-bottom: 0;
+    }
+
+    .popup-credit {
+        padding: 5px 5px 5px 3px;
+    }
+
+    .popup-credit svg {
+        margin-right: 15px;
+    }
+
+    #mlk section:nth-of-type(2)>article>div {
+        margin-bottom: 20px;
+    }
+
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) img:nth-child(2) {
+        margin: 0;
+    }
 
 
 }
@@ -1091,13 +1055,63 @@ Credit : Titouan Moquet
         background-position-y: -50px;
     }
 }
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 400px) {
+
     #mlk p,
-    #mlk header ul{
+    #mlk header ul {
         font-size: 1em !important;
     }
-    #mlk header ul li{
+
+    #mlk h2 {
+        font-size: 1.5em;
+    }
+
+    #mlk header ul li {
         line-height: 1em;
+    }
+
+    #personnages>section div img {
+        height: auto;
+    }
+
+    #personnages>section div a {
+        width: auto;
+        align-self: auto;
+        margin-top: inherit;
+    }
+
+    #personnages header h1 {
+        font-size: 2.5em;
+    }
+
+    #personnages header p {
+        font-size: 1.2em;
+    }
+
+    #mlk section,
+    #mlk aside {
+        width: auto;
+        margin: 15px;
+    }
+
+    #mlk aside {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #personnages>section div {
+        margin: 10px;
+    }
+
+    #personnages>section h2 {
+        font-size: 1.1em;
+
+    }
+
+    #personnages>section p {
+        font-size: 1em;
     }
 }
 
@@ -2506,88 +2520,6 @@ Credit : Titouan Moquet
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ======== PAGE LIEUX ========*/
 
 #lieux-page header h1 {
@@ -3179,4 +3111,121 @@ strong {
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: var(--border-radius-bloc);
+}
+
+
+/* ===== responsif =====*/
+
+@media screen and (max-width: 970px) {
+    .nav-left {
+        margin-left: 0;
+    }
+
+    .burger {
+        display: block;
+        margin-left: auto;
+        margin-right: 30px;
+        margin-top: 8px;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        border-top: 2px solid #BF0606;
+
+    }
+
+
+    #menu-toggle:checked~.nav-right {
+        display: flex;
+        max-height: 500px;
+        /* assez grand pour contenir le menu */
+        opacity: 1;
+        transform: translateY(0);
+        background-color: var(--white);
+
+        padding: 0;
+    }
+
+    .nav-right li {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        border-bottom: #dbdbdb 1px solid;
+        margin: 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .has-submenu:hover>.submenu {
+        display: none;
+    }
+
+    .nav-right img {
+        display: none;
+    }
+
+    #menu-toggle:checked~.nav-top .burger svg {
+        transform: rotate(90deg);
+    }
+
+    .nav-right li:hover {
+        background: #f5f5f5;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav {
+        font-size: 1.5em;
+    }
+
+    #gpu-and-pdc {
+        width: 100%;
+        margin: 0;
+    }
+
+    #gpu-and-pdc>div {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    footer>div:first-child h1 {
+        font-size: 1.5em;
+    }
+
+    footer>div:first-child>div section h2 {
+        font-size: 1.2em;
+    }
+
+    footer p,
+    footer a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer>div:first-child>div {
+        flex-direction: column;
+    }
+
+    footer>div:first-child>div section {
+        width: auto;
+    }
+
+    footer>div:first-child>div section:nth-child(2) {
+        border-right: none;
+        border-left: none;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .nav-left img {
+        display: none;
+    }
 }

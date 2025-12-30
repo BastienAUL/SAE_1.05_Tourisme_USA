@@ -2,7 +2,12 @@
 ---
 
 ## 📌 Présentation
+`EN`  
+This project, completed as part of the SAE1.05 course in the Computer Science BUT program in Lannion, involves creating a website about the United States, including various pages showcasing cities, works of art, and cultural information.
 
+> To see the project's progress, consult the changelog.
+
+`FR`  
 Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion consiste en la création d’un site web autour des États-Unis, comprenant différentes pages illustrant villes, œuvres et informations culturelles.
 
 
@@ -33,8 +38,13 @@ Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion c
 
 
 > [!WARNING]  
+`EN`   
+>This project was created solely for educational purposes and contains copyrighted material.
+>Do not reuse without permission.  
+`FR`   
 > Projet réalisé uniquement dans un cadre pédagogique et contient des éléments non libre de droit.
-> Ne pas réutiliser sans autorisation.
+> Ne pas réutiliser sans autorisation.  
+
 
 
 

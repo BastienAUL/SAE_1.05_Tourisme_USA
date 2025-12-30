@@ -1,6 +1,20 @@
 
 # Changelog pages des personnages 
+> different versions of my pages, and the changes I made  
 > differentes versions de mes pages, et des modifications que j'ai fait
+
+## Bug to fix:
+- Unknown rightward movement
+
+## Version 1.2.3 : 30/12/2025
+- responsive header personnages improvement
+- responsive link card improvement
+- various responsive improvements on the mlk page
+
+- responsive popup credit improvement & fix alignement
+- responsive footer
+
+- update todo & changlog & redme
 
 ## Version 1.2.2 : 29/12/2025
 - responsive header main improvement

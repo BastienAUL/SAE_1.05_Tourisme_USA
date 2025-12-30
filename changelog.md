@@ -1,21 +1,35 @@
 # Changelogs
- 
+
+Not all of Bastien, Flavien, and Ako's edits are listed here.
+
+Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées ici
+
+## Version 2.0.8 : 30/12/2025
+(Titouan)
+> Version 1.2.3 Personnages
+- responsive popup credit improvement & fix alignement
+- responsive footer 
+
+
 ## Version 2.0.7 : 29/12/2025
-(titouan)
+(Titouan)
 > Version 1.2.2 Personnages
 - small responsive change nav
+
+(Bastien)
+- Fix rightward movement on the homepage
 
 ## Version 2.0.6 : 25/12/2025
 (titouan)
 > Version 1.2.1 Personnages
-- changement de l'emplacement de certaines pages et du js 
-- changement de tout les liens des pages 
+- Changed the location of some pages and the JavaScript file
+- Changed all page links
 
 
 ## Version 2.0.5
 (titouan)
-- version responsive de la nav pour toute les pages
-> V1.2.0 *personnage fix hover & submenu style
+- Responsive navigation version for all pages
+> V1.2.0 *Fixed "personnages" hover & submenu style
 
 
 ## Version 2.0.4
@@ -27,9 +41,9 @@ Bastien :
 Flavien : 
 - mise à jour du css & début optimisation
 Titouan :
-- refonte popup js 
-- Version 1.1.9 Personnages
-- fix img size traveau & changement texte
+- JavaScript popup redesign
+- Version 1.1.9 Characters
+- Fixed image size and changed text
 
 ## Version 2.0.2
 Flavien : 
@@ -39,9 +53,9 @@ Ako :
 - ajout d'image yellowstones
 - ajout de contenus yellowstones
 Titouan :
-- V1.1.6 to 1.1.8 Personnages
-- migration du css personnages dans style.css
-- corrections mineures du code css
+- Version 1.1.6 to 1.1.8 Characters
+- Migration of character CSS to style.css
+- Minor CSS code corrections
 
 ## Version 2.0.1 
 Titouan

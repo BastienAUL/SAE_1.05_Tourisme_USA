@@ -1,5 +1,10 @@
-- [ ] verifier tout le code
-- [ ] version responsive de la page mlk (en cours)
-- [ ] version responsive de la page oeuvre & fg 
-- [ ] version responsive de la page lieux et yellowstone
-- [ ] version responsive de la page index
+## ALL
+
+- [ ] Check all the code
+- [ ] Responsive version of the "mlk" page (in progress)
+- [ ] Responsive version of the "oeuvre" & "fg" page
+- [ ] Responsive version of the "lieux" and "yellowstone" page
+- [ ] Responsive version of the "index" page
+
+## Bug to fix:
+- [ ] Unknown rightward movement
