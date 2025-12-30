@@ -15,6 +15,7 @@
 - responsive footer
 
 - update todo & changlog & redme
+- fix missing favicon
 
 ## Version 1.2.2 : 29/12/2025
 - responsive header main improvement

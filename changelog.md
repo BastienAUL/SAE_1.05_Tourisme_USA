@@ -9,7 +9,7 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 > Version 1.2.3 Personnages
 - responsive popup credit improvement & fix alignement
 - responsive footer 
-
+- fix missing favicon
 
 ## Version 2.0.7 : 29/12/2025
 (Titouan)
