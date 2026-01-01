@@ -313,7 +313,8 @@ footer svg {
 
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
 }
 
 .top-button.hidden {
@@ -329,6 +330,7 @@ footer svg {
     border-radius: 50%;
     width: var(--taille-bouton);
     height: var(--taille-bouton);
+    transition: transform 0.5s ease;
 }
 
 .top-button svg {
@@ -341,6 +343,7 @@ footer svg {
 
 .top-button a:hover {
     transform: scale(1.2);
+
 }
 
 /* ======== credits & warning ========*/
