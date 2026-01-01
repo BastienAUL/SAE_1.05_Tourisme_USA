@@ -303,13 +303,52 @@ footer svg {
     margin-left: 10px;
 }
 
+/* ======== top ========*/
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    --taille-bouton: 30px;
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.top-button.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.top-button a {
+    display: block;
+    padding: 10px;
+    background-color: #ffffffe8;
+    border-radius: 50%;
+    width: var(--taille-bouton);
+    height: var(--taille-bouton);
+}
+
+.top-button svg {
+    width: var(--taille-bouton);
+}
+
+.top-button svg path {
+    fill: #0A3D91;
+}
+
+.top-button a:hover {
+    transform: scale(1.2);
+}
 
 /* ======== credits & warning ========*/
 .popup-credit {
     background-color: #fff;
     position: fixed;
     right: -170px;
-    bottom: 40px;
+    bottom: 20px;
     transition: 0.3s;
     padding: 15px 15px 15px 15px;
     width: 190px;
@@ -603,6 +642,16 @@ Credit : Titouan Moquet
     width: 70%;
 }
 
+#mlk mark {
+    /*background: #ffcf5e;
+    background: linear-gradient(90deg, rgba(255, 207, 94, 1) 0%, rgba(255, 237, 122, 1) 100%);*/
+    background: #ffcf5e;
+    background: linear-gradient(90deg, rgba(255, 207, 94, 0.5) 0%, rgba(255, 237, 122, 0.5) 100%);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
 #mlk section p {
     font-size: 1.2em;
     line-height: 1.6;
@@ -625,6 +674,8 @@ Credit : Titouan Moquet
     background-size: cover;
     height: 55em;
     padding-top: 20px;
+
+    position: relative;
 
 }
 
@@ -668,13 +719,18 @@ blockquote::after {
 #mlk header ul {
     background-color: rgba(255, 255, 255, 0.500);
     backdrop-filter: blur(5px);
-    position: relative;
-    top: 18em;
+    /* position: relative;*/
+    /* top: 18em;
     left: 4em;
-    width: 500px;
+    width: 500px;*/
     padding: 10px 20px 10px 20px;
     border-radius: var(--border-radius-bloc);
     transition: all 0.5s ease;
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
 }
 
 #mlk header ul li {
@@ -682,9 +738,10 @@ blockquote::after {
     margin-bottom: 5px;
     list-style: none;
     color: var(--bleu);
-    font-size: x-large;
+    font-size: 1.4em;
     line-height: 2em;
     font-family: 'Alexandria Regular', sans-serif;
+    transition: all 0.5s ease;
 
 }
 
@@ -713,14 +770,14 @@ blockquote::after {
 #mlk section,
 #mlk aside {
     opacity: 0;
-    transform: translateX(100px);
-    transition: all 0.5s ease-out;
+    /*transform: translateX(100px);*/
+    transition: all 0.8s ease-out;
 }
 
 #mlk section.appear,
 #mlk aside.appear {
     opacity: 1;
-    transform: translateX(0);
+    /* transform: translateX(0);*/
 }
 
 
@@ -828,9 +885,13 @@ blockquote::after {
     padding: 20px;
     flex-wrap: nowrap;
     border-radius: var(--border-radius-bloc);
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
 }
 
+#mlk section:nth-of-type(3) div>div .mark {
+    margin-bottom: 0;
+    margin-top: auto;
+}
 
 
 #mlk section:nth-of-type(3) div>div>img {
@@ -878,7 +939,11 @@ Credit : Titouan Moquet
 
 @media screen and (max-width: 1420px) {
     #mlk section:nth-of-type(3) div>div {
-        width: 450px;
+        width: 40%;
+    }
+
+    #mlk section:nth-of-type(3) div>div>img {
+        width: 100%;
     }
 }
 
@@ -925,17 +990,14 @@ Credit : Titouan Moquet
 
     #mlk header blockquote {
         left: 0;
-
         width: auto;
     }
 
+    /*
     #mlk header ul {
-        top: 25em;
-        left: 1em;
-
         width: fit-content;
     }
-
+*/
 }
 
 
@@ -952,24 +1014,32 @@ Credit : Titouan Moquet
         margin-top: 2em;
     }
 
+    /*
     #mlk header ul {
         top: 28em;
-    }
+    }*/
 
     #mlk header ul li {
         font-size: 1.2em;
     }
 
+
+}
+
+@media screen and (max-width: 800px) {
+    #mlk section:nth-of-type(3) div>div {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 660px) {
-    #mlk section:nth-of-type(3) div>div {
+    /* #mlk section:nth-of-type(3) div>div {
         flex-wrap: wrap;
         width: auto;
-    }
+    }*/
 
     #mlk section:nth-of-type(3) div>div>img {
-        width: 100%;
+        /* width: 100%;*/
         height: auto;
     }
 
@@ -990,20 +1060,23 @@ Credit : Titouan Moquet
 }
 
 @media screen and (max-width: 550px) {
-    #mlk header {
+    /*#mlk header {
         height: 60em;
-    }
+    }*/
 
     #mlk header blockquote {
         display: none;
     }
 
     #mlk header ul {
-        width: auto;
-        top: 25em;
-        right: 0;
+        bottom: 0;
         left: 0;
+        right: 0;
 
+    }
+
+    #mlk header ul li {
+        line-height: 1.2em;
     }
 
     #mlk section:nth-of-type(2)>article>div:first-of-type,
@@ -1049,13 +1122,14 @@ Credit : Titouan Moquet
 
 }
 
+/*
 @media screen and (max-width: 470px) {
     #mlk header {
         background-position-x: -1250px;
         background-position-y: -50px;
     }
 }
-
+*/
 @media screen and (max-width: 400px) {
 
     #mlk p,
@@ -1065,10 +1139,6 @@ Credit : Titouan Moquet
 
     #mlk h2 {
         font-size: 1.5em;
-    }
-
-    #mlk header ul li {
-        line-height: 1em;
     }
 
     #personnages>section div img {

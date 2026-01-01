@@ -4,6 +4,10 @@ Not all of Bastien, Flavien, and Ako's edits are listed here.
 
 Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées ici
 
+## Version 2.0.9 
+(Titouan)
+> V1.2.4 Personnages: 01/01/2026
+
 ## Version 2.0.8 : 30/12/2025
 (Titouan)
 > Version 1.2.3 Personnages

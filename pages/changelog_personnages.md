@@ -4,7 +4,14 @@
 > differentes versions de mes pages, et des modifications que j'ai fait
 
 ## Bug to fix:
-- Unknown rightward movement
+
+
+## Version 1.2.4 : 01/01/2026
+- Fix position ul header "mlk"
+- Add addresses marked in "Activités touristiques"
+- responsive improvement "Tourist Activities"
+- Removal of the slide animation which was causing a bug on the responsive version
+- Add back to top button
 
 ## Version 1.2.3 : 30/12/2025
 - responsive header personnages improvement
