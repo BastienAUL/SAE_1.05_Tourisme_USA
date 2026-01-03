@@ -2170,7 +2170,7 @@ Credit : Titouan Moquet
     gap: 1em;
 }
 
-.main-fg section:nth-child(3)>div:last-child>div {
+.main-fg section:nth-child(3) > div:last-child > div {
     box-sizing: border-box;
 
     padding: 1.5em 2em;
@@ -2181,8 +2181,6 @@ Credit : Titouan Moquet
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px, inset -100px 0 140px -100px var(--bleu-ciel);
     display: flex;
     align-items: center;
-
-    justify-content: flex-start;
     gap: 2em;
     transition: all ease 500ms;
 }
@@ -2725,6 +2723,10 @@ Credit : Titouan Moquet
 
     /* Page Forrest Gump */
 
+    .main-fg section h2 {
+        font-size: 2em;
+    }
+
     .main-fg header:has(h1) div h3 {
         display: none;
     }
@@ -2734,7 +2736,7 @@ Credit : Titouan Moquet
         width: 100%;
     }
 
-    .main-fg section:nth-child(3)>div:first-child cite,
+    .main-fg section:nth-child(3)>div:first-child cite:last-child,
     .main-fg section:nth-child(3)>div:first-child q,
     .main-fg section:nth-child(3)>div:first-child br {
         display: none;
@@ -2745,10 +2747,41 @@ Credit : Titouan Moquet
         height: 20em;
     }
 
+    .note span {
+        font-size: 7em;
+    }
+
     .note::before {
         width: 16em;
         height: 16em;
     }
+
+    .main-fg section:nth-child(3) > div:last-child > div {
+        flex-direction: column;
+    }
+
+    .main-fg section:nth-child(3) > div:last-child > div img {
+        height: 10em;
+    }
+
+    .main-fg section:nth-child(3) > div:last-child > div > div {
+        height: 10em;
+        width: 12em;
+    }
+
+    .main-fg section:nth-child(3) > div:last-child > div p {
+        text-align: center;
+    }
+
+    .main-fg section:nth-child(3) > div:last-child > div p {
+        /* bug  "z-index n’a aucun effet sur cet élément, car il ne s’agit pas d’un élément positionné.
+        Essayez de définir sa propriété position avec une valeur différente de static"*/
+        z-index: 2;
+    }
+
+
+
+
 
     .mouvement-images img:nth-child(2) {
         display: none;
@@ -2778,6 +2811,8 @@ Credit : Titouan Moquet
         width: 100%;
         margin-top: 1em !important;
     }
+
+
 
 }
 
