@@ -7,6 +7,12 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 ## Version 2.0.9 
 (Titouan)
 > V1.2.4 Personnages: 01/01/2026
+> V1.2.5 Personnages: 02/01/2026 - 03/01/2026
+- various fixes
+- "Travaux" page redesign (Responsive is missing)
+
+(Flavien)
+- update css forrest gump - 03/01/2026
 
 ## Version 2.0.8 : 30/12/2025
 (Titouan)

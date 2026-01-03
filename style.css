@@ -127,6 +127,7 @@ header nav {
 .nav-left img {
     width: 80px;
     height: 80px;
+    transition: all 0.3s ease;
 }
 
 .nav-right img {
@@ -458,34 +459,155 @@ hr {
 /* ======== TRAVAUX ========*/
 
 .travaux {
-    display: flex;
+    font-family: var(--font-family-alexandria);
+    font-size: 1.2em;
+    color: var(--bleu);
+    /*height: 100vh;*/
+    background-image: url(assets/images/accueil/background_las-vegas.jpg);
+
+
+}
+
+.travaux h1 {
+    font-size: 2.5em;
+    animation: zoom-comming-soon 1s infinite;
+}
+
+.travaux>div {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    /* display: flex;
     flex-direction: column;
-    font-family: 'NATS';
-    justify-content: center;
+    justify-content: center;*/
     text-align: center;
+    padding: 1px;
+
+}
+
+.travaux>div>div {
+    background-color: #ffffffe0;
+    width: fit-content;
+    padding: 20px;
+    border-radius: var(--border-radius-bloc);
+    margin-top: 6em;
+    margin-bottom: 2.5em;
+    margin: 220px auto 150px auto;
+}
+
+.travaux div div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travaux>div svg {
+    width: 1.5em;
+    margin-left: 10px;
+}
+
+.travaux>div svg path {
+    fill: var(--bleu);
+}
+
+.travaux .home-button {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3em;
     color: var(--bleu-fonce);
-    height: 100vh;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: fit-content;
+    /*border: 1px solid black;*/
+    transition: transform 0.5s ease;
+    margin: auto;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
-.travaux button {
-    color: white;
-    background-color: var(--bleu-fonce);
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
-    font-size: larger;
-    border: 1px solid black;
-    transition: 0.5s;
-}
-
-.travaux button:hover {
+.travaux .home-button:hover {
     background-color: white;
     color: var(--bleu-fonce);
 }
 
-.travaux img {
-    height: 60%;
-    object-fit: contain;
+.link-card-travaux {
+    display: flex;
+    justify-content: center;
+}
+
+.link-card-travaux div {
+    background-color: rgb(255, 255, 255);
+    border-radius: var(--border-radius-bloc);
+    width: 32%;
+    max-width: 330px;
+    transition: transform 0.5s ease;
+
+}
+
+.link-card-travaux div a {
+    text-decoration: none;
+    color: var(--bleu-fonce);
+}
+
+.link-card-travaux div:nth-of-type(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.travaux .home-button:hover {
+    transform: scale(1.1);
+}
+
+.link-card-travaux div:hover {
+    transform: scale(1.05);
+}
+
+.link-card-travaux img {
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px 15px 0 0;
+}
+
+@keyframes zoom-comming-soon {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .travaux>div>main {
+
+        width: auto;
+    }
+
+    .travaux>div>div {
+        width: 80%;
+    }
+
+    .link-card-travaux {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link-card-travaux div {
+        width: 40%;
+        min-width: 220px;
+    }
+
+    .link-card-travaux div {
+        margin: 20px;
+    }
 }
 
 /* margin communs */
@@ -539,11 +661,6 @@ hr {
     /*margin: auto;*/
 }
 
-@media screen and (min-width: 1300px) {
-    #personnages>section {
-        width: 100%;
-    }
-}
 
 #personnages>section div {
     background-color: var(--white);
@@ -646,8 +763,6 @@ Credit : Titouan Moquet
 }
 
 #mlk mark {
-    /*background: #ffcf5e;
-    background: linear-gradient(90deg, rgba(255, 207, 94, 1) 0%, rgba(255, 237, 122, 1) 100%);*/
     background: #ffcf5e;
     background: linear-gradient(90deg, rgba(255, 207, 94, 0.5) 0%, rgba(255, 237, 122, 0.5) 100%);
     padding: 5px;
@@ -656,8 +771,12 @@ Credit : Titouan Moquet
 }
 
 #mlk section p {
-    font-size: 1.2em;
     line-height: 1.6;
+
+}
+
+#mlk figcaption {
+    font-family: var(--font-family-fredoka);
 }
 
 #mlk h2 {
@@ -665,9 +784,20 @@ Credit : Titouan Moquet
     font-size: 2em;
     margin: 0;
     padding-bottom: 15px;
-    /*padding-left: 15px;*/
     color: var(--bleu-fonce);
     border-bottom: 3px solid var(--bleu-fonce);
+}
+
+#mlk h3 {
+    font-family: var(--font-family-alexandria);
+    color: var(--bleu-fonce);
+    font-size: 1.3em;
+    background: #ffcf5e;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration-line: underline;
+    text-decoration-color: #cc0102;
 }
 
 #mlk header {
@@ -677,9 +807,7 @@ Credit : Titouan Moquet
     background-size: cover;
     height: 55em;
     padding-top: 20px;
-
     position: relative;
-
 }
 
 #mlk header h1 {
@@ -711,11 +839,11 @@ Credit : Titouan Moquet
     font-weight: bold;
 }
 
-blockquote::before {
+#mlk blockquote::before {
     content: open-quote;
 }
 
-blockquote::after {
+#mlk blockquote::after {
     content: close-quote;
 }
 
@@ -754,9 +882,9 @@ blockquote::after {
 
 #mlk section,
 #mlk aside {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
     border-radius: var(--border-radius-bloc);
-    font-family: var(--font-family-fredoka);
+    /* font-family: var(--font-family-fredoka);*/
     width: 70%;
 }
 
@@ -788,28 +916,36 @@ blockquote::after {
     float: right;
     margin-left: 15px;
     width: 200px;
+
 }
 
 #mlk section:first-of-type figure img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
 }
 
 /*=== oeuvres ===*/
 
 #mlk section:nth-of-type(2) img {
-
     border-radius: 10px;
 }
 
 #mlk section:nth-of-type(2) article {
-    display: flex;
     margin-top: 20px;
+
 }
 
 /*articles livres */
-#mlk section:nth-of-type(2)>article>div {
+#mlk section:nth-of-type(2) .livres>div {
+    display: flex;
+    flex-direction: row;
+}
+
+#mlk section:nth-of-type(2) .livres>div>div {
+
     width: 50%;
     text-align: center;
     padding: 20px;
@@ -819,28 +955,25 @@ blockquote::after {
     transition: transform 0.3s ease;
 }
 
-#mlk section:nth-of-type(2)>article>div:first-of-type {
+#mlk section:nth-of-type(2) .livres>div>div:first-of-type {
     margin-right: 10px;
 }
 
-#mlk section:nth-of-type(2)>article>div:nth-child(2) {
+#mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
     margin-left: 10px;
 }
 
-#mlk section:nth-of-type(2)>article>div:hover {
-    transform: scale(1.03);
-}
 
 /*article film*/
 
-#mlk section:nth-of-type(2) article img:first-of-type,
-#mlk section:nth-of-type(2) article img:nth-child(2) {
+#mlk section:nth-of-type(2) .livres>div>div>img:first-of-type,
+#mlk section:nth-of-type(2) .film div img {
     height: 13em;
     width: auto;
     float: left;
 }
 
-#mlk section:nth-of-type(2)>article:nth-of-type(2) {
+#mlk section:nth-of-type(2) .film div {
     background-color: var(--bg-color-article);
     display: block;
     padding: 20px;
@@ -849,21 +982,19 @@ blockquote::after {
 
 }
 
-#mlk section:nth-of-type(2)>article:nth-of-type(2) img {
-    align-self: center;
-}
-
-#mlk section:nth-of-type(2)>article:nth-of-type(2) img:nth-child(2) {
+#mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
     margin-left: 10px;
     margin-right: 20px;
 }
 
-#mlk section:nth-of-type(2)>article:nth-of-type(2) p {
+#mlk section:nth-of-type(2) .film div p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#mlk section:nth-of-type(2)>article:nth-of-type(2):hover {
+/*hover*/
+#mlk section:nth-of-type(2)>article>div>div:hover,
+#mlk section:nth-of-type(2) .film div:hover {
     transform: scale(1.03);
 }
 
@@ -935,6 +1066,10 @@ blockquote::after {
     object-position: center;
 }
 
+#mlk aside p {
+    display: none;
+}
+
 /*===== responsif des pages mlk et personnages =====*/
 /*
 Credit : Titouan Moquet
@@ -952,45 +1087,53 @@ Credit : Titouan Moquet
 
 @media screen and (max-width: 1200px) {
 
-    /* livres */
-    /*
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
-        flex-direction: column;
-    }*/
-
     /*photo du film*/
-
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) img:first-of-type {
+    #mlk section:nth-of-type(2) .film>div img:first-of-type {
         display: none;
+    }
+
+    #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
+        margin-left: 0;
+
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    #personnages>section {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 1050px) {
-    #mlk section:nth-of-type(2) article {
+
+    /*livres*/
+    #mlk section:nth-of-type(2) .livres>div {
         flex-direction: column;
         align-items: center
     }
 
-    #mlk section:nth-of-type(2)>article>div:first-of-type {
+    #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
         margin-right: 0;
     }
 
-    #mlk section:nth-of-type(2)>article>div:nth-of-type(2) {
+    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
         margin-left: 0;
     }
 
-    #mlk section:nth-of-type(2)>article>div {
+    #mlk section:nth-of-type(2) .livres>div>div {
         width: auto;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     /*article film*/
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
+    /*
+    #mlk section:nth-of-type(2) .film {
         margin: auto;
-        /*width: 90%;*/
-        /*margin-bottom: 10px;*/
+        width: 90%;
+        margin-bottom: 10px;
     }
-
+*/
     #mlk header blockquote {
         left: 0;
         width: auto;
@@ -1012,20 +1155,19 @@ Credit : Titouan Moquet
         font-size: small;
     }
 
+    #mlk section:first-of-type figure img:hover {
+        transform: scale(1.9);
+
+    }
+
     #mlk header h1 {
         font-size: 2.5em;
         margin-top: 2em;
     }
 
-    /*
-    #mlk header ul {
-        top: 28em;
-    }*/
-
     #mlk header ul li {
         font-size: 1.2em;
     }
-
 
 }
 
@@ -1033,13 +1175,19 @@ Credit : Titouan Moquet
     #mlk section:nth-of-type(3) div>div {
         width: auto;
     }
+
+    #mlk p,
+    #mlk header ul {
+        font-size: 1.1em !important;
+    }
+
+    #mlk h2 {
+        font-size: 1.6em;
+    }
+
 }
 
 @media screen and (max-width: 660px) {
-    /* #mlk section:nth-of-type(3) div>div {
-        flex-wrap: wrap;
-        width: auto;
-    }*/
 
     #mlk section:nth-of-type(3) div>div>img {
         /* width: 100%;*/
@@ -1063,9 +1211,17 @@ Credit : Titouan Moquet
 }
 
 @media screen and (max-width: 550px) {
-    /*#mlk header {
-        height: 60em;
-    }*/
+    #personnages header {
+        height: auto;
+    }
+
+    #personnages header h1 {
+        margin-bottom: 0;
+    }
+
+    #mlk header h1 {
+        font-size: 2em;
+    }
 
     #mlk header blockquote {
         display: none;
@@ -1075,20 +1231,29 @@ Credit : Titouan Moquet
         bottom: 0;
         left: 0;
         right: 0;
-
     }
 
     #mlk header ul li {
         line-height: 1.2em;
     }
 
-    #mlk section:nth-of-type(2)>article>div:first-of-type,
-    #mlk section:nth-of-type(2)>article>div:nth-of-type(2),
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) {
+    /* film et livres*/
+    #mlk section:nth-of-type(2) .livres>div>div:first-of-type,
+    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2),
+    #mlk section:nth-of-type(2) .film>div>div {
         display: flex;
         flex-direction: column;
     }
 
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) p {
+        margin-top: 1em;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div {
+        margin-bottom: 0;
+    }
+
+    /*galerie */
     #mlk aside:first-of-type div {
         display: block;
     }
@@ -1098,14 +1263,7 @@ Credit : Titouan Moquet
         width: 100%;
     }
 
-    #personnages header {
-        height: auto;
-    }
-
-    #personnages header h1 {
-        margin-bottom: 0;
-    }
-
+    /*popup*/
     .popup-credit {
         padding: 5px 5px 5px 3px;
     }
@@ -1114,36 +1272,9 @@ Credit : Titouan Moquet
         margin-right: 15px;
     }
 
-    #mlk section:nth-of-type(2)>article>div {
-        margin-bottom: 20px;
-    }
-
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) img:nth-child(2) {
-        margin: 0;
-    }
-
-
 }
 
-/*
-@media screen and (max-width: 470px) {
-    #mlk header {
-        background-position-x: -1250px;
-        background-position-y: -50px;
-    }
-}
-*/
 @media screen and (max-width: 400px) {
-
-    #mlk p,
-    #mlk header ul {
-        font-size: 1em !important;
-    }
-
-    #mlk h2 {
-        font-size: 1.5em;
-    }
-
     #personnages>section div img {
         height: auto;
     }
@@ -1162,14 +1293,50 @@ Credit : Titouan Moquet
         font-size: 1.2em;
     }
 
+    /* mlk */
+
+    #mlk p,
+    #mlk header ul {
+        font-size: 1em !important;
+    }
+
+    #mlk h2 {
+        font-size: 1.5em;
+    }
+
     #mlk section,
     #mlk aside {
         width: auto;
-        margin: 15px;
+        margin: 25px 15px 15px 15px;
     }
 
     #mlk aside {
         padding: 0;
+    }
+
+    #mlk aside p {
+        display: block;
+    }
+
+    /*film et livres*/
+    #mlk section:nth-of-type(2) .livres>div>div {
+        margin-bottom: 20px;
+    }
+
+    #mlk section:nth-of-type(2) .film div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
+        margin: 0;
+        align-self: center;
+    }
+
+
+    /*activité */
+    #mlk section:nth-of-type(3) div>div {
+        margin: 10px auto 10px auto;
     }
 }
 
@@ -1186,7 +1353,29 @@ Credit : Titouan Moquet
     #personnages>section p {
         font-size: 1em;
     }
+
+    #mlk section:nth-of-type(2) .livres>div>div>img:first-of-type,
+    #mlk section:nth-of-type(2) .film div img {
+        height: 9em;
+    }
+
+    #mlk section:nth-of-type(2),
+    #mlk section:nth-of-type(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #mlk section:nth-of-type(2) h2,
+    #mlk section:nth-of-type(2) h3,
+    #mlk section:nth-of-type(3) h2 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
 }
+
+
 
 /* ======== PAGE D'ACCUEIL ========*/
 
@@ -1221,7 +1410,7 @@ Credit : Titouan Moquet
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'BEBAS';
+    font-family: var(--font-family-bedas);
     font-size: 110px;
     z-index: 10;
     text-align: center;
@@ -3062,7 +3251,7 @@ strong {
     background-color: var(--bleu-deep);
     z-index: 1;
     color: var(--bg-color-article);
-    font-family: "FREDOKA", sans-serif;
+    font-family: var(--font-family-fredoka);
     overflow-y: scroll;
     scrollbar-color: var(--bg-color-article) var(--bleu-deep);
     scrollbar-width: thin;
@@ -3074,7 +3263,7 @@ strong {
 
 #mapid aside h3 {
     text-align: center;
-    font-family: "fredoka", sans-serif;
+    font-family: var(--font-family-fredoka);
     font-size: 28px;
     color: var(--bg-color-article);
     border: none;
@@ -3297,7 +3486,18 @@ strong {
     }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 320px) {
+    header nav {
+        font-size: 1em;
+    }
+
+    .nav-left img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 200px) {
     .nav-left img {
         display: none;
     }

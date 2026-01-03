@@ -3,8 +3,21 @@
 > different versions of my pages, and the changes I made  
 > differentes versions de mes pages, et des modifications que j'ai fait
 
-## Bug to fix:
+## To do:
+- add title img
 
+## Version 1.2.5 : 02/01/2026 - 03/01/2026
+(02/01/2026)
+- margin fix Selma article 
+(03/01/2026)
+- fix html error mlk
+- add missing alt img
+- CSS modified to match the new HTML
+- Hover scale added to the biography image
+
+(03/01/2026)
+- various fixes
+- "Travaux" page redesign (Responsive is missing)
 
 ## Version 1.2.4 : 01/01/2026
 - Fix position ul header "mlk"
