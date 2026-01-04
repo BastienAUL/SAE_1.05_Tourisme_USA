@@ -2783,6 +2783,29 @@ Credit : Titouan Moquet
 
 
 
+    .lieu-card > div, .lieu-card-visite > div {
+        flex-direction: column;
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+    }
+
+    .zigzag-container img {
+        width: 100%;
+    }
+
+    .zigzag-container h4 {
+        line-height: 1em;
+        margin: 1em;
+    }
+
+    .lieu-card, .lieu-card-visite {
+        padding: 0;
+        margin: 0;   
+    }
+
+
+
     .mouvement-images img:nth-child(2) {
         display: none;
     }

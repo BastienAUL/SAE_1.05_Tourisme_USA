@@ -4,6 +4,11 @@ Not all of Bastien, Flavien, and Ako's edits are listed here.
 
 Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées ici
 
+## Version 2.0.10
+(Flavien)
+> Update Fg zigzag container mobile: 01/01/2026
+- Reorganisation of the sections on places and places to visit
+
 ## Version 2.0.9 
 (Titouan)
 > V1.2.4 Personnages: 01/01/2026
