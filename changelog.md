@@ -4,6 +4,13 @@ Not all of Bastien, Flavien, and Ako's edits are listed here.
 
 Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées ici
 
+## Version 2.0.11
+(Flavien)
+> Update css mobile fg: 01/01/2026
+- Adjusting spacing between elements for mobile format
+- Adjusting images for mobile format
+- Improving bullet point behaviour on h2 tags
+
 ## Version 2.0.10
 (Flavien)
 > Update Fg zigzag container mobile: 01/01/2026
