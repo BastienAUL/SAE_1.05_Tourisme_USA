@@ -12,7 +12,9 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 - "Travaux" page redesign (Responsive is missing)
 
 (Flavien)
-- update css forrest gump - 03/01/2026
+> update css forrest gump - 03/01/2026
+- Added mobile format source note
+- Adapted reward image sizes for mobile format
 
 ## Version 2.0.8 : 30/12/2025
 (Titouan)
