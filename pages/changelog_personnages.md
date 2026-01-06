@@ -1,10 +1,23 @@
 
 # Changelog pages des personnages 
-> different versions of my pages, and the changes I made  
-> differentes versions de mes pages, et des modifications que j'ai fait
+`EN`   
+Main changelog [here](/changelog.md)  
+Different versions of my pages, and the changes I made  
+
+`FR`  
+Changelog global [ici](/changelog.md)  
+Differentes versions de mes pages, et des modifications que j'ai fait
 
 ## To do:
-- add title img
+- ~~add title img~~
+- translate all file
+- add new img 
+- add credit to img
+
+## Version 1.2.6 : 06/01/2026
+- changelog fixes
+- adding images to a folder
+- adds titles to images on the mlk page
 
 ## Version 1.2.5 : 02/01/2026 - 03/01/2026
 (02/01/2026)

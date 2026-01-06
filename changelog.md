@@ -1,24 +1,30 @@
 # Changelogs
-
+`EN`  
 Not all of Bastien, Flavien, and Ako's edits are listed here.
 
+
+`FR`  
 Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées ici
 
-## Version 2.0.11
+Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [changelog](pages/changelog_personnages.md)
+
+## Version 2.1.1 : 06/01/2026
+(Titouan)
+> V1.2.6 Personnages : 06/01/2026
+- changelog fixes
+
+## Version 2.1.0 : 04/01/2026
 (Flavien)
-> Update css mobile fg: 01/01/2026
+> Update Forrest Gump "Lieux" container mobile: 04/01/2026
+- Reorganisation of the sections on places and places to visit
+> Update css mobile Forrest Gump : 04/01/2026
 - Adjusting spacing between elements for mobile format
 - Adjusting images for mobile format
 - Improving bullet point behaviour on h2 tags
 
-## Version 2.0.10
-(Flavien)
-> Update Fg zigzag container mobile: 01/01/2026
-- Reorganisation of the sections on places and places to visit
-
-## Version 2.0.9 
+## Version 2.0.9 : 03/01/2026
 (Titouan)
-> V1.2.4 Personnages: 01/01/2026
+> V1.2.4 Personnages: 01/01/2026  
 > V1.2.5 Personnages: 02/01/2026 - 03/01/2026
 - various fixes
 - "Travaux" page redesign (Responsive is missing)
@@ -57,7 +63,7 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 
 
 ## Version 2.0.4
--migration css oeuvres et lieux
+- migration css oeuvres et lieux
 
 ## Version 2.0.3
 Bastien : 
