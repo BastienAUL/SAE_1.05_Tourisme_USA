@@ -173,7 +173,7 @@ header nav {
     border: 1px solid #BF0606;
     min-width: 180px;
     z-index: 1000;
-    /*font-weight: 400;*/
+    padding-left: 0;
 }
 
 .submenu li {
@@ -304,14 +304,17 @@ footer svg {
     margin-left: 10px;
 }
 
-/* ======== top ========*/
+/* ======== top button========*/
+/*
+Par : Titouan Moquet 
+*/
 .top-button {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 100;
-    --taille-bouton: 30px;
-
+    --taille-bouton: 35px;
+   
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -326,7 +329,7 @@ footer svg {
 
 .top-button a {
     display: block;
-    padding: 10px;
+    padding: 11px;
     background-color: #ffffffe8;
     border-radius: 50%;
     width: var(--taille-bouton);
@@ -348,10 +351,16 @@ footer svg {
 }
 
 /* ======== credits & warning ========*/
+/*
+Par : Titouan Moquet 
+*/
+
 .popup-credit {
     background-color: #fff;
     position: fixed;
-    right: -170px;
+    /*right: -170px;
+    bottom: 20px;*/
+    left: -170px;
     bottom: 20px;
     transition: 0.3s;
     padding: 15px 15px 15px 15px;
@@ -359,8 +368,9 @@ footer svg {
     text-align: end;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    border-radius: 5px 0 0 5px;
+    border-radius: 0 5px 5px 0;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: left;
     align-items: center;
     z-index: 4;
@@ -372,18 +382,20 @@ footer svg {
 .popup-credit p {
     margin: 0;
     font-size: 18px;
-    margin-left: -4px;
+    margin-left: auto;
+
 }
 
 .popup-credit svg {
     width: 25px;
     height: 25px;
-    margin-right: 25px;
+    /*margin-right: 25px;*/
+    margin-left: auto;
 
 }
 
 .popup-credit:hover {
-    right: -5px;
+    left: -5px;
 
 }
 
@@ -801,7 +813,8 @@ Credit : Titouan Moquet
 }
 
 #mlk header {
-    background-image: url(assets/images/personnages/background-mlk.png);
+    /*background-image: url(assets/images/personnages/background-mlk.png);*/
+    background-image: url(assets/images/personnages/images_a_renommer_et_sourcer/C-etait-le-dernier-appel-de-Martin-Luther-King.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -816,7 +829,7 @@ Credit : Titouan Moquet
     padding: 10px;
     box-shadow: 0px 0px 10px #0000002a;
     margin-right: 3%;
-    margin-left: 3%;
+    margin-left: 2%;
     margin-top: 1.5em;
     width: fit-content;
     border-radius: 10px;
@@ -1231,6 +1244,7 @@ Credit : Titouan Moquet
         bottom: 0;
         left: 0;
         right: 0;
+        border-radius: 0;
     }
 
     #mlk header ul li {
@@ -1249,8 +1263,12 @@ Credit : Titouan Moquet
         margin-top: 1em;
     }
 
-    #mlk section:nth-of-type(2) .livres>div>div {
+    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
         margin-bottom: 0;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
+        margin-bottom: 20px;
     }
 
     /*galerie */
@@ -2173,7 +2191,7 @@ Credit : Titouan Moquet
     gap: 1em;
 }
 
-.main-fg section:nth-child(3) > div:last-child > div {
+.main-fg section:nth-child(3)>div:last-child>div {
     box-sizing: border-box;
 
     padding: 1.5em 2em;
@@ -2767,24 +2785,24 @@ Credit : Titouan Moquet
         height: 16em;
     }
 
-    .main-fg section:nth-child(3) > div:last-child > div {
+    .main-fg section:nth-child(3)>div:last-child>div {
         flex-direction: column;
     }
 
-    .main-fg section:nth-child(3) > div:last-child > div img {
+    .main-fg section:nth-child(3)>div:last-child>div img {
         height: 10em;
     }
 
-    .main-fg section:nth-child(3) > div:last-child > div > div {
+    .main-fg section:nth-child(3)>div:last-child>div>div {
         height: 10em;
         width: 12em;
     }
 
-    .main-fg section:nth-child(3) > div:last-child > div p {
+    .main-fg section:nth-child(3)>div:last-child>div p {
         text-align: center;
     }
 
-    .main-fg section:nth-child(3) > div:last-child > div p {
+    .main-fg section:nth-child(3)>div:last-child>div p {
         /* bug  "z-index n’a aucun effet sur cet élément, car il ne s’agit pas d’un élément positionné.
         Essayez de définir sa propriété position avec une valeur différente de static"*/
         z-index: 2;
@@ -2792,11 +2810,12 @@ Credit : Titouan Moquet
 
 
 
-    .section-lieux{
+    .section-lieux {
         gap: 1em;
     }
 
-    .lieu-card > div, .lieu-card-visite > div {
+    .lieu-card>div,
+    .lieu-card-visite>div {
         flex-direction: column;
         width: 90%;
         box-sizing: border-box;
@@ -2812,9 +2831,10 @@ Credit : Titouan Moquet
         margin: 1em;
     }
 
-    .lieu-card, .lieu-card-visite {
+    .lieu-card,
+    .lieu-card-visite {
         padding: 0;
-        margin: 0;   
+        margin: 0;
     }
 
 
@@ -2853,7 +2873,7 @@ Credit : Titouan Moquet
     }
 
 
-    .main-fg > section:last-of-type div:nth-child(2) img {
+    .main-fg>section:last-of-type div:nth-child(2) img {
         width: 90vw;
         height: 12em;
     }
@@ -2861,17 +2881,17 @@ Credit : Titouan Moquet
 
 
     .section-lieux header p,
-    .section-oeuvres > div:first-child p,
-    .main-fg > section:last-of-type p{
+    .section-oeuvres>div:first-child p,
+    .main-fg>section:last-of-type p {
         margin-bottom: 0.5em;
     }
 
-    .section-oeuvres > div:first-child,
-    .main-fg > section:last-of-type div:nth-child(1) {
+    .section-oeuvres>div:first-child,
+    .main-fg>section:last-of-type div:nth-child(1) {
         margin: 0 0 2em 0;
     }
 
-    .main-fg > section:last-of-type{
+    .main-fg>section:last-of-type {
         margin-bottom: 4em !important;
     }
 

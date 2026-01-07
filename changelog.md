@@ -8,6 +8,10 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 
 Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [changelog](pages/changelog_personnages.md)
 
+## Version 2.1.1 : 07/01/2026
+> V1.2.7 Personnages - 07/01/2026
+- change position of top button & popup credit
+
 ## Version 2.1.1 : 06/01/2026
 (Titouan)
 > V1.2.6 Personnages : 06/01/2026

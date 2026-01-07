@@ -11,8 +11,16 @@ Differentes versions de mes pages, et des modifications que j'ai fait
 ## To do:
 - ~~add title img~~
 - translate all file
-- add new img 
+
 - add credit to img
+
+changer popup credit
+
+## Version 1.2.7 : 07/01/2026
+- rename image
+- adding images to MLK page
+- change position of top button & popup credit
+
 
 ## Version 1.2.6 : 06/01/2026
 - changelog fixes
