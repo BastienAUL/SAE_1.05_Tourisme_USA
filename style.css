@@ -2347,6 +2347,11 @@ Credit : Titouan Moquet
 
 }
 
+
+/* LIEU & LIEU VISITE */
+
+
+
 .section-lieux {
     background: none !important;
     box-shadow: none !important;
@@ -2401,7 +2406,13 @@ Credit : Titouan Moquet
     box-shadow: var(--drop-shadow-0-25);
 
     width: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .lieu-card:nth-child(n+3),
 .lieu-card-visite:nth-child(n+3) {
@@ -2465,7 +2476,7 @@ Credit : Titouan Moquet
     text-align: left;
 
     align-items: center;
-    margin: 1em 0 0 1.5em;
+
     gap: 2em;
 
     text-wrap: wrap;
@@ -2485,6 +2496,7 @@ Credit : Titouan Moquet
     padding: 0;
 
     position: relative;
+    align-self: flex-start;
 
     margin-left: 1em;
 }
@@ -2495,6 +2507,7 @@ Credit : Titouan Moquet
     font-weight: 100;
     font-size: 1.3em;
     margin: 0;
+    padding : 0.5em 1em;
 }
 
 
@@ -2505,6 +2518,60 @@ Credit : Titouan Moquet
     object-fit: cover;
     border-radius: calc(var(--border-radius-bloc) / 2);
 }
+
+
+/* Version Classique */
+
+
+
+
+.section-lieux{
+    gap: 1em;
+}
+
+.lieu-card > div, .lieu-card-visite > div {
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.zigzag-container img {
+    width: 100%;
+}
+
+.zigzag-container h4 {
+    line-height: 1em;
+    margin: 1em;
+}
+
+.lieu-card, .lieu-card-visite {
+    padding: 0;
+    margin: 0;   
+}
+
+.cercles-lieu,
+.cercles-visite {
+    display: none;
+}
+
+.lieu-card-visite,
+.lieu-card {
+    width: 100%;
+    margin-top: 1em !important;
+}
+
+
+
+
+
+
+
+/* FIN */
+
+
+
+
 
 .section-oeuvres {
     background: none !important;
@@ -2553,7 +2620,6 @@ Credit : Titouan Moquet
 
     width: 100%;
     margin: 0 auto;
-    padding: 2em 0;
 }
 
 
@@ -2733,21 +2799,14 @@ Credit : Titouan Moquet
     box-shadow: var(--drop-shadow-0-5);
 }
 
+
+
+
 /* Responsive */
 
-/* Format MAC */
-
-@media screen and (max-width: 1024px) {
-
-    /* Page Forrest Gump */
 
 
-
-}
-
-/* Format Téléphone */
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) { /* Format Téléphone */
 
     /* Oeuvres */
 
@@ -2875,11 +2934,7 @@ Credit : Titouan Moquet
         box-shadow: var(--drop-shadow-0-25) !important;
     }
 
-    .lieu-card-visite,
-    .lieu-card {
-        width: 100%;
-        margin-top: 1em !important;
-    }
+
 
 
     .main-fg>section:last-of-type div:nth-child(2) img {
@@ -2904,7 +2959,82 @@ Credit : Titouan Moquet
         margin-bottom: 4em !important;
     }
 
+
+
+
+
+    .section-lieux header p,
+    .section-oeuvres > div:first-child p,
+    .main-fg > section:last-of-type p{
+        margin-bottom: 0.5em;
+    }
+
 }
+
+/* Autre Format */ 
+
+
+
+@media screen and (min-width: 1524px) and (max-width: 1920px){
+
+    .section-lieux{
+        gap: 3em;
+    }
+
+    .lieu-card > div, .lieu-card-visite > div {
+        flex-direction: row ;
+        width: 100%;
+        box-sizing: content-box;
+        margin-bottom: 0;  
+    }
+
+    .zigzag-container img {
+        width: 35em;
+    }
+
+    .zigzag-container h4 {
+        line-height: normal;
+        margin: 0.5em;
+    }
+
+    .lieu-card, .lieu-card-visite {
+        padding: 2em;
+        width: 65%;  
+        display: block !important; 
+    }
+
+    .cercles-lieu,
+    .cercles-visite {
+        display: block;
+    }
+
+
+    .lieu-card:nth-child(n+3),
+    .lieu-card-visite:nth-child(n+3) {
+        margin-top: -5em !important;
+    }
+
+
+}
+
+@media screen and (min-width: 1920px){
+
+    .zigzag-container img {
+        height: 45em;
+    }
+
+    .zigzag-container h4 {
+        margin: 2em 2em 0 2em;
+        align-self: center;
+    }
+
+    .lieu-card > div, .lieu-card-visite > div {
+        flex-direction: column-reverse;
+        margin: 2em;
+    }
+
+}
+
 
 
 /* ======== PAGE LIEUX ========*/

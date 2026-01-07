@@ -8,9 +8,14 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 
 Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [changelog](pages/changelog_personnages.md)
 
-## Version 2.1.1 : 07/01/2026
+## Version 2.1.2 : 07/01/2026
+(Titouan)
 > V1.2.7 Personnages - 07/01/2026
 - change position of top button & popup credit
+(Flavien)
+> Update Responsive Fg : 07/01/2026
+- Adjusts the "lieux" and "lieux à visiter" sections to the format
+- Improvements to certain padding and margin behaviour in several places
 
 ## Version 2.1.1 : 06/01/2026
 (Titouan)
