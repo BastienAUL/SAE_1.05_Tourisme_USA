@@ -17,6 +17,10 @@ Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [c
 > V1.2.6 Personnages : 06/01/2026
 - changelog fixes
 
+- add top buton all page
+
+
+
 ## Version 2.1.0 : 04/01/2026
 (Flavien)
 > Update Forrest Gump "Lieux" container mobile: 04/01/2026

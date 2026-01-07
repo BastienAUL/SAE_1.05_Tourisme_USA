@@ -21,6 +21,8 @@ changer popup credit
 - adding images to MLK page
 - change position of top button & popup credit
 
+- add top button all page
+
 
 ## Version 1.2.6 : 06/01/2026
 - changelog fixes

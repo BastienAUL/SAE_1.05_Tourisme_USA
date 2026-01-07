@@ -1,627 +1,619 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <title>Lieux</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <title>Lieux</title>
+</head>
 
-  <body id="lieux-page">
-    <header>
-        <nav class="navbar">
-            <input type="checkbox" id="menu-toggle">
+<body id="lieux-page">
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle">
 
 
-            <div class="nav-top">
-                <ul class="nav-left">
-                    <li><a href="/index.html"> <img src="/assets/images/usa-nav-icon.png" alt="logo">HOME</a></li>
-                </ul>
+      <div class="nav-top">
+        <ul class="nav-left">
+          <li><a href="/index.html"> <img src="/assets/images/usa-nav-icon.png" alt="logo">HOME</a></li>
+        </ul>
 
-                <label for="menu-toggle" class="burger"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path
-                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
-                    </svg></label>
-            </div>
-
-            <ul class="nav-right">
-                <li class="has-submenu">
-                    <a href="/pages/oeuvres.html"><img src="/assets/images/art-nav.png">OEUVRES</a>
-                    <ul class="submenu">
-                        <li><a href="/pages/forrest-gump.html">Forrest Gump</a></li>
-                        <li><a href="/pages/travaux.html">Nighthawks</a></li>
-                        <li><a href="/pages/travaux.html">La statue de la liberté</a></li>
-                        <li><a href="/pages/travaux.html">No.5</a></li>
-                        <li><a href="/pages/travaux.html">Best buddies</a></li>
-                        <li><a href="/pages/travaux.html">Heat</a></li>
-                        <li><a href="/pages/travaux.html">Hope</a></li>
-                        <li><a href="/pages/travaux.html">American Gothic</a></li>
-                        <li><a href="/pages/travaux.html">Marilyn Monroe</a></li>
-                        <li><a href="/pages/travaux.html">L'odyssée de l'espace</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-submenu">
-                    <a href="/pages/personnages.html"><img src="/assets/images/personnage-nav.png">PERSONNAGES</a>
-                    <ul class="submenu">
-                        <li><a href="/pages/martin-luther-king.html">Martin Luther King Jr</a></li>
-                        <li><a href="/pages/travaux.html">Barack Obama</a></li>
-                        <li><a href="/pages/travaux.html">George Washington</a></li>
-                        <li><a href="/pages/travaux.html">Harriet Tubman</a></li>
-                        <li><a href="/pages/travaux.html">Abraham Lincoln</a></li>
-                        <li><a href="/pages/travaux.html">Thomas Jefferson</a></li>
-                        <li><a href="/pages/travaux.html">Rosa Parks</a></li>
-                        <li><a href="/pages/travaux.html">Benjamin Franklin</a></li>
-                        <li><a href="/pages/travaux.html">John F. Kennedy</a></li>
-                        <li><a href="/pages/travaux.html">Elvis Presley</a></li>
-                        <li><a href="/pages/travaux.html">Neil Armstrong</a></li>
-                        <li><a href="/pages/travaux.html">Michael Jackson</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-submenu">
-                    <a href="/pages/lieux.html"><img src="/assets/images/lieu-nav.png">LIEUX</a>
-                    <ul class="submenu">
-                        <li><a href="/pages/yellowstone.html">Yellowstone</a></li>
-                        <li><a href="/pages/travaux.html">Grand Canyon</a></li>
-                        <li><a href="/pages/travaux.html">Monument Valley</a></li>
-                        <li><a href="/pages/travaux.html">Lake Tahoe</a></li>
-                        <li><a href="/pages/travaux.html">Golden Gate Bridge</a></li>
-                        <li><a href="/pages/travaux.html">The Wave</a></li>
-                        <li><a href="/pages/travaux.html">Route 66</a></li>
-                        <li><a href="/pages/travaux.html">Yosemite National Park</a></li>
-                        <li><a href="/pages/travaux.html">Arches National Park</a></li>
-                        <li><a href="/pages/travaux.html">Mount Rushmore</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="lieu">
-      <section id="lieux-list">
-        <article>
-          <h2>Yellowstone National Park</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de Yellowstone</h3>
-              <ul>
-                <li><strong>Localisation :</strong> Wyoming, Montana, Idaho</li>
-                <li><strong>Type :</strong> Parc national</li>
-                <li><strong>Superficie :</strong> 8 983 km²</li>
-                <li><strong>Visiteurs/an :</strong> ~4,9 millions</li>
-                <li>
-                  <strong>Création :</strong> 1872 (1er parc national au monde)
-                </li>
-                <li>
-                  <strong>Fait marquant :</strong> Plus de 500 geysers actifs
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-Yellowstone.jpg"
-              alt="Vue du Grand Prismatic
-            Spring à Yellowstone" />
-          </div>
-          <p>
-            Yellowstone, premier parc national au monde, offre un spectacle
-            géologique et naturel unique : geysers incandescents comme Old
-            Faithful, bassins aux couleurs surnaturelles comme le Grand
-            Prismatic, forêts, vallées et rivières qui abritent une faune
-            abondante (bisons, cerfs, ours et loups). Parcourez les routes
-            panoramiques au lever du soleil pour observer la vie sauvage,
-            promenez‑vous sur les passerelles en toute sécurité autour des
-            formations géothermiques et prévoyez plusieurs jours pour profiter
-            calmement des sites majeurs. Meilleure période : fin mai à
-            septembre, mais chaque saison révèle une facette différente du parc.
-          </p>
-          <a id="button" href="/pages/yellowstone.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Grand Canyon</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos du Grand Canyon</h3>
-              <ul>
-                <li><strong>Localisation :</strong> Arizona</li>
-                <li><strong>Type :</strong> Parc national</li>
-                <li>
-                  <strong>Dimensions :</strong> 446 km de long, jusqu'à 1 800 m
-                  de profondeur
-                </li>
-                <li><strong>Visiteurs/an :</strong> ~6 millions</li>
-                <li><strong>Création :</strong> 1919</li>
-                <li>
-                  <strong>Fait marquant :</strong> Roches vieilles de 2
-                  milliards d'années
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-grandCanyon.jpg"
-              alt="Panorama du Grand Canyon au coucher du soleil" />
-          </div>
-          <p>
-            Le Grand Canyon fascine par ses immensités sculptées par le Colorado
-            : falaises striées de couleurs changeantes, points de vue
-            vertigineux et sentiers historiques qui descendent vers les gorges.
-            Que vous choisissiez les belvédères faciles d'accès du South Rim,
-            une randonnée exigeante vers le fond du canyon ou un survol en
-            hélicoptère, l'échelle et la profondeur du site laissent une
-            impression durable. Pour une visite plus tranquille, privilégiez le
-            printemps ou l'automne en évitant les heures de forte affluence.
-          </p>
-          <a id="button" href="/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Monument Valley</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de Monument Valley</h3>
-              <ul>
-                <li>
-                  <strong>Localisation :</strong> Arizona / Utah (Réserve
-                  Navajo)
-                </li>
-                <li><strong>Type :</strong> Parc tribal Navajo</li>
-                <li><strong>Superficie :</strong> 120 km²</li>
-                <li><strong>Visiteurs/an :</strong> ~500 000</li>
-                <li><strong>Altitude :</strong> 1 500 à 1 800 m</li>
-                <li>
-                  <strong>Fait marquant :</strong> Décor de nombreux westerns
-                  hollywoodiens
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-monumentValley.jpg"
-              alt="Buttes rouges de
-            Monument Valley au lever du soleil" />
-          </div>
-          <p>
-            Monument Valley, avec ses silhouettes de buttes rouges émergeant du
-            désert, incarne l'image mythique de l'Ouest américain et offre un
-            décor exceptionnel pour la photographie, les balades en 4x4 et la
-            découverte de la culture navajo. Les routes et pistes traversant la
-            vallée proposent des points de vue spectaculaires au lever et au
-            coucher du soleil ; des tours guidés par des Navajos permettent
-            d'explorer des sites autrement inaccessibles tout en apprenant
-            l'histoire locale. Prévoyez de l'eau, du soleil et du respect pour
-            les lieux sacrés.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Lake Tahoe</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de Lake Tahoe</h3>
-              <ul>
-                <li><strong>Localisation :</strong> Californie / Nevada</li>
-                <li><strong>Type :</strong> Lac alpin</li>
-                <li><strong>Superficie :</strong> 495 km²</li>
-                <li>
-                  <strong>Profondeur max :</strong> 501 m (2e lac le plus
-                  profond des USA)
-                </li>
-                <li><strong>Altitude :</strong> 1 897 m</li>
-                <li>
-                  <strong>Fait marquant :</strong> Eau si claire qu'on voit
-                  jusqu'à 21 m de profondeur
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-lacTahoe.jpg"
-              alt="Lac Tahoe et montagnes
-            en arrière-plan" />
-          </div>
-          <p>
-            Lake Tahoe est un grand lac d'altitude aux eaux d'un bleu profond,
-            niché entre montagnes et forêts, idéal pour les activités nautiques
-            en été (bateau, paddle, baignade) et le ski en hiver sur les
-            domaines alentour. Les rives offrent des villages accueillants, des
-            sentiers pour randonnée et VTT, ainsi que des panoramas alpins
-            remarquables ; la région est parfaite pour un séjour détente ou
-            actif selon la saison. Meilleure période : juin–septembre pour les
-            sports d'eau, décembre–mars pour le ski.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Golden Gate Bridge</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos du Golden Gate Bridge</h3>
-              <ul>
-                <li>
-                  <strong>Localisation :</strong> San Francisco, Californie
-                </li>
-                <li><strong>Type :</strong> Pont suspendu</li>
-                <li>
-                  <strong>Longueur :</strong> 2 737 m (travée principale : 1 280
-                  m)
-                </li>
-                <li><strong>Hauteur des pylônes :</strong> 227 m</li>
-                <li><strong>Inauguration :</strong> 1937</li>
-                <li>
-                  <strong>Fait marquant :</strong> ~10 millions de véhicules le
-                  traversent chaque année
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/liu-goldenGateBridge.jpg"
-              alt="Golden Gate Bridge
-            dans la brume" />
-          </div>
-          <p>
-            Le Golden Gate Bridge, icône de San Francisco, séduit par son
-            architecture art déco et sa couleur « international orange » qui se
-            détache sur la baie et souvent dans la brume matinale. Promenez‑vous
-            ou faites du vélo sur le pont pour des vues imprenables sur la
-            ville, Alcatraz et le Pacifique ; les points de vue de Battery
-            Spencer et Crissy Field sont particulièrement photogéniques.
-            Attention au vent et à la brume : habillez‑vous chaudement même en
-            été.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>The Wave</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de The Wave</h3>
-              <ul>
-                <li>
-                  <strong>Localisation :</strong> Arizona (Vermilion Cliffs
-                  National Monument)
-                </li>
-                <li><strong>Type :</strong> Formation géologique de grès</li>
-                <li>
-                  <strong>Accès :</strong> Limité à 64 personnes/jour (permis
-                  obligatoire)
-                </li>
-                <li>
-                  <strong>Âge des roches :</strong> ~190 millions d'années
-                  (Jurassique)
-                </li>
-                <li>
-                  <strong>Randonnée :</strong> ~10 km aller-retour, sans sentier
-                  balisé
-                </li>
-                <li>
-                  <strong>Fait marquant :</strong> Formations ondulées uniques
-                  au monde
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-theWave.jpg"
-              alt="Formations ondulées de
-            grès à The Wave" />
-          </div>
-          <p>
-            The Wave, formation de grès ondulé dans le désert de Vermilion
-            Cliffs, est une merveille géologique aux stries rouges et blanches
-            d'une beauté presque irréelle ; l'accès est strictement limité et
-            nécessite un permis obtenu par tirage au sort afin de préserver le
-            site fragile. La randonnée jusqu'à The Wave est exigeante (terrain
-            ouvert, sans balisage) et demande une bonne préparation, de
-            l'orientation et des réserves d'eau ; les photographes y trouvent
-            des compositions spectaculaires au lever et au coucher du soleil.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Route 66</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de la Route 66</h3>
-              <ul>
-                <li>
-                  <strong>Localisation :</strong> De Chicago (Illinois) à Santa
-                  Monica (Californie)
-                </li>
-                <li><strong>Type :</strong> Route historique</li>
-                <li><strong>Longueur :</strong> 3 940 km</li>
-                <li>
-                  <strong>États traversés :</strong> 8 (Illinois, Missouri,
-                  Kansas, Oklahoma, Texas, Nouveau-Mexique, Arizona, Californie)
-                </li>
-                <li><strong>Création :</strong> 1926 (déclassée en 1985)</li>
-                <li>
-                  <strong>Fait marquant :</strong> Surnommée « Main Street of
-                  America »
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-route66.jpg"
-              alt="Route 66 avec
-            enseignes rétro et motels" />
-          </div>
-          <p>
-            La Route 66, légendaire « Main Street of America », est une route
-            historique qui traverse des petites villes, des relais rétro et des
-            panoramas changeants, offrant une plongée nostalgique dans
-            l'Amérique du XXe siècle. Voyages en voiture, arrêts dans des diners
-            vintage, motels à néons et musées locaux composent l'expérience ;
-            planifiez vos étapes pour profiter des curiosités régionales et des
-            détours pittoresques. Idéal pour un road‑trip au rythme détendu et
-            chargé d'histoire.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Yosemite National Park</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de Yosemite</h3>
-              <ul>
-                <li>
-                  <strong>Localisation :</strong> Californie (Sierra Nevada)
-                </li>
-                <li><strong>Type :</strong> Parc national</li>
-                <li><strong>Superficie :</strong> 3 082 km²</li>
-                <li><strong>Visiteurs/an :</strong> ~4 millions</li>
-                <li><strong>Création :</strong> 1890</li>
-                <li>
-                  <strong>Fait marquant :</strong> El Capitan, plus grande paroi
-                  de granite au monde (900 m)
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-yosemiteNationalPark.jpg"
-              alt="Paroi de granite et vallée de Yosemite" />
-          </div>
-          <p>
-            Yosemite émerveille par ses parois de granite monumentales (Half
-            Dome, El Capitan), ses vallées profondes, ses cascades puissantes et
-            ses forêts anciennes : un paradis pour l'escalade, la randonnée et
-            la photographie de paysages. Les sentiers vont de promenades
-            accessibles à des ascensions techniques ; réservez l'hébergement et
-            les permis bien à l'avance en haute saison et respectez les règles
-            de sécurité face à la faune et aux parois. Meilleure période : fin
-            printemps à début automne pour les cascades et l'accès routier.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Arches National Park</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos d'Arches</h3>
-              <ul>
-                <li><strong>Localisation :</strong> Utah (près de Moab)</li>
-                <li><strong>Type :</strong> Parc national</li>
-                <li><strong>Superficie :</strong> 310 km²</li>
-                <li><strong>Visiteurs/an :</strong> ~1,8 million</li>
-                <li><strong>Création :</strong> 1971</li>
-                <li>
-                  <strong>Fait marquant :</strong> Plus de 2 000 arches
-                  naturelles répertoriées
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-archNationalPark.jpg"
-              alt="Delicate Arch à Arches
-            National Park au coucher du soleil" />
-          </div>
-          <p>
-            Arches présente plus de 2 000 arches naturelles sculptées dans la
-            roche rouge, créant un paysage lunaire où des sentiers courts mènent
-            à des merveilles comme Delicate Arch et Landscape Arch. Les
-            promenades sont souvent courtes mais soutenues par le soleil et le
-            sable ; apportez eau, protection solaire et matériel photo pour
-            capter les jeux de lumière au matin et au crépuscule. Le parc se
-            visite bien en 1–2 jours, en combinant randonnées et panoramas
-            depuis la route.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-
-        <article>
-          <h2>Mount Rushmore</h2>
-          <div id="container-image-aside">
-            <aside>
-              <h3>À propos de Mount Rushmore</h3>
-              <ul>
-                <li>
-                  <strong>Localisation :</strong> Dakota du Sud (Black Hills)
-                </li>
-                <li><strong>Type :</strong> Mémorial national</li>
-                <li><strong>Altitude :</strong> 1 745 m</li>
-                <li><strong>Hauteur des visages :</strong> 18 m chacun</li>
-                <li><strong>Visiteurs/an :</strong> ~3 millions</li>
-                <li>
-                  <strong>Création :</strong> 1927–1941 (14 ans de travaux)
-                </li>
-                <li>
-                  <strong>Fait marquant :</strong> Représente Washington,
-                  Jefferson, Roosevelt et Lincoln
-                </li>
-              </ul>
-            </aside>
-            <img src="/assets/images/lieux/lieu-montRushmore.jpg"
-              alt="Sculpture des visages
-            à Mount Rushmore" />
-          </div>
-          <p>
-            Mount Rushmore, sculpture monumentale des visages de quatre
-            présidents américains taillée dans le granit, symbolise l'histoire
-            nationale et attire pour son impressionnante réalisation artistique
-            et son cadre dans les Black Hills. Le site propose un centre
-            d'accueil, des sentiers courts et des points d'observation ;
-            combinez la visite avec les attractions locales (Custer State Park,
-            Badlands) pour enrichir votre découverte de la région. Visites
-            matinales ou en fin d'après‑midi recommandées pour éviter la foule.
-          </p>
-          <a id="button" href="/pages/travaux.html">En voir plus</a>
-        </article>
-      </section>
-      <section id="conseils-pratiques">
-        <header>
-          <h2>Conseils pratiques pour votre voyage</h2>
-          <h3>
-            Tout ce qu'il faut savoir avant de partir à la découverte de l'Ouest
-            américain
-          </h3>
-        </header>
-        <div>
-          <button>
-            <img src="/assets/images/lieux/passeport-américain.jpg"
-              alt="visa" />
-            <h3>Visa et formalités</h3>
-            <aside>
-
-              <p>
-                Pour entrer aux États-Unis, vous devez posséder un passeport
-                biométrique valide et obtenir une autorisation ESTA en ligne au
-                moins 72h avant le départ. Cette autorisation coûte 21$, reste
-                valable 2 ans et permet des séjours de 90 jours maximum. Aucun
-                visa n'est nécessaire pour un séjour touristique.
-              </p>
-
-            </aside>
-          </button>
-
-          <button>
-            <img src="/assets/images/lieux/location-voiture.jpg"
-              alt="location de voiture" />
-            <h3>Location de voiture</h3>
-            <aside>
-
-              <p>
-                La voiture est indispensable pour explorer l'Ouest américain.
-                Réservez à l'avance pour obtenir de meilleurs tarifs.
-                Privilégiez un SUV pour les pistes des parcs nationaux. L'âge
-                minimum est généralement de 21 ans, et le permis français est
-                accepté. Pensez à prendre l'assurance tous risques et un GPS.
-              </p>
-
-            </aside>
-          </button>
-
-          <button>
-            <img src="/assets/images/lieux/hebergement.jpg"
-              alt="hébergement" />
-            <h3>Hébergement</h3>
-            <aside>
-
-              <p>
-                Réservez les lodges à l'intérieur des parcs nationaux 6 à 12
-                mois à l'avance, surtout pour Yellowstone et Yosemite.
-                Alternatives : motels aux abords des parcs, campings
-                (réservation conseillée), ou Airbnb dans les villes proches.
-                Comptez entre 80$ et 200$ la nuit selon le confort.
-              </p>
-
-            </aside>
-          </button>
-
-          <button>
-            <img src="/assets/images/lieux/meteosaison.jpg"
-              alt="météo et saison" />
-            <h3>Météo et saison</h3>
-            <aside>
-
-              <p>
-                La meilleure période pour visiter l'Ouest américain est de mai à
-                septembre. Attention aux écarts de température : jusqu'à 40°C le
-                jour et 10°C la nuit dans le désert. En altitude (Yellowstone,
-                Yosemite), les nuits sont fraîches même en été. Évitez
-                juillet-août si vous craignez la chaleur et la foule.
-              </p>
-
-            </aside>
-          </button>
-
-          <button>
-            <img src="/assets/images/lieux/equipement-voyage.jpg"
-              alt="équipement de voyage" />
-            <h3>Équipement de voyage</h3>
-            <aside>
-
-              <p>
-                Emportez des chaussures de randonnée confortables, des vêtements
-                en couches, un coupe-vent, un chapeau et de la crème solaire.
-                Prévoyez au moins 3 litres d'eau par personne et par jour.
-                N'oubliez pas une glacière pour la voiture, des cartes
-                hors-ligne sur votre téléphone et une batterie externe.
-              </p>
-
-            </aside>
-          </button>
-        </div>
-      </section>
-
-      <section id="galerie-images">
-        <h2>Une image vaut mille mots</h2>
-        <article>
-          <img src="/assets/images/lieux/paysage1.jpg"
-            alt="Collage des plus beaux lieux des États-Unis" />
-        </article>
-        <article>
-          <img src="/assets/images/lieux/paysage2.jpg"
-            alt="Collage des plus beaux lieux des États-Unis" />
-        </article>
-        <article>
-          <img src="/assets/images/lieux/paysage3.jpg"
-            alt="Collage des plus beaux lieux des États-Unis" />
-        </article>
-        <article>
-          <img src="/assets/images/lieux/paysage4.jpg"
-            alt="Collage des plus beaux lieux des États-Unis" />
-        </article>
-      </section>
-
-      <aside class="popup-credit">
-        <svg xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path
-            fill="#003385"
-            d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z" /></svg>
-        <p> Page par Ako.D </p>
-      </aside>
-    </main>
-    <footer>
-      <div>
-        <h1>Pour nous contacter :</h1>
-        <div>
-          <section>
-            <h2>Email</h2>
-            <p>contact@visit-usa.com</p>s
-          </section>
-
-          <section>
-            <h2>Téléphone</h2>
-            <p>+1 202 555 0198</p>
-          </section>
-
-          <section>
-            <h2>Adresse</h2>
-            <p>1600 Pennsylvania Avenue NW, Washington, D.C.</p>
-          </section>
-        </div>
-      </div>
-      <div>
-        <a href="/pages/cgu.html">Mentions légales</a> |
-        <a href="/pages/pdc.html">Politique de confidentialité</a>
-      </div>
-      <div>
-        <p>© 2025 Office de Tourisme des États-Unis – Tous droits
-          réservés.</p>
-        <a href="https://github.com/BastienAUL/SAE_1.05_DEV-WEB"><svg
-            xmlns="http://www.w3.org/2000/svg"
+        <label for="menu-toggle" class="burger"><svg xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-            <path fill="#ffffff"
-              d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-          </svg></a>
+            <path
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+          </svg></label>
       </div>
-    </footer>
-  </body>
+
+      <ul class="nav-right">
+        <li class="has-submenu">
+          <a href="/pages/oeuvres.html"><img src="/assets/images/art-nav.png">OEUVRES</a>
+          <ul class="submenu">
+            <li><a href="/pages/forrest-gump.html">Forrest Gump</a></li>
+            <li><a href="/pages/travaux.html">Nighthawks</a></li>
+            <li><a href="/pages/travaux.html">La statue de la liberté</a></li>
+            <li><a href="/pages/travaux.html">No.5</a></li>
+            <li><a href="/pages/travaux.html">Best buddies</a></li>
+            <li><a href="/pages/travaux.html">Heat</a></li>
+            <li><a href="/pages/travaux.html">Hope</a></li>
+            <li><a href="/pages/travaux.html">American Gothic</a></li>
+            <li><a href="/pages/travaux.html">Marilyn Monroe</a></li>
+            <li><a href="/pages/travaux.html">L'odyssée de l'espace</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="/pages/personnages.html"><img src="/assets/images/personnage-nav.png">PERSONNAGES</a>
+          <ul class="submenu">
+            <li><a href="/pages/martin-luther-king.html">Martin Luther King Jr</a></li>
+            <li><a href="/pages/travaux.html">Barack Obama</a></li>
+            <li><a href="/pages/travaux.html">George Washington</a></li>
+            <li><a href="/pages/travaux.html">Harriet Tubman</a></li>
+            <li><a href="/pages/travaux.html">Abraham Lincoln</a></li>
+            <li><a href="/pages/travaux.html">Thomas Jefferson</a></li>
+            <li><a href="/pages/travaux.html">Rosa Parks</a></li>
+            <li><a href="/pages/travaux.html">Benjamin Franklin</a></li>
+            <li><a href="/pages/travaux.html">John F. Kennedy</a></li>
+            <li><a href="/pages/travaux.html">Elvis Presley</a></li>
+            <li><a href="/pages/travaux.html">Neil Armstrong</a></li>
+            <li><a href="/pages/travaux.html">Michael Jackson</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="/pages/lieux.html"><img src="/assets/images/lieu-nav.png">LIEUX</a>
+          <ul class="submenu">
+            <li><a href="/pages/yellowstone.html">Yellowstone</a></li>
+            <li><a href="/pages/travaux.html">Grand Canyon</a></li>
+            <li><a href="/pages/travaux.html">Monument Valley</a></li>
+            <li><a href="/pages/travaux.html">Lake Tahoe</a></li>
+            <li><a href="/pages/travaux.html">Golden Gate Bridge</a></li>
+            <li><a href="/pages/travaux.html">The Wave</a></li>
+            <li><a href="/pages/travaux.html">Route 66</a></li>
+            <li><a href="/pages/travaux.html">Yosemite National Park</a></li>
+            <li><a href="/pages/travaux.html">Arches National Park</a></li>
+            <li><a href="/pages/travaux.html">Mount Rushmore</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="lieu">
+    <section id="lieux-list">
+      <article id="top">
+        <h2>Yellowstone National Park</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de Yellowstone</h3>
+            <ul>
+              <li><strong>Localisation :</strong> Wyoming, Montana, Idaho</li>
+              <li><strong>Type :</strong> Parc national</li>
+              <li><strong>Superficie :</strong> 8 983 km²</li>
+              <li><strong>Visiteurs/an :</strong> ~4,9 millions</li>
+              <li>
+                <strong>Création :</strong> 1872 (1er parc national au monde)
+              </li>
+              <li>
+                <strong>Fait marquant :</strong> Plus de 500 geysers actifs
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-Yellowstone.jpg" alt="Vue du Grand Prismatic
+            Spring à Yellowstone" />
+        </div>
+        <p>
+          Yellowstone, premier parc national au monde, offre un spectacle
+          géologique et naturel unique : geysers incandescents comme Old
+          Faithful, bassins aux couleurs surnaturelles comme le Grand
+          Prismatic, forêts, vallées et rivières qui abritent une faune
+          abondante (bisons, cerfs, ours et loups). Parcourez les routes
+          panoramiques au lever du soleil pour observer la vie sauvage,
+          promenez‑vous sur les passerelles en toute sécurité autour des
+          formations géothermiques et prévoyez plusieurs jours pour profiter
+          calmement des sites majeurs. Meilleure période : fin mai à
+          septembre, mais chaque saison révèle une facette différente du parc.
+        </p>
+        <a id="button" href="/pages/yellowstone.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Grand Canyon</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos du Grand Canyon</h3>
+            <ul>
+              <li><strong>Localisation :</strong> Arizona</li>
+              <li><strong>Type :</strong> Parc national</li>
+              <li>
+                <strong>Dimensions :</strong> 446 km de long, jusqu'à 1 800 m
+                de profondeur
+              </li>
+              <li><strong>Visiteurs/an :</strong> ~6 millions</li>
+              <li><strong>Création :</strong> 1919</li>
+              <li>
+                <strong>Fait marquant :</strong> Roches vieilles de 2
+                milliards d'années
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-grandCanyon.jpg" alt="Panorama du Grand Canyon au coucher du soleil" />
+        </div>
+        <p>
+          Le Grand Canyon fascine par ses immensités sculptées par le Colorado
+          : falaises striées de couleurs changeantes, points de vue
+          vertigineux et sentiers historiques qui descendent vers les gorges.
+          Que vous choisissiez les belvédères faciles d'accès du South Rim,
+          une randonnée exigeante vers le fond du canyon ou un survol en
+          hélicoptère, l'échelle et la profondeur du site laissent une
+          impression durable. Pour une visite plus tranquille, privilégiez le
+          printemps ou l'automne en évitant les heures de forte affluence.
+        </p>
+        <a id="button" href="/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Monument Valley</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de Monument Valley</h3>
+            <ul>
+              <li>
+                <strong>Localisation :</strong> Arizona / Utah (Réserve
+                Navajo)
+              </li>
+              <li><strong>Type :</strong> Parc tribal Navajo</li>
+              <li><strong>Superficie :</strong> 120 km²</li>
+              <li><strong>Visiteurs/an :</strong> ~500 000</li>
+              <li><strong>Altitude :</strong> 1 500 à 1 800 m</li>
+              <li>
+                <strong>Fait marquant :</strong> Décor de nombreux westerns
+                hollywoodiens
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-monumentValley.jpg" alt="Buttes rouges de
+            Monument Valley au lever du soleil" />
+        </div>
+        <p>
+          Monument Valley, avec ses silhouettes de buttes rouges émergeant du
+          désert, incarne l'image mythique de l'Ouest américain et offre un
+          décor exceptionnel pour la photographie, les balades en 4x4 et la
+          découverte de la culture navajo. Les routes et pistes traversant la
+          vallée proposent des points de vue spectaculaires au lever et au
+          coucher du soleil ; des tours guidés par des Navajos permettent
+          d'explorer des sites autrement inaccessibles tout en apprenant
+          l'histoire locale. Prévoyez de l'eau, du soleil et du respect pour
+          les lieux sacrés.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Lake Tahoe</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de Lake Tahoe</h3>
+            <ul>
+              <li><strong>Localisation :</strong> Californie / Nevada</li>
+              <li><strong>Type :</strong> Lac alpin</li>
+              <li><strong>Superficie :</strong> 495 km²</li>
+              <li>
+                <strong>Profondeur max :</strong> 501 m (2e lac le plus
+                profond des USA)
+              </li>
+              <li><strong>Altitude :</strong> 1 897 m</li>
+              <li>
+                <strong>Fait marquant :</strong> Eau si claire qu'on voit
+                jusqu'à 21 m de profondeur
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-lacTahoe.jpg" alt="Lac Tahoe et montagnes
+            en arrière-plan" />
+        </div>
+        <p>
+          Lake Tahoe est un grand lac d'altitude aux eaux d'un bleu profond,
+          niché entre montagnes et forêts, idéal pour les activités nautiques
+          en été (bateau, paddle, baignade) et le ski en hiver sur les
+          domaines alentour. Les rives offrent des villages accueillants, des
+          sentiers pour randonnée et VTT, ainsi que des panoramas alpins
+          remarquables ; la région est parfaite pour un séjour détente ou
+          actif selon la saison. Meilleure période : juin–septembre pour les
+          sports d'eau, décembre–mars pour le ski.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Golden Gate Bridge</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos du Golden Gate Bridge</h3>
+            <ul>
+              <li>
+                <strong>Localisation :</strong> San Francisco, Californie
+              </li>
+              <li><strong>Type :</strong> Pont suspendu</li>
+              <li>
+                <strong>Longueur :</strong> 2 737 m (travée principale : 1 280
+                m)
+              </li>
+              <li><strong>Hauteur des pylônes :</strong> 227 m</li>
+              <li><strong>Inauguration :</strong> 1937</li>
+              <li>
+                <strong>Fait marquant :</strong> ~10 millions de véhicules le
+                traversent chaque année
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/liu-goldenGateBridge.jpg" alt="Golden Gate Bridge
+            dans la brume" />
+        </div>
+        <p>
+          Le Golden Gate Bridge, icône de San Francisco, séduit par son
+          architecture art déco et sa couleur « international orange » qui se
+          détache sur la baie et souvent dans la brume matinale. Promenez‑vous
+          ou faites du vélo sur le pont pour des vues imprenables sur la
+          ville, Alcatraz et le Pacifique ; les points de vue de Battery
+          Spencer et Crissy Field sont particulièrement photogéniques.
+          Attention au vent et à la brume : habillez‑vous chaudement même en
+          été.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>The Wave</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de The Wave</h3>
+            <ul>
+              <li>
+                <strong>Localisation :</strong> Arizona (Vermilion Cliffs
+                National Monument)
+              </li>
+              <li><strong>Type :</strong> Formation géologique de grès</li>
+              <li>
+                <strong>Accès :</strong> Limité à 64 personnes/jour (permis
+                obligatoire)
+              </li>
+              <li>
+                <strong>Âge des roches :</strong> ~190 millions d'années
+                (Jurassique)
+              </li>
+              <li>
+                <strong>Randonnée :</strong> ~10 km aller-retour, sans sentier
+                balisé
+              </li>
+              <li>
+                <strong>Fait marquant :</strong> Formations ondulées uniques
+                au monde
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-theWave.jpg" alt="Formations ondulées de
+            grès à The Wave" />
+        </div>
+        <p>
+          The Wave, formation de grès ondulé dans le désert de Vermilion
+          Cliffs, est une merveille géologique aux stries rouges et blanches
+          d'une beauté presque irréelle ; l'accès est strictement limité et
+          nécessite un permis obtenu par tirage au sort afin de préserver le
+          site fragile. La randonnée jusqu'à The Wave est exigeante (terrain
+          ouvert, sans balisage) et demande une bonne préparation, de
+          l'orientation et des réserves d'eau ; les photographes y trouvent
+          des compositions spectaculaires au lever et au coucher du soleil.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Route 66</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de la Route 66</h3>
+            <ul>
+              <li>
+                <strong>Localisation :</strong> De Chicago (Illinois) à Santa
+                Monica (Californie)
+              </li>
+              <li><strong>Type :</strong> Route historique</li>
+              <li><strong>Longueur :</strong> 3 940 km</li>
+              <li>
+                <strong>États traversés :</strong> 8 (Illinois, Missouri,
+                Kansas, Oklahoma, Texas, Nouveau-Mexique, Arizona, Californie)
+              </li>
+              <li><strong>Création :</strong> 1926 (déclassée en 1985)</li>
+              <li>
+                <strong>Fait marquant :</strong> Surnommée « Main Street of
+                America »
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-route66.jpg" alt="Route 66 avec
+            enseignes rétro et motels" />
+        </div>
+        <p>
+          La Route 66, légendaire « Main Street of America », est une route
+          historique qui traverse des petites villes, des relais rétro et des
+          panoramas changeants, offrant une plongée nostalgique dans
+          l'Amérique du XXe siècle. Voyages en voiture, arrêts dans des diners
+          vintage, motels à néons et musées locaux composent l'expérience ;
+          planifiez vos étapes pour profiter des curiosités régionales et des
+          détours pittoresques. Idéal pour un road‑trip au rythme détendu et
+          chargé d'histoire.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Yosemite National Park</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de Yosemite</h3>
+            <ul>
+              <li>
+                <strong>Localisation :</strong> Californie (Sierra Nevada)
+              </li>
+              <li><strong>Type :</strong> Parc national</li>
+              <li><strong>Superficie :</strong> 3 082 km²</li>
+              <li><strong>Visiteurs/an :</strong> ~4 millions</li>
+              <li><strong>Création :</strong> 1890</li>
+              <li>
+                <strong>Fait marquant :</strong> El Capitan, plus grande paroi
+                de granite au monde (900 m)
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-yosemiteNationalPark.jpg" alt="Paroi de granite et vallée de Yosemite" />
+        </div>
+        <p>
+          Yosemite émerveille par ses parois de granite monumentales (Half
+          Dome, El Capitan), ses vallées profondes, ses cascades puissantes et
+          ses forêts anciennes : un paradis pour l'escalade, la randonnée et
+          la photographie de paysages. Les sentiers vont de promenades
+          accessibles à des ascensions techniques ; réservez l'hébergement et
+          les permis bien à l'avance en haute saison et respectez les règles
+          de sécurité face à la faune et aux parois. Meilleure période : fin
+          printemps à début automne pour les cascades et l'accès routier.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Arches National Park</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos d'Arches</h3>
+            <ul>
+              <li><strong>Localisation :</strong> Utah (près de Moab)</li>
+              <li><strong>Type :</strong> Parc national</li>
+              <li><strong>Superficie :</strong> 310 km²</li>
+              <li><strong>Visiteurs/an :</strong> ~1,8 million</li>
+              <li><strong>Création :</strong> 1971</li>
+              <li>
+                <strong>Fait marquant :</strong> Plus de 2 000 arches
+                naturelles répertoriées
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-archNationalPark.jpg" alt="Delicate Arch à Arches
+            National Park au coucher du soleil" />
+        </div>
+        <p>
+          Arches présente plus de 2 000 arches naturelles sculptées dans la
+          roche rouge, créant un paysage lunaire où des sentiers courts mènent
+          à des merveilles comme Delicate Arch et Landscape Arch. Les
+          promenades sont souvent courtes mais soutenues par le soleil et le
+          sable ; apportez eau, protection solaire et matériel photo pour
+          capter les jeux de lumière au matin et au crépuscule. Le parc se
+          visite bien en 1–2 jours, en combinant randonnées et panoramas
+          depuis la route.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+
+      <article>
+        <h2>Mount Rushmore</h2>
+        <div id="container-image-aside">
+          <aside>
+            <h3>À propos de Mount Rushmore</h3>
+            <ul>
+              <li>
+                <strong>Localisation :</strong> Dakota du Sud (Black Hills)
+              </li>
+              <li><strong>Type :</strong> Mémorial national</li>
+              <li><strong>Altitude :</strong> 1 745 m</li>
+              <li><strong>Hauteur des visages :</strong> 18 m chacun</li>
+              <li><strong>Visiteurs/an :</strong> ~3 millions</li>
+              <li>
+                <strong>Création :</strong> 1927–1941 (14 ans de travaux)
+              </li>
+              <li>
+                <strong>Fait marquant :</strong> Représente Washington,
+                Jefferson, Roosevelt et Lincoln
+              </li>
+            </ul>
+          </aside>
+          <img src="/assets/images/lieux/lieu-montRushmore.jpg" alt="Sculpture des visages
+            à Mount Rushmore" />
+        </div>
+        <p>
+          Mount Rushmore, sculpture monumentale des visages de quatre
+          présidents américains taillée dans le granit, symbolise l'histoire
+          nationale et attire pour son impressionnante réalisation artistique
+          et son cadre dans les Black Hills. Le site propose un centre
+          d'accueil, des sentiers courts et des points d'observation ;
+          combinez la visite avec les attractions locales (Custer State Park,
+          Badlands) pour enrichir votre découverte de la région. Visites
+          matinales ou en fin d'après‑midi recommandées pour éviter la foule.
+        </p>
+        <a id="button" href="/pages/travaux.html">En voir plus</a>
+      </article>
+    </section>
+    <section id="conseils-pratiques">
+      <header>
+        <h2>Conseils pratiques pour votre voyage</h2>
+        <h3>
+          Tout ce qu'il faut savoir avant de partir à la découverte de l'Ouest
+          américain
+        </h3>
+      </header>
+      <div>
+        <button>
+          <img src="/assets/images/lieux/passeport-américain.jpg" alt="visa" />
+          <h3>Visa et formalités</h3>
+          <aside>
+
+            <p>
+              Pour entrer aux États-Unis, vous devez posséder un passeport
+              biométrique valide et obtenir une autorisation ESTA en ligne au
+              moins 72h avant le départ. Cette autorisation coûte 21$, reste
+              valable 2 ans et permet des séjours de 90 jours maximum. Aucun
+              visa n'est nécessaire pour un séjour touristique.
+            </p>
+
+          </aside>
+        </button>
+
+        <button>
+          <img src="/assets/images/lieux/location-voiture.jpg" alt="location de voiture" />
+          <h3>Location de voiture</h3>
+          <aside>
+
+            <p>
+              La voiture est indispensable pour explorer l'Ouest américain.
+              Réservez à l'avance pour obtenir de meilleurs tarifs.
+              Privilégiez un SUV pour les pistes des parcs nationaux. L'âge
+              minimum est généralement de 21 ans, et le permis français est
+              accepté. Pensez à prendre l'assurance tous risques et un GPS.
+            </p>
+
+          </aside>
+        </button>
+
+        <button>
+          <img src="/assets/images/lieux/hebergement.jpg" alt="hébergement" />
+          <h3>Hébergement</h3>
+          <aside>
+
+            <p>
+              Réservez les lodges à l'intérieur des parcs nationaux 6 à 12
+              mois à l'avance, surtout pour Yellowstone et Yosemite.
+              Alternatives : motels aux abords des parcs, campings
+              (réservation conseillée), ou Airbnb dans les villes proches.
+              Comptez entre 80$ et 200$ la nuit selon le confort.
+            </p>
+
+          </aside>
+        </button>
+
+        <button>
+          <img src="/assets/images/lieux/meteosaison.jpg" alt="météo et saison" />
+          <h3>Météo et saison</h3>
+          <aside>
+
+            <p>
+              La meilleure période pour visiter l'Ouest américain est de mai à
+              septembre. Attention aux écarts de température : jusqu'à 40°C le
+              jour et 10°C la nuit dans le désert. En altitude (Yellowstone,
+              Yosemite), les nuits sont fraîches même en été. Évitez
+              juillet-août si vous craignez la chaleur et la foule.
+            </p>
+
+          </aside>
+        </button>
+
+        <button>
+          <img src="/assets/images/lieux/equipement-voyage.jpg" alt="équipement de voyage" />
+          <h3>Équipement de voyage</h3>
+          <aside>
+
+            <p>
+              Emportez des chaussures de randonnée confortables, des vêtements
+              en couches, un coupe-vent, un chapeau et de la crème solaire.
+              Prévoyez au moins 3 litres d'eau par personne et par jour.
+              N'oubliez pas une glacière pour la voiture, des cartes
+              hors-ligne sur votre téléphone et une batterie externe.
+            </p>
+
+          </aside>
+        </button>
+      </div>
+    </section>
+
+    <section id="galerie-images">
+      <h2>Une image vaut mille mots</h2>
+      <article>
+        <img src="/assets/images/lieux/paysage1.jpg" alt="Collage des plus beaux lieux des États-Unis" />
+      </article>
+      <article>
+        <img src="/assets/images/lieux/paysage2.jpg" alt="Collage des plus beaux lieux des États-Unis" />
+      </article>
+      <article>
+        <img src="/assets/images/lieux/paysage3.jpg" alt="Collage des plus beaux lieux des États-Unis" />
+      </article>
+      <article>
+        <img src="/assets/images/lieux/paysage4.jpg" alt="Collage des plus beaux lieux des États-Unis" />
+      </article>
+    </section>
+
+    <div class="popup-credit">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path fill="#003385"
+          d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z" />
+      </svg>
+      <p> Page par Ako.D </p>
+    </div>
+    <div class="top-button hidden">
+      <!--made by Titouan-->
+      <a href="#top"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+          <path
+            d="M342.6 105.4C330.1 92.9 309.8 92.9 297.3 105.4L137.3 265.4C124.8 277.9 124.8 298.2 137.3 310.7C149.8 323.2 170.1 323.2 182.6 310.7L320 173.3L457.4 310.6C469.9 323.1 490.2 323.1 502.7 310.6C515.2 298.1 515.2 277.8 502.7 265.3L342.7 105.3zM502.6 457.4L342.6 297.4C330.1 284.9 309.8 284.9 297.3 297.4L137.3 457.4C124.8 469.9 124.8 490.2 137.3 502.7C149.8 515.2 170.1 515.2 182.6 502.7L320 365.3L457.4 502.6C469.9 515.1 490.2 515.1 502.7 502.6C515.2 490.1 515.2 469.8 502.7 457.3z" />
+          <title>Haut de la page</title>
+        </svg>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <h1>Pour nous contacter :</h1>
+      <div>
+        <section>
+          <h2>Email</h2>
+          <p>contact@visit-usa.com</p>s
+        </section>
+
+        <section>
+          <h2>Téléphone</h2>
+          <p>+1 202 555 0198</p>
+        </section>
+
+        <section>
+          <h2>Adresse</h2>
+          <p>1600 Pennsylvania Avenue NW, Washington, D.C.</p>
+        </section>
+      </div>
+    </div>
+    <div>
+      <a href="/pages/cgu.html">Mentions légales</a> |
+      <a href="/pages/pdc.html">Politique de confidentialité</a>
+    </div>
+    <div>
+      <p>© 2025 Office de Tourisme des États-Unis – Tous droits
+        réservés.</p>
+      <a href="https://github.com/BastienAUL/SAE_1.05_DEV-WEB"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path fill="#ffffff"
+            d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
+        </svg></a>
+    </div>
+  </footer>
+  <script src="/js/js.js"></script>
+</body>
 
 </html>

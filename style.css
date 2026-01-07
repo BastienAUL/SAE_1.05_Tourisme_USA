@@ -314,10 +314,11 @@ Par : Titouan Moquet
     right: 20px;
     z-index: 100;
     --taille-bouton: 35px;
-   
+
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
+   
 
 }
 
@@ -339,6 +340,7 @@ Par : Titouan Moquet
 
 .top-button svg {
     width: var(--taille-bouton);
+    transition: width 0.3s ease;
 }
 
 .top-button svg path {
@@ -346,7 +348,7 @@ Par : Titouan Moquet
 }
 
 .top-button a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
@@ -363,7 +365,7 @@ Par : Titouan Moquet
     left: -170px;
     bottom: 20px;
     transition: 0.3s;
-    padding: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
     width: 190px;
     text-align: end;
     text-decoration: none;
@@ -485,7 +487,7 @@ hr {
     animation: zoom-comming-soon 1s infinite;
 }
 
-.travaux>div {
+.travaux>div:first-of-type {
     backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
@@ -497,7 +499,7 @@ hr {
 
 }
 
-.travaux>div>div {
+.travaux>div:first-of-type>div {
     background-color: #ffffffe0;
     width: fit-content;
     padding: 20px;
@@ -507,18 +509,18 @@ hr {
     margin: 220px auto 150px auto;
 }
 
-.travaux div div section {
+.travaux div:first-of-type div section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.travaux>div svg {
+.travaux>div:first-of-type svg {
     width: 1.5em;
     margin-left: 10px;
 }
 
-.travaux>div svg path {
+.travaux>div:first-of-type svg path {
     fill: var(--bleu);
 }
 
@@ -1198,6 +1200,17 @@ Credit : Titouan Moquet
         font-size: 1.6em;
     }
 
+    /*popup*/
+    .popup-credit {
+        padding: 7px 7px 7px 7px;
+    }
+
+    .top-button {
+        transform: scale(0.8);
+        right: 10px;
+    }
+
+
 }
 
 @media screen and (max-width: 660px) {
@@ -1283,11 +1296,7 @@ Credit : Titouan Moquet
 
     /*popup*/
     .popup-credit {
-        padding: 5px 5px 5px 3px;
-    }
-
-    .popup-credit svg {
-        margin-right: 15px;
+        padding: 5px 5px 5px 5px;
     }
 
 }

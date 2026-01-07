@@ -1,604 +1,606 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <title>Yellowstone National Park</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <title>Yellowstone National Park</title>
+</head>
 
-  <body id="yellowstone-page">
-    <header>
-        <nav class="navbar">
-            <input type="checkbox" id="menu-toggle">
+<body id="yellowstone-page">
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle">
 
 
-            <div class="nav-top">
-                <ul class="nav-left">
-                    <li><a href="/index.html"> <img src="/assets/images/usa-nav-icon.png" alt="logo">HOME</a></li>
-                </ul>
+      <div class="nav-top">
+        <ul class="nav-left">
+          <li><a href="/index.html"> <img src="/assets/images/usa-nav-icon.png" alt="logo">HOME</a></li>
+        </ul>
 
-                <label for="menu-toggle" class="burger"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path
-                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
-                    </svg></label>
-            </div>
+        <label for="menu-toggle" class="burger"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+          </svg></label>
+      </div>
 
-            <ul class="nav-right">
-                <li class="has-submenu">
-                    <a href="oeuvres.html"><img src="/assets/images/art-nav.png">OEUVRES</a>
-                    <ul class="submenu">
-                        <li><a href="forrest-gump.html">Forrest Gump</a></li>
-                        <li><a href="/pages/travaux.html">Nighthawks</a></li>
-                        <li><a href="/pages/travaux.html">La statue de la liberté</a></li>
-                        <li><a href="/pages/travaux.html">No.5</a></li>
-                        <li><a href="/pages/travaux.html">Best buddies</a></li>
-                        <li><a href="/pages/travaux.html">Heat</a></li>
-                        <li><a href="/pages/travaux.html">Hope</a></li>
-                        <li><a href="/pages/travaux.html">American Gothic</a></li>
-                        <li><a href="/pages/travaux.html">Marilyn Monroe</a></li>
-                        <li><a href="/pages/travaux.html">L'odyssée de l'espace</a></li>
-                    </ul>
-                </li>
+      <ul class="nav-right">
+        <li class="has-submenu">
+          <a href="oeuvres.html"><img src="/assets/images/art-nav.png">OEUVRES</a>
+          <ul class="submenu">
+            <li><a href="forrest-gump.html">Forrest Gump</a></li>
+            <li><a href="/pages/travaux.html">Nighthawks</a></li>
+            <li><a href="/pages/travaux.html">La statue de la liberté</a></li>
+            <li><a href="/pages/travaux.html">No.5</a></li>
+            <li><a href="/pages/travaux.html">Best buddies</a></li>
+            <li><a href="/pages/travaux.html">Heat</a></li>
+            <li><a href="/pages/travaux.html">Hope</a></li>
+            <li><a href="/pages/travaux.html">American Gothic</a></li>
+            <li><a href="/pages/travaux.html">Marilyn Monroe</a></li>
+            <li><a href="/pages/travaux.html">L'odyssée de l'espace</a></li>
+          </ul>
+        </li>
 
-                <li class="has-submenu">
-                    <a href="personnages.html"><img src="/assets/images/personnage-nav.png">PERSONNAGES</a>
-                    <ul class="submenu">
-                        <li><a href="martin-luther-king.html">Martin Luther King Jr</a></li>
-                        <li><a href="/pages/travaux.html">Barack Obama</a></li>
-                        <li><a href="/pages/travaux.html">George Washington</a></li>
-                        <li><a href="/pages/travaux.html">Harriet Tubman</a></li>
-                        <li><a href="/pages/travaux.html">Abraham Lincoln</a></li>
-                        <li><a href="/pages/travaux.html">Thomas Jefferson</a></li>
-                        <li><a href="/pages/travaux.html">Rosa Parks</a></li>
-                        <li><a href="/pages/travaux.html">Benjamin Franklin</a></li>
-                        <li><a href="/pages/travaux.html">John F. Kennedy</a></li>
-                        <li><a href="/pages/travaux.html">Elvis Presley</a></li>
-                        <li><a href="/pages/travaux.html">Neil Armstrong</a></li>
-                        <li><a href="/pages/travaux.html">Michael Jackson</a></li>
-                    </ul>
-                </li>
+        <li class="has-submenu">
+          <a href="personnages.html"><img src="/assets/images/personnage-nav.png">PERSONNAGES</a>
+          <ul class="submenu">
+            <li><a href="martin-luther-king.html">Martin Luther King Jr</a></li>
+            <li><a href="/pages/travaux.html">Barack Obama</a></li>
+            <li><a href="/pages/travaux.html">George Washington</a></li>
+            <li><a href="/pages/travaux.html">Harriet Tubman</a></li>
+            <li><a href="/pages/travaux.html">Abraham Lincoln</a></li>
+            <li><a href="/pages/travaux.html">Thomas Jefferson</a></li>
+            <li><a href="/pages/travaux.html">Rosa Parks</a></li>
+            <li><a href="/pages/travaux.html">Benjamin Franklin</a></li>
+            <li><a href="/pages/travaux.html">John F. Kennedy</a></li>
+            <li><a href="/pages/travaux.html">Elvis Presley</a></li>
+            <li><a href="/pages/travaux.html">Neil Armstrong</a></li>
+            <li><a href="/pages/travaux.html">Michael Jackson</a></li>
+          </ul>
+        </li>
 
-                <li class="has-submenu">
-                    <a href="lieux.html"><img src="/assets/images/lieu-nav.png">LIEUX</a>
-                    <ul class="submenu">
-                        <li><a href="yellowstone.html">Yellowstone</a></li>
-                        <li><a href="/pages/travaux.html">Grand Canyon</a></li>
-                        <li><a href="/pages/travaux.html">Monument Valley</a></li>
-                        <li><a href="/pages/travaux.html">Lake Tahoe</a></li>
-                        <li><a href="/pages/travaux.html">Golden Gate Bridge</a></li>
-                        <li><a href="/pages/travaux.html">The Wave</a></li>
-                        <li><a href="/pages/travaux.html">Route 66</a></li>
-                        <li><a href="/pages/travaux.html">Yosemite National Park</a></li>
-                        <li><a href="/pages/travaux.html">Arches National Park</a></li>
-                        <li><a href="/pages/travaux.html">Mount Rushmore</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <li class="has-submenu">
+          <a href="lieux.html"><img src="/assets/images/lieu-nav.png">LIEUX</a>
+          <ul class="submenu">
+            <li><a href="yellowstone.html">Yellowstone</a></li>
+            <li><a href="/pages/travaux.html">Grand Canyon</a></li>
+            <li><a href="/pages/travaux.html">Monument Valley</a></li>
+            <li><a href="/pages/travaux.html">Lake Tahoe</a></li>
+            <li><a href="/pages/travaux.html">Golden Gate Bridge</a></li>
+            <li><a href="/pages/travaux.html">The Wave</a></li>
+            <li><a href="/pages/travaux.html">Route 66</a></li>
+            <li><a href="/pages/travaux.html">Yosemite National Park</a></li>
+            <li><a href="/pages/travaux.html">Arches National Park</a></li>
+            <li><a href="/pages/travaux.html">Mount Rushmore</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="yellowstone">
+    <!---->
+    <header id="top">
+      <h1>yellowstone national park</h1>
     </header>
-    <main id="yellowstone">
-      <!---->
-      <header>
-        <h1>yellowstone national park</h1>
-      </header>
-      <!---->
-      <section id="info-yellowstone">
+    <!---->
+    <section id="info-yellowstone">
 
-        <h2>Situation géographique du parc national de Yellowstone</h2>
+      <h2>Situation géographique du parc national de Yellowstone</h2>
 
-        <article>
-          <p>
-            Le parc national de Yellowstone se trouve à l’ouest des États-Unis,
-            principalement dans l’État du Wyoming, et s’étend également sur le
-            Montana et l’Idaho. Niché au cœur des montagnes Rocheuses, ce parc
-            emblématique couvre un vaste plateau volcanique, culminant à environ
-            2400 mètres d’altitude.
-          </p>
-          <p>
-            Reconnu pour ses paysages grandioses et ses phénomènes géothermiques
-            uniques (geysers, sources chaudes), Yellowstone est entouré de
-            montagnes impressionnantes et abrite de grands lacs, des rivières
-            sauvages et une faune exceptionnelle. Sa localisation, au croisement
-            de plusieurs écosystèmes majeurs, en fait un joyau naturel
-            incontournable d’Amérique du Nord.
-          </p>
-        </article>
-      </section>
-      <section>
-        <h2>frise chronologique de Yellowstone</h2>
-        <div id="frise-chronologique">
-          <section id="frise-section1">
+      <article>
+        <p>
+          Le parc national de Yellowstone se trouve à l’ouest des États-Unis,
+          principalement dans l’État du Wyoming, et s’étend également sur le
+          Montana et l’Idaho. Niché au cœur des montagnes Rocheuses, ce parc
+          emblématique couvre un vaste plateau volcanique, culminant à environ
+          2400 mètres d’altitude.
+        </p>
+        <p>
+          Reconnu pour ses paysages grandioses et ses phénomènes géothermiques
+          uniques (geysers, sources chaudes), Yellowstone est entouré de
+          montagnes impressionnantes et abrite de grands lacs, des rivières
+          sauvages et une faune exceptionnelle. Sa localisation, au croisement
+          de plusieurs écosystèmes majeurs, en fait un joyau naturel
+          incontournable d’Amérique du Nord.
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2>frise chronologique de Yellowstone</h2>
+      <div id="frise-chronologique">
+        <section id="frise-section1">
 
-            <article>
-              <p>
-                John Colter, ancien membre de l’expédition Lewis et Clark,
-                devient
-                le premier Européen à explorer la région de Yellowstone.
-              </p>
-              <h2>1807</h2>
-              <div class="point"></div>
-            </article>
-
-            <article>
-
-              <p>
-                L’expédition Washburn-Langford-Doane mène la première
-                exploration
-                scientifique officielle et cartographie la région.
-              </p>
-              <h2>1870</h2>
-              <div class="point"></div>
-            </article>
-
-            <article>
-
-              <p>
-                Yellowstone est officiellement créé comme le premier parc
-                national
-                au monde.
-              </p>
-              <h2>1872</h2>
-              <div class="point"></div>
-            </article>
-
-            <article>
-              <p>
-                Réintroduction du loup gris dans le parc, rétablissant
-                l’équilibre
-                écologique des lieux.
-              </p>
-              <h2>1995</h2>
-              <div class="point"></div>
-            </article>
-
-          </section>
-          <div id="barre"></div>
-          <section id="frise-section2">
-
-            <article>
-              <h2>1869</h2>
-              <p>
-                L’expédition Folsom–Cook–Peterson réalise la première
-                exploration
-                documentée et rapportée de Yellowstone.
-              </p>
-              <div class="point"></div>
-            </article>
-
-            <article>
-              <h2>1871</h2>
-              <p>
-                L’expédition Hayden, avec des scientifiques et des artistes,
-                publie les premières images et cartes détaillées de Yellowstone.
-              </p>
-              <div class="point"></div>
-            </article>
-
-            <article>
-              <h2>1988</h2>
-              <p>
-                De grands incendies touchent plus du tiers du parc, influençant
-                la
-                gestion écologique moderne de Yellowstone.
-              </p>
-              <div class="point"></div>
-            </article>
-
-            <article>
-              <h2>2022</h2>
-              <p>
-                Yellowstone célèbre ses 150 ans et fait face à des inondations
-                majeures, marquant une nouvelle étape dans sa gestion.
-              </p>
-              <div class="point"></div>
-            </article>
-
-          </section>
-        </div>
-      </section>
-
-      <section id="biodiversite">
-        <h2>biodiversité</h2>
-        <article>
-          <h3>Bison</h3>
-          <img src="/assets/images/lieux/bison-yellowstone.jpg"
-            alt="Bison dans le parc national de Yellowstone" />
-          <p>
-            <strong>Le bison de Yellowstone</strong> est le plus grand mammifère
-            terrestre d’Amérique du Nord, pouvant atteindre
-            <strong>2 m</strong> et peser <strong>1 000 kg</strong>. Agile
-            malgré sa taille, il file à <strong>55 km/h</strong>. Son
-            <strong>pelage épais</strong> lui permet de survivre à des
-            <strong>hivers glacials</strong>. À la fin du XIXe siècle, l’espèce
-            a failli disparaître, mais <strong>Yellowstone</strong> a été
-            crucial pour sa sauvegarde. Les bisons jouent un rôle clé dans la
-            <strong>diversité des plantes</strong> et les
-            <strong>migrations spectaculaires</strong> à travers le parc.
-          </p>
-        </article>
-        <article>
-          <h3>Loup</h3>
-          <img src="/assets/images/lieux/loup-yellowstone.jpg"
-            alt="Loup dans le parc national de Yellowstone" />
-          <p>
-            Réintroduits en <strong>1995</strong> après 70 ans d’absence, les
-            loups ont transformé l’écosystème de Yellowstone. En régulant les
-            <strong>populations de proies</strong> comme les
-            <strong>wapitis</strong>, ils favorisent la
-            <strong>croissance des plantes</strong> et la
-            <strong>diversité biologique</strong>. Les loups, animaux
-            <strong>sociaux</strong> vivant en meutes, utilisent le hurlement
-            comme <strong>communication essentielle</strong>, symbole de la
-            <strong>nature sauvage</strong>.
-          </p>
-        </article>
-        <article>
-          <h3>Wapitis</h3>
-          <img src="/assets/images/lieux/wapitis-yellowstone.jpg"
-            alt="Wapiti dans le parc national de Yellowstone" />
-          <p>
-            Les wapitis, présents en grand nombre, mesurent jusqu’à
-            <strong>1,5 m</strong> et pèsent <strong>300 kg</strong>. Ils jouent
-            un rôle essentiel dans la
-            <strong>régénération des prairies</strong>, servant aussi de
-            <strong>proies</strong> aux loups et aux ours. L’hiver, ils
-            consomment les plantes accessibles pour maintenir
-            <strong>l’équilibre naturel</strong>.
-          </p>
-        </article>
-        <article>
-          <h3>Ours</h3>
-          <img src="/assets/images/lieux/ours-yellowstone.jpg"
-            alt="Ours dans le parc national de Yellowstone" />
-          <p>
-            Yellowstone abrite des <strong>ours noirs</strong> et des
-            <strong>grizzlys</strong>. Les grizzlys mesurent jusqu’à
-            <strong>2,4 m</strong> et pèsent <strong>360 kg</strong>. Ils
-            consomment <strong>fruits</strong>, <strong>poissons</strong> et
-            <strong>insectes</strong>, se préparant à
-            l’<strong>hibernation</strong>. Les ours symbolisent la
-            <strong>force</strong> et la <strong>résilience</strong> de la
-            nature.
-          </p>
-        </article>
-      </section>
-
-      <section id="carrousel">
-        <h2>Carrousel</h2>
-        <div id="carousel-image">
-          <img src="/assets/images/lieux/carrousel-Yellowstone1.jpg" alt>
-          <img src="/assets/images/lieux/carrousel-Yellowstone2.jpg" alt>
-          <img src="/assets/images/lieux/carrousel-Yellowstone3.jpg" alt>
-          <img src="/assets/images/lieux/carrousel-Yellowstone4.jpg" alt>
-        </div>
-      </section>
-
-      <section id="mapid">
-        <h2>carte des lieux du parc national de Yellowstone</h2>
-        <aside>
-          <h3>LES LIEUX</h3>
-          <details>
-            <summary>Indian Creek Campground</summary>
-            <ul>
-              <li><strong>Type :</strong> Terrain de camping</li>
-              <li>
-                <strong>Emplacement :</strong> Nord du parc, près de Roosevelt
-                Arch et Mammoth Hot Springs
-              </li>
-              <li>
-                <strong>À proximité :</strong> Tower Fall Campground, Albright
-                Visitor Center
-              </li>
-              <li><strong>Accès :</strong> Route 191</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Roosevelt Arch</summary>
-            <ul>
-              <li><strong>Type :</strong> Monument historique</li>
-              <li>
-                <strong>Emplacement :</strong> Entrée nord du parc Yellowstone
-              </li>
-              <li>
-                <strong>À proximité :</strong> Mammoth Hot Springs Gas
-                Station,
-                Indian Creek Campground
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Mammoth Hot Springs Gas Station</summary>
-            <ul>
-              <li><strong>Type :</strong> Station essence</li>
-              <li>
-                <strong>Emplacement :</strong> Mammoth Hot Springs, nord du
-                parc
-              </li>
-              <li>
-                <strong>À proximité :</strong> Roosevelt Arch, Albright
-                Visitor
-                Center
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Albright Visitor Center</summary>
-            <ul>
-              <li><strong>Type :</strong> Centre d’accueil visiteurs</li>
-              <li><strong>Emplacement :</strong> Mammoth Hot Springs</li>
-              <li>
-                <strong>À proximité :</strong> Mammoth Hot Springs Gas
-                Station,
-                Indian Creek Campground
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Tower Fall Campground</summary>
-            <ul>
-              <li><strong>Type :</strong> Terrain de camping</li>
-              <li><strong>Emplacement :</strong> Nord-est du parc</li>
-              <li>
-                <strong>À proximité :</strong> Pebble Creek Campground, Indian
-                Creek Campground
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Pebble Creek Campground</summary>
-            <ul>
-              <li><strong>Type :</strong> Terrain de camping</li>
-              <li><strong>Emplacement :</strong> Extrême nord-est du parc</li>
-              <li><strong>À proximité :</strong> Tower Fall Campground</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>
-              Norris Geyser Basin Museum and Information Station
-            </summary>
-            <ul>
-              <li><strong>Type :</strong> Musée et info</li>
-              <li>
-                <strong>Emplacement :</strong> Centre du parc Yellowstone,
-                proche Norris Geyser Basin
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Grant Village Gas and Service Station</summary>
-            <ul>
-              <li><strong>Type :</strong> Station essence et service</li>
-              <li>
-                <strong>Emplacement :</strong> Sud du parc, près de Grant
-                Village Visitor Center
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Lewis Lake Campground</summary>
-            <ul>
-              <li><strong>Type :</strong> Terrain de camping</li>
-              <li>
-                <strong>Emplacement :</strong> Sud du parc près du lac Lewis
-              </li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Bechler Backcountry Office</summary>
-            <ul>
-              <li><strong>Type :</strong> Bureau backcountry</li>
-              <li><strong>Emplacement :</strong> Sud-ouest du parc</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>
-              West Yellowstone Visitor Information Center (NPS Desk)
-            </summary>
-            <ul>
-              <li><strong>Type :</strong> Centre d’information NPS</li>
-              <li><strong>Emplacement :</strong> Entrée ouest du parc</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>East Entrance Station</summary>
-            <ul>
-              <li><strong>Type :</strong> Point d’entrée</li>
-              <li><strong>Emplacement :</strong> Extrême Est du parc</li>
-              <li>
-                <strong>À proximité :</strong> Cody (ville en dehors du parc)
-              </li>
-            </ul>
-          </details>
-        </aside>
-        <img src="/assets/images/lieux/map-yellowstone.jpg"
-          alt="Carte du parc national de Yellowstone">
-      </section>
-      <section id="activite">
-        <h2>Activités</h2>
-        <div>
           <article>
-            <img src="/assets/images/lieux/activite-1.jpg"
-              alt="Activité à Yellowstone">
-            <p>Une excursion en radeau d'une demi-journée dans les ruisseaux
-              du
-              Montana</p>
-          </article>
-          <article>
-            <img src="/assets/images/lieux/activite-2.jpg"
-              alt="Activité à Yellowstone">
-            <p>Qui ne rêve pas de pêcher dans les rivières et lacs du parc
-              Yellowstone</p>
-          </article>
-          <article>
-            <img src="/assets/images/lieux/activite-3.jpg"
-              alt="Activité à Yellowstone">
-            <p>A l'exploration des geysers et sources chaudes de
-              Yellowstone</p>
-          </article>
-          <article>
-            <img src="/assets/images/lieux/activite-4.jpg"
-              alt="Activité à Yellowstone">
-            <p>Comment ne pas admirer les magnifiques paysages de
-              Yellowstone grace aux chemins de randonnée</p>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div id="avis-container">
-          <h2>Avis des visiteurs</h2>
-          <article>
-            <h3>Marie D.</h3>
             <p>
-              "Une expérience inoubliable ! La beauté naturelle de Yellowstone
-              est à couper le souffle. Les geysers, les cascades et la faune
-              sauvage m'ont émerveillée à chaque instant. Un must pour les
-              amoureux de la nature."
+              John Colter, ancien membre de l’expédition Lewis et Clark,
+              devient
+              le premier Européen à explorer la région de Yellowstone.
             </p>
+            <h2>1807</h2>
+            <div class="point"></div>
           </article>
+
           <article>
-            <h3>Jean P.</h3>
+
             <p>
-              "Yellowstone est un véritable joyau. J'ai adoré observer les
-              bisons et les loups dans leur habitat naturel. Les sentiers de
-              randonnée offrent des vues spectaculaires. Je recommande
-              vivement
-              ce parc à tous les passionnés d'aventure."
+              L’expédition Washburn-Langford-Doane mène la première
+              exploration
+              scientifique officielle et cartographie la région.
             </p>
+            <h2>1870</h2>
+            <div class="point"></div>
           </article>
+
           <article>
-            <h3>Sophie L.</h3>
+
             <p>
-              "Un endroit magique où la nature règne en maître. Les paysages
-              sont variés et impressionnants, des sources chaudes aux forêts
-              denses. J'ai particulièrement apprécié les levers de soleil sur
-              le Grand Prismatic Spring. Une destination à ne pas manquer !"
+              Yellowstone est officiellement créé comme le premier parc
+              national
+              au monde.
             </p>
+            <h2>1872</h2>
+            <div class="point"></div>
           </article>
+
+          <article>
+            <p>
+              Réintroduction du loup gris dans le parc, rétablissant
+              l’équilibre
+              écologique des lieux.
+            </p>
+            <h2>1995</h2>
+            <div class="point"></div>
+          </article>
+
         </section>
+        <div id="barre"></div>
+        <section id="frise-section2">
+
+          <article>
+            <h2>1869</h2>
+            <p>
+              L’expédition Folsom–Cook–Peterson réalise la première
+              exploration
+              documentée et rapportée de Yellowstone.
+            </p>
+            <div class="point"></div>
+          </article>
+
+          <article>
+            <h2>1871</h2>
+            <p>
+              L’expédition Hayden, avec des scientifiques et des artistes,
+              publie les premières images et cartes détaillées de Yellowstone.
+            </p>
+            <div class="point"></div>
+          </article>
+
+          <article>
+            <h2>1988</h2>
+            <p>
+              De grands incendies touchent plus du tiers du parc, influençant
+              la
+              gestion écologique moderne de Yellowstone.
+            </p>
+            <div class="point"></div>
+          </article>
+
+          <article>
+            <h2>2022</h2>
+            <p>
+              Yellowstone célèbre ses 150 ans et fait face à des inondations
+              majeures, marquant une nouvelle étape dans sa gestion.
+            </p>
+            <div class="point"></div>
+          </article>
+
+        </section>
+      </div>
+    </section>
+
+    <section id="biodiversite">
+      <h2>biodiversité</h2>
+      <article>
+        <h3>Bison</h3>
+        <img src="/assets/images/lieux/bison-yellowstone.jpg" alt="Bison dans le parc national de Yellowstone" />
+        <p>
+          <strong>Le bison de Yellowstone</strong> est le plus grand mammifère
+          terrestre d’Amérique du Nord, pouvant atteindre
+          <strong>2 m</strong> et peser <strong>1 000 kg</strong>. Agile
+          malgré sa taille, il file à <strong>55 km/h</strong>. Son
+          <strong>pelage épais</strong> lui permet de survivre à des
+          <strong>hivers glacials</strong>. À la fin du XIXe siècle, l’espèce
+          a failli disparaître, mais <strong>Yellowstone</strong> a été
+          crucial pour sa sauvegarde. Les bisons jouent un rôle clé dans la
+          <strong>diversité des plantes</strong> et les
+          <strong>migrations spectaculaires</strong> à travers le parc.
+        </p>
+      </article>
+      <article>
+        <h3>Loup</h3>
+        <img src="/assets/images/lieux/loup-yellowstone.jpg" alt="Loup dans le parc national de Yellowstone" />
+        <p>
+          Réintroduits en <strong>1995</strong> après 70 ans d’absence, les
+          loups ont transformé l’écosystème de Yellowstone. En régulant les
+          <strong>populations de proies</strong> comme les
+          <strong>wapitis</strong>, ils favorisent la
+          <strong>croissance des plantes</strong> et la
+          <strong>diversité biologique</strong>. Les loups, animaux
+          <strong>sociaux</strong> vivant en meutes, utilisent le hurlement
+          comme <strong>communication essentielle</strong>, symbole de la
+          <strong>nature sauvage</strong>.
+        </p>
+      </article>
+      <article>
+        <h3>Wapitis</h3>
+        <img src="/assets/images/lieux/wapitis-yellowstone.jpg" alt="Wapiti dans le parc national de Yellowstone" />
+        <p>
+          Les wapitis, présents en grand nombre, mesurent jusqu’à
+          <strong>1,5 m</strong> et pèsent <strong>300 kg</strong>. Ils jouent
+          un rôle essentiel dans la
+          <strong>régénération des prairies</strong>, servant aussi de
+          <strong>proies</strong> aux loups et aux ours. L’hiver, ils
+          consomment les plantes accessibles pour maintenir
+          <strong>l’équilibre naturel</strong>.
+        </p>
+      </article>
+      <article>
+        <h3>Ours</h3>
+        <img src="/assets/images/lieux/ours-yellowstone.jpg" alt="Ours dans le parc national de Yellowstone" />
+        <p>
+          Yellowstone abrite des <strong>ours noirs</strong> et des
+          <strong>grizzlys</strong>. Les grizzlys mesurent jusqu’à
+          <strong>2,4 m</strong> et pèsent <strong>360 kg</strong>. Ils
+          consomment <strong>fruits</strong>, <strong>poissons</strong> et
+          <strong>insectes</strong>, se préparant à
+          l’<strong>hibernation</strong>. Les ours symbolisent la
+          <strong>force</strong> et la <strong>résilience</strong> de la
+          nature.
+        </p>
+      </article>
+    </section>
+
+    <section id="carrousel">
+      <h2>Carrousel</h2>
+      <div id="carousel-image">
+        <img src="/assets/images/lieux/carrousel-Yellowstone1.jpg" alt>
+        <img src="/assets/images/lieux/carrousel-Yellowstone2.jpg" alt>
+        <img src="/assets/images/lieux/carrousel-Yellowstone3.jpg" alt>
+        <img src="/assets/images/lieux/carrousel-Yellowstone4.jpg" alt>
+      </div>
+    </section>
+
+    <section id="mapid">
+      <h2>carte des lieux du parc national de Yellowstone</h2>
+      <aside>
+        <h3>LES LIEUX</h3>
+        <details>
+          <summary>Indian Creek Campground</summary>
+          <ul>
+            <li><strong>Type :</strong> Terrain de camping</li>
+            <li>
+              <strong>Emplacement :</strong> Nord du parc, près de Roosevelt
+              Arch et Mammoth Hot Springs
+            </li>
+            <li>
+              <strong>À proximité :</strong> Tower Fall Campground, Albright
+              Visitor Center
+            </li>
+            <li><strong>Accès :</strong> Route 191</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Roosevelt Arch</summary>
+          <ul>
+            <li><strong>Type :</strong> Monument historique</li>
+            <li>
+              <strong>Emplacement :</strong> Entrée nord du parc Yellowstone
+            </li>
+            <li>
+              <strong>À proximité :</strong> Mammoth Hot Springs Gas
+              Station,
+              Indian Creek Campground
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Mammoth Hot Springs Gas Station</summary>
+          <ul>
+            <li><strong>Type :</strong> Station essence</li>
+            <li>
+              <strong>Emplacement :</strong> Mammoth Hot Springs, nord du
+              parc
+            </li>
+            <li>
+              <strong>À proximité :</strong> Roosevelt Arch, Albright
+              Visitor
+              Center
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Albright Visitor Center</summary>
+          <ul>
+            <li><strong>Type :</strong> Centre d’accueil visiteurs</li>
+            <li><strong>Emplacement :</strong> Mammoth Hot Springs</li>
+            <li>
+              <strong>À proximité :</strong> Mammoth Hot Springs Gas
+              Station,
+              Indian Creek Campground
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Tower Fall Campground</summary>
+          <ul>
+            <li><strong>Type :</strong> Terrain de camping</li>
+            <li><strong>Emplacement :</strong> Nord-est du parc</li>
+            <li>
+              <strong>À proximité :</strong> Pebble Creek Campground, Indian
+              Creek Campground
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Pebble Creek Campground</summary>
+          <ul>
+            <li><strong>Type :</strong> Terrain de camping</li>
+            <li><strong>Emplacement :</strong> Extrême nord-est du parc</li>
+            <li><strong>À proximité :</strong> Tower Fall Campground</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            Norris Geyser Basin Museum and Information Station
+          </summary>
+          <ul>
+            <li><strong>Type :</strong> Musée et info</li>
+            <li>
+              <strong>Emplacement :</strong> Centre du parc Yellowstone,
+              proche Norris Geyser Basin
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Grant Village Gas and Service Station</summary>
+          <ul>
+            <li><strong>Type :</strong> Station essence et service</li>
+            <li>
+              <strong>Emplacement :</strong> Sud du parc, près de Grant
+              Village Visitor Center
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Lewis Lake Campground</summary>
+          <ul>
+            <li><strong>Type :</strong> Terrain de camping</li>
+            <li>
+              <strong>Emplacement :</strong> Sud du parc près du lac Lewis
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Bechler Backcountry Office</summary>
+          <ul>
+            <li><strong>Type :</strong> Bureau backcountry</li>
+            <li><strong>Emplacement :</strong> Sud-ouest du parc</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            West Yellowstone Visitor Information Center (NPS Desk)
+          </summary>
+          <ul>
+            <li><strong>Type :</strong> Centre d’information NPS</li>
+            <li><strong>Emplacement :</strong> Entrée ouest du parc</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>East Entrance Station</summary>
+          <ul>
+            <li><strong>Type :</strong> Point d’entrée</li>
+            <li><strong>Emplacement :</strong> Extrême Est du parc</li>
+            <li>
+              <strong>À proximité :</strong> Cody (ville en dehors du parc)
+            </li>
+          </ul>
+        </details>
+      </aside>
+      <img src="/assets/images/lieux/map-yellowstone.jpg" alt="Carte du parc national de Yellowstone">
+    </section>
+    <section id="activite">
+      <h2>Activités</h2>
+      <div>
+        <article>
+          <img src="/assets/images/lieux/activite-1.jpg" alt="Activité à Yellowstone">
+          <p>Une excursion en radeau d'une demi-journée dans les ruisseaux
+            du
+            Montana</p>
+        </article>
+        <article>
+          <img src="/assets/images/lieux/activite-2.jpg" alt="Activité à Yellowstone">
+          <p>Qui ne rêve pas de pêcher dans les rivières et lacs du parc
+            Yellowstone</p>
+        </article>
+        <article>
+          <img src="/assets/images/lieux/activite-3.jpg" alt="Activité à Yellowstone">
+          <p>A l'exploration des geysers et sources chaudes de
+            Yellowstone</p>
+        </article>
+        <article>
+          <img src="/assets/images/lieux/activite-4.jpg" alt="Activité à Yellowstone">
+          <p>Comment ne pas admirer les magnifiques paysages de
+            Yellowstone grace aux chemins de randonnée</p>
+        </article>
+      </div>
+    </section>
+    <section>
+      <div id="avis-container">
+        <h2>Avis des visiteurs</h2>
+        <article>
+          <h3>Marie D.</h3>
+          <p>
+            "Une expérience inoubliable ! La beauté naturelle de Yellowstone
+            est à couper le souffle. Les geysers, les cascades et la faune
+            sauvage m'ont émerveillée à chaque instant. Un must pour les
+            amoureux de la nature."
+          </p>
+        </article>
+        <article>
+          <h3>Jean P.</h3>
+          <p>
+            "Yellowstone est un véritable joyau. J'ai adoré observer les
+            bisons et les loups dans leur habitat naturel. Les sentiers de
+            randonnée offrent des vues spectaculaires. Je recommande
+            vivement
+            ce parc à tous les passionnés d'aventure."
+          </p>
+        </article>
+        <article>
+          <h3>Sophie L.</h3>
+          <p>
+            "Un endroit magique où la nature règne en maître. Les paysages
+            sont variés et impressionnants, des sources chaudes aux forêts
+            denses. J'ai particulièrement apprécié les levers de soleil sur
+            le Grand Prismatic Spring. Une destination à ne pas manquer !"
+          </p>
+        </article>
+    </section>
+    <section>
+
+      <h2>Conseils Pratiques</h2>
+
+      <div id="conseils-pratiques">
+        <article>
+          <h3>1. Sécurité avec la faune</h3>
+          <p>Yellowstone n'est pas un zoo. Les animaux sont sauvages et
+            imprévisibles.</p>
+          <ul>
+            <li><strong>Gardez vos distances :</strong> Restez à au moins
+              100
+              mètres des ours et des loups, et à 25 mètres des bisons et
+              des
+              élans.</li>
+            <li><strong>Spray anti-ours :</strong> Ayez toujours un spray
+              anti-ours (bear spray) accessible et sachez l'utiliser.</li>
+            <li><strong>Nourriture :</strong> Ne nourrissez jamais les
+              animaux.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>2. Dangers géothermiques</h3>
+          <p>Les sources chaudes sont magnifiques mais mortelles.</p>
+          <ul>
+            <li><strong>Restez sur les pontons :</strong> Ne quittez
+              jamais
+              les sentiers balisés et les passerelles en bois. La croûte
+              terrestre est très fine à certains endroits.</li>
+            <li><strong>Ne touchez pas l'eau :</strong> L'eau des sources
+              peut
+              être extrêmement acide ou bouillante.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>3. Météo et Équipement</h3>
+          <p>Le temps change très vite en montagne, même en été.</p>
+          <ul>
+            <li><strong>Superposition :</strong> Prévoyez des vêtements en
+              plusieurs couches (le système "oignon").</li>
+            <li><strong>Hydratation :</strong> L'altitude déshydrate,
+              buvez
+              beaucoup d'eau.</li>
+            <li><strong>Protection solaire :</strong> Le soleil tape fort
+              en
+              altitude, n'oubliez pas chapeau et crème solaire.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>4. Si prendre à l'avance</h3>
+          <p>Le parc est immense et très fréquenté.</p>
+          <ul>
+            <li><strong>Réservez tôt :</strong> Les hébergements dans le
+              parc
+              sont souvent complets un an à l'avance.</li>
+            <li><strong>Téléchargez vos cartes :</strong> Il n'y a presque
+              pas
+              de réseau cellulaire dans le parc. Téléchargez les cartes
+              hors-ligne avant d'entrer.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <div class="popup-credit">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path fill="#003385"
+          d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z" />
+      </svg>
+      <p> Page par Ako.D </p>
+    </div>
+    <div class="top-button hidden">
+      <!--made by Titouan-->
+      <a href="#top"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+          <path
+            d="M342.6 105.4C330.1 92.9 309.8 92.9 297.3 105.4L137.3 265.4C124.8 277.9 124.8 298.2 137.3 310.7C149.8 323.2 170.1 323.2 182.6 310.7L320 173.3L457.4 310.6C469.9 323.1 490.2 323.1 502.7 310.6C515.2 298.1 515.2 277.8 502.7 265.3L342.7 105.3zM502.6 457.4L342.6 297.4C330.1 284.9 309.8 284.9 297.3 297.4L137.3 457.4C124.8 469.9 124.8 490.2 137.3 502.7C149.8 515.2 170.1 515.2 182.6 502.7L320 365.3L457.4 502.6C469.9 515.1 490.2 515.1 502.7 502.6C515.2 490.1 515.2 469.8 502.7 457.3z" />
+          <title>Haut de la page</title>
+        </svg>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <h1>Pour nous contacter :</h1>
+      <div>
         <section>
-
-          <h2>Conseils Pratiques</h2>
-
-          <div id="conseils-pratiques">
-            <article>
-              <h3>1. Sécurité avec la faune</h3>
-              <p>Yellowstone n'est pas un zoo. Les animaux sont sauvages et
-                imprévisibles.</p>
-              <ul>
-                <li><strong>Gardez vos distances :</strong> Restez à au moins
-                  100
-                  mètres des ours et des loups, et à 25 mètres des bisons et
-                  des
-                  élans.</li>
-                <li><strong>Spray anti-ours :</strong> Ayez toujours un spray
-                  anti-ours (bear spray) accessible et sachez l'utiliser.</li>
-                <li><strong>Nourriture :</strong> Ne nourrissez jamais les
-                  animaux.</li>
-              </ul>
-            </article>
-
-            <article>
-              <h3>2. Dangers géothermiques</h3>
-              <p>Les sources chaudes sont magnifiques mais mortelles.</p>
-              <ul>
-                <li><strong>Restez sur les pontons :</strong> Ne quittez
-                  jamais
-                  les sentiers balisés et les passerelles en bois. La croûte
-                  terrestre est très fine à certains endroits.</li>
-                <li><strong>Ne touchez pas l'eau :</strong> L'eau des sources
-                  peut
-                  être extrêmement acide ou bouillante.</li>
-              </ul>
-            </article>
-
-            <article>
-              <h3>3. Météo et Équipement</h3>
-              <p>Le temps change très vite en montagne, même en été.</p>
-              <ul>
-                <li><strong>Superposition :</strong> Prévoyez des vêtements en
-                  plusieurs couches (le système "oignon").</li>
-                <li><strong>Hydratation :</strong> L'altitude déshydrate,
-                  buvez
-                  beaucoup d'eau.</li>
-                <li><strong>Protection solaire :</strong> Le soleil tape fort
-                  en
-                  altitude, n'oubliez pas chapeau et crème solaire.</li>
-              </ul>
-            </article>
-
-            <article>
-              <h3>4. Si prendre à l'avance</h3>
-              <p>Le parc est immense et très fréquenté.</p>
-              <ul>
-                <li><strong>Réservez tôt :</strong> Les hébergements dans le
-                  parc
-                  sont souvent complets un an à l'avance.</li>
-                <li><strong>Téléchargez vos cartes :</strong> Il n'y a presque
-                  pas
-                  de réseau cellulaire dans le parc. Téléchargez les cartes
-                  hors-ligne avant d'entrer.</li>
-              </ul>
-            </article>
-          </div>
+          <h2>Email</h2>
+          <p>contact@visit-usa.com</p>
         </section>
-        <aside class="popup-credit">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path
-              fill="#003385"
-              d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z" /></svg>
-          <p> Page par Ako.D </p>
-        </aside>
-      </main>
-      <footer>
-        <div>
-          <h1>Pour nous contacter :</h1>
-          <div>
-            <section>
-              <h2>Email</h2>
-              <p>contact@visit-usa.com</p>
-            </section>
 
-            <section>
-              <h2>Téléphone</h2>
-              <p>+1 202 555 0198</p>
-            </section>
+        <section>
+          <h2>Téléphone</h2>
+          <p>+1 202 555 0198</p>
+        </section>
 
-            <section>
-              <h2>Adresse</h2>
-              <p>1600 Pennsylvania Avenue NW, Washington, D.C.</p>
-            </section>
-          </div>
-        </div>
-        <div>
-          <a href="/pages/cgu.html">Mentions légales</a> |
-          <a href="/pages/pdc.html">Politique de confidentialité</a>
-        </div>
-        <div>
-          <p>© 2025 Office de Tourisme des États-Unis – Tous droits
-            réservés.</p>
-          <a href="https://github.com/BastienAUL/SAE_1.05_DEV-WEB"><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-              <path fill="#ffffff"
-                d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-            </svg></a>
-        </div>
-      </footer>
-    </body>
+        <section>
+          <h2>Adresse</h2>
+          <p>1600 Pennsylvania Avenue NW, Washington, D.C.</p>
+        </section>
+      </div>
+    </div>
+    <div>
+      <a href="/pages/cgu.html">Mentions légales</a> |
+      <a href="/pages/pdc.html">Politique de confidentialité</a>
+    </div>
+    <div>
+      <p>© 2025 Office de Tourisme des États-Unis – Tous droits
+        réservés.</p>
+      <a href="https://github.com/BastienAUL/SAE_1.05_DEV-WEB"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path fill="#ffffff"
+            d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
+        </svg></a>
+    </div>
+  </footer>
+  <script src="/js/js.js"></script>
+</body>
 
-  </html>
+</html>
