@@ -1786,19 +1786,44 @@ Credit : Titouan Moquet
         font-size: 30px;
     }
 
+    #usa-title h1 {
+        margin-bottom: 50px;
+    }
+
     #usa-presentation {
         font-size: 10px;
-        margin-left: 0;
-        margin-right: 30px;
+        width: auto;
+        height: 200px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .usa-presentation{
+        height: auto;
     }
 
     .right-presentation {
-        font-size: 9px;
+        font-size: 10px;
+        height: 90%;
+        width: 32%;
+    }
+
+    #right-presentation-cate {
+        width: 100%;
+        height: 50;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
     #usa-all-presentation {
         justify-content: space-around;
         padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .right-presentation h3 {
+        margin: 10px;
     }
 
     #carte {
@@ -1834,10 +1859,25 @@ Credit : Titouan Moquet
         display: none;
     }
 
-    #discover-description {
-        font-size: 10px;
+    .discover {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30%;
     }
 
+    #discover {
+        height: 1300px;
+    }
+
+    #discover-description {
+        font-size: 10px;
+        height: 18%;
+    }
+
+    #discover-cate {
+        flex-wrap: wrap;
+        width: 80%;
+    }
 
 }
 
