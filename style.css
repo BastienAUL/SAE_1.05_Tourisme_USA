@@ -1,3 +1,8 @@
+/*
+Copyright : Bastien Aulney, Ako Didion, Flavien Devallan, Titouan Moquet, all rights reserved, 2025
+Do not reuse without permission ! 
+*/
+
 @font-face {
     font-family: 'NATS';
     src: url('assets/fonts/NATS.woff') format('woff');
@@ -758,15 +763,7 @@ hr {
     transform: scale(1.07);
 }
 
-#personnages>p:last-of-type {
-    font-family: var(--font-family-fredoka);
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
 
-#personnages>p:last-of-type a {
-    color: inherit;
-}
 
 /*========== page mlk ==========*/
 /*
@@ -816,7 +813,7 @@ Credit : Titouan Moquet
 
 #mlk header {
     /*background-image: url(assets/images/personnages/background-mlk.png);*/
-    background-image: url(assets/images/personnages/images_a_renommer_et_sourcer/C-etait-le-dernier-appel-de-Martin-Luther-King.jpg);
+    background-image: url(assets/images/personnages/background.jpeg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -844,14 +841,16 @@ Credit : Titouan Moquet
 #mlk header blockquote {
     color: var(--white);
     position: absolute;
-    right: 18%;
-    top: 8em;
+    right: 8%;
+    top: 11em;
     width: 670px;
     font-size: 35px;
     font-family: 'Caveat Regular', sans-serif;
     quotes: "«" "»";
-
     font-weight: bold;
+    background-color: #0d0d0d85;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #mlk blockquote::before {
@@ -865,14 +864,9 @@ Credit : Titouan Moquet
 #mlk header ul {
     background-color: rgba(255, 255, 255, 0.500);
     backdrop-filter: blur(5px);
-    /* position: relative;*/
-    /* top: 18em;
-    left: 4em;
-    width: 500px;*/
     padding: 10px 20px 10px 20px;
     border-radius: var(--border-radius-bloc);
     transition: all 0.5s ease;
-
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -897,9 +891,7 @@ Credit : Titouan Moquet
 
 #mlk section,
 #mlk aside {
-    /*margin-top: 2%;*/
     border-radius: var(--border-radius-bloc);
-    /* font-family: var(--font-family-fredoka);*/
     width: 70%;
 }
 
@@ -946,6 +938,7 @@ Credit : Titouan Moquet
 
 #mlk section:nth-of-type(2) img {
     border-radius: 10px;
+    margin-right: 20px;
 }
 
 #mlk section:nth-of-type(2) article {
@@ -1067,6 +1060,13 @@ Credit : Titouan Moquet
     margin-top: 20px;
 }
 
+#mlk aside:first-of-type figure{
+    margin: 0;
+    padding: 0;
+
+}
+
+
 #mlk aside:first-of-type div img {
     width: 100%;
     height: 20em;
@@ -1083,6 +1083,18 @@ Credit : Titouan Moquet
 
 #mlk aside p {
     display: none;
+}
+
+#personnages>p:last-of-type,
+#mlk>p:last-of-type {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#personnages>p:last-of-type a,
+#mlk>p:last-of-type a{
+    color: inherit;
 }
 
 /*===== responsif des pages mlk et personnages =====*/
@@ -1245,6 +1257,10 @@ Credit : Titouan Moquet
         margin-bottom: 0;
     }
 
+    #mlk header{
+        background-position-x: 80%
+    }
+
     #mlk header h1 {
         font-size: 2em;
     }
@@ -1283,10 +1299,19 @@ Credit : Titouan Moquet
     #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
         margin-bottom: 20px;
     }
-
+    #mlk section:nth-of-type(2) img{
+        margin-right: 0;
+    }
     /*galerie */
     #mlk aside:first-of-type div {
         display: block;
+    }
+
+    #mlk aside:first-of-type figure{
+        margin-bottom: 20px;
+    }
+    #mlk aside:first-of-type figcaption{
+        font-size: 0.9em;
     }
 
     #mlk aside:first-of-type div img {
@@ -1294,12 +1319,26 @@ Credit : Titouan Moquet
         width: 100%;
     }
 
+
+
     /*popup*/
     .popup-credit {
         padding: 5px 5px 5px 5px;
     }
 
 }
+
+/*
+Source - https://stackoverflow.com/a
+*/
+@media (any-pointer: coarse) {
+    #mlk aside p {
+        display: block; 
+        /*affiche un message seulement si écran tactile*/
+    }
+
+}
+
 
 @media screen and (max-width: 400px) {
     #personnages>section div img {
@@ -1341,9 +1380,6 @@ Credit : Titouan Moquet
         padding: 0;
     }
 
-    #mlk aside p {
-        display: block;
-    }
 
     /*film et livres*/
     #mlk section:nth-of-type(2) .livres>div>div {

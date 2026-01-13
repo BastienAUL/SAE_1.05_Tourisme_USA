@@ -12,10 +12,15 @@ Differentes versions de mes pages, et des modifications que j'ai fait
 - ~~add title img~~
 - translate all file
 
-- add credit to img
+- ~~add credit to img~~
 
-changer popup credit
+~~changer popup credit~~
 
+## Version 1.2.8 : 13/01/2026
+- adding image credits
+- some small fixes
+
+ 
 ## Version 1.2.7 : 07/01/2026
 - rename image
 - adding images to MLK page
