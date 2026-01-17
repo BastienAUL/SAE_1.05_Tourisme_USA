@@ -2,7 +2,7 @@
 # Changelog pages des personnages (FR)
 
 
-🇬🇧 [Read in English](README.md)
+🇬🇧 [Read in English](changelog-personnages-en.md)
 
 
 Changelog global [ici](/changelog.md)  
