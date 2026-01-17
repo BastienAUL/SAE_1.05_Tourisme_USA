@@ -48,7 +48,7 @@ Do not reuse without permission !
     --rouge-fonce: #BF0606;
     --rouge-deep: #A41015;
     --rouge: #cc0102;
-    --white: #f8f8f8;
+    --white: #fff;
     --bg-color-article: rgb(255, 255, 255);
     --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --border-radius-bloc: 15px;
@@ -1699,6 +1699,9 @@ Crédits : Titouan Moquet
     flex-direction: column;
     justify-content: center;
     gap: 0.5em;
+
+    width: 100%;
+    height: auto;
 }
 
 .main-fg section:nth-child(3)>div:first-child cite {
@@ -1862,7 +1865,7 @@ Crédits : Titouan Moquet
     font-family: var(--font-family-fredoka);
     font-weight: 100;
 
-    margin: 1.5em;
+    margin: 1em 1em 0em;
 }
 
 .zigzag-container {
@@ -2039,6 +2042,20 @@ Crédits : Titouan Moquet
     flex-direction: column;
 }
 
+.section-oeuvres header {
+    background-color: var(--white);
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: var(--border-radius-bloc);
+    box-shadow: var(--drop-shadow-0-25);
+    text-align: left;
+    height: 100%;
+}
+
+.section-oeuvres header p {
+    margin: 1em 1em 0em;
+}
+
 .section-oeuvres>div:first-child {
     margin: 4em auto;
     padding: 2em;
@@ -2059,6 +2076,21 @@ Crédits : Titouan Moquet
     font-weight: 100;
     margin-bottom: 2em;
 }
+
+.main-fg > section:last-of-type > header {
+    background-color: var(--white);
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: var(--border-radius-bloc);
+    box-shadow: var(--drop-shadow-0-25);
+    text-align: left;
+    height: 100%;
+}
+
+.main-fg > section:last-of-type > header p {
+    margin: 1em 1em 0em;
+}
+
 
 .oeuvres-grid {
     display: flex;
@@ -3133,6 +3165,27 @@ strong {
     #mlk header ul li {
         font-size: 1.2em;
     }
+
+    /* Forrest Gump */
+
+    .oeuvre-card {
+        width: 100%;
+        opacity: 100% !important;
+        box-shadow: var(--drop-shadow-0-25) !important;
+    }
+
+    .main-fg>section:last-of-type div:nth-child(2) img {
+        width: 100%;;
+        height: 12em;
+    }
+
+    .fleche-oeuvre {
+        display: none;
+    }
+
+    .oeuvres-grid {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -3303,6 +3356,10 @@ strong {
         font-size: 2em;
     }
 
+    .main-fg section:nth-child(2) p{
+        padding-left: 0;
+    }
+
     .main-fg header:has(h1) div h3 {
         display: none;
     }
@@ -3349,10 +3406,8 @@ strong {
         text-align: center;
     }
 
-    .main-fg section:nth-child(3)>div:last-child>div p {
-        /* bug  "z-index n’a aucun effet sur cet élément, car il ne s’agit pas d’un élément positionné.
-        Essayez de définir sa propriété position avec une valeur différente de static"*/
-        z-index: 2;
+    .main-fg section:nth-child(3) > div:last-child > div:hover {
+        flex-direction: column-reverse;
     }
 
     .section-lieux {
@@ -3395,24 +3450,6 @@ strong {
         display: none;
     }
 
-    .fleche-oeuvre {
-        display: none;
-    }
-
-    .oeuvres-grid {
-        flex-direction: column;
-    }
-
-    .oeuvre-card {
-        width: 100%;
-        opacity: 100% !important;
-        box-shadow: var(--drop-shadow-0-25) !important;
-    }
-
-    .main-fg>section:last-of-type div:nth-child(2) img {
-        width: 100%;;
-        height: 12em;
-    }
 
     .section-lieux header p,
     .section-oeuvres>div:first-child p,
@@ -3518,6 +3555,39 @@ strong {
     }
 
     /**/
+
+    /* Page Forrest Gump */
+
+    /* Note */
+
+    .note {
+        width: 16em;
+        height: 16em;
+    }
+
+    .note span {
+        font-size: 6em;
+    }
+
+    .note::before {
+        width: 13em;
+        height: 13em;
+    }
+
+    .section-mouvement p {
+        padding: 0;
+    }
+
+    
+
+    .mouvement-images {
+        padding: 0;
+    }
+
+    .section-lieux header p{
+        margin: 1em 0 0;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -3565,6 +3635,26 @@ strong {
 
     .popup-warn p {
         font-size: 0.9em;
+    }
+
+    /* Page Forrest Gump */
+
+    /* Note */
+
+    .note {
+        width: 13em;
+        height: 13em;
+        background: var(--white);
+        margin: 0;
+        padding: 0;
+    }
+
+    .note span {
+        font-size: 8em;
+    }
+
+    .note::before {
+        display: none;
     }
 }
 
