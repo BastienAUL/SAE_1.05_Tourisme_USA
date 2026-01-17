@@ -48,7 +48,7 @@ Do not reuse without permission !
     --rouge-fonce: #BF0606;
     --rouge-deep: #A41015;
     --rouge: #cc0102;
-    --white: #f8f8f8;
+    --white: #ffffff;
     --bg-color-article: rgb(255, 255, 255);
     --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --border-radius-bloc: 15px;
@@ -105,7 +105,7 @@ header nav {
     display: flex;
     background: #fff;
     border-bottom: 3px solid #BF0606;
-    z-index: 1000;
+    z-index: 100;
     color: var(--bleu-deep);
     font-weight: 600;
 }
@@ -178,7 +178,7 @@ header nav {
     background: #fff;
     border: 1px solid #BF0606;
     min-width: 180px;
-    z-index: 1000;
+    z-index: 100;
     padding-left: 0;
 }
 
@@ -231,6 +231,8 @@ version responsive Titouan Moquet :
 footer {
     color: var(--white);
     font-family: var(--font-family-alexandria);
+    position: relative;
+    z-index: 101; /*pour masquer les bouton crédits et top*/
 }
 
 
@@ -403,7 +405,7 @@ Par : Titouan Moquet
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 102;
 }
 
 /* fenêtre */
