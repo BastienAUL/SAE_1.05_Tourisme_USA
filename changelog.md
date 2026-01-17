@@ -8,6 +8,11 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 
 Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [changelog](pages/changelog_personnages.md)
 
+## Version 2.1.3 : 17/01/2026
+- fix responsive popup-warn
+- gathering @media at the end of the CSS
+- clean code
+
 ## Version 2.1.2 : 07/01/2026
 (Titouan)
 > V1.2.7 Personnages - 07/01/2026

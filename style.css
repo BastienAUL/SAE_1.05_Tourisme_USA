@@ -1,8 +1,9 @@
 /*
-Copyright : Bastien Aulney, Ako Didion, Flavien Devallan, Titouan Moquet, all rights reserved, 2025
+Copyrights : Bastien Aulney, Ako Didion, Flavien Devallan, Titouan Moquet, all rights reserved, 2025
 Do not reuse without permission ! 
 */
 
+/* IMPORT FONT*/
 @font-face {
     font-family: 'NATS';
     src: url('assets/fonts/NATS.woff') format('woff');
@@ -38,6 +39,7 @@ Do not reuse without permission !
     src: local('Alexandria Regular'), url('assets/fonts/Alexandria.woff') format('woff');
 }
 
+/* VARIABLES */
 :root {
     --bleu-fonce: #1C2F66;
     --bleu-deep: #1D3060;
@@ -46,7 +48,7 @@ Do not reuse without permission !
     --rouge-fonce: #BF0606;
     --rouge-deep: #A41015;
     --rouge: #cc0102;
-    --white: #fff;
+    --white: #f8f8f8;
     --bg-color-article: rgb(255, 255, 255);
     --background-gradient: linear-gradient(180deg, #f8f9fa 0%, #f0f0ff 50%);
     --border-radius-bloc: 15px;
@@ -65,7 +67,7 @@ body {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     overflow-x: hidden;
 }
 
@@ -94,7 +96,6 @@ header nav {
     height: 60px;
     font-family: 'Alexandria Regular';
     font-size: 2em;
-
 }
 
 .navbar {
@@ -213,7 +214,6 @@ header nav {
 
 .burger {
     display: none;
-    /*font-size: 28px;*/
     cursor: pointer;
 }
 
@@ -311,7 +311,7 @@ footer svg {
 
 /* ======== top button========*/
 /*
-Par : Titouan Moquet 
+Crédits : Titouan Moquet 
 */
 .top-button {
     position: fixed;
@@ -319,12 +319,9 @@ Par : Titouan Moquet
     right: 20px;
     z-index: 100;
     --taille-bouton: 35px;
-
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
-   
-
 }
 
 .top-button.hidden {
@@ -354,7 +351,6 @@ Par : Titouan Moquet
 
 .top-button a:hover {
     transform: scale(1.1);
-
 }
 
 /* ======== credits & warning ========*/
@@ -365,8 +361,6 @@ Par : Titouan Moquet
 .popup-credit {
     background-color: #fff;
     position: fixed;
-    /*right: -170px;
-    bottom: 20px;*/
     left: -170px;
     bottom: 20px;
     transition: 0.3s;
@@ -390,20 +384,16 @@ Par : Titouan Moquet
     margin: 0;
     font-size: 18px;
     margin-left: auto;
-
 }
 
 .popup-credit svg {
     width: 25px;
     height: 25px;
-    /*margin-right: 25px;*/
     margin-left: auto;
-
 }
 
 .popup-credit:hover {
     left: -5px;
-
 }
 
 .popup-warn {
@@ -437,7 +427,6 @@ hr {
     height: 4px;
     background-color: var(--bleu);
     width: 90%;
-    /* margin: 2% auto 0 auto;*/
     border-radius: 10px;
     border-style: none;
 }
@@ -481,10 +470,7 @@ hr {
     font-family: var(--font-family-alexandria);
     font-size: 1.2em;
     color: var(--bleu);
-    /*height: 100vh;*/
     background-image: url(assets/images/accueil/background_las-vegas.jpg);
-
-
 }
 
 .travaux h1 {
@@ -496,9 +482,6 @@ hr {
     backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;*/
     text-align: center;
     padding: 1px;
 
@@ -537,7 +520,6 @@ hr {
     background-color: var(--white);
     border-radius: 10px;
     width: fit-content;
-    /*border: 1px solid black;*/
     transition: transform 0.5s ease;
     margin: auto;
     text-align: center;
@@ -604,32 +586,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .travaux>div>main {
-
-        width: auto;
-    }
-
-    .travaux>div>div {
-        width: 80%;
-    }
-
-    .link-card-travaux {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .link-card-travaux div {
-        width: 40%;
-        min-width: 220px;
-    }
-
-    .link-card-travaux div {
-        margin: 20px;
-    }
-}
-
-/* margin communs */
+/* ======== margin communs ======== */
 #mlk section,
 #mlk aside,
 #accueil section {
@@ -638,8 +595,9 @@ hr {
 }
 
 /* ======== PERSONNAGES & MLK ========*/
-
-
+/*
+Crédits : Titouan Moquet
+*/
 #mlk,
 #personnages {
     cursor: default;
@@ -677,7 +635,6 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    /*margin: auto;*/
 }
 
 
@@ -698,7 +655,6 @@ hr {
 
 #personnages>section h2 {
     color: var(--bleu);
-    /*margin: 15px 15px 0 15px;*/
     margin: 0;
     padding: 15px 15px 0 15px;
     font-size: 1.5em;
@@ -715,7 +671,6 @@ hr {
 }
 
 #personnages>section div img {
-    /*width: inherit;*/
     height: 330px;
     object-fit: cover;
     object-position: top;
@@ -763,11 +718,9 @@ hr {
     transform: scale(1.07);
 }
 
-
-
 /*========== page mlk ==========*/
 /*
-Credit : Titouan Moquet
+Crédits : Titouan Moquet
 */
 #mlk hr {
     width: 70%;
@@ -812,7 +765,6 @@ Credit : Titouan Moquet
 }
 
 #mlk header {
-    /*background-image: url(assets/images/personnages/background-mlk.png);*/
     background-image: url(assets/images/personnages/background.jpeg);
     background-repeat: no-repeat;
     background-position: right;
@@ -882,7 +834,6 @@ Credit : Titouan Moquet
     line-height: 2em;
     font-family: 'Alexandria Regular', sans-serif;
     transition: all 0.5s ease;
-
 }
 
 #mlk header ul li u {
@@ -904,26 +855,21 @@ Credit : Titouan Moquet
     min-height: 450px;
 }
 
-
 #mlk section,
 #mlk aside {
     opacity: 0;
-    /*transform: translateX(100px);*/
     transition: all 0.8s ease-out;
 }
 
 #mlk section.appear,
 #mlk aside.appear {
     opacity: 1;
-    /* transform: translateX(0);*/
 }
-
 
 #mlk section:first-of-type figure {
     float: right;
     margin-left: 15px;
     width: 200px;
-
 }
 
 #mlk section:first-of-type figure img {
@@ -943,7 +889,6 @@ Credit : Titouan Moquet
 
 #mlk section:nth-of-type(2) article {
     margin-top: 20px;
-
 }
 
 /*articles livres */
@@ -953,7 +898,6 @@ Credit : Titouan Moquet
 }
 
 #mlk section:nth-of-type(2) .livres>div>div {
-
     width: 50%;
     text-align: center;
     padding: 20px;
@@ -987,7 +931,6 @@ Credit : Titouan Moquet
     padding: 20px;
     border-radius: var(--border-radius-bloc);
     transition: transform 0.3s ease;
-
 }
 
 #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
@@ -1005,7 +948,6 @@ Credit : Titouan Moquet
 #mlk section:nth-of-type(2) .film div:hover {
     transform: scale(1.03);
 }
-
 
 /*=== activité ===*/
 
@@ -1035,7 +977,6 @@ Credit : Titouan Moquet
     margin-top: auto;
 }
 
-
 #mlk section:nth-of-type(3) div>div>img {
     align-self: center;
     width: 25em;
@@ -1060,12 +1001,11 @@ Credit : Titouan Moquet
     margin-top: 20px;
 }
 
-#mlk aside:first-of-type figure{
+#mlk aside:first-of-type figure {
     margin: 0;
     padding: 0;
 
 }
-
 
 #mlk aside:first-of-type div img {
     width: 100%;
@@ -1093,351 +1033,9 @@ Credit : Titouan Moquet
 }
 
 #personnages>p:last-of-type a,
-#mlk>p:last-of-type a{
+#mlk>p:last-of-type a {
     color: inherit;
 }
-
-/*===== responsif des pages mlk et personnages =====*/
-/*
-Credit : Titouan Moquet
-*/
-
-@media screen and (max-width: 1420px) {
-    #mlk section:nth-of-type(3) div>div {
-        width: 40%;
-    }
-
-    #mlk section:nth-of-type(3) div>div>img {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
-    /*photo du film*/
-    #mlk section:nth-of-type(2) .film>div img:first-of-type {
-        display: none;
-    }
-
-    #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
-        margin-left: 0;
-
-    }
-}
-
-
-@media screen and (min-width: 1300px) {
-    #personnages>section {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-
-    /*livres*/
-    #mlk section:nth-of-type(2) .livres>div {
-        flex-direction: column;
-        align-items: center
-    }
-
-    #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
-        margin-right: 0;
-    }
-
-    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
-        margin-left: 0;
-    }
-
-    #mlk section:nth-of-type(2) .livres>div>div {
-        width: auto;
-        margin-bottom: 20px;
-    }
-
-    /*article film*/
-    /*
-    #mlk section:nth-of-type(2) .film {
-        margin: auto;
-        width: 90%;
-        margin-bottom: 10px;
-    }
-*/
-    #mlk header blockquote {
-        left: 0;
-        width: auto;
-    }
-
-    /*
-    #mlk header ul {
-        width: fit-content;
-    }
-*/
-}
-
-
-@media screen and (max-width: 900px) {
-    #mlk section:first-of-type figure {
-
-        margin-right: 15px;
-        width: 100px;
-        font-size: small;
-    }
-
-    #mlk section:first-of-type figure img:hover {
-        transform: scale(1.9);
-
-    }
-
-    #mlk header h1 {
-        font-size: 2.5em;
-        margin-top: 2em;
-    }
-
-    #mlk header ul li {
-        font-size: 1.2em;
-    }
-
-}
-
-@media screen and (max-width: 800px) {
-    #mlk section:nth-of-type(3) div>div {
-        width: auto;
-    }
-
-    #mlk p,
-    #mlk header ul {
-        font-size: 1.1em !important;
-    }
-
-    #mlk h2 {
-        font-size: 1.6em;
-    }
-
-    /*popup*/
-    .popup-credit {
-        padding: 7px 7px 7px 7px;
-    }
-
-    .top-button {
-        transform: scale(0.8);
-        right: 10px;
-    }
-
-
-}
-
-@media screen and (max-width: 660px) {
-
-    #mlk section:nth-of-type(3) div>div>img {
-        /* width: 100%;*/
-        height: auto;
-    }
-
-    #mlk section:nth-of-type(3) div {
-        padding: 0;
-    }
-
-    /*
-    #mlk aside:first-of-type div img {
-        width: 50%;
-        height: 10em;
-    }*/
-
-    #personnages>section div {
-        height: auto;
-
-    }
-}
-
-@media screen and (max-width: 550px) {
-    #personnages header {
-        height: auto;
-    }
-
-    #personnages header h1 {
-        margin-bottom: 0;
-    }
-
-    #mlk header{
-        background-position-x: 80%
-    }
-
-    #mlk header h1 {
-        font-size: 2em;
-    }
-
-    #mlk header blockquote {
-        display: none;
-    }
-
-    #mlk header ul {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border-radius: 0;
-    }
-
-    #mlk header ul li {
-        line-height: 1.2em;
-    }
-
-    /* film et livres*/
-    #mlk section:nth-of-type(2) .livres>div>div:first-of-type,
-    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2),
-    #mlk section:nth-of-type(2) .film>div>div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #mlk section:nth-of-type(2)>article:nth-of-type(2) p {
-        margin-top: 1em;
-    }
-
-    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
-        margin-bottom: 0;
-    }
-
-    #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
-        margin-bottom: 20px;
-    }
-    #mlk section:nth-of-type(2) img{
-        margin-right: 0;
-    }
-    /*galerie */
-    #mlk aside:first-of-type div {
-        display: block;
-    }
-
-    #mlk aside:first-of-type figure{
-        margin-bottom: 20px;
-    }
-    #mlk aside:first-of-type figcaption{
-        font-size: 0.9em;
-    }
-
-    #mlk aside:first-of-type div img {
-        height: 10em;
-        width: 100%;
-    }
-
-
-
-    /*popup*/
-    .popup-credit {
-        padding: 5px 5px 5px 5px;
-    }
-
-}
-
-/*
-Source - https://stackoverflow.com/a
-*/
-@media (any-pointer: coarse) {
-    #mlk aside p {
-        display: block; 
-        /*affiche un message seulement si écran tactile*/
-    }
-
-}
-
-
-@media screen and (max-width: 400px) {
-    #personnages>section div img {
-        height: auto;
-    }
-
-    #personnages>section div a {
-        width: auto;
-        align-self: auto;
-        margin-top: inherit;
-    }
-
-    #personnages header h1 {
-        font-size: 2.5em;
-    }
-
-    #personnages header p {
-        font-size: 1.2em;
-    }
-
-    /* mlk */
-
-    #mlk p,
-    #mlk header ul {
-        font-size: 1em !important;
-    }
-
-    #mlk h2 {
-        font-size: 1.5em;
-    }
-
-    #mlk section,
-    #mlk aside {
-        width: auto;
-        margin: 25px 15px 15px 15px;
-    }
-
-    #mlk aside {
-        padding: 0;
-    }
-
-
-    /*film et livres*/
-    #mlk section:nth-of-type(2) .livres>div>div {
-        margin-bottom: 20px;
-    }
-
-    #mlk section:nth-of-type(2) .film div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
-        margin: 0;
-        align-self: center;
-    }
-
-
-    /*activité */
-    #mlk section:nth-of-type(3) div>div {
-        margin: 10px auto 10px auto;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #personnages>section div {
-        margin: 10px;
-    }
-
-    #personnages>section h2 {
-        font-size: 1.1em;
-
-    }
-
-    #personnages>section p {
-        font-size: 1em;
-    }
-
-    #mlk section:nth-of-type(2) .livres>div>div>img:first-of-type,
-    #mlk section:nth-of-type(2) .film div img {
-        height: 9em;
-    }
-
-    #mlk section:nth-of-type(2),
-    #mlk section:nth-of-type(3) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #mlk section:nth-of-type(2) h2,
-    #mlk section:nth-of-type(2) h3,
-    #mlk section:nth-of-type(3) h2 {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-
-}
-
 
 
 /* ======== PAGE D'ACCUEIL ========*/
@@ -1576,7 +1174,6 @@ Source - https://stackoverflow.com/a
     background: #444;
 }
 
-
 /* ======== présentation des USA ========*/
 
 .usa-presentation {
@@ -1674,7 +1271,6 @@ Source - https://stackoverflow.com/a
     align-items: center;
     text-align: center;
     height: 680px;
-
 }
 
 .article {
@@ -1810,115 +1406,6 @@ Source - https://stackoverflow.com/a
     color: var(--bleu-fonce);
 }
 
-@media screen and (max-width: 1420px) {
-    #fullscreen_las-vegas h1 {
-        font-size: 80px;
-        width: 350px;
-    }
-
-    #usa-title h1,
-    #article-title h1,
-    #discover-title h1 {
-        font-size: 30px;
-    }
-
-    #usa-title h1 {
-        margin-bottom: 50px;
-    }
-
-    #usa-presentation {
-        font-size: 10px;
-        width: auto;
-        height: 200px;
-        margin: 0;
-        justify-content: space-between;
-    }
-
-    .usa-presentation{
-        height: auto;
-    }
-
-    .right-presentation {
-        font-size: 10px;
-        height: 90%;
-        width: 32%;
-    }
-
-    #right-presentation-cate {
-        width: 100%;
-        height: 50;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #usa-all-presentation {
-        justify-content: space-around;
-        padding: 10px 0;
-        flex-wrap: wrap;
-    }
-
-    .right-presentation h3 {
-        margin: 10px;
-    }
-
-    #carte {
-        display: none;
-    }
-
-    .carte {
-        display: none;
-    }
-
-    .article {
-        width: 90%;
-    }
-
-    #article-title,
-    #discover-title {
-        height: 60px;
-    }
-
-    .article div h1 {
-        font-size: 15px;
-    }
-
-    .article div h2 {
-        display: none;
-    }
-
-    .article div h3 {
-        font-size: 12px;
-    }
-
-    .article-button {
-        display: none;
-    }
-
-    .discover {
-        width: 100%;
-        margin-bottom: 20px;
-        height: 30%;
-    }
-
-    #discover {
-        height: 1300px;
-    }
-
-    #discover-description {
-        font-size: 10px;
-        height: 18%;
-    }
-
-    #discover-cate {
-        flex-wrap: wrap;
-        width: 80%;
-    }
-
-}
-
-
-
 
 /* ======== PAGE OEUVRE ========*/
 
@@ -1970,7 +1457,6 @@ Source - https://stackoverflow.com/a
     border-radius: var(--border-radius-bloc);
     box-shadow: var(--drop-shadow-0-25);
     overflow: hidden;
-
     transition: all;
     transition-duration: 300ms;
 }
@@ -1989,7 +1475,6 @@ Source - https://stackoverflow.com/a
     border-radius: var(--border-radius-bloc) var(--border-radius-bloc) 0 0;
     object-fit: cover;
     overflow: hidden;
-
     transition-duration: 300ms;
 }
 
@@ -2008,29 +1493,22 @@ Source - https://stackoverflow.com/a
 
 .main-oeuvres>section>div>div a {
     background-color: var(--bleu);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 12.5em;
     height: 2em;
-
     margin: 0.5em;
-
     font-family: var(--font-family-fredoka);
     color: var(--white);
     text-decoration: none;
     font-size: 1.3em;
-
     border-radius: calc(var(--border-radius-bloc) / 2);
     border: 0;
     box-shadow: 0 0px 5px var(--bleu);
-
     transition: all;
     transition-duration: 300ms;
 }
-
 
 .main-oeuvres>section>div>div a:hover {
     background-color: var(--white);
@@ -2038,21 +1516,16 @@ Source - https://stackoverflow.com/a
     box-shadow: 0 0px 15px var(--bleu);
 }
 
-
-
 .main-oeuvres>section>div>div h2 {
     width: 80%;
     text-align: left;
     color: var(--bleu);
-
     text-transform: uppercase;
     font-family: var(--font-family-nats);
     font-size: 2.5em;
     font-weight: 50;
-
     margin: 0;
     padding: 0;
-
     position: relative;
     margin-left: 1em;
 }
@@ -2060,10 +1533,8 @@ Source - https://stackoverflow.com/a
 .main-oeuvres>section>div>div h2::before {
     background-color: var(--rouge-fonce);
     content: "";
-
     width: 10px;
     height: 40px;
-
     position: absolute;
     left: -0.5em;
     top: 50%;
@@ -2073,15 +1544,12 @@ Source - https://stackoverflow.com/a
 .main-oeuvres>section>div>div {
     width: 100%;
     height: 16em;
-
     display: flex;
-
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: left;
     align-self: center;
-
     position: relative;
 }
 
@@ -2102,7 +1570,6 @@ Source - https://stackoverflow.com/a
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     height: 40vh;
     margin: 0;
     padding-top: 50%;
@@ -2123,7 +1590,6 @@ Source - https://stackoverflow.com/a
     font-size: 80px;
     letter-spacing: 0.1rem;
     font-weight: 400;
-
     margin: 0;
     padding: 0;
 }
@@ -2134,7 +1600,6 @@ Source - https://stackoverflow.com/a
     font-size: 20px;
     letter-spacing: 0.05rem;
     font-weight: 400;
-
     margin: 0;
     padding: 0;
 }
@@ -2143,42 +1608,33 @@ Source - https://stackoverflow.com/a
     width: 90%;
     margin: 4em auto;
     padding: 2em;
-
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
     box-shadow: var(--drop-shadow-0-25);
-
     box-sizing: border-box;
 }
 
 .main-fg section:nth-child(2) {
     display: flex;
     align-items: flex-start;
-
     gap: 1em;
-
     flex-wrap: wrap;
 }
 
 .main-fg section:nth-child(2) div {
-
     display: flex;
     flex-direction: column;
     align-self: stretch;
-
     flex: 1;
 }
 
 .main-fg section:nth-child(2) p {
     text-align: left;
-
     font-family: var(--font-family-fredoka);
     font-weight: 100;
-
     margin: 0;
     padding-left: 1.5em;
     margin-top: 1em;
-
     flex: 1;
     display: flex;
     align-items: center;
@@ -2199,10 +1655,8 @@ Source - https://stackoverflow.com/a
     font-size: 2.5em;
     font-weight: 50;
     line-height: 1em;
-
     margin: 0;
     padding: 0;
-
     position: relative;
     margin-left: 1em;
 }
@@ -2210,53 +1664,40 @@ Source - https://stackoverflow.com/a
 .main-fg section h2::before {
     background-color: var(--rouge-fonce);
     content: "";
-
     width: 10px;
-    /* height: 40px; */
     height: 110%;
-
     position: absolute;
-
     left: -0.5em;
     top: 50%;
     transform: translateY(-50%);
 }
 
-
 .main-fg section:nth-child(3) {
     background: none;
     box-shadow: none;
-
     padding: 0;
     display: flex;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
-
     gap: 2em;
-
     width: 90%;
     margin: 4em auto;
 }
 
 .main-fg section:nth-child(3)>div:first-child {
     box-sizing: border-box;
-
     padding: 2em;
     flex: 1 1 30%;
-
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
     box-shadow: var(--drop-shadow-0-25);
-
     text-align: left;
     font-family: var(--font-family-fredoka);
     font-weight: 100;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     gap: 0.5em;
 }
 
@@ -2271,19 +1712,16 @@ Source - https://stackoverflow.com/a
 .main-fg section:nth-child(3)>div:last-child {
     display: flex;
     flex-direction: column;
-
     flex: 2 1 60%;
     gap: 1em;
 }
 
 .main-fg section:nth-child(3)>div:last-child>div {
     box-sizing: border-box;
-
     padding: 1.5em 2em;
     width: 100%;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px, inset -100px 0 140px -100px var(--bleu-ciel);
     display: flex;
     align-items: center;
@@ -2310,22 +1748,17 @@ Source - https://stackoverflow.com/a
 .main-fg section:nth-child(3)>div:last-child>div>div {
     height: 5em;
     width: 6em;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-shrink: 0;
 }
 
 .main-fg section:nth-child(3)>div:last-child>div img {
     height: 5em;
     width: 100%;
-
     object-fit: contain;
-
     filter: saturate(0) brightness(0.8) contrast(1.5);
-
     transition: transform 0.3s ease;
 }
 
@@ -2340,52 +1773,39 @@ Source - https://stackoverflow.com/a
 .main-fg section:nth-child(3)>div:last-child>div p {
     margin: 0;
     text-align: left;
-
     flex: 1;
-
     font-family: var(--font-family-fredoka);
     font-weight: 100;
 }
 
 .note {
     position: relative;
-
     width: 17em;
     height: 17em;
-
     border-radius: 50%;
     background: conic-gradient(#15305B 0% 88%, transparent 88% 100%);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 auto 2em;
 }
 
 .note::before {
     content: "";
-
     position: absolute;
-
     width: 14em;
     height: 14em;
-
     background-color: var(--white);
     border-radius: 50%;
 }
 
 .note span {
     position: relative;
-
     color: #15305B;
     font-family: var(--font-family-bedas);
-
     font-size: 5em;
-
     letter-spacing: 0.1rem;
     font-weight: 400;
-
     margin: 0;
     padding: 0;
 }
@@ -2394,7 +1814,6 @@ Source - https://stackoverflow.com/a
     text-align: left;
     font-family: var(--font-family-fredoka);
     font-weight: 100;
-
     margin-bottom: 2em;
     padding: 0 1.5em;
 }
@@ -2402,60 +1821,42 @@ Source - https://stackoverflow.com/a
 .mouvement-images {
     display: flex;
     justify-content: space-between;
-
     gap: 1em;
     padding: 0 1.5em 1em;
 }
 
 .mouvement-images img {
     object-fit: cover;
-
     border-radius: var(--border-radius-bloc);
-
     width: 50%;
     height: auto;
-
     display: flex;
 }
 
 .mouvement-images img:nth-child(1) {
     flex: 2 1 70%;
-
 }
 
-
 /* LIEU & LIEU VISITE */
-
-
 
 .section-lieux {
     background: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-
     display: flex;
     flex-direction: column;
-
     gap: 3em;
-
     margin-bottom: 0 !important;
 }
 
 .section-lieux header {
     background-color: var(--white);
     padding: 2em;
-
     border-radius: var(--border-radius-bloc);
-
     box-shadow: var(--drop-shadow-0-25);
-
-
     text-align: left;
-
     height: 100%;
 }
-
-
 
 .section-lieux header p {
     font-family: var(--font-family-fredoka);
@@ -2463,7 +1864,6 @@ Source - https://stackoverflow.com/a
 
     margin: 1.5em;
 }
-
 
 .zigzag-container {
     position: relative;
@@ -2489,12 +1889,10 @@ Source - https://stackoverflow.com/a
     align-items: center;
 }
 
-
 .lieu-card:nth-child(n+3),
 .lieu-card-visite:nth-child(n+3) {
     margin-top: -5em;
 }
-
 
 .cercle-pointille {
     position: absolute;
@@ -2558,7 +1956,6 @@ Source - https://stackoverflow.com/a
     text-wrap: wrap;
 }
 
-
 .zigzag-container h4 {
     text-align: left;
     color: var(--bleu);
@@ -2577,15 +1974,13 @@ Source - https://stackoverflow.com/a
     margin-left: 1em;
 }
 
-
 .zigzag-container p {
     font-family: var(--font-family-fredoka);
     font-weight: 100;
     font-size: 1.3em;
     margin: 0;
-    padding : 0.5em 1em;
+    padding: 0.5em 1em;
 }
-
 
 .zigzag-container img {
     width: 35em;
@@ -2595,17 +1990,12 @@ Source - https://stackoverflow.com/a
     border-radius: calc(var(--border-radius-bloc) / 2);
 }
 
-
-/* Version Classique */
-
-
-
-
-.section-lieux{
+.section-lieux {
     gap: 1em;
 }
 
-.lieu-card > div, .lieu-card-visite > div {
+.lieu-card>div,
+.lieu-card-visite>div {
     flex-direction: column;
     width: 90%;
     box-sizing: border-box;
@@ -2621,9 +2011,10 @@ Source - https://stackoverflow.com/a
     margin: 1em;
 }
 
-.lieu-card, .lieu-card-visite {
+.lieu-card,
+.lieu-card-visite {
     padding: 0;
-    margin: 0;   
+    margin: 0;
 }
 
 .cercles-lieu,
@@ -2637,39 +2028,24 @@ Source - https://stackoverflow.com/a
     margin-top: 1em !important;
 }
 
-
-
-
-
-
-
-/* FIN */
-
-
-
-
+/* ====== ======= */
 
 .section-oeuvres {
     background: none !important;
     box-shadow: none !important;
     padding: 0 !important;
     margin-top: 0 !important;
-
     display: flex;
     flex-direction: column;
 }
 
-
 .section-oeuvres>div:first-child {
     margin: 4em auto;
     padding: 2em;
-
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-
     box-shadow: var(--drop-shadow-0-25);
     box-sizing: border-box;
-
     width: 100%;
 }
 
@@ -2684,38 +2060,29 @@ Source - https://stackoverflow.com/a
     margin-bottom: 2em;
 }
 
-
-
 .oeuvres-grid {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     flex-wrap: nowrap;
     gap: 2em;
-
     width: 100%;
     margin: 0 auto;
 }
 
-
 .oeuvre-card {
     width: 28%;
-
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
     box-shadow: var(--drop-shadow-0-25);
     padding: 1.5em;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
 
 }
-
 
 .oeuvre-card:nth-child(2) {
     height: 35em;
@@ -2732,16 +2099,12 @@ Source - https://stackoverflow.com/a
 .oeuvre-card h4 {
     text-align: center;
     color: var(--bleu);
-
     text-transform: uppercase;
     font-family: var(--font-family-nats);
-
     font-size: 1.3em;
     line-height: 1.2em;
-
     font-weight: 50;
     margin: 0 0 1em 0;
-
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -2754,7 +2117,6 @@ Source - https://stackoverflow.com/a
     height: 0;
     object-fit: contain;
 }
-
 .fleche-oeuvre {
     position: absolute;
     width: 5em;
@@ -2774,7 +2136,6 @@ Source - https://stackoverflow.com/a
     transition: all 0.3s ease;
 }
 
-
 .fleche-oeuvre::before {
     content: "";
     position: absolute;
@@ -2787,7 +2148,6 @@ Source - https://stackoverflow.com/a
     border-top-left-radius: 10%;
 }
 
-
 .oeuvre-card:nth-child(1) .fleche-oeuvre {
     opacity: 1 !important;
     pointer-events: auto;
@@ -2797,12 +2157,10 @@ Source - https://stackoverflow.com/a
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-
 .oeuvre-card:nth-child(2) .fleche-oeuvre {
     opacity: 0 !important;
     pointer-events: none;
 }
-
 
 .oeuvre-card:nth-child(3) .fleche-oeuvre {
     opacity: 1 !important;
@@ -2813,10 +2171,8 @@ Source - https://stackoverflow.com/a
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-
 .fleche-oeuvre:hover {
     background-color: var(--bleu-ciel);
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.75);
     transform: translate(-50%, -50%) scale(1.1);
 }
@@ -2832,7 +2188,6 @@ Source - https://stackoverflow.com/a
 .main-fg>section:last-of-type div:nth-child(1) {
     margin: 4em auto;
     padding: 2em;
-
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
     box-shadow: var(--drop-shadow-0-25);
@@ -2842,28 +2197,22 @@ Source - https://stackoverflow.com/a
 .main-fg>section:last-of-type p {
     text-align: left;
     font-family: var(--font-family-fredoka);
-
     font-weight: 100;
-
     margin-bottom: 2em;
     margin: 1.5em;
 }
 
 .main-fg>section:last-of-type div:nth-child(2) {
     display: grid;
-
     grid-template-columns: repeat(auto-fill, minmax(35em, 1fr));
     gap: 1.5em;
 }
-
 
 .main-fg>section:last-of-type div:nth-child(2) img {
     width: 100%;
     height: 25em;
     object-fit: cover;
-
     border-radius: calc(var(--border-radius-bloc) / 2);
-
     box-shadow: var(--drop-shadow-0-25);
     transition: all 0.3s ease;
     box-sizing: border-box;
@@ -2873,242 +2222,6 @@ Source - https://stackoverflow.com/a
     filter: brightness(1.1);
     transform: scale(1.01);
     box-shadow: var(--drop-shadow-0-5);
-}
-
-
-
-
-/* Responsive */
-
-
-
-@media screen and (max-width: 576px) { /* Format Téléphone */
-
-    /* Oeuvres */
-
-    .main-oeuvres header h3 {
-        display: none;
-    }
-
-    /* Page Forrest Gump */
-
-    .main-fg section {
-        margin: 2em auto !important;
-    }
-
-    .main-fg section h2 {
-        font-size: 2em;
-    }
-
-    .main-fg header:has(h1) div h3 {
-        display: none;
-    }
-
-
-    .main-fg section:nth-child(2) img {
-        width: 100%;
-    }
-
-    .main-fg section:nth-child(3)>div:first-child cite:last-child,
-    .main-fg section:nth-child(3)>div:first-child q,
-    .main-fg section:nth-child(3)>div:first-child br {
-        display: none;
-    }
-
-    .note {
-        width: 20em;
-        height: 20em;
-    }
-
-    .note span {
-        font-size: 7em;
-    }
-
-    .note::before {
-        width: 16em;
-        height: 16em;
-    }
-
-    .main-fg section:nth-child(3)>div:last-child>div {
-        flex-direction: column;
-    }
-
-    .main-fg section:nth-child(3)>div:last-child>div img {
-        height: 10em;
-    }
-
-    .main-fg section:nth-child(3)>div:last-child>div>div {
-        height: 10em;
-        width: 12em;
-    }
-
-    .main-fg section:nth-child(3)>div:last-child>div p {
-        text-align: center;
-    }
-
-    .main-fg section:nth-child(3)>div:last-child>div p {
-        /* bug  "z-index n’a aucun effet sur cet élément, car il ne s’agit pas d’un élément positionné.
-        Essayez de définir sa propriété position avec une valeur différente de static"*/
-        z-index: 2;
-    }
-
-
-
-    .section-lieux {
-        gap: 1em;
-    }
-
-    .lieu-card>div,
-    .lieu-card-visite>div {
-        flex-direction: column;
-        width: 90%;
-        box-sizing: border-box;
-        margin-bottom: 1em;
-    }
-
-    .zigzag-container img {
-        width: 100%;
-    }
-
-    .zigzag-container h4 {
-        line-height: 1em;
-        margin: 1em;
-    }
-
-    .lieu-card,
-    .lieu-card-visite {
-        padding: 0;
-        margin: 0;
-    }
-
-
-
-    .mouvement-images img:nth-child(2) {
-        display: none;
-    }
-
-    .mouvement-images img:nth-child(1) {
-        height: 15em;
-    }
-
-    .cercles-lieu,
-    .cercles-visite {
-        display: none;
-    }
-
-    .fleche-oeuvre {
-        display: none;
-    }
-
-    .oeuvres-grid {
-        flex-direction: column;
-    }
-
-    .oeuvre-card {
-        width: 100%;
-        opacity: 100% !important;
-        box-shadow: var(--drop-shadow-0-25) !important;
-    }
-
-
-
-
-    .main-fg>section:last-of-type div:nth-child(2) img {
-        width: 90vw;
-        height: 12em;
-    }
-
-
-
-    .section-lieux header p,
-    .section-oeuvres>div:first-child p,
-    .main-fg>section:last-of-type p {
-        margin-bottom: 0.5em;
-    }
-
-    .section-oeuvres>div:first-child,
-    .main-fg>section:last-of-type div:nth-child(1) {
-        margin: 0 0 2em 0;
-    }
-
-    .main-fg>section:last-of-type {
-        margin-bottom: 4em !important;
-    }
-
-
-
-
-
-    .section-lieux header p,
-    .section-oeuvres > div:first-child p,
-    .main-fg > section:last-of-type p{
-        margin-bottom: 0.5em;
-    }
-
-}
-
-/* Autre Format */ 
-
-
-
-@media screen and (min-width: 1524px) and (max-width: 1920px){
-
-    .section-lieux{
-        gap: 3em;
-    }
-
-    .lieu-card > div, .lieu-card-visite > div {
-        flex-direction: row ;
-        width: 100%;
-        box-sizing: content-box;
-        margin-bottom: 0;  
-    }
-
-    .zigzag-container img {
-        width: 35em;
-    }
-
-    .zigzag-container h4 {
-        line-height: normal;
-        margin: 0.5em;
-    }
-
-    .lieu-card, .lieu-card-visite {
-        padding: 2em;
-        width: 65%;  
-        display: block !important; 
-    }
-
-    .cercles-lieu,
-    .cercles-visite {
-        display: block;
-    }
-
-
-    .lieu-card:nth-child(n+3),
-    .lieu-card-visite:nth-child(n+3) {
-        margin-top: -5em !important;
-    }
-
-
-}
-
-@media screen and (min-width: 1920px){
-
-    .zigzag-container img {
-        height: 45em;
-    }
-
-    .zigzag-container h4 {
-        margin: 2em 2em 0 2em;
-        align-self: center;
-    }
-
-    .lieu-card > div, .lieu-card-visite > div {
-        flex-direction: column-reverse;
-        margin: 2em;
-    }
-
 }
 
 
@@ -3165,8 +2278,6 @@ Source - https://stackoverflow.com/a
     color: var(--bleu-deep);
     line-height: 1.6;
 }
-
-
 
 #container-image-aside {
     height: 30vw;
@@ -3331,13 +2442,11 @@ Source - https://stackoverflow.com/a
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: "BEBAS", sans-serif;
     font-size: 120px;
     color: var(--bg-color-article);
     text-shadow: 2px 5px 40px var(--bleu-fonce);
     height: 100vh;
-
     margin: 0;
     background-image: url("assets/images/lieux/yellowstone-national-park.jpg");
     background-size: cover;
@@ -3354,7 +2463,6 @@ Source - https://stackoverflow.com/a
     width: 55%;
 }
 
-
 #yellowstone p {
     font-family: "FREDOKA", sans-serif;
     font-size: 1.2em;
@@ -3368,8 +2476,6 @@ Source - https://stackoverflow.com/a
     color: var(--bleu-deep);
     line-height: 1.6;
 }
-
-
 
 #yellowstone h2 {
     font-family: "BEBAS", sans-serif;
@@ -3440,7 +2546,6 @@ Source - https://stackoverflow.com/a
 #frise-chronologique article p {
     width: 50%;
     font-family: var(--font-family-fredoka);
-    /*font-size: 1em;*/
     line-height: 1.6;
     padding: 5px;
     margin: 0;
@@ -3474,7 +2579,6 @@ Source - https://stackoverflow.com/a
 #frise-section2 article .point {
     left: -37px;
 }
-
 
 #biodiversite article {
     height: 100%;
@@ -3570,10 +2674,6 @@ strong {
     overflow: hidden;
 }
 
-
-
-
-
 #mapid aside {
     position: absolute;
     padding: 5%;
@@ -3587,10 +2687,7 @@ strong {
     scrollbar-color: var(--bg-color-article) var(--bleu-deep);
     scrollbar-width: thin;
     border-radius: 10px;
-
 }
-
-
 
 #mapid aside h3 {
     text-align: center;
@@ -3706,8 +2803,229 @@ strong {
     border-radius: var(--border-radius-bloc);
 }
 
+/* ===== RESPONSIF =====*/
 
-/* ===== responsif =====*/
+@media screen and (min-width: 1524px) and (max-width: 1920px) {
+
+    .section-lieux {
+        gap: 3em;
+    }
+
+    .lieu-card>div,
+    .lieu-card-visite>div {
+        flex-direction: row;
+        width: 100%;
+        box-sizing: content-box;
+        margin-bottom: 0;
+    }
+
+    .zigzag-container img {
+        width: 35em;
+    }
+
+    .zigzag-container h4 {
+        line-height: normal;
+        margin: 0.5em;
+    }
+
+    .lieu-card,
+    .lieu-card-visite {
+        padding: 2em;
+        width: 65%;
+        display: block !important;
+    }
+
+    .cercles-lieu,
+    .cercles-visite {
+        display: block;
+    }
+
+
+    .lieu-card:nth-child(n+3),
+    .lieu-card-visite:nth-child(n+3) {
+        margin-top: -5em !important;
+    }
+
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .zigzag-container img {
+        height: 45em;
+    }
+
+    .zigzag-container h4 {
+        margin: 2em 2em 0 2em;
+        align-self: center;
+    }
+
+    .lieu-card>div,
+    .lieu-card-visite>div {
+        flex-direction: column-reverse;
+        margin: 2em;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    /* ACCUEIL */
+    #fullscreen_las-vegas h1 {
+        font-size: 80px;
+        width: 350px;
+    }
+
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
+        font-size: 30px;
+    }
+
+    #usa-title h1 {
+        margin-bottom: 50px;
+    }
+
+    #usa-presentation {
+        font-size: 10px;
+        width: auto;
+        height: 200px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .usa-presentation {
+        height: auto;
+    }
+
+    .right-presentation {
+        font-size: 10px;
+        height: 90%;
+        width: 32%;
+    }
+
+    #right-presentation-cate {
+        width: 100%;
+        height: 50;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #usa-all-presentation {
+        justify-content: space-around;
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .right-presentation h3 {
+        margin: 10px;
+    }
+
+    #carte {
+        display: none;
+    }
+
+    .carte {
+        display: none;
+    }
+
+    .article {
+        width: 90%;
+    }
+
+    #article-title,
+    #discover-title {
+        height: 60px;
+    }
+
+    .article div h1 {
+        font-size: 15px;
+    }
+
+    .article div h2 {
+        display: none;
+    }
+
+    .article div h3 {
+        font-size: 12px;
+    }
+
+    .article-button {
+        display: none;
+    }
+
+    .discover {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30%;
+    }
+
+    #discover {
+        height: 1300px;
+    }
+
+    #discover-description {
+        font-size: 10px;
+        height: 18%;
+    }
+
+    #discover-cate {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    /* MLK */
+    #mlk section:nth-of-type(3) div>div {
+        width: 40%;
+    }
+
+    #mlk section:nth-of-type(3) div>div>img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /*photo du film*/
+    #mlk section:nth-of-type(2) .film>div img:first-of-type {
+        display: none;
+    }
+
+    #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
+        margin-left: 0;
+
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #personnages>section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    /*livres*/
+    #mlk section:nth-of-type(2) .livres>div {
+        flex-direction: column;
+        align-items: center
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
+        margin-right: 0;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    /* header */ 
+    #mlk header blockquote {
+        left: 0;
+        width: auto;
+    }
+}
 
 @media screen and (max-width: 970px) {
     .nav-left {
@@ -3771,7 +3089,98 @@ strong {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
+    /* traveau */
+    .travaux>div>main {
+
+        width: auto;
+    }
+
+    .travaux>div>div {
+        width: 80%;
+    }
+
+    .link-card-travaux {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link-card-travaux div {
+        width: 40%;
+        min-width: 220px;
+    }
+
+    .link-card-travaux div {
+        margin: 20px;
+    }
+
+    /* MLK */
+    #mlk section:first-of-type figure {
+        margin-right: 15px;
+        width: 100px;
+        font-size: small;
+    }
+
+    #mlk section:first-of-type figure img:hover {
+        transform: scale(1.9);
+    }
+
+    #mlk header h1 {
+        font-size: 2.5em;
+        margin-top: 2em;
+    }
+
+    #mlk header ul li {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #mlk section:nth-of-type(3) div>div {
+        width: auto;
+    }
+
+    #mlk p,
+    #mlk header ul {
+        font-size: 1.1em !important;
+    }
+
+    #mlk h2 {
+        font-size: 1.6em;
+    }
+
+    /*popup*/
+    .popup-credit {
+        padding: 7px 7px 7px 7px;
+    }
+
+    .top-button {
+        transform: scale(0.8);
+        right: 10px;
+    }
+
+    /* FG */
+    .main-fg>section:last-of-type div:nth-child(2) {
+        grid-template-columns: repeat(auto-fill, minmax(30em, 1fr)); 
+        /*fix d'un bug*/
+    }
+}
+
+@media screen and (max-width: 660px) {
+    /* MLK */
+    #mlk section:nth-of-type(3) div>div>img {
+        height: auto;
+    }
+
+    #mlk section:nth-of-type(3) div {
+        padding: 0;
+    }
+
+    #personnages>section div {
+        height: auto;
+
+    }
+    /* NAV */
     header nav {
         font-size: 1.5em;
     }
@@ -3800,7 +3209,239 @@ strong {
     }
 }
 
+@media screen and (max-width: 550px) {
+    /* PERSONNAGES */
+    #personnages header {
+        height: auto;
+    }
+
+    #personnages header h1 {
+        margin-bottom: 0;
+    }
+    /* MLK */
+    #mlk header {
+        background-position-x: 80%
+    }
+
+    #mlk header h1 {
+        font-size: 2em;
+    }
+
+    #mlk header blockquote {
+        display: none;
+    }
+
+    #mlk header ul {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    #mlk header ul li {
+        line-height: 1.2em;
+    }
+
+    /* film et livres*/
+    #mlk section:nth-of-type(2) .livres>div>div:first-of-type,
+    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2),
+    #mlk section:nth-of-type(2) .film>div>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mlk section:nth-of-type(2)>article:nth-of-type(2) p {
+        margin-top: 1em;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div:nth-of-type(2) {
+        margin-bottom: 0;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    #mlk section:nth-of-type(2) img {
+        margin-right: 0;
+    }
+
+    /*galerie */
+    #mlk aside:first-of-type div {
+        display: block;
+    }
+
+    #mlk aside:first-of-type figure {
+        margin-bottom: 20px;
+    }
+
+    #mlk aside:first-of-type figcaption {
+        font-size: 0.9em;
+    }
+
+    #mlk aside:first-of-type div img {
+        height: 10em;
+        width: 100%;
+    }
+
+    /* POPUP */
+    .popup-credit {
+        padding: 5px 5px 5px 5px;
+    }
+
+    /* OEUVRES */
+    .main-oeuvres header h3 {
+        display: none;
+    }
+
+    /* FORREST GUMP */
+    .main-fg section {
+        margin: 2em auto !important;
+    }
+
+    .main-fg section h2 {
+        font-size: 2em;
+    }
+
+    .main-fg header:has(h1) div h3 {
+        display: none;
+    }
+
+
+    .main-fg section:nth-child(2) img {
+        width: 100%;
+    }
+
+    .main-fg section:nth-child(3)>div:first-child cite:last-child,
+    .main-fg section:nth-child(3)>div:first-child q,
+    .main-fg section:nth-child(3)>div:first-child br {
+        display: none;
+    }
+
+    .note {
+        width: 20em;
+        height: 20em;
+    }
+
+    .note span {
+        font-size: 7em;
+    }
+
+    .note::before {
+        width: 16em;
+        height: 16em;
+    }
+
+    .main-fg section:nth-child(3)>div:last-child>div {
+        flex-direction: column;
+    }
+
+    .main-fg section:nth-child(3)>div:last-child>div img {
+        height: 10em;
+    }
+
+    .main-fg section:nth-child(3)>div:last-child>div>div {
+        height: 10em;
+        width: 12em;
+    }
+
+    .main-fg section:nth-child(3)>div:last-child>div p {
+        text-align: center;
+    }
+
+    .main-fg section:nth-child(3)>div:last-child>div p {
+        /* bug  "z-index n’a aucun effet sur cet élément, car il ne s’agit pas d’un élément positionné.
+        Essayez de définir sa propriété position avec une valeur différente de static"*/
+        z-index: 2;
+    }
+
+    .section-lieux {
+        gap: 1em;
+    }
+
+    .lieu-card>div,
+    .lieu-card-visite>div {
+        flex-direction: column;
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+    }
+
+    .zigzag-container img {
+        width: 100%;
+    }
+
+    .zigzag-container h4 {
+        line-height: 1em;
+        margin: 1em;
+    }
+
+    .lieu-card,
+    .lieu-card-visite {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mouvement-images img:nth-child(2) {
+        display: none;
+    }
+
+    .mouvement-images img:nth-child(1) {
+        height: 15em;
+    }
+
+    .cercles-lieu,
+    .cercles-visite {
+        display: none;
+    }
+
+    .fleche-oeuvre {
+        display: none;
+    }
+
+    .oeuvres-grid {
+        flex-direction: column;
+    }
+
+    .oeuvre-card {
+        width: 100%;
+        opacity: 100% !important;
+        box-shadow: var(--drop-shadow-0-25) !important;
+    }
+
+    .main-fg>section:last-of-type div:nth-child(2) img {
+        width: 100%;;
+        height: 12em;
+    }
+
+    .section-lieux header p,
+    .section-oeuvres>div:first-child p,
+    .main-fg>section:last-of-type p {
+        margin-bottom: 0.5em;
+    }
+
+    .section-oeuvres>div:first-child,
+    .main-fg>section:last-of-type div:nth-child(1) {
+        margin: 0 0 2em 0;
+    }
+
+    .main-fg>section:last-of-type {
+        margin-bottom: 4em !important;
+    }
+
+    .section-lieux header p,
+    .section-oeuvres>div:first-child p,
+    .main-fg>section:last-of-type p {
+        margin-bottom: 0.5em;
+    }
+    .main-fg>section:last-of-type div:nth-child(2){
+        display: block  ;
+    }
+
+}
+
 @media screen and (max-width: 400px) {
+    /* FOOTER */
     footer>div:first-child>div {
         flex-direction: column;
     }
@@ -3815,6 +3456,68 @@ strong {
         border-top: 3px solid white;
         border-bottom: 3px solid white;
     }
+
+    /* PERSONNAGES */
+    #personnages>section div img {
+        height: auto;
+    }
+
+    #personnages>section div a {
+        width: auto;
+        align-self: auto;
+        margin-top: inherit;
+    }
+
+    #personnages header h1 {
+        font-size: 2.5em;
+    }
+
+    #personnages header p {
+        font-size: 1.2em;
+    }
+
+    /* MLK */
+
+    #mlk p,
+    #mlk header ul {
+        font-size: 1em !important;
+    }
+
+    #mlk h2 {
+        font-size: 1.5em;
+    }
+
+    #mlk section,
+    #mlk aside {
+        width: auto;
+        margin: 25px 15px 15px 15px;
+    }
+
+    #mlk aside {
+        padding: 0;
+    }
+
+    /*film et livres*/
+    #mlk section:nth-of-type(2) .livres>div>div {
+        margin-bottom: 20px;
+    }
+
+    #mlk section:nth-of-type(2) .film div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mlk section:nth-of-type(2) .film div img:nth-of-type(2) {
+        margin: 0;
+        align-self: center;
+    }
+
+    /*activité */
+    #mlk section:nth-of-type(3) div>div {
+        margin: 10px auto 10px auto;
+    }
+
+    /**/
 }
 
 @media screen and (max-width: 320px) {
@@ -3826,6 +3529,43 @@ strong {
         width: 50px;
         height: 50px;
     }
+
+    /* PERSONNAGES */ 
+    #personnages>section div {
+        margin: 10px;
+    }
+
+    #personnages>section h2 {
+        font-size: 1.1em;
+
+    }
+
+    #personnages>section p {
+        font-size: 1em;
+    }
+
+    #mlk section:nth-of-type(2) .livres>div>div>img:first-of-type,
+    #mlk section:nth-of-type(2) .film div img {
+        height: 9em;
+    }
+
+    #mlk section:nth-of-type(2),
+    #mlk section:nth-of-type(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #mlk section:nth-of-type(2) h2,
+    #mlk section:nth-of-type(2) h3,
+    #mlk section:nth-of-type(3) h2 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* POPUP */ 
+
+    .popup-warn p {
+        font-size: 0.9em;
+    }
 }
 
 @media screen and (max-width: 200px) {
@@ -3833,3 +3573,15 @@ strong {
         display: none;
     }
 }
+
+@media (any-pointer: coarse) {
+    /*
+    Source - https://stackoverflow.com/
+    */
+    /* MLK */
+    #mlk aside p {
+        display: block;
+        /*affiche un message seulement si écran tactile*/
+    }
+}
+
