@@ -9,28 +9,28 @@ Les modifications de Bastien, Flavien et Ako ne sont pas toutes répertoriées i
 Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [changelog](pages/changelog_personnages.md)
 
 ## Version 2.1.3 : 17/01/2026
-() 
-> ... : 17/01/2026
+(Titouan)
 - fix responsive popup-warn
 - gathering @media at the end of the CSS
 - clean code
+
 (Flavien)
-> Fix affichage différents éléments page FG : 17/01/2026
+> Fix affichage différents éléments page FG
 - fix responsive display of many items
 - fix responsive bugs
 
 ## Version 2.1.2 : 07/01/2026
 (Titouan)
-> V1.2.7 Personnages - 07/01/2026
+> V1.2.7 Personnages 
 - change position of top button & popup credit
 (Flavien)
-> Update Responsive Fg : 07/01/2026
+> Update Responsive Fg 
 - Adjusts the "lieux" and "lieux à visiter" sections to the format
 - Improvements to certain padding and margin behaviour in several places
 
 ## Version 2.1.1 : 06/01/2026
 (Titouan)
-> V1.2.6 Personnages : 06/01/2026
+> V1.2.6 Personnages
 - changelog fixes
 
 - add top buton all page
@@ -39,9 +39,10 @@ Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [c
 
 ## Version 2.1.0 : 04/01/2026
 (Flavien)
-> Update Forrest Gump "Lieux" container mobile: 04/01/2026
+> Update Forrest Gump "Lieux" container mobile
 - Reorganisation of the sections on places and places to visit
-> Update css mobile Forrest Gump : 04/01/2026
+
+> Update css mobile Forrest Gump 
 - Adjusting spacing between elements for mobile format
 - Adjusting images for mobile format
 - Improving bullet point behaviour on h2 tags
@@ -54,7 +55,7 @@ Pour plus de détails sur les mises à jour `Vx.x.x Personnages` consultez ce [c
 - "Travaux" page redesign (Responsive is missing)
 
 (Flavien)
-> update css forrest gump - 03/01/2026
+> update css forrest gump : 03/01/2026
 - Added mobile format source note
 - Adapted reward image sizes for mobile format
 
