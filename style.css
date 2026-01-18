@@ -1416,7 +1416,7 @@ Crédits : Titouan Moquet
     text-decoration: none;
     color: var(--bleu-fonce);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
     #fullscreen_las-vegas h1 {
         font-size: 100px;
     }
@@ -1458,7 +1458,7 @@ Crédits : Titouan Moquet
     }
 }
 
-@media screen and (max-width: 425px) {
+@media (max-width: 767px) {
     #fullscreen_las-vegas h1 {
         font-size: 80px;
         width: 350px;
@@ -1551,7 +1551,7 @@ Crédits : Titouan Moquet
     }
 
     #discover {
-        height: 1300px;
+        height: 1400px;
     }
 
     #discover-description {
@@ -3817,6 +3817,18 @@ strong {
 
     .note::before {
         display: none;
+    }
+
+    .article-recent {
+        width: 100%;
+    }
+
+    .article {
+        width: 97%;
+    }
+
+    #usa-title h1, #article-title h1, #discover-title h1 {
+        font-size: 26px;
     }
 }
 
