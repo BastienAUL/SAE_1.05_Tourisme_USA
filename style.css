@@ -3176,6 +3176,10 @@ strong {
     }
 
     /*Page Lieux*/
+    
+    #lieux-page header h1{
+        font-size: 90px;
+    }
     #lieu section {
         width: 70%;
     }
@@ -3206,10 +3210,6 @@ strong {
     #conseils-pratiques div button {
         height: 20em;
         margin-bottom: 20px;
-    }
-
-    #container-image-aside{
-        height: 15em;
     }
 
     #lieux-list article p{
@@ -3510,6 +3510,11 @@ strong {
     #container-image-aside  {
         height: 40em;
     }
+
+    /* Page lieux */
+    #lieux-page header h1{
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -3552,6 +3557,20 @@ strong {
     footer p,
     footer a {
         font-size: 1em;
+    }
+
+     /* Yellowstone */
+     #yellowstone header h1 {
+        font-size: 40px;
+    }
+
+    #container-image-aside  {
+        height: 30em;
+    }
+
+    /* Page lieux */
+    #lieux-page header h1{
+        font-size: 40px;
     }
 }
 
