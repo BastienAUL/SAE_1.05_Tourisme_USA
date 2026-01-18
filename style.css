@@ -56,8 +56,8 @@ Do not reuse without permission !
     --font-family-nats: 'NATS', Arial, Helvetica, sans-serif;
     --font-family-alexandria: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     --font-family-bedas: 'BEBAS', Arial, Helvetica, sans-serif;
-    --drop-shadow-0-25: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
-    --drop-shadow-0-50: drop-shadow(rgba(0, 0, 0, 0.5) 0px 5px 20px);
+    --drop-shadow-0-25: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25) );
+    --drop-shadow-0-50: drop-shadow( 0px 5px 20px rgba(0, 0, 0, 0.5));
 }
 
 body {
@@ -189,7 +189,7 @@ header nav {
 .submenu li a {
     display: block;
     padding: 10px;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .submenu li a:hover {
@@ -448,7 +448,7 @@ hr {
 
 #cgu-and-pdc>section {
     border-radius: 20px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
+    filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
     margin: 4em 0 4em 0;
     background-color: white;
     padding: 0 30px;
@@ -1468,14 +1468,14 @@ Crédits : Titouan Moquet
     height: 35em;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     overflow: hidden;
     transition: all;
     transition-duration: 300ms;
 }
 
 .main-oeuvres>section>div:hover {
-    box-shadow: var(--drop-shadow-0-5);
+    box-shadow: 0px 0px 10px #0000002a;
 }
 
 .main-oeuvres>section>div:hover img {
@@ -1623,7 +1623,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow:0px 0px 10px #0000002a;
     box-sizing: border-box;
 }
 
@@ -1704,7 +1704,7 @@ Crédits : Titouan Moquet
     flex: 1 1 30%;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     text-align: left;
     font-family: var(--font-family-fredoka);
     font-weight: 100;
@@ -1869,7 +1869,7 @@ Crédits : Titouan Moquet
     background-color: var(--white);
     padding: 2em;
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     text-align: left;
     height: 100%;
 }
@@ -1895,7 +1895,7 @@ Crédits : Titouan Moquet
     padding: 2em;
 
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
 
     width: 65%;
 
@@ -2060,7 +2060,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     margin: 2em 0;
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     text-align: left;
     height: 100%;
 }
@@ -2074,7 +2074,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     box-sizing: border-box;
     width: 100%;
 }
@@ -2095,7 +2095,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     margin: 2em 0;
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow:0px 0px 10px #0000002a;
     text-align: left;
     height: 100%;
 }
@@ -2119,7 +2119,7 @@ Crédits : Titouan Moquet
     width: 28%;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow:0px 0px 10px #0000002a;
     padding: 1.5em;
     box-sizing: border-box;
     display: flex;
@@ -2169,7 +2169,7 @@ Crédits : Titouan Moquet
     height: 5em;
     background-color: var(--bleu);
     border-radius: 50%;
-    box-shadow: var(--drop-shadow-0-5);
+    box-shadow: 0px 0px 10px #0000002a;
     z-index: 10;
 
     top: 50%;
@@ -2236,7 +2236,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     box-sizing: border-box;
 }
 
@@ -2259,7 +2259,7 @@ Crédits : Titouan Moquet
     height: 25em;
     object-fit: cover;
     border-radius: calc(var(--border-radius-bloc) / 2);
-    box-shadow: var(--drop-shadow-0-25);
+    box-shadow: 0px 0px 10px #0000002a;
     transition: all 0.3s ease;
     box-sizing: border-box;
 }
@@ -2267,7 +2267,7 @@ Crédits : Titouan Moquet
 .main-fg>section:last-of-type div:nth-child(2) img:hover {
     filter: brightness(1.1);
     transform: scale(1.01);
-    box-shadow: var(--drop-shadow-0-5);
+    box-shadow: 0px 0px 10px #0000002a;
 }
 
 
@@ -2951,7 +2951,7 @@ strong {
 
     #right-presentation-cate {
         width: 100%;
-        height: 50;
+        height: 50px;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -3355,7 +3355,7 @@ strong {
     .oeuvre-card {
         width: 100%;
         opacity: 100% !important;
-        box-shadow: var(--drop-shadow-0-25) !important;
+        box-shadow: 0px 0px 10px #0000002a !important;
     }
 
     .main-fg>section:last-of-type div:nth-child(2) img {
@@ -3455,7 +3455,7 @@ strong {
 
     #right-presentation-cate {
         width: 100%;
-        height: 50;
+        height: 50px;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;

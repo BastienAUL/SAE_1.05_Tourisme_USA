@@ -13,6 +13,19 @@ Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion c
 
 <br>
 
+## Validation du code 
+Aucune erreurs css 
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS Valide !" />
+    </a>
+</p>
+
+Aucune erreurs html sur les pages : MLK, CGU, PDC, Personnages et travaux
+
+
 ## 🛠️ Technologies used / Technologies utilisées
 
 <div>
@@ -50,7 +63,6 @@ Ce projet réalisé dans le cadre de la SAE1.05 du BUT Informatique à Lannion c
 `FR`   
 > Projet réalisé uniquement dans un cadre pédagogique et contient des éléments non libre de droit.
 > Ne pas réutiliser sans autorisation.  
-
 
 
 
