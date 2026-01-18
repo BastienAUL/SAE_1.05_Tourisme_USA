@@ -1286,6 +1286,12 @@ Crédits : Titouan Moquet
     transition: 0.5s;
 }
 
+.article a {
+    text-decoration: none;
+    color: var(--bleu-deep);
+    width: 100%;
+}
+
 .article:hover {
     transform: translateY(-10px);
     filter: var(--drop-shadow-0-5);
@@ -1407,6 +1413,157 @@ Crédits : Titouan Moquet
     text-decoration: none;
     color: var(--bleu-fonce);
 }
+@media screen and (max-width: 1440px) {
+    #fullscreen_las-vegas h1 {
+        font-size: 100px;
+    }
+
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    #usa-title h1 {
+        margin-bottom: 50px;
+    }
+
+    #usa-presentation {
+        font-size: 10px;
+    }
+
+    .article-button {
+        display: none;
+    }
+
+    .article div h1 {
+        font-size: 21px;
+    }
+
+    .article div h2 {
+        font-size: 19px;
+    }
+
+    .article div h3 {
+        font-size: 17px;
+    }
+
+    #discover-description {
+        font-size: 15px;
+        height: 18%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #fullscreen_las-vegas h1 {
+        font-size: 80px;
+        width: 350px;
+    }
+
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    #usa-title h1 {
+        margin-bottom: 50px;
+    }
+
+    #usa-presentation {
+        font-size: 10px;
+        width: auto;
+        height: 200px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .usa-presentation{
+        height: auto;
+    }
+
+    .right-presentation {
+        font-size: 10px;
+        height: 90%;
+        width: 32%;
+    }
+
+    #right-presentation-cate {
+        width: 100%;
+        height: 50;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #usa-all-presentation {
+        justify-content: space-around;
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .right-presentation h3 {
+        margin: 10px;
+    }
+
+    #carte {
+        display: none;
+    }
+
+    .carte {
+        display: none;
+    }
+
+    .article {
+        width: 90%;
+    }
+
+    #article-title,
+    #discover-title {
+        height: 60px;
+    }
+
+    .article div h1 {
+        font-size: 18px;
+    }
+
+    .article div h2 {
+        display: none;
+    }
+
+    .article div h3 {
+        font-size: 16px;
+    }
+
+    .article-button {
+        display: none;
+    }
+
+    .discover {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30%;
+    }
+
+    #discover {
+        height: 1300px;
+    }
+
+    #discover-description {
+        font-size: 10px;
+        height: 18%;
+    }
+
+    #discover-cate {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+}
+
+
 
 
 /* ======== PAGE OEUVRE ========*/
