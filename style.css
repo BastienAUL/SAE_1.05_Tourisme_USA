@@ -1413,7 +1413,7 @@ Crédits : Titouan Moquet
     text-decoration: none;
     color: var(--bleu-fonce);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 425px) {
     #fullscreen_las-vegas h1 {
         font-size: 100px;
     }
@@ -1455,7 +1455,7 @@ Crédits : Titouan Moquet
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 425px) {
     #fullscreen_las-vegas h1 {
         font-size: 80px;
         width: 350px;
