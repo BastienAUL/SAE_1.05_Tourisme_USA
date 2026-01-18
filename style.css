@@ -3176,12 +3176,12 @@ strong {
     }
 
     /*Page Lieux*/
-        #lieu section {
+    #lieu section {
         width: 70%;
     }
 
     #container-image-aside  {
-        height: 40em;
+        height: 60em;
     }
 
     #container-image-aside aside {
@@ -3235,7 +3235,7 @@ strong {
     }
 
     #yellowstone header h1 {
-        font-size: 10px;
+        font-size: 90px;
     }
 
     #frise-chronologique {
@@ -3500,6 +3500,15 @@ strong {
     .main-fg>section:last-of-type div:nth-child(2) {
         grid-template-columns: repeat(auto-fill, minmax(30em, 1fr)); 
         /*fix d'un bug*/
+    }
+
+    /* Yellowstone */
+     #yellowstone header h1 {
+        font-size: 60px;
+    }
+
+    #container-image-aside  {
+        height: 40em;
     }
 }
 
