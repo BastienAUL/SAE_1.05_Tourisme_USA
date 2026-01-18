@@ -3228,6 +3228,74 @@ strong {
     #lieux-list article p{
         font-size: 1em;
     }
+    
+    /*Page Yellowstone */
+    #yellowstone section {
+        width: 70%;
+    }
+
+    #yellowstone header h1 {
+        font-size: 10px;
+    }
+
+    #frise-chronologique {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #frise-section1 article p,
+    #frise-section2 article p {
+        width: 100%;
+    }
+    
+     
+    #frise-section2 article {
+        margin: 20px 0;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #frise-section1 article{
+        margin: 20px 0;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    #frise-section2 {
+        margin: 0;
+    }
+
+
+    .point {
+        display: none;
+    }
+
+    #barre {
+        display: none;
+    }
+    
+    #activite article {
+        width: 95%;
+        height: 60vh;
+    }
+
+    #biodiversite img{
+        height: auto;
+    }
+
+    #mapid aside{
+        position: relative;
+        height: 30%;
+        width: 90%;
+    }
+
+    #mapid img{
+        margin : 0;
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
