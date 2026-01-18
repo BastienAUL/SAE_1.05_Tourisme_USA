@@ -1290,6 +1290,9 @@ Crédits : Titouan Moquet
     text-decoration: none;
     color: var(--bleu-deep);
     width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .article:hover {
