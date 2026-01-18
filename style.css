@@ -2440,7 +2440,7 @@ Crédits : Titouan Moquet
     font-family: "fredoka", cursive;
     position: absolute;
     width: 80%;
-    font-size: 20px;
+    font-size: 1em;
     background-color: var(--bg-color-article);
     border-radius: 10px;
     color: var(--bleu-fonce);
@@ -2449,6 +2449,7 @@ Crédits : Titouan Moquet
     transition: all 0.8s ease-in-out;
     opacity: 0;
     visibility: hidden;
+    
 }
 
 #conseils-pratiques button:hover {
