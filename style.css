@@ -3174,6 +3174,60 @@ strong {
     #mlk section:nth-of-type(3) div>div>img {
         width: 100%;
     }
+
+    /*Page Lieux*/
+        #lieu section {
+        width: 70%;
+    }
+
+    #container-image-aside  {
+        height: 40em;
+    }
+
+    #container-image-aside aside {
+        display: none;
+    }
+
+    #conseils-pratiques div button aside p{
+        font-size: 0.8em;
+    }
+
+    #conseils-pratiques div {
+        display: block;
+    } 
+
+    #conseils-pratiques div button aside p{
+        font-size: 0.8em;
+    }
+
+    #conseils-pratiques div {
+        display: block;
+    }
+    #conseils-pratiques div button {
+        height: 20em;
+        margin-bottom: 20px;
+    }
+
+    #container-image-aside{
+        height: 15em;
+    }
+
+    #lieux-list article p{
+        font-size: 1em;
+    }
+ 
+    #conseils-pratiques div button {
+        height: 20em;
+        margin-bottom: 20px;
+    }
+
+    #container-image-aside{
+        height: 15em;
+    }
+
+    #lieux-list article p{
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 1200px) {
