@@ -232,7 +232,8 @@ footer {
     color: var(--white);
     font-family: var(--font-family-alexandria);
     position: relative;
-    z-index: 101; /*pour masquer les bouton crédits et top*/
+    z-index: 101;
+    /*pour masquer les bouton crédits et top*/
 }
 
 
@@ -434,18 +435,18 @@ hr {
 }
 
 /* ======== CGU & PDC ========*/
-#gpu-and-pdc {
+#cgu-and-pdc {
     width: 60%;
     margin: 8em auto 4em auto;
     transition: all 0.5s ease;
 
 }
 
-#gpu-and-pdc h3 {
+#cgu-and-pdc h3 {
     font-family: var(--font-family-fredoka);
 }
 
-#gpu-and-pdc>div {
+#cgu-and-pdc>section {
     border-radius: 20px;
     filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 20px);
     margin: 4em 0 4em 0;
@@ -456,11 +457,11 @@ hr {
     transition: all 0.5s ease;
 }
 
-#gpu-and-pdc>div>p:last-child {
+#cgu-and-pdc>section>p:last-child {
     text-align: center;
 }
 
-#gpu-and-pdc h2 {
+#cgu-and-pdc h2 {
     font-size: 30px;
     text-align: center;
     background-color: white;
@@ -473,6 +474,7 @@ hr {
     font-size: 1.2em;
     color: var(--bleu);
     background-image: url(assets/images/accueil/background_las-vegas.jpg);
+
 }
 
 .travaux h1 {
@@ -497,6 +499,7 @@ hr {
     margin-top: 6em;
     margin-bottom: 2.5em;
     margin: 220px auto 150px auto;
+
 }
 
 .travaux div:first-of-type div section {
@@ -1416,158 +1419,6 @@ Crédits : Titouan Moquet
     text-decoration: none;
     color: var(--bleu-fonce);
 }
-@media screen and (max-width: 1024px) {
-    #fullscreen_las-vegas h1 {
-        font-size: 100px;
-    }
-
-    #usa-title h1,
-    #article-title h1,
-    #discover-title h1 {
-        font-size: 40px;
-        margin-top: 15px;
-    }
-
-    #usa-title h1 {
-        margin-bottom: 50px;
-    }
-
-    #usa-presentation {
-        font-size: 10px;
-    }
-
-    .article-button {
-        display: none;
-    }
-
-    .article div h1 {
-        font-size: 21px;
-    }
-
-    .article div h2 {
-        font-size: 19px;
-    }
-
-    .article div h3 {
-        font-size: 17px;
-    }
-
-    #discover-description {
-        font-size: 15px;
-        height: 18%;
-    }
-}
-
-@media (max-width: 767px) {
-    #fullscreen_las-vegas h1 {
-        font-size: 80px;
-        width: 350px;
-    }
-
-    #usa-title h1,
-    #article-title h1,
-    #discover-title h1 {
-        font-size: 30px;
-        margin-top: 0px;
-    }
-
-    #usa-title h1 {
-        margin-bottom: 50px;
-    }
-
-    #usa-presentation {
-        font-size: 10px;
-        width: auto;
-        height: 200px;
-        margin: 0;
-        justify-content: space-between;
-    }
-
-    .usa-presentation{
-        height: auto;
-    }
-
-    .right-presentation {
-        font-size: 10px;
-        height: 90%;
-        width: 32%;
-    }
-
-    #right-presentation-cate {
-        width: 100%;
-        height: 50;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #usa-all-presentation {
-        justify-content: space-around;
-        padding: 10px 0;
-        flex-wrap: wrap;
-    }
-
-    .right-presentation h3 {
-        margin: 10px;
-    }
-
-    #carte {
-        display: none;
-    }
-
-    .carte {
-        display: none;
-    }
-
-    .article {
-        width: 90%;
-    }
-
-    #article-title,
-    #discover-title {
-        height: 60px;
-    }
-
-    .article div h1 {
-        font-size: 18px;
-    }
-
-    .article div h2 {
-        display: none;
-    }
-
-    .article div h3 {
-        font-size: 16px;
-    }
-
-    .article-button {
-        display: none;
-    }
-
-    .discover {
-        width: 100%;
-        margin-bottom: 20px;
-        height: 30%;
-    }
-
-    #discover {
-        height: 1400px;
-    }
-
-    #discover-description {
-        font-size: 10px;
-        height: 18%;
-    }
-
-    #discover-cate {
-        flex-wrap: wrap;
-        width: 80%;
-    }
-
-}
-
-
-
 
 /* ======== PAGE OEUVRE ========*/
 
@@ -2239,7 +2090,7 @@ Crédits : Titouan Moquet
     margin-bottom: 2em;
 }
 
-.main-fg > section:last-of-type > header {
+.main-fg>section:last-of-type>header {
     background-color: var(--white);
     padding: 2em;
     margin: 2em 0;
@@ -2249,7 +2100,7 @@ Crédits : Titouan Moquet
     height: 100%;
 }
 
-.main-fg > section:last-of-type > header p {
+.main-fg>section:last-of-type>header p {
     margin: 1em 1em 0em;
 }
 
@@ -2311,6 +2162,7 @@ Crédits : Titouan Moquet
     height: 0;
     object-fit: contain;
 }
+
 .fleche-oeuvre {
     position: absolute;
     width: 5em;
@@ -3062,6 +2914,7 @@ strong {
 }
 
 @media screen and (max-width: 1420px) {
+
     /* ACCUEIL */
     #fullscreen_las-vegas h1 {
         font-size: 80px;
@@ -3166,6 +3019,7 @@ strong {
         flex-wrap: wrap;
         width: 80%;
     }
+
     /* MLK */
     #mlk section:nth-of-type(3) div>div {
         width: 40%;
@@ -3176,15 +3030,16 @@ strong {
     }
 
     /*Page Lieux*/
-    
-    #lieux-page header h1{
+
+    #lieux-page header h1 {
         font-size: 90px;
     }
+
     #lieu section {
         width: 70%;
     }
 
-    #container-image-aside  {
+    #container-image-aside {
         height: 60em;
     }
 
@@ -3192,43 +3047,44 @@ strong {
         display: none;
     }
 
-    #conseils-pratiques div button aside p{
-        font-size: 0.8em;
-    }
-
-    #conseils-pratiques div {
-        display: block;
-    } 
-
-    #conseils-pratiques div button aside p{
+    #conseils-pratiques div button aside p {
         font-size: 0.8em;
     }
 
     #conseils-pratiques div {
         display: block;
     }
+
+    #conseils-pratiques div button aside p {
+        font-size: 0.8em;
+    }
+
+    #conseils-pratiques div {
+        display: block;
+    }
+
     #conseils-pratiques div button {
         height: 20em;
         margin-bottom: 20px;
     }
 
-    #lieux-list article p{
+    #lieux-list article p {
         font-size: 1em;
     }
- 
+
     #conseils-pratiques div button {
         height: 20em;
         margin-bottom: 20px;
     }
 
-    #container-image-aside{
+    #container-image-aside {
         height: 15em;
     }
 
-    #lieux-list article p{
+    #lieux-list article p {
         font-size: 1em;
     }
-    
+
     /*Page Yellowstone */
     #yellowstone section {
         width: 70%;
@@ -3248,8 +3104,8 @@ strong {
     #frise-section2 article p {
         width: 100%;
     }
-    
-     
+
+
     #frise-section2 article {
         margin: 20px 0;
         height: auto;
@@ -3257,7 +3113,7 @@ strong {
         flex-direction: column;
     }
 
-    #frise-section1 article{
+    #frise-section1 article {
         margin: 20px 0;
         height: auto;
         width: 100%;
@@ -3276,26 +3132,26 @@ strong {
     #barre {
         display: none;
     }
-    
+
     #activite article {
         width: 95%;
         height: 60vh;
     }
 
-    #biodiversite img{
+    #biodiversite img {
         height: auto;
     }
 
-    #mapid aside{
+    #mapid aside {
         position: relative;
         height: 30%;
         width: 90%;
     }
 
-    #mapid img{
-        margin : 0;
+    #mapid img {
+        margin: 0;
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -3318,6 +3174,7 @@ strong {
 }
 
 @media screen and (max-width: 1050px) {
+
     /*livres*/
     #mlk section:nth-of-type(2) .livres>div {
         flex-direction: column;
@@ -3336,10 +3193,52 @@ strong {
         width: auto;
         margin-bottom: 20px;
     }
-    /* header */ 
+
+    /* header */
     #mlk header blockquote {
         left: 0;
         width: auto;
+    }
+
+    /* acceuil */
+    #fullscreen_las-vegas h1 {
+        font-size: 100px;
+    }
+
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    #usa-title h1 {
+        margin-bottom: 50px;
+    }
+
+    #usa-presentation {
+        font-size: 10px;
+    }
+
+    .article-button {
+        display: none;
+    }
+
+    .article div h1 {
+        font-size: 21px;
+    }
+
+    .article div h2 {
+        font-size: 19px;
+    }
+
+    .article div h3 {
+        font-size: 17px;
+    }
+
+    #discover-description {
+        font-size: 15px;
+        height: 18%;
     }
 }
 
@@ -3406,6 +3305,7 @@ strong {
 }
 
 @media screen and (max-width: 900px) {
+
     /* traveau */
     .travaux>div>main {
 
@@ -3459,7 +3359,8 @@ strong {
     }
 
     .main-fg>section:last-of-type div:nth-child(2) img {
-        width: 100%;;
+        width: 100%;
+        ;
         height: 12em;
     }
 
@@ -3498,26 +3399,135 @@ strong {
 
     /* FG */
     .main-fg>section:last-of-type div:nth-child(2) {
-        grid-template-columns: repeat(auto-fill, minmax(30em, 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
         /*fix d'un bug*/
     }
 
     /* Yellowstone */
-     #yellowstone header h1 {
+    #yellowstone header h1 {
         font-size: 60px;
     }
 
-    #container-image-aside  {
+    #container-image-aside {
         height: 40em;
     }
 
     /* Page lieux */
-    #lieux-page header h1{
+    #lieux-page header h1 {
         font-size: 60px;
     }
 }
 
+@media (max-width: 767px) {
+    #fullscreen_las-vegas h1 {
+        font-size: 80px;
+        width: 350px;
+    }
+
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    #usa-title h1 {
+        margin-bottom: 50px;
+    }
+
+    #usa-presentation {
+        font-size: 10px;
+        width: auto;
+        height: 200px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .usa-presentation {
+        height: auto;
+    }
+
+    .right-presentation {
+        font-size: 10px;
+        height: 90%;
+        width: 32%;
+    }
+
+    #right-presentation-cate {
+        width: 100%;
+        height: 50;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #usa-all-presentation {
+        justify-content: space-around;
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .right-presentation h3 {
+        margin: 10px;
+    }
+
+    #carte {
+        display: none;
+    }
+
+    .carte {
+        display: none;
+    }
+
+    .article {
+        width: 90%;
+    }
+
+    #article-title,
+    #discover-title {
+        height: 60px;
+    }
+
+    .article div h1 {
+        font-size: 18px;
+    }
+
+    .article div h2 {
+        display: none;
+    }
+
+    .article div h3 {
+        font-size: 16px;
+    }
+
+    .article-button {
+        display: none;
+    }
+
+    .discover {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30%;
+    }
+
+    #discover {
+        height: 1400px;
+    }
+
+    #discover-description {
+        font-size: 10px;
+        height: 18%;
+    }
+
+    #discover-cate {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+}
+
 @media screen and (max-width: 660px) {
+
     /* MLK */
     #mlk section:nth-of-type(3) div>div>img {
         height: auto;
@@ -3531,17 +3541,18 @@ strong {
         height: auto;
 
     }
+
     /* NAV */
     header nav {
         font-size: 1.5em;
     }
-
-    #gpu-and-pdc {
+    /*CGU*/
+    #cgu-and-pdc {
         width: 100%;
         margin: 0;
     }
 
-    #gpu-and-pdc>div {
+    #cgu-and-pdc>div {
         margin-bottom: 0;
         border-radius: 0;
     }
@@ -3559,22 +3570,23 @@ strong {
         font-size: 1em;
     }
 
-     /* Yellowstone */
-     #yellowstone header h1 {
+    /* Yellowstone */
+    #yellowstone header h1 {
         font-size: 40px;
     }
 
-    #container-image-aside  {
+    #container-image-aside {
         height: 30em;
     }
 
     /* Page lieux */
-    #lieux-page header h1{
+    #lieux-page header h1 {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 550px) {
+
     /* PERSONNAGES */
     #personnages header {
         height: auto;
@@ -3583,6 +3595,7 @@ strong {
     #personnages header h1 {
         margin-bottom: 0;
     }
+
     /* MLK */
     #mlk header {
         background-position-x: 80%
@@ -3668,7 +3681,7 @@ strong {
         font-size: 2em;
     }
 
-    .main-fg section:nth-child(2) p{
+    .main-fg section:nth-child(2) p {
         padding-left: 0;
     }
 
@@ -3718,7 +3731,7 @@ strong {
         text-align: center;
     }
 
-    .main-fg section:nth-child(3) > div:last-child > div:hover {
+    .main-fg section:nth-child(3)>div:last-child>div:hover {
         flex-direction: column-reverse;
     }
 
@@ -3783,13 +3796,15 @@ strong {
     .main-fg>section:last-of-type p {
         margin-bottom: 0.5em;
     }
-    .main-fg>section:last-of-type div:nth-child(2){
-        display: block  ;
+
+    .main-fg>section:last-of-type div:nth-child(2) {
+        display: block;
     }
 
 }
 
 @media screen and (max-width: 400px) {
+
     /* FOOTER */
     footer>div:first-child>div {
         flex-direction: column;
@@ -3890,16 +3905,26 @@ strong {
         padding: 0;
     }
 
-    
-
     .mouvement-images {
         padding: 0;
     }
 
-    .section-lieux header p{
+    .section-lieux header p {
         margin: 1em 0 0;
     }
 
+    /* travaux */
+    .travaux h1 {
+        font-size: 1.9em;
+    }
+
+    .travaux h2 {
+        font-size: 1.2em;
+    }
+
+    .travaux>div:first-of-type svg {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -3912,7 +3937,7 @@ strong {
         height: 50px;
     }
 
-    /* PERSONNAGES */ 
+    /* PERSONNAGES */
     #personnages>section div {
         margin: 10px;
     }
@@ -3943,7 +3968,8 @@ strong {
         margin-left: 15px;
         margin-right: 15px;
     }
-    /* POPUP */ 
+
+    /* POPUP */
 
     .popup-warn p {
         font-size: 0.9em;
@@ -3977,8 +4003,45 @@ strong {
         width: 97%;
     }
 
-    #usa-title h1, #article-title h1, #discover-title h1 {
+    #usa-title h1,
+    #article-title h1,
+    #discover-title h1 {
         font-size: 26px;
+    }
+
+    /*travaux*/
+    .travaux>div:first-of-type>div {
+        margin-top: 6em;
+        margin-bottom: 2.5em;
+    }
+    .travaux h1{
+        font-size: 1em;
+    }
+    .travaux h2{
+        font-size: 0.8em;
+    }
+    .travaux {
+        font-size: 1em;
+    }
+    .link-card-travaux div{
+        margin: 0;
+        min-width: 100%;
+    }
+
+    .link-card-travaux div:nth-of-type(2){
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*CGU*/
+    #cgu-and-pdc h2{
+        font-size: 1.4em;
+
+    }
+    #cgu-and-pdc p {
+        font-size: 1em;
     }
 }
 
@@ -3989,6 +4052,7 @@ strong {
 }
 
 @media (any-pointer: coarse) {
+
     /*
     Source - https://stackoverflow.com/
     */
@@ -3998,4 +4062,3 @@ strong {
         /*affiche un message seulement si écran tactile*/
     }
 }
-
