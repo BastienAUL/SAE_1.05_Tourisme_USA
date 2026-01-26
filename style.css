@@ -3033,7 +3033,7 @@ strong {
     /*Page Lieux*/
 
     #lieux-page header h1 {
-        font-size: 90px;
+        font-size: 80px;
     }
 
     #lieu section {
@@ -3371,6 +3371,11 @@ strong {
 
     .oeuvres-grid {
         flex-direction: column;
+    }
+
+    /*page lieu*/
+    #lieux-page header h1 {
+        font-size: 70px;
     }
 }
 
@@ -3931,6 +3936,18 @@ strong {
     .travaux>div:first-of-type svg {
         display: none;
     }
+
+    /*page lieu*/
+    #lieux-page header h1 {
+        font-size: 35px;
+    }
+
+    /* Yellowstone */
+    #yellowstone header h1 {
+        font-size: 30px;
+    }
+
+    
 }
 
 @media screen and (max-width: 320px) {
