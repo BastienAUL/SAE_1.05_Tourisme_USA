@@ -3153,6 +3153,20 @@ strong {
         margin: 0;
     }
 
+    #mapid {
+        height: 1000px;
+    }
+
+    #mapid aside {
+        position: relative;
+        height: 40%;
+        width: 90%;
+    }
+
+    #mapid img {
+        height: 400px;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -3939,12 +3953,12 @@ strong {
 
     /*page lieu*/
     #lieux-page header h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     /* Yellowstone */
     #yellowstone header h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     
