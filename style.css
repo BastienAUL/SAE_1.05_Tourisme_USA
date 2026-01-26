@@ -2852,7 +2852,7 @@ strong {
 
 /* ===== RESPONSIF =====*/
 
-@media screen and (min-width: 1524px) and (max-width: 1920px) {
+@media screen and (min-width: 1524px) and (max-width: 1919px) {
 
     .section-lieux {
         gap: 3em;
