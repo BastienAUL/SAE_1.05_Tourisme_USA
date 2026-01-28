@@ -2519,7 +2519,7 @@ Crédits : Titouan Moquet
 
 #yellowstone li {
     font-family: "FREDOKA", sans-serif;
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: var(--bleu-deep);
     line-height: 1.6;
 }
@@ -3168,7 +3168,7 @@ strong {
     }
 
     #yellowstone li {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 }
 
