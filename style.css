@@ -2490,7 +2490,7 @@ Crédits : Titouan Moquet
     justify-content: center;
     align-items: center;
     font-family: "BEBAS", sans-serif;
-    font-size: 120px; 10ans
+    font-size: 120px;
     color: var(--bg-color-article);
     text-shadow: 2px 5px 40px var(--bleu-fonce);
     height: 100vh;
@@ -3044,7 +3044,7 @@ strong {
         height: 60em;
     }
 
-    #container-image-aside aside {
+    #container-image-aside asidyellowstone lie {
         display: none;
     }
 
@@ -3073,7 +3073,7 @@ strong {
         font-size: 1em;
     }
 
-    #conseils-pratiques div button {
+    #conseils-pratiques div butyellowstone liton {
         height: 20em;
         margin-bottom: 20px;
     }
@@ -3167,6 +3167,9 @@ strong {
         height: 400px;
     }
 
+    #yellowstone li {
+        font-size: 0.6em;
+    }
 }
 
 @media screen and (max-width: 1200px) {
