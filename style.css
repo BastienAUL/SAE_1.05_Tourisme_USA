@@ -2490,7 +2490,7 @@ Crédits : Titouan Moquet
     justify-content: center;
     align-items: center;
     font-family: "BEBAS", sans-serif;
-    font-size: 120px;
+    font-size: 120px; 10ans
     color: var(--bg-color-article);
     text-shadow: 2px 5px 40px var(--bleu-fonce);
     height: 100vh;
@@ -2604,7 +2604,7 @@ Crédits : Titouan Moquet
 }
 
 #barre {
-    height: 85em;
+    height: 96em;
     border: 4px solid var(--bleu-fonce);
     border-radius: 10px;
     margin: 0 20px;
