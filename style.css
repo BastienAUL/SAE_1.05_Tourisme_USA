@@ -56,8 +56,8 @@ Do not reuse without permission !
     --font-family-nats: 'NATS', Arial, Helvetica, sans-serif;
     --font-family-alexandria: 'Alexandria Regular', Arial, Helvetica, sans-serif;
     --font-family-bedas: 'BEBAS', Arial, Helvetica, sans-serif;
-    --drop-shadow-0-25: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25) );
-    --drop-shadow-0-50: drop-shadow( 0px 5px 20px rgba(0, 0, 0, 0.5));
+    --drop-shadow-0-25: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
+    --drop-shadow-0-50: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.5));
 }
 
 body {
@@ -1623,7 +1623,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow:0px 0px 10px #0000002a;
+    box-shadow: 0px 0px 10px #0000002a;
     box-sizing: border-box;
 }
 
@@ -2095,7 +2095,7 @@ Crédits : Titouan Moquet
     padding: 2em;
     margin: 2em 0;
     border-radius: var(--border-radius-bloc);
-    box-shadow:0px 0px 10px #0000002a;
+    box-shadow: 0px 0px 10px #0000002a;
     text-align: left;
     height: 100%;
 }
@@ -2119,7 +2119,7 @@ Crédits : Titouan Moquet
     width: 28%;
     background-color: var(--white);
     border-radius: var(--border-radius-bloc);
-    box-shadow:0px 0px 10px #0000002a;
+    box-shadow: 0px 0px 10px #0000002a;
     padding: 1.5em;
     box-sizing: border-box;
     display: flex;
@@ -2449,7 +2449,7 @@ Crédits : Titouan Moquet
     transition: all 0.8s ease-in-out;
     opacity: 0;
     visibility: hidden;
-    
+
 }
 
 #conseils-pratiques button:hover {
@@ -2968,14 +2968,6 @@ strong {
         margin: 10px;
     }
 
-    #carte {
-        display: none;
-    }
-
-    .carte {
-        display: none;
-    }
-
     .article {
         width: 90%;
     }
@@ -3223,11 +3215,23 @@ strong {
         font-size: 100px;
     }
 
+    #carte {
+        display: none;
+    }
+
+    .carte {
+        display: none;
+    }
+    
+    #discover h1 {
+        margin-top: 10px;
+    }
+
     #usa-title h1,
     #article-title h1,
     #discover-title h1 {
         font-size: 40px;
-        margin-top: 15px;
+        margin-top: -10px;
     }
 
     #usa-title h1 {
@@ -3257,6 +3261,11 @@ strong {
     #discover-description {
         font-size: 15px;
         height: 18%;
+        margin-bottom: 10px;
+    }
+
+    #discover-cate {
+        height: 1000px;
     }
 }
 
@@ -3466,6 +3475,12 @@ strong {
         justify-content: space-between;
     }
 
+    #discover-description {
+        font-size: 15px;
+        height: 18%;
+        margin-bottom: 10px;
+    }
+
     .usa-presentation {
         height: auto;
     }
@@ -3510,7 +3525,7 @@ strong {
         margin: 0;
         width: 100%;
     }
-    
+
     #article-title,
     #discover-title {
         height: 60px;
@@ -3543,8 +3558,9 @@ strong {
     }
 
     #discover-description {
-        font-size: 10px;
-        height: 18%;
+        font-size: 14px;
+        height: 15%;
+        margin-bottom: 10px;
     }
 
     #discover-cate {
@@ -3574,6 +3590,7 @@ strong {
     header nav {
         font-size: 1.5em;
     }
+
     /*CGU*/
     #cgu-and-pdc {
         width: 100%;
@@ -3964,7 +3981,7 @@ strong {
         font-size: 35px;
     }
 
-    
+
 }
 
 @media screen and (max-width: 320px) {
@@ -4054,21 +4071,25 @@ strong {
         margin-top: 6em;
         margin-bottom: 2.5em;
     }
-    .travaux h1{
+
+    .travaux h1 {
         font-size: 1em;
     }
-    .travaux h2{
+
+    .travaux h2 {
         font-size: 0.8em;
     }
+
     .travaux {
         font-size: 1em;
     }
-    .link-card-travaux div{
+
+    .link-card-travaux div {
         margin: 0;
         min-width: 100%;
     }
 
-    .link-card-travaux div:nth-of-type(2){
+    .link-card-travaux div:nth-of-type(2) {
         margin-left: 0;
         margin-right: 0;
         margin-top: 20px;
@@ -4076,10 +4097,11 @@ strong {
     }
 
     /*CGU*/
-    #cgu-and-pdc h2{
+    #cgu-and-pdc h2 {
         font-size: 1.4em;
 
     }
+
     #cgu-and-pdc p {
         font-size: 1em;
     }
