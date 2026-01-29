@@ -819,9 +819,9 @@ Crédits : Titouan Moquet
 }
 
 #mlk header ul {
-    background-color: rgba(255, 255, 255, 0.500);
+    background-color: rgba(255, 255, 255, 0.831);
     backdrop-filter: blur(5px);
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px; 
     border-radius: var(--border-radius-bloc);
     transition: all 0.5s ease;
     position: absolute;
@@ -2854,7 +2854,7 @@ strong {
 
 /* ===== RESPONSIF =====*/
 
-@media screen and (min-width: 1524px) and (max-width: 1919px) {
+@media screen and (min-width: 1525px) and (max-width: 1920px) {
 
     .section-lieux {
         gap: 3em;
@@ -2898,7 +2898,7 @@ strong {
 
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
 
     .zigzag-container img {
         height: 45em;
