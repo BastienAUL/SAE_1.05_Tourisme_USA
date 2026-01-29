@@ -3629,6 +3629,10 @@ strong {
     #lieux-page header h1 {
         font-size: 40px;
     }
+
+    #lieux-list aside{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 550px) {
